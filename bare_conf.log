@@ -1,0 +1,235 @@
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  2 DEC 2014 22:07
+entering extended mode
+**bare_conf.tex
+(C:\Users\xintao\Desktop\incremental-covering-array\bare_conf.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(C:\CTEX\MiKTeX\tex\latex\ieeetran\IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count80
+\@IEEEtrantmpcountB=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 366.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+Requested font "ptmr7t" at 10.0pt
+ -> ptmr7t
+
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+Requested font "ptmr7t" at 5.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 5.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 5.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 5.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 7.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 7.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 7.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 7.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 8.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 8.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 8.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 8.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 9.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 9.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 9.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 9.0pt
+ -> ptmbi7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 10.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 10.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 10.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 11.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 11.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 11.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 11.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 12.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 12.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 12.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 12.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 17.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 17.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 17.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 17.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 20.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 20.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 20.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 20.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 24.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 24.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 24.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 24.0pt
+ -> ptmbi7t
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count91
+\@IEEEtranrubishbin=\box26
+) (C:\Users\xintao\Desktop\incremental-covering-array\bare_conf.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+Requested font "ptmrc7t" at 10.0pt
+ -> ptmrc7t
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 447.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 447.
+Requested font "cmr8" at 8.0pt
+ -> cmr8
+Requested font "cmr6" at 6.0pt
+ -> cmr6
+Requested font "cmmi8" at 8.0pt
+ -> cmmi8
+Requested font "cmmi6" at 6.0pt
+ -> cmmi6
+Requested font "cmsy8" at 8.0pt
+ -> cmsy8
+Requested font "cmsy6" at 6.0pt
+ -> cmsy6
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 593.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 593.
+Requested font "ptmri7t" at 6.0pt
+ -> ptmri7t
+
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[1
+
+
+
+] (C:\Users\xintao\Desktop\incremental-covering-array\bare_conf.aux) ) 
+Here is how much of TeX's memory you used:
+ 903 strings out of 430478
+ 15770 string characters out of 3191502
+ 63173 words of memory out of 3000000
+ 4107 multiletter control sequences out of 15000+200000
+ 27727 words of font info for 62 fonts, out of 3000000 for 9000
+ 17 hyphenation exceptions out of 8191
+ 26i,8n,19p,190b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on bare_conf.pdf (1 page).
