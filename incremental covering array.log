@@ -1,0 +1,281 @@
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  19 DEC 2014 04:05
+entering extended mode
+**incremental*covering*array.tex
+
+("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
+.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(C:\CTEX\MiKTeX\tex\latex\ieeetran\IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count80
+\@IEEEtrantmpcountB=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 366.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+Requested font "ptmr7t" at 10.0pt
+ -> ptmr7t
+
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+Requested font "ptmr7t" at 5.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 5.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 5.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 5.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 7.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 7.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 7.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 7.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 8.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 8.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 8.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 8.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 9.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 9.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 9.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 9.0pt
+ -> ptmbi7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 10.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 10.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 10.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 11.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 11.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 11.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 11.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 12.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 12.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 12.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 12.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 17.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 17.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 17.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 17.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 20.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 20.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 20.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 20.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 24.0pt
+ -> ptmr7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+Requested font "ptmb7t" at 24.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 24.0pt
+ -> ptmri7t
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+Requested font "ptmbi7t" at 24.0pt
+ -> ptmbi7t
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count91
+\@IEEEtranrubishbin=\box26
+) (C:\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks15
+\thm@bodyfont=\toks16
+\thm@headfont=\toks17
+\thm@notefont=\toks18
+\thm@headpunct=\toks19
+\thm@preskip=\skip44
+\thm@postskip=\skip45
+\thm@headsep=\skip46
+\dth@everypar=\toks20
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: xetex.def on input line 91.
+
+(C:\CTEX\MiKTeX\tex\xelatex\xetex-def\xetex.def
+File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+\c@definition=\count92
+
+("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
+.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 355.
+LaTeX Font Info:    ... okay on input line 355.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 355.
+LaTeX Font Info:    ... okay on input line 355.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 355.
+LaTeX Font Info:    ... okay on input line 355.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 355.
+LaTeX Font Info:    ... okay on input line 355.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 355.
+LaTeX Font Info:    ... okay on input line 355.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 355.
+LaTeX Font Info:    ... okay on input line 355.
+Requested font "cmr9" at 9.0pt
+ -> cmr9
+Requested font "cmr6" at 6.0pt
+ -> cmr6
+Requested font "cmmi9" at 9.0pt
+ -> cmmi9
+Requested font "cmmi6" at 6.0pt
+ -> cmmi6
+Requested font "cmsy9" at 9.0pt
+ -> cmsy9
+Requested font "cmsy6" at 6.0pt
+ -> cmsy6
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 422.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 422.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 422.
+Requested font "ptmrc7t" at 10.0pt
+ -> ptmrc7t
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 474.
+File: increase_example.eps Graphic file (type eps)
+ <increase_example.eps> [1
+
+
+]
+File: decrease_example.eps Graphic file (type eps)
+ <decrease_example.eps>
+("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
+.bbl")
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[2]
+("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
+.aux") ) 
+Here is how much of TeX's memory you used:
+ 1357 strings out of 430478
+ 21291 string characters out of 3191502
+ 74894 words of memory out of 3000000
+ 4533 multiletter control sequences out of 15000+200000
+ 27179 words of font info for 61 fonts, out of 3000000 for 9000
+ 17 hyphenation exceptions out of 8191
+ 26i,8n,19p,1011b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on incremental*covering*array.pdf (2 pages).
