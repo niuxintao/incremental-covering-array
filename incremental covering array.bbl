@@ -21,6 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{nie2011survey}
+C.~Nie and H.~Leung, ``A survey of combinatorial testing,'' \emph{ACM Computing
+  Surveys (CSUR)}, vol.~43, no.~2, p.~11, 2011.
+
 \bibitem{kuhn2002investigation}
 D.~R. Kuhn and M.~J. Reilly, ``An investigation of the applicability of design
   of experiments to software testing,'' in \emph{Software Engineering Workshop,

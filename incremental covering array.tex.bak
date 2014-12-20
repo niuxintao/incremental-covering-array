@@ -446,14 +446,24 @@ Combinatorial testing (CT) is an effective technique for testing the interaction
 
 
 \section{Introduction}
-With the growing complexity of software systems, various interactions of factors can affect the behaviour of the system.  To test all the possible interactions of them is impractical due to the large interactions space. Therefore, efficient sampling of the whole testing space are required. Combinatorial testing has been proven to be effective to deal with this sampling work. It works by generating a efficient set of test cases, i.e., covering array, to test all the possible interactions in system.  The justification behind of CT is that most failures in the system are caused by the interactions with number of factors no more than 6 \cite{kuhn2002investigation}. And hence    can fulfil testing requirement at most time.
+With the growing complexity and scale of modern software systems, various factors, e.g., input values and configure options, can affect the behaviour of the system. Worse more, some interactions between them can trigger unexpected negative effects on the software. To ensure the correctness and quality of the software system, it is desirable to detect and locate these \emph{bad} interactions. The simplest way to solve this problem is to take exhaustive testing for all the possible validate interactions of the software system. It is, however, not impractical due to the interactions explosion. Therefore, to select a group of representative test cases from the whole testing space is required.
 
-Many works are proposed to . There is a common for these work, i.e., should give a t in prior, such it can generate.
+Combinatorial testing has been proven to be effective to deal with this sampling work \cite{nie2011survey}. It works by generating a relative small set of test cases, i.e., covering array, to test a group of particular interactions in the system. The number of factors involved in those selected interactions is limited in a moderate range, which is usually from 2 to 6 \cite{kuhn2002investigation}.
+
+% The justification behind of this range is that based on empirical studies \cite{kuhn2002investigation}, most failures in the system are caused by the interactions with number of involved factors no more than 6 \cite{kuhn2002investigation}. And hence can fulfil testing requirement at most time.
+
+Many algorithms are proposed to generate covering arrays. Apart from many differences between them,  those works have a common condition, i.e., they all need to be given a the strength \emph{t} in prior.  The strength \emph{t} indicated the largest number of factors involved in the interactions they need to cover. In practice, however, such a \emph{t} can not be properly determined. There are two reasons for this. First, many software systems have complicated interactions space which let alone determining the strength \emph{t},  cannot even a challenge to determine the maximal strength. In fact, in the worst case, any interaction with any strength can have an distinct affect of the SUT. Second, even though the \emph{t} has been properly determined, there may be no time to completely executing all the test cases in the test cases. This is because, are distinct, some may  \cite{fouche2009incremental}.  In such a case, the is no meaning less.
+
+For this two reasons, the adaptive covering array is preferred. Fouche in this paper proposed a incremantal coveing array. Which the higher can be based on several lower strength covering array.
+
+In consideration of the size, . And also the key idea of this paper : To generate higher strength covering array from the lower strength, may be not effective at the size of the overall needed test cases. This can be easily understood, as it is not focus on the  higher covering array, which should . to in the .
+
+Then a . In fact, to execute the test cases , not mean to generate them in the order.
 
 
 % no \IEEEPARstart
 %Modern software are becoming more and more complicated. Combinatorial testing, as a black, has been proven to be effecive.
-%In fact, in the worst case, any interaction with any strength can have an distinct affect of the SUT.
+%
 %
 %and hence makes applying CT a challenge task.
 %
@@ -508,7 +518,7 @@ need to . And hence then , we need to increase the strength, as . To . Then firs
 \section{Generating incremental covering arrays}
 
 \section{Preliminary Evaluation}
-This section , on which there are 20 covering arrays . in Table. 
+This section , on which there are 20 covering arrays . in Table.
 
 
 \section{Related work}

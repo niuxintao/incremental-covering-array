@@ -419,7 +419,7 @@ Email: cshleung@comp.polyu.edu.hk\\
 
 \begin{abstract}
 %\boldmath
-Combinatorial testing (CT) is an effective technique for testing the interactions of factors in the software under test (SUT). By designing an efficient set of test cases, i.e., covering array, CT ensures to check every possible validate interactions in SUT. Most existing covering array generation algorithms require to be given a \emph{strength} \emph{t} in prior, such that only the interactions with the number of factors no more than $t$ are needed to be checked.  In practice, however, such $t$ cannot be properly determined, especially for systems with complicated interactions space.  Hence, adaptively generation of covering arrays is preferred. In this paper, we proposed two strategies for generating covering arrays which can increase the coverage strength when required. An preliminary evaluation of the two strategies is given, which showed that, in consideration of the size of the covering array, both the two strategies has their own advantages.
+Combinatorial testing (CT) is an effective technique for testing the interactions of factors in the software under test (SUT). By designing an efficient set of test cases, i.e., covering array, CT ensures to check every possible validate interactions in SUT. Most existing covering array generation algorithms require to be given a \emph{strength} \emph{t} in prior, such that only the interactions with the number of factors no more than $t$ are needed to be checked.  In practice, however, such $t$ cannot be properly determined, especially for systems with complicated interactions space.  Hence, adaptively generation of covering arrays is preferred. In this paper, we proposed two strategies for generating covering arrays which can increase the coverage strength when required. An preliminary evaluation of the two strategies is given, which showed that, in consideration of the size of the covering array, both the two strategies have their own advantages.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -446,13 +446,22 @@ Combinatorial testing (CT) is an effective technique for testing the interaction
 
 
 \section{Introduction}
-With the growing complexity of software systems, various interactions of factors can affect the behaviour of the system.  To test all the possible interactions of them is impractical due to the large interactions space. Therefore, efficient sampling of the whole testing space are required. Combinatorial testing has been proven to be effective to deal with this sampling work. It works by generating a relative small set of test cases, i.e., covering array, to test all the possible moderately low-stregn interactions in system.  The justification behind of CT is that most failures in the system are caused by the interactions with number of involved factors no more than 6 \cite{kuhn2002investigation}. And hence    can fulfil testing requirement at most time.
+With the growing complexity and scale of modern software systems, various factors, e.g., input values and configure options, can affect the behaviour of the system. Worse more, some interactions between them can trigger unexpected negative effects on the software. To ensure the correctness and quality of the software system, it is desirable to detect and locate these \emph{bad} interactions. The simplest way to solve this problem is to take exhaustive testing for all the possible validate interactions of the software system. It is, however, not impractical due to the interactions explosion. Therefore, to select a group of representative test cases from the whole testing space is required.
 
-Many works are proposed to generate covering arrays. Besides the behind these algorithms, there is a common for these work, i.e., they should be should given a the strength \emph{t} in prior to guide the generation. In practice, however, such a \emph{t} can not be propoer determined. There are two reasons for this, first, many software system has complicated interactions space which make a challenge to determine the maximal strenght. In fact, in the worst case, any interaction with any strength can have an distinct affect of the SUT. Second, even though the \emph{t} has been properly determined, there may be no time to completedly executing all the test cases in the test cases. This is becasue, are distinct, some may  \cite{fouche2009incremental}.  In such a case, the is no meaning less.
+Combinatorial testing has been proven to be effective to deal with this sampling work \cite{nie2011survey}. It works by generating a relative small set of test cases, i.e., covering array, to test a group of particular interactions in the system. The number of factors involved in those selected interactions is limited in a moderate range, which is usually from 2 to 6 \cite{kuhn2002investigation}.
 
-For this two reasons, the adaptive covering array is prefered. Fouche in this paper proposed a incremantal coveing array. Which the higher can be based on several lower strength covering array. 
+% The justification behind of this range is that based on empirical studies \cite{kuhn2002investigation}, most failures in the system are caused by the interactions with number of involved factors no more than 6 \cite{kuhn2002investigation}. And hence can fulfil testing requirement at most time.
 
-In consideration of the size, . And also the key idea of this paper : To generate higher strength covering array from the lower strength, may be not effective at the size of the overall needed test cases. This can be easily understood, as it is not focus on the  higher covering array, which should . to in the .
+Many algorithms are proposed to generate covering arrays. Apart from many differences between them,  those works have a common condition, i.e., they all need to be given a the strength \emph{t} in prior.  The strength \emph{t} indicated the largest number of factors involved in the interactions they need to cover. In practice, however, such a \emph{t} can not be properly determined. There are two reasons for this. First, many software systems suffer from complicated interactions space which make it challenging to estimate the strength \emph{t}. In such case, even experienced testers can make mistakes and estimate a wrong value for \emph{t}, which can significantly affect the effectiveness and efficiency of CT.  Second, even though \emph{t} has been properly determined, there may be no enough time to completely executing all the test cases in the covering array. This is because testing for the software only makes sense before the next version is released. This time interval between two release versions may sometimes too short for a complete testing to a high strength covering array \cite{fouche2009incremental}. 
+
+%In fact, in the worst case, any interaction with any strength can have an distinct affect of the SUT.
+
+To make up for the shortcoming of traditional covering arrays, the incremental covering array \cite{fouche2009incremental} has been proposed. Such object can be deemed as adaptive covering array, which can increase the strength \emph{t} when required. As it can generate higher strength covering array based on lower strength covering array, it can reduce much more cost when comparing with generating multiple different strengths of covering arrays. Additionally, it can better applied on the testing software of which the releasing time is  frequently changed and cannot be predicted.
+
+
+In consideration of the size of the overall test cases, we argue that this approach of generation of incremental covering array may generate too many test cases to construct the higher-strength covering array. This can be easily understood, as generating higher-strength covering array based on the lower-strength covering array (called \emph{down-top} generation later) does not aim to optimize the size of the higher-strength covering array. As a result, it may generate more test cases than those generated by approaches that focus on generating particular higher-strength covering array.  
+
+For this, And also the key idea of this paper : To generate higher strength covering array from the lower strength, may be not effective at the size of the overall needed test cases. This can be easily understood, as it is not focus on the  higher covering array, which should . to in the .
 
 Then a . In fact, to execute the test cases , not mean to generate them in the order.
 
@@ -467,6 +476,11 @@ Then a . In fact, to execute the test cases , not mean to generate them in the o
 %In the other hand, simply generated different covering arrays will be , as many test cases in the covering array may be redundant.
 Our contributions includes:
 
+ \begin{enumerate}
+ \item  We propose two strategies for the generation of incremental covering arrays.
+ \item  We conduct a series experiments to compare and evaluate the two strategies. 
+ \item  A recommendation for selecting which strategy when generating incremental covering array in practice is given.
+\end{enumerate}
 %\section{Motivation}
 %
 
@@ -514,7 +528,7 @@ need to . And hence then , we need to increase the strength, as . To . Then firs
 \section{Generating incremental covering arrays}
 
 \section{Preliminary Evaluation}
-This section , on which there are 20 covering arrays . in Table. 
+This section , on which there are 20 covering arrays . in Table.
 
 
 \section{Related work}
