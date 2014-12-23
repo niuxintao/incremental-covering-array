@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  21 DEC 2014 06:45
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  24 DEC 2014 06:37
 entering extended mode
 **incremental*covering*array.tex
 
@@ -171,25 +171,110 @@ Requested font "ptmbi7t" at 24.0pt
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count91
 \@IEEEtranrubishbin=\box26
+) (C:\CTEX\MiKTeX\tex\latex\algorithmicx\algpseudocode.sty
+Package: algpseudocode 
+
+(C:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\algorithmicx\algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count92
+\c@ALG@rem=\count93
+\c@ALG@nested=\count94
+\ALG@tlm=\skip44
+\ALG@thistlm=\skip45
+\c@ALG@Lnr=\count95
+\c@ALG@blocknr=\count96
+\c@ALG@storecount=\count97
+\c@ALG@tmpcounter=\count98
+\ALG@tmplength=\skip46
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (C:\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(C:\CTEX\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count99
+\float@exts=\toks15
+\float@box=\box27
+\@float@everytoks=\toks16
+\@floatcapt=\box28
+)
+\@float@every@algorithm=\toks17
+\c@algorithm=\count100
+)
+(C:\CTEX\MiKTeX\tex\latex\subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:\CTEX\MiKTeX\tex\latex\caption\caption.sty
+Package: caption 2011/11/10 v3.2e Customizing captions (AR)
+
+(C:\CTEX\MiKTeX\tex\latex\caption\caption3.sty
+Package: caption3 2011/11/01 v1.4a caption3 kernel (AR)
+\captionmargin=\dimen117
+\captionmargin@=\dimen118
+\captionwidth=\dimen119
+\caption@indent=\dimen120
+\caption@parindent=\dimen121
+\caption@hangindent=\dimen122
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \begin {center}{\normalfont \footnotesize #1}\\{\normal
+font \footnotesize \scshape #2}\end {center}\@IEEEtablecaptionsepspace \else \@
+IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {
+#1.}~~ #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \
+footnotesize {#1.}~~ }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent 
+\unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfon
+t \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont 
+\footnotesize \box \@tempboxa \hfil }\fi \fi \fi .
+\c@ContinuedFloat=\count101
+Package caption Info: float package is loaded.
+)
+\c@KVtest=\count102
+\sf@farskip=\skip47
+\sf@captopadj=\dimen123
+\sf@capskip=\skip48
+\sf@nearskip=\skip49
+\c@subfigure=\count103
+\c@subfigure@save=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@subtable@save=\count107
+\c@lotdepth=\count108
+\sf@top=\skip50
+\sf@bottom=\skip51
 ) (C:\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty
 Package: amsthm 2004/08/06 v2.20
-\thm@style=\toks15
-\thm@bodyfont=\toks16
-\thm@headfont=\toks17
-\thm@notefont=\toks18
-\thm@headpunct=\toks19
-\thm@preskip=\skip44
-\thm@postskip=\skip45
-\thm@headsep=\skip46
-\dth@everypar=\toks20
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks24
 )
 (C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks21
-)
 (C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
@@ -205,25 +290,28 @@ Package graphics Info: Driver file: xetex.def on input line 91.
 File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
 
 ))
-\Gin@req@height=\dimen117
-\Gin@req@width=\dimen118
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
 )
-\c@definition=\count92
+\c@definition=\count109
 
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 Requested font "cmr9" at 9.0pt
  -> cmr9
 Requested font "cmr6" at 6.0pt
@@ -237,11 +325,11 @@ Requested font "cmsy9" at 9.0pt
 Requested font "cmsy6" at 6.0pt
  -> cmsy6
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 422.
+(Font)              <9> on input line 425.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 422.
+(Font)              <6> on input line 425.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 422.
+(Font)              <5> on input line 425.
 Requested font "ptmrc7t" at 10.0pt
  -> ptmrc7t
  [1
@@ -249,11 +337,54 @@ Requested font "ptmrc7t" at 10.0pt
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 488.
+(Font)              <7> on input line 496.
+
+Underfull \hbox (badness 4832) in paragraph at lines 501--502
+\OT1/ptm/b/n/10 Definition 1. \OT1/ptm/m/n/10 A $\OML/cmm/m/it/10 t$\OT1/ptm/m/
+n/10 -way \OT1/ptm/m/it/10 cov-er-ing ar-ray $\OML/cmm/m/it/10 MCA\OT1/cmr/m/n/
+10 (\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 t; k;$
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 511.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 511.
+Requested font "cmr8" at 8.0pt
+ -> cmr8
+Requested font "cmmi8" at 8.0pt
+ -> cmmi8
+Requested font "cmsy8" at 8.0pt
+ -> cmsy8
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 536.
+ [2]
 File: increase_example.eps Graphic file (type eps)
  <increase_example.eps>
 File: decrease_example.eps Graphic file (type eps)
- <decrease_example.eps>
+
+<decrease_example.eps>
+Underfull \hbox (badness 1681) in paragraph at lines 664--665
+[]\OT1/ptm/m/n/10 This sec-tion de-scribe the ex-per-i-ments. We have pre-
+ []
+
+
+Underfull \hbox (badness 3291) in paragraph at lines 664--665
+\OT1/ptm/m/n/10 pared 6 SUT with their pa-ram-e-ter-s as shown in II[].
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 664--665
+\OT1/ptm/m/n/10 The pa-ram-e-ter-s are p-re-sent-ed in the ab-bre-vi-at-ed for-
+m
+ []
+
+
+Underfull \vbox (badness 4913) has occurred while \output is active []
+
+ [3]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .bbl")
 
@@ -267,16 +398,18 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2]
+[4
+
+]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux") ) 
 Here is how much of TeX's memory you used:
- 1358 strings out of 430478
- 21306 string characters out of 3191502
- 74894 words of memory out of 3000000
- 4534 multiletter control sequences out of 15000+200000
- 27179 words of font info for 61 fonts, out of 3000000 for 9000
+ 3151 strings out of 430478
+ 50341 string characters out of 3191502
+ 113755 words of memory out of 3000000
+ 6298 multiletter control sequences out of 15000+200000
+ 28091 words of font info for 64 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 26i,8n,19p,1184b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,10n,46p,1292b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on incremental*covering*array.pdf (2 pages).
+Output written on incremental*covering*array.pdf (4 pages).

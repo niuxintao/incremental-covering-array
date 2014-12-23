@@ -37,4 +37,9 @@ S.~Fouch{\'e}, M.~B. Cohen, and A.~Porter, ``Incremental covering array failure
   eighteenth international symposium on Software testing and analysis}.\hskip
   1em plus 0.5em minus 0.4em\relax ACM, 2009, pp. 177--188.
 
+\bibitem{cohen1997aetg}
+D.~M. Cohen, S.~R. Dalal, M.~L. Fredman, and G.~C. Patton, ``The aetg system:
+  An approach to testing based on combinatorial design,'' \emph{Software
+  Engineering, IEEE Transactions on}, vol.~23, no.~7, pp. 437--444, 1997.
+
 \end{thebibliography}
