@@ -466,7 +466,7 @@ In consideration of the size of the overall test cases, we argue that this appro
 
 Then a nature question, and also the motivation of this paper is, \textbf{is it possible to generate the incremental covering array with the number of the overall test cases the same as those by the particular high-way covering array generating algorithms ?}  Before answering this question, one obvious conclusion to note is that any high way covering array must cover all the lower way interactions. So the answer for the previous question is \emph{yes}, as we just need apply a particular covering array generating algorithm to generate the high-way covering array, and then generate the lower-way covering arrays by extracting some subset of the test cases which can cover all the lower degree interactions. Later we call this strategy \emph{top-down}.
 
-In this paper, we implemented this two strategies and evaluated their performance by comparing them at constructing several incremental covering arrays. The results of the experiments showed that the \emph{top-down} strategy has an significant advantage at the size of the highest-way covering array in the incremental covering arrays, while for the \emph{bottom-up} strategy, it is better at constructing those lower-way covering arrays with smaller size.
+In this paper, we implemented this two strategies and evaluated their performance by comparing them at constructing several incremental covering arrays. The results of the experiments showed that the \emph{top-down} strategy has an significant advantage at the size of the higher-way covering array, while for the \emph{bottom-up} strategy, it is better at constructing those lower-way covering arrays with smaller size.
 
 %The answer is yes.
 %For this, And also the key idea of this paper : To generate higher strength covering array from the lower strength, may be not effective at the size of the overall needed test cases. This can be easily understood, as it is not focus on the  higher covering array, which should . to in the .
@@ -655,13 +655,17 @@ An example for this strategy is listed in Fig.\ref{decrease-example}. In this ex
 
 
 From the two examples, an obvious observation is that for the \emph{top-down} strategy, it has an significant advantage over the \emph{bottom-up} strategy at the size of the highest-way covering array (16 for \emph{top-down} and 24 for \emph{bottom-up}). But when in consideration of the lower-way covering arrays, the \emph{bottom-up} performed better (13 and 6 for \emph{bottom-up}, while 14 and 8 for \emph{top-down} respectively).  To evaluate the generality of this observation , we conduct the following experiments.
-
+\begin{figure*}[htbp]
+ \includegraphics[width=7.5in]{experiment.eps}
+\caption{Experiment results}
+\label{experiement}
+\end{figure*}
 
 
 %\section{}
 
 \section{Preliminary Evaluation}
-This section describe the experiments. We have prepared 6 SUT with their parameters as shown in \ref{ica_to_constuct}. The parameters are  presented in the abbreviated form $\#values^{\#number\ of\ parameters} ...$, e.g., $7^{3}6^{2}5^{4}$ indicates the software has 3 parameters that can take 7 values, 2 parameters 6 values, and 4 parameter 5 values. We didn't choose SUT with large parameter values because next we will generate covering arrays with the coverage strength reaching to 6, which is time-consuming if the parameter values are too large.
+This section describe the experiments. We have prepared 6 SUT with their parameters as shown in \ref{ica_to_constuct}. The parameters are  presented in the abbreviated form $\#values^{\#number\ of\ parameters} ...$, e.g., $7^{3}6^{2}5^{4}$ indicates the software has 3 parameters that can take 7 values, 2 parameters 6 values, and 4 parameter 5 values. We didn't choose SUT with large parameter values because next we will generate covering arrays with the coverage strength reaching to 5, which is time-consuming for AETG algorithm if the parameter values are too large.
 
 \begin{table}
 \caption{The parameters of the SUT}
@@ -669,13 +673,15 @@ This section describe the experiments. We have prepared 6 SUT with their paramet
 \center
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{c | c | c }
-\hline  $SUT^{1}(10^{7}) $& $SUT^{2}(2^{30})$ & $SUT^{3}(7^{3}6^{2}5^{4})$) \\
-\hline  $SUT^{4}(3^{13})$ & $SUT^{5}(15^{9})$ & $SUT^{6}(4^{10})$ \\
+\hline  $SUT^{1}(4^{7}) $& $SUT^{2}(2^{15})$ & $SUT^{3}(2^{5}3^{2}5^{1})$ \\
+\hline  $SUT^{4}(2^{10}3^{2})$ & $SUT^{5}(3^{7}4^{2})$ & $SUT^{6}(2^{8}9^{1})$ \\
+\hline $SUT^{7}(2^{9}3^{2}5^{2})$ & $SUT^{8}(2^{8}4^{3})$ & $SUT^{9}(2^{8}3^{3}4^{1})$ \\
 \hline
 \end{tabular}
   \end{table}
-  
-Then for each SUT, we will generate 4 incremental covering arrays, which are $ICA((2, 3), k ,v)$, $ICA((2, 4), k ,v)$, $ICA((2, 5), k ,v)$, $ICA((2, 6), k ,v)$ respectively. Each incremental covering arrays will be repeatedly generated 30 times by two strategies, and we will compare their average size. The results are shown in Fig. 
+
+Then for each SUT, we will generate 4 incremental covering arrays, which are $ICA((2, 3), k ,v)$, $ICA((2, 4), k ,v)$, and $ICA((2, 5), k ,v)$, respectively. Each incremental covering arrays will be repeatedly generated 30 times by two strategies, and we will compare their average size. The results are shown in Fig.\ref{experiement}.
+
 
 
 %\begin{table}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  24 DEC 2014 06:37
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  27 DEC 2014 20:42
 entering extended mode
 **incremental*covering*array.tex
 
@@ -366,17 +366,24 @@ File: increase_example.eps Graphic file (type eps)
 File: decrease_example.eps Graphic file (type eps)
 
 <decrease_example.eps>
-Underfull \hbox (badness 1681) in paragraph at lines 664--665
+File: experiment.eps Graphic file (type eps)
+ <experiment.eps>
+Overfull \hbox (26.025pt too wide) in paragraph at lines 659--660
+[][] 
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 668--669
 []\OT1/ptm/m/n/10 This sec-tion de-scribe the ex-per-i-ments. We have pre-
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 664--665
+Underfull \hbox (badness 3291) in paragraph at lines 668--669
 \OT1/ptm/m/n/10 pared 6 SUT with their pa-ram-e-ter-s as shown in II[].
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 664--665
+Underfull \hbox (badness 2753) in paragraph at lines 668--669
 \OT1/ptm/m/n/10 The pa-ram-e-ter-s are p-re-sent-ed in the ab-bre-vi-at-ed for-
 m
  []
@@ -398,16 +405,14 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4
-
-]
+[4]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux") ) 
 Here is how much of TeX's memory you used:
- 3151 strings out of 430478
- 50341 string characters out of 3191502
+ 3154 strings out of 430478
+ 50382 string characters out of 3191502
  113755 words of memory out of 3000000
- 6298 multiletter control sequences out of 15000+200000
+ 6300 multiletter control sequences out of 15000+200000
  28091 words of font info for 64 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
  44i,10n,46p,1292b,390s stack positions out of 5000i,500n,10000p,200000b,50000s

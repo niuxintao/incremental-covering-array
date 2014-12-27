@@ -466,7 +466,7 @@ In consideration of the size of the overall test cases, we argue that this appro
 
 Then a nature question, and also the motivation of this paper is, \textbf{is it possible to generate the incremental covering array with the number of the overall test cases the same as those by the particular high-way covering array generating algorithms ?}  Before answering this question, one obvious conclusion to note is that any high way covering array must cover all the lower way interactions. So the answer for the previous question is \emph{yes}, as we just need apply a particular covering array generating algorithm to generate the high-way covering array, and then generate the lower-way covering arrays by extracting some subset of the test cases which can cover all the lower degree interactions. Later we call this strategy \emph{top-down}.
 
-In this paper, we implemented this two strategies and evaluated their performance by comparing them at constructing several incremental covering arrays. The results of the experiments showed that the \emph{top-down} strategy has an significant advantage at the size of the highest-way covering array in the incremental covering arrays, while for the \emph{bottom-up} strategy, it is better at constructing those lower-way covering arrays with smaller size.
+In this paper, we implemented this two strategies and evaluated their performance by comparing them at constructing several incremental covering arrays. The results of the experiments showed that the \emph{top-down} strategy has an significant advantage at the size of the higher-way covering array, while for the \emph{bottom-up} strategy, it is better at constructing those lower-way covering arrays with smaller size.
 
 %The answer is yes.
 %For this, And also the key idea of this paper : To generate higher strength covering array from the lower strength, may be not effective at the size of the overall needed test cases. This can be easily understood, as it is not focus on the  higher covering array, which should . to in the .
@@ -661,20 +661,35 @@ From the two examples, an obvious observation is that for the \emph{top-down} st
 %\section{}
 
 \section{Preliminary Evaluation}
-This section , on which there are 12 covering arrays . in Table.
+This section describe the experiments. We have prepared 6 SUT with their parameters as shown in \ref{ica_to_constuct}. The parameters are  presented in the abbreviated form $\#values^{\#number\ of\ parameters} ...$, e.g., $7^{3}6^{2}5^{4}$ indicates the software has 3 parameters that can take 7 values, 2 parameters 6 values, and 4 parameter 5 values. We didn't choose SUT with large parameter values because next we will generate covering arrays with the coverage strength reaching to 5, which is time-consuming for AETG algorithm if the parameter values are too large.
 
 \begin{table}
-\caption{The incremental covering array to be constructed}
+\caption{The parameters of the SUT}
 \label{ica_to_constuct}
 \center
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{c | c | c }
-\hline  $ICA^{1}$:ICA((2,4),$10^{30}$)& $ICA^{2}$:ICA((2,4),$2^{100}$)& $ICA^{3}$:ICA((2,4),$10^{20}$) \\
-\hline  $ICA^{4}$:ICA((2,4),$7^{6}6^{7}5^{6}$) & $ICA^{5}$:ICA((2,4),$3^{13}$) & $ICA^{6}$:ICA((2,4),$8^{40}$ ) \\
-\hline  $ICA^{7}$:ICA((2,4),$15^{9}10^{6}$) & $ICA^{8}$:ICA((2,4),$4^{10}$) & $ICA^{9}$:ICA((2,4),$8^{20}$ ) \\
-\hline  $ICA^{10}$:ICA((2,4),$6^{10}$) & $ICA^{11}$:ICA((2,4),$4^{20}$) & $ICA^{12}$:ICA((2,4),$6^{20}$)\\\hline
+\hline  $SUT^{1}(4^{7}) $& $SUT^{2}(2^{15})$ & $SUT^{3}(2^{5}3^{2}5^{1})$ \\
+\hline  $SUT^{4}(2^{10}3^{2})$ & $SUT^{5}(4^{5}6^{4})$ & $SUT^{6}(5^{10})$ \\
+\hline
 \end{tabular}
   \end{table}
+
+Then for each SUT, we will generate 4 incremental covering arrays, which are $ICA((2, 3), k ,v)$, $ICA((2, 4), k ,v)$, and $ICA((2, 5), k ,v)$, respectively. Each incremental covering arrays will be repeatedly generated 30 times by two strategies, and we will compare their average size. The results are shown in Fig.
+
+
+%\begin{table}
+%\caption{The incremental covering array to be constructed}
+%\label{ica_to_constuct}
+%\center
+%\setlength{\tabcolsep}{3pt}
+%\begin{tabular}{c | c | c }
+%\hline  $ICA^{1}$:ICA((2,4),$10^{30}$)& $ICA^{2}$:ICA((2,4),$2^{100}$)& $ICA^{3}$:ICA((2,4),$10^{20}$) \\
+%\hline  $ICA^{4}$:ICA((2,4),$7^{6}6^{7}5^{6}$) & $ICA^{5}$:ICA((2,4),$3^{13}$) & $ICA^{6}$:ICA((2,4),$8^{40}$ ) \\
+%\hline  $ICA^{7}$:ICA((2,4),$15^{9}10^{6}$) & $ICA^{8}$:ICA((2,4),$4^{10}$) & $ICA^{9}$:ICA((2,4),$8^{20}$ ) \\
+%\hline  $ICA^{10}$:ICA((2,4),$6^{10}$) & $ICA^{11}$:ICA((2,4),$4^{20}$) & $ICA^{12}$:ICA((2,4),$6^{20}$)\\\hline
+%\end{tabular}
+%  \end{table}
 
 \section{Related work}
 
@@ -684,7 +699,7 @@ S.Fouch{\'e} \cite{fouche2009incremental} proposed the incremental covering arra
 \section{Conclusions and future works}
 
 
-As a future work, we should apply more test cases generaing algorithm, to comapre their performance. Another interesting work is to combine the two srategies, that we can first, select, and then . We believe such a generatign algorithm can get the two adavanteges of this two approaches.
+As a future work, we should apply more test cases generating algorithm, to compare their performance. Another interesting work is to combine the two strategies, that we can first, select, and then . We believe such a generating algorithm can get the two advantages of this two approaches.
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
