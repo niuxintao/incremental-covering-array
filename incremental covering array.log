@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  27 DEC 2014 20:42
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  27 DEC 2014 22:13
 entering extended mode
 **incremental*covering*array.tex
 
@@ -325,11 +325,11 @@ Requested font "cmsy9" at 9.0pt
 Requested font "cmsy6" at 6.0pt
  -> cmsy6
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 425.
+(Font)              <9> on input line 423.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 425.
+(Font)              <6> on input line 423.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 425.
+(Font)              <5> on input line 423.
 Requested font "ptmrc7t" at 10.0pt
  -> ptmrc7t
  [1
@@ -337,21 +337,21 @@ Requested font "ptmrc7t" at 10.0pt
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 496.
+(Font)              <7> on input line 494.
 
-Underfull \hbox (badness 4832) in paragraph at lines 501--502
+Underfull \hbox (badness 4832) in paragraph at lines 499--500
 \OT1/ptm/b/n/10 Definition 1. \OT1/ptm/m/n/10 A $\OML/cmm/m/it/10 t$\OT1/ptm/m/
 n/10 -way \OT1/ptm/m/it/10 cov-er-ing ar-ray $\OML/cmm/m/it/10 MCA\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 t; k;$
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 511.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 509.
 
 (C:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 511.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 509.
 Requested font "cmr8" at 8.0pt
  -> cmr8
 Requested font "cmmi8" at 8.0pt
@@ -359,7 +359,7 @@ Requested font "cmmi8" at 8.0pt
 Requested font "cmsy8" at 8.0pt
  -> cmsy8
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 536.
+(Font)              <8> on input line 534.
  [2]
 File: increase_example.eps Graphic file (type eps)
  <increase_example.eps>
@@ -368,22 +368,22 @@ File: decrease_example.eps Graphic file (type eps)
 <decrease_example.eps>
 File: experiment.eps Graphic file (type eps)
  <experiment.eps>
-Overfull \hbox (26.025pt too wide) in paragraph at lines 659--660
+Overfull \hbox (26.025pt too wide) in paragraph at lines 657--658
 [][] 
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 668--669
+Underfull \hbox (badness 1681) in paragraph at lines 666--667
 []\OT1/ptm/m/n/10 This sec-tion de-scribe the ex-per-i-ments. We have pre-
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 668--669
+Underfull \hbox (badness 3291) in paragraph at lines 666--667
 \OT1/ptm/m/n/10 pared 6 SUT with their pa-ram-e-ter-s as shown in II[].
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 668--669
+Underfull \hbox (badness 2753) in paragraph at lines 666--667
 \OT1/ptm/m/n/10 The pa-ram-e-ter-s are p-re-sent-ed in the ab-bre-vi-at-ed for-
 m
  []
@@ -409,10 +409,10 @@ Before submitting the final camera ready copy, remember to:
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux") ) 
 Here is how much of TeX's memory you used:
- 3154 strings out of 430478
- 50382 string characters out of 3191502
+ 3155 strings out of 430478
+ 50399 string characters out of 3191502
  113755 words of memory out of 3000000
- 6300 multiletter control sequences out of 15000+200000
+ 6301 multiletter control sequences out of 15000+200000
  28091 words of font info for 64 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
  44i,10n,46p,1292b,390s stack positions out of 5000i,500n,10000p,200000b,50000s

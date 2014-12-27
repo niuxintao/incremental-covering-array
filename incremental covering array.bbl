@@ -42,4 +42,9 @@ D.~M. Cohen, S.~R. Dalal, M.~L. Fredman, and G.~C. Patton, ``The aetg system:
   An approach to testing based on combinatorial design,'' \emph{Software
   Engineering, IEEE Transactions on}, vol.~23, no.~7, pp. 437--444, 1997.
 
+\bibitem{nie2013adaptive}
+C.~Nie, H.~Leung, and K.-Y. Cai, ``Adaptive combinatorial testing,'' in
+  \emph{Quality Software (QSIC), 2013 13th International Conference on}.\hskip
+  1em plus 0.5em minus 0.4em\relax IEEE, 2013, pp. 284--287.
+
 \end{thebibliography}
