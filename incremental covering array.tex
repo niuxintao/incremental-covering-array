@@ -506,7 +506,7 @@ For example, Table \ref{ica_example} (a) shows a 2-way covering array $CA(5;2,4,
 \subsection{incremental covering array}
 
 \begin{definition}
-Incremental covering arrays $ICA((t_{min},t_{max})$ $, k, v)$ is a sequence of covering arrays\{$CA(N_{1}; t_{min}, k, v)$, $CA(N_{2}; t_{min} + 1, k, v)$, ..., $CA(N_{n}; t_{max}, k, v)$ \}. For any covering array ($CA(N_{i}, t_{i}, k , v)$), ($ 0 \leq i < n$), it must have $CA(N_{i}; t_{min + i}, k, v)$ $\subseteq$ $CA(N_{i+1}; t_{min + i + 1}, k, v)$.
+Incremental covering arrays $ICA((t_{1},t_{2})$ $, k, v)$ ($t_{1} < t_{2}$) is a sequence set of covering arrays\{$CA(N_{0}; t_{1}, k, v)$, $CA(N_{1}; t_{1} + 1, k, v)$, ..., $CA(N_{n-1}; $ $t_{2}, k, v)$ \}. For any covering array $CA(N_{i}, t_{1} + i, k , v)$, ($ 0 \leq i < n$), it has $\forall test \in CA(N_{i}; t_{1} + i, k, v)$ $s.t.$ $test \in CA(N_{i+1}; t_{1} + i + 1, k, v)$.
 \end{definition}
 
 
@@ -565,18 +565,18 @@ This strategy is listed as Algorithm 1.
      \Require
      $Param$ \Comment{parameter values for the SUT}
 
-     $t_{min}$ \Comment{the lowest way}
+     $t_{1}$ \Comment{the lowest way}
      %$s_{fixed}$ \Comment{fixed part}
 
-     $t_{max}$ \Comment{the highest way}
+     $t_{2}$ \Comment{the highest way}
 
      \Ensure  $ICA$ \Comment{the incremental covering arrays}
 
     % \While{\textbf{not} $t_{uncovered}$ is not empty}
       \State $ICA \leftarrow Empty Set$
-       \For {$t_{i} = t_{min};\ t_{i} \leq  t_{max};\ t_{i}\ INC$}
+       \For {$t_{i} = t_{1};\ t_{i} \leq  t_{2};\ t_{i}\ INC$}
          \State $CA_{i} \leftarrow  Empty Set $
-         \If {$t_{i} == t_{min}$}
+         \If {$t_{i} == t_{1}$}
                 \State $CA_{i} \leftarrow CA\_Gen(Param, t_{i})$
          \Else
              \State $CA_{i} \leftarrow CA\_Gen\_Seeds(Param, t_{i}, CA_{i - 1})$
@@ -588,9 +588,9 @@ This strategy is listed as Algorithm 1.
      \State \Return $ICA$
   \end{algorithmic}
 \end{algorithm}
-The inputs for this algorithm consists of the values for each parameter of the SUT --$Param$,  the lowest way $t_{min}$ of the covering array in the incremental covering arrays, and the highest way $t_{max}$ of covering array . The output of this algorithm is a incremental covering array -- $ICA$.
+The inputs for this algorithm consists of the values for each parameter of the SUT --$Param$,  the lowest way $t_{1}$ of the covering array in the incremental covering arrays, and the highest way $t_{2}$ of covering array . The output of this algorithm is a incremental covering array -- $ICA$.
 
-This algorithm generate the covering array from lower-way to higher-way (line 2). If the current coverage strength $t_{i}$ is equal to $t_{min}$, it just utilize an covering array generating algorithm to generate the particular covering array (line 4 - 5). Otherwise, it will first take the previous generated covering array $CA_{i - 1}$ as seeds, and then utilize covering array generation algorithm to append additional test cases to satisfy higher coverage criteria (line 6 - 7).
+This algorithm generate the covering array from lower-way to higher-way (line 2). If the current coverage strength $t_{i}$ is equal to $t_{1}$, it just utilize an covering array generating algorithm to generate the particular covering array (line 4 - 5). Otherwise, it will first take the previous generated covering array $CA_{i - 1}$ as seeds, and then utilize covering array generation algorithm to append additional test cases to satisfy higher coverage criteria (line 6 - 7).
 %the example for . Consider we are testing a object, initially, we believe 1 way is enough, but when we give so, it find that is not , then we must increase the , to three way. In such a case, to take a Coverin array to regenerate 3-way covering array is follish, as it may introuduce many redunenta.t For example, many 3 way schemas in fact have been checked before.
 %
 %Then it is of course we need to generate the coverin array based on the previous covering array, such that we can utilze the previous tesing results. For this, a natural idea, is to set the as the seeds, like this.
@@ -604,7 +604,7 @@ Fig.\ref{increase-example} presents an example for constructing $ICA((2,4), 5, 2
 \end{figure}
 
 \subsection{Top-down strategy}
-This strategy is listed as Algorithm 2, which generate covering arrays in the opposite order (line 2) against the previous strategy. Similarly, if the current coverage strength $t_{i}$ is equal to $t_{max}$, it directly generate the particular covering array (line 4 - 5). Otherwise, it will extract the covering array from a higher covering array ($CA_{i + 1}$) (line 6 - 10). The extraction process is a greedy approach. At each iteration, the test case which can cover most number of uncovered $t$-degree interactions will be selected from the higher-way covering array (line 7 - 10).  Note that this greedy selection does not promise to obtain the $CA_{i}$ covering array with the minimal size. But to get the minimal size, we need to exhaustive check every possible subset of the higher-covering array $CA_{i+1}$, which is impractical if the size of $CA_{i + 1}$ is too large.
+This strategy is listed as Algorithm 2, which generate covering arrays in the opposite order (line 2) against the previous strategy. Similarly, if the current coverage strength $t_{i}$ is equal to $t_{2}$, it directly generate the particular covering array (line 4 - 5). Otherwise, it will extract the covering array from a higher covering array ($CA_{i + 1}$) (line 6 - 10). The extraction process is a greedy approach. At each iteration, the test case which can cover most number of uncovered $t$-degree interactions will be selected from the higher-way covering array (line 7 - 10).  Note that this greedy selection does not promise to obtain the $CA_{i}$ covering array with the minimal size. But to get the minimal size, we need to exhaustive check every possible subset of the higher-covering array $CA_{i+1}$, which is impractical if the size of $CA_{i + 1}$ is too large.
 %Another reason we does not focus on obtaining the minimal size of $CA_{i}$, is that even though we have, it does not have so that $CA_{i - 1}$.
 
 %Now let us think the following problem, as the . If we had first generate the 3-way covering array, and .
@@ -616,18 +616,18 @@ This strategy is listed as Algorithm 2, which generate covering arrays in the op
     \Require
      $Param$ \Comment{parameter values for the SUT}
 
-     $t_{min}$ \Comment{the lowest way}
+     $t_{1}$ \Comment{the lowest way}
      %$s_{fixed}$ \Comment{fixed part}
 
-     $t_{max}$ \Comment{the highest way}
+     $t_{2}$ \Comment{the highest way}
 
      \Ensure  $ICA$ \Comment{the incremental covering arrays}
 
     % \While{\textbf{not} $t_{uncovered}$ is not empty}
       \State $ICA \leftarrow Empty Set$
-       \For {$t_{i} = t_{max};\ t_{i} \geq  t_{min};\ t_{i}\  DEC $}
+       \For {$t_{i} = t_{2};\ t_{i} \geq  t_{1};\ t_{i}\  DEC $}
          \State $CA_{i} \leftarrow  Empty Set $
-         \If {$t_{i} == t_{max}$}
+         \If {$t_{i} == t_{2}$}
                 \State $CA_{i} \leftarrow CA\_Gen(Param, t_{i})$
          \Else
              \While{$t_{i}$ coverage is not satisfied}
@@ -654,7 +654,8 @@ An example for this strategy is listed in Fig.\ref{decrease-example}. In this ex
 
 From the two examples, an obvious observation is that for the \emph{top-down} strategy, it has an significant advantage over the \emph{bottom-up} strategy at the size of the highest-way covering array (16 for \emph{top-down} and 24 for \emph{bottom-up}). But when in consideration of the lower-way covering arrays, the \emph{bottom-up} performed better (13 and 6 for \emph{bottom-up}, while 14 and 8 for \emph{top-down} respectively).  To evaluate the generality of this observation , we conduct the following experiments.
 \begin{figure*}[htbp]
- \includegraphics[width=7.5in]{experiment.eps}
+\center
+ \includegraphics[width=5.6in]{experiment.eps}
 \caption{Experiment results}
 \label{experiement}
 \end{figure*}
@@ -663,24 +664,27 @@ From the two examples, an obvious observation is that for the \emph{top-down} st
 %\section{}
 
 \section{Preliminary Evaluation}
-This section describe the experiments. We have prepared 6 SUT with their parameters as shown in \ref{ica_to_constuct}. The parameters are  presented in the abbreviated form $\#values^{\#number\ of\ parameters} ...$, e.g., $7^{3}6^{2}5^{4}$ indicates the software has 3 parameters that can take 7 values, 2 parameters 6 values, and 4 parameter 5 values. We didn't choose SUT with large parameter values because next we will generate covering arrays with the coverage strength reaching to 5, which is time-consuming for AETG algorithm if the parameter values are too large.
+This section describe the experiments. We have prepared 6 SUT with their parameters as shown in \ref{ica_to_constuct}. The parameters are  presented in the abbreviated form $\#values^{\#number\ of\ parameters} ...$, e.g., $7^{3}6^{2}$ indicates the software has 3 parameters that can take 7 values and 2 parameters take 6 values. We didn't choose SUT with large parameter values because next we will generate covering arrays with the coverage strength reaching to 5, which is time-consuming for AETG algorithm.
 
 \begin{table}
 \caption{The parameters of the SUT}
 \label{ica_to_constuct}
 \center
-\setlength{\tabcolsep}{3pt}
+%\setlength{\tabcolsep}{3pt}
 \begin{tabular}{c | c | c }
-\hline  $SUT^{1}(4^{7}) $& $SUT^{2}(2^{15})$ & $SUT^{3}(2^{5}3^{2}5^{1})$ \\
-\hline  $SUT^{4}(2^{10}3^{2})$ & $SUT^{5}(3^{7}4^{2})$ & $SUT^{6}(2^{8}9^{1})$ \\
-\hline $SUT^{7}(2^{9}3^{2}5^{2})$ & $SUT^{8}(2^{8}4^{3})$ & $SUT^{9}(2^{8}3^{3}4^{1})$ \\
+\hline  $SUT_{1}(4^{7}) $& $SUT_{2}(2^{15})$ & $SUT_{3}(2^{5}3^{2}5^{1})$ \\
+\hline  $SUT_{4}(2^{10}3^{2})$ & $SUT_{5}(3^{7}4^{2})$ & $SUT_{6}(2^{8}9^{1})$ \\
+\hline $SUT_{7}(2^{9}3^{2}5^{2})$ & $SUT_{8}(2^{8}4^{3})$ & $SUT_{9}(2^{8}3^{3}4^{1})$ \\
 \hline
 \end{tabular}
   \end{table}
 
-Then for each SUT, we will generate 4 incremental covering arrays, which are $ICA((2, 3), k ,v)$, $ICA((2, 4), k ,v)$, and $ICA((2, 5), k ,v)$, respectively. Each incremental covering arrays will be repeatedly generated 30 times by two strategies, and we will compare their average size. The results are shown in Fig.\ref{experiement}.
+Then for each SUT, we will generate 4 incremental covering arrays, which are $ICA((2, 3), k ,v)$, $ICA((2, 4), k ,v)$, and $ICA((2, 5), k ,v)$, respectively. Each incremental covering arrays will be repeatedly generated 30 times by two strategies, and we will compare their average size. The results are shown in Fig.\ref{experiement}, in which the results are normalized.
+
+In Fig.\ref{experiement}. We can observe that for most cases, \emph{top-down} strategy obtained smaller higher-way covering arrays (about 90 \% of that of \emph{bottom-up}). While \emph{bottom-up} strategy, it performed better at the lower-way covering arrays. This conclusion coincides with the case study in Section 3.  There are also some exceptions, for example in the second row in Fig. \ref{experiement} ($ICA((2,4),k,v)$), \emph{top-down} strategy generated smaller 2-way covering arrays for $SUT_{2}$, $SUT_{4}$, and $SUT_{6}$ than that of \emph{bottom-up}. One possible explanation for the exceptions is that, the covering array generated by greedy approach AETG sometimes may produce too many test cases than needed.
 
 
+Above all, the preliminary results suggested that when the coverage strength of the final covering array is low, \emph{bottom-up} strategy is preferred, otherwise, \emph{top-down} is a better choice.
 
 %\begin{table}
 %\caption{The incremental covering array to be constructed}
@@ -696,18 +700,18 @@ Then for each SUT, we will generate 4 incremental covering arrays, which are $IC
 %  \end{table}
 
 \section{Related work}
-ChanghaiNie \cite{nie2011survey} 
+Nie et al. \cite{nie2011survey} gave a survey for combinatorial testing, in which the methods for generating covering
+arrays are  properly classified and introduced. Further Nie et al.\cite{nie2013adaptive} proposed a model for adaptive CT, in which the coverage strength of covering array needs to be adaptively changed as required.
 
-Nie in \cite{nie2013adaptive} said that
-
-S.Fouch{\'e} \cite{fouche2009incremental} proposed the incremental covering array, it hence use the classification tree method to classify the failure-inducing interaction, such that it should need to run multiple test cases, which is an augment of the bottom-up.
+S.Fouch{\'e}  et al. \cite{fouche2009incremental} proposed the incremental covering array, and gave a method to generate it. The method can be deemed as one special case of \emph{bottom-up} strategy, the only difference is that it used multiple lower-way covering arrays instead only one in this paper to construct the higher-way covering array. This is because that work needed to characterize the failure-inducing interactions in the covering array, in which ,multiple covering arrays can support a better diagnosis information. 
+%
+%it hence use the classification tree method to classify the failure-inducing interaction, such that it should need to run multiple test cases, which is an augment of the bottom-up.
 
 
 \section{Conclusions and future works}
+This paper proposed two strategies for generating incremental covering arrays. Experiment results showed that both the two strategies have their own advantages, in specific, \emph{top-down} strategy is better at generating higher-way covering arrays, while \emph{bottom up} performed better at lower-way ones .
 
-
-As a future work, we should apply more test cases generating algorithm, to compare their performance. Another interesting work is to combine the two strategies, that we can first, select, and then . We believe such a generating algorithm can get the two advantages of this two approaches.
-
+As a future work, we should apply more covering array generating algorithms, to compare their performance at generating incremental covering arrays. Another interesting work is to combine the two strategies, i.e., we can first select a median coverage strength \emph{t} and generate incremental covering arrays by \emph{top-down} strategy. Then if the maximal-way covering array is generated, we can use \emph{bottom-up} strategy to generate further higher-way covering arrays. We believe such a combination of the two strategies may get a better performance.
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.

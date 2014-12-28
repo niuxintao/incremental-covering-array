@@ -201,13 +201,13 @@ ax27 = fig.add_subplot(3,9,27) #flux3
 ax27n = fig.add_subplot(3,9,27, sharex=ax27,  sharey=ax27, frameon=False) #flux3
 
 #plot data and normalized data 
-ax1.plot(x2, out1,  marker="s",  color="k")
-ax1n.plot(x2, out1_, ls="--", marker="d", mfc="None",   color="k")
+line_up, = ax1.plot(x2, out1,  marker="s",  color="k")
+line_down, = ax1n.plot(x2, out1_, ls="--", marker="d", mfc="None",   color="k")
 
-ax2.plot(x3, out2,  marker="s", mfc="None",color="k")
-ax2n.plot(x3, out2_, ls="--",color="k")
+ax2.plot(x3, out2,  marker="s", color="k")
+ax2n.plot(x3, out2_, ls="--", marker="d", mfc="None", color="k")
 
-ax3.plot(x4, out3,  marker="s",mfc="None", color="k")
+ax3.plot(x4, out3,  marker="s", color="k")
 ax3n.plot(x4, out3_, ls="--",marker="d", mfc="None", color="k")
 
 ax4.plot(x2, out4, marker="s", color="k")
@@ -233,10 +233,10 @@ ax9n.plot(x4, out9_, ls="--",marker="d", mfc="None",color="k")
 ax10.plot(x2, out10 , marker="s", color="k")
 ax10n.plot(x2, out10_, ls="--",marker="d",mfc="None", color="k")
 
-ax11.plot(x3, out11 , marker="s",mfc="None", color="k")
+ax11.plot(x3, out11 , marker="s", color="k")
 ax11n.plot(x3, out11_, ls="--", marker="d",mfc="None", color="k")
 
-ax12.plot(x4, out12 , marker="s",mfc="None", color="k")
+ax12.plot(x4, out12 , marker="s",color="k")
 ax12n.plot(x4, out12_, ls="--",marker="d", mfc="None", color="k")
 
 ax13.plot(x2, out13 , marker="s", color="k")
@@ -283,6 +283,11 @@ ax26n.plot(x3, out26_, ls="--",marker="d", mfc="None", color="k")
 
 ax27.plot(x4, out27, marker="s",color="k")
 ax27n.plot(x4, out27_, ls="--", marker="d",mfc="None", color="k")
+
+#configure legend
+fig.legend([line_up, line_down], ['bottom-up', 'top-down'],'upper left',
+           ncol=2,prop={'size':10})
+
 
 #configure axis
 
@@ -512,8 +517,8 @@ ax25.set_xticks(np.arange(2, 3, 1))
 ax26.set_xticks(np.arange(2, 4, 1))
 ax27.set_xticks(np.arange(2, 5, 1))
 
-ax15.set_xticklabels([])
-ax16.set_xticklabels([])
+ax25.set_xticklabels([])
+ax26.set_xticklabels([])
 ax27.set_xticklabels([])
 
 
@@ -669,12 +674,12 @@ ax21.set_xlabel(r"$SUT_{7}$")
 ax24.set_xlabel(r"$SUT_{8}$")
 ax27.set_xlabel(r"$SUT_{9}$")
 #set X labels
-ax1.set_ylabel(r"$ICA(2,3)$")
-ax2.set_ylabel(r"$ICA(2,4)$")
-ax3.set_ylabel(r"$ICA(2,5)$")
+ax1.set_ylabel(r"$2-way\ to\ 3-way$")
+ax2.set_ylabel(r"$2-way\ to\ 4-way$")
+ax3.set_ylabel(r"$2-way\ to\ 5-way$")
 
 #adjust plot spacing
-plt.subplots_adjust(left=0.15, bottom=0.1, right=0.93, top=0.97, wspace=0.05, hspace=0.05)
+plt.subplots_adjust(left=0.09, bottom=0.1, right=0.93, top=0.94, wspace=0.05, hspace=0.05)
 
 #finally draw the plot
 plt.show()

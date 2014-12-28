@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  27 DEC 2014 22:13
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  28 DEC 2014 16:48
 entering extended mode
 **incremental*covering*array.tex
 
@@ -352,6 +352,19 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 509.
+
+Underfull \hbox (badness 3312) in paragraph at lines 509--510
+\OT1/ptm/b/n/10 Definition 2. \OT1/ptm/m/n/10 In-cre-men-tal cov-er-ing ar-rays
+ $\OML/cmm/m/it/10 ICA\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 t[]; t[]\OT1/cmr/m/n/1
+0 )$
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 509--510
+\OML/cmm/m/it/10 ; k; v\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 ($\OML/cmm/m/it/10 t[
+] < t[]$\OT1/ptm/m/n/10 ) is a se-quence set of cov-er-ing
+ []
+
 Requested font "cmr8" at 8.0pt
  -> cmr8
 Requested font "cmmi8" at 8.0pt
@@ -360,30 +373,24 @@ Requested font "cmsy8" at 8.0pt
  -> cmsy8
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 534.
- [2]
+[2]
 File: increase_example.eps Graphic file (type eps)
  <increase_example.eps>
 File: decrease_example.eps Graphic file (type eps)
-
-<decrease_example.eps>
+ <decrease_example.eps>
 File: experiment.eps Graphic file (type eps)
  <experiment.eps>
-Overfull \hbox (26.025pt too wide) in paragraph at lines 657--658
-[][] 
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 666--667
+Underfull \hbox (badness 1681) in paragraph at lines 667--668
 []\OT1/ptm/m/n/10 This sec-tion de-scribe the ex-per-i-ments. We have pre-
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 666--667
+Underfull \hbox (badness 3291) in paragraph at lines 667--668
 \OT1/ptm/m/n/10 pared 6 SUT with their pa-ram-e-ter-s as shown in II[].
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 666--667
+Underfull \hbox (badness 2753) in paragraph at lines 667--668
 \OT1/ptm/m/n/10 The pa-ram-e-ter-s are p-re-sent-ed in the ab-bre-vi-at-ed for-
 m
  []
@@ -392,6 +399,7 @@ m
 Underfull \vbox (badness 4913) has occurred while \output is active []
 
  [3]
+[4]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .bbl")
 
@@ -405,7 +413,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4]
+[5
+
+]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux") ) 
 Here is how much of TeX's memory you used:
@@ -417,4 +427,4 @@ Here is how much of TeX's memory you used:
  17 hyphenation exceptions out of 8191
  44i,10n,46p,1292b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on incremental*covering*array.pdf (4 pages).
+Output written on incremental*covering*array.pdf (5 pages).
