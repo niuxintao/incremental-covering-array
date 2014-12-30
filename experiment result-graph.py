@@ -308,14 +308,14 @@ ax1.set_xlim(2, 3)
 ax2.set_xlim(2, 4)
 ax3.set_xlim(2, 5)
 
-ax1.set_xticks(np.arange(2, 3, 1))
-ax2.set_xticks(np.arange(2, 4, 1))
-ax3.set_xticks(np.arange(2, 5, 1))
+ax1.set_xticks(np.arange(2, 4, 1))
+ax2.set_xticks(np.arange(2, 5, 1))
+ax3.set_xticks(np.arange(2, 6, 1))
 
 
-ax1.set_xticklabels([])
-ax2.set_xticklabels([])
-ax3.set_xticklabels([])
+ax1.set_xticklabels(['2','3'])
+ax2.set_xticklabels(['2','3','4'])
+ax3.set_xticklabels(['2','3','4','5'])
 
 #456
 ax4.set_ylim(0.7, 1.05)
@@ -334,14 +334,14 @@ ax4.set_xlim(2, 3)
 ax5.set_xlim(2, 4)
 ax6.set_xlim(2, 5)
 
-ax4.set_xticks(np.arange(2, 3, 1))
-ax5.set_xticks(np.arange(2, 4, 1))
-ax6.set_xticks(np.arange(2, 5, 1))
+ax4.set_xticks(np.arange(2, 4, 1))
+ax5.set_xticks(np.arange(2, 5, 1))
+ax6.set_xticks(np.arange(2, 6, 1))
 
-ax4.set_xticklabels([])
-ax5.set_xticklabels([])
-ax6.set_xticklabels([])
 
+ax4.set_xticklabels(['2','3'])
+ax5.set_xticklabels(['2','3','4'])
+ax6.set_xticklabels(['2','3','4','5'])
 #789
 ax7.set_ylim(0.7, 1.05)
 ax8.set_ylim(0.8, 1.05)
@@ -359,13 +359,14 @@ ax7.set_xlim(2, 3)
 ax8.set_xlim(2, 4)
 ax9.set_xlim(2, 5)
 
-ax7.set_xticks(np.arange(2, 3, 1))
-ax8.set_xticks(np.arange(2, 4, 1))
-ax9.set_xticks(np.arange(2, 5, 1))
+ax7.set_xticks(np.arange(2, 4, 1))
+ax8.set_xticks(np.arange(2, 5, 1))
+ax9.set_xticks(np.arange(2, 6, 1))
 
-ax7.set_xticklabels([])
-ax8.set_xticklabels([])
-ax9.set_xticklabels([])
+
+ax7.set_xticklabels(['2','3'])
+ax8.set_xticklabels(['2','3','4'])
+ax9.set_xticklabels(['2','3','4','5'])
 
 # 10, 11, 12
 ax10.set_ylim(0.7, 1.05)
@@ -384,13 +385,14 @@ ax10.set_xlim(2, 3)
 ax11.set_xlim(2, 4)
 ax12.set_xlim(2, 5)
 
-ax10.set_xticks(np.arange(2, 3, 1))
-ax11.set_xticks(np.arange(2, 4, 1))
-ax12.set_xticks(np.arange(2, 5, 1))
+ax10.set_xticks(np.arange(2, 4, 1))
+ax11.set_xticks(np.arange(2, 5, 1))
+ax12.set_xticks(np.arange(2, 6, 1))
 
-ax10.set_xticklabels([])
-ax11.set_xticklabels([])
-ax12.set_xticklabels([])
+
+ax10.set_xticklabels(['2','3'])
+ax11.set_xticklabels(['2','3','4'])
+ax12.set_xticklabels(['2','3','4','5'])
 
 # 13, 14, 15
 ax13.set_ylim(0.7, 1.05)
@@ -409,13 +411,14 @@ ax13.set_xlim(2, 3)
 ax14.set_xlim(2, 4)
 ax15.set_xlim(2, 5)
 
-ax13.set_xticks(np.arange(2, 3, 1))
-ax14.set_xticks(np.arange(2, 4, 1))
-ax15.set_xticks(np.arange(2, 5, 1))
+ax13.set_xticks(np.arange(2, 4, 1))
+ax14.set_xticks(np.arange(2, 5, 1))
+ax15.set_xticks(np.arange(2, 6, 1))
 
-ax13.set_xticklabels([])
-ax14.set_xticklabels([])
-ax15.set_xticklabels([])
+
+ax13.set_xticklabels(['2','3'])
+ax14.set_xticklabels(['2','3','4'])
+ax15.set_xticklabels(['2','3','4','5'])
 
 # 16, 17, 18
 ax16.set_ylim(0.7, 1.05)
@@ -434,13 +437,14 @@ ax16.set_xlim(2, 3)
 ax17.set_xlim(2, 4)
 ax18.set_xlim(2, 5)
 
-ax16.set_xticks(np.arange(2, 3, 1))
-ax17.set_xticks(np.arange(2, 4, 1))
-ax18.set_xticks(np.arange(2, 5, 1))
+ax16.set_xticks(np.arange(2, 4, 1))
+ax17.set_xticks(np.arange(2, 5, 1))
+ax18.set_xticks(np.arange(2, 6, 1))
 
-ax16.set_xticklabels([])
-ax17.set_xticklabels([])
-ax18.set_xticklabels([])
+
+ax16.set_xticklabels(['2','3'])
+ax17.set_xticklabels(['2','3','4'])
+ax18.set_xticklabels(['2','3','4','5'])
 
 
 
@@ -461,14 +465,14 @@ ax19.set_xlim(2, 3)
 ax20.set_xlim(2, 4)
 ax21.set_xlim(2, 5)
 
-ax19.set_xticks(np.arange(2, 3, 1))
-ax20.set_xticks(np.arange(2, 4, 1))
-ax21.set_xticks(np.arange(2, 5, 1))
+ax19.set_xticks(np.arange(2, 4, 1))
+ax20.set_xticks(np.arange(2, 5, 1))
+ax21.set_xticks(np.arange(2, 6, 1))
 
-ax19.set_xticklabels([])
-ax20.set_xticklabels([])
-ax21.set_xticklabels([])
 
+ax19.set_xticklabels(['2','3'])
+ax20.set_xticklabels(['2','3','4'])
+ax21.set_xticklabels(['2','3','4','5'])
 
 
 # 22, 23, 24
@@ -488,14 +492,14 @@ ax22.set_xlim(2, 3)
 ax23.set_xlim(2, 4)
 ax24.set_xlim(2, 5)
 
-ax22.set_xticks(np.arange(2, 3, 1))
-ax23.set_xticks(np.arange(2, 4, 1))
-ax24.set_xticks(np.arange(2, 5, 1))
+ax22.set_xticks(np.arange(2, 4, 1))
+ax23.set_xticks(np.arange(2, 5, 1))
+ax24.set_xticks(np.arange(2, 6, 1))
 
-ax22.set_xticklabels([])
-ax23.set_xticklabels([])
-ax24.set_xticklabels([])
 
+ax22.set_xticklabels(['2','3'])
+ax23.set_xticklabels(['2','3','4'])
+ax24.set_xticklabels(['2','3','4','5'])
 
 # 25, 26, 27
 ax25.set_ylim(0.7, 1.05)
@@ -513,13 +517,14 @@ ax25.set_xlim(2, 3)
 ax26.set_xlim(2, 4)
 ax27.set_xlim(2, 5)
 
-ax25.set_xticks(np.arange(2, 3, 1))
-ax26.set_xticks(np.arange(2, 4, 1))
-ax27.set_xticks(np.arange(2, 5, 1))
+ax25.set_xticks(np.arange(2, 4, 1))
+ax26.set_xticks(np.arange(2, 5, 1))
+ax27.set_xticks(np.arange(2, 6, 1))
 
-ax25.set_xticklabels([])
-ax26.set_xticklabels([])
-ax27.set_xticklabels([])
+
+ax1.set_xticklabels(['2','3'])
+ax2.set_xticklabels(['2','3','4'])
+ax3.set_xticklabels(['2','3','4','5'])
 
 
 
@@ -679,7 +684,7 @@ ax2.set_ylabel(r"$2-way\ to\ 4-way$")
 ax3.set_ylabel(r"$2-way\ to\ 5-way$")
 
 #adjust plot spacing
-plt.subplots_adjust(left=0.09, bottom=0.1, right=0.93, top=0.94, wspace=0.05, hspace=0.05)
+plt.subplots_adjust(left=0.07, bottom=0.11, right=0.97, top=0.94, wspace=0.25, hspace=0.25)
 
 #finally draw the plot
 plt.show()

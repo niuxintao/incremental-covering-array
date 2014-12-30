@@ -1,0 +1,4923 @@
+SUT0
+increase
+size
+  degree : 27  degree : 123
+decrease
+size
+  degree : 31  degree : 123
+increase
+size
+  degree : 25  degree : 128  degree : 519
+decrease
+size
+  degree : 30  degree : 136  degree : 506
+increase
+size
+  degree : 26  degree : 129  degree : 515  degree : 1897
+decrease
+size
+  degree : 31  degree : 138  degree : 557  degree : 1864
+increase
+size
+  degree : 26  degree : 124
+decrease
+size
+  degree : 31  degree : 121
+increase
+size
+  degree : 27  degree : 126  degree : 517
+decrease
+size
+  degree : 30  degree : 142  degree : 507
+increase
+size
+  degree : 27  degree : 126  degree : 526  degree : 1910
+decrease
+size
+  degree : 29  degree : 137  degree : 550  degree : 1876
+increase
+size
+  degree : 26  degree : 126
+decrease
+size
+  degree : 31  degree : 122
+increase
+size
+  degree : 27  degree : 125  degree : 518
+decrease
+size
+  degree : 32  degree : 136  degree : 514
+increase
+size
+  degree : 26  degree : 125  degree : 513  degree : 1898
+decrease
+size
+  degree : 29  degree : 139  degree : 544  degree : 1861
+increase
+size
+  degree : 27  degree : 124
+decrease
+size
+  degree : 31  degree : 120
+increase
+size
+  degree : 26  degree : 126  degree : 517
+decrease
+size
+  degree : 31  degree : 136  degree : 516
+increase
+size
+  degree : 28  degree : 126  degree : 522  degree : 1922
+decrease
+size
+  degree : 32  degree : 136  degree : 557  degree : 1863
+increase
+size
+  degree : 26  degree : 125
+decrease
+size
+  degree : 30  degree : 120
+increase
+size
+  degree : 27  degree : 126  degree : 515
+decrease
+size
+  degree : 30  degree : 139  degree : 515
+increase
+size
+  degree : 28  degree : 127  degree : 522  degree : 1906
+decrease
+size
+  degree : 29  degree : 141  degree : 551  degree : 1856
+increase
+size
+  degree : 26  degree : 126
+decrease
+size
+  degree : 31  degree : 123
+increase
+size
+  degree : 25  degree : 125  degree : 516
+decrease
+size
+  degree : 31  degree : 139  degree : 514
+increase
+size
+  degree : 25  degree : 128  degree : 519  degree : 1901
+decrease
+size
+  degree : 30  degree : 140  degree : 554  degree : 1873
+increase
+size
+  degree : 26  degree : 129
+decrease
+size
+  degree : 34  degree : 126
+increase
+size
+  degree : 28  degree : 128  degree : 526
+decrease
+size
+  degree : 31  degree : 140  degree : 507
+increase
+size
+  degree : 27  degree : 128  degree : 520  degree : 1908
+decrease
+size
+  degree : 29  degree : 136  degree : 549  degree : 1864
+increase
+size
+  degree : 28  degree : 130
+decrease
+size
+  degree : 31  degree : 125
+increase
+size
+  degree : 26  degree : 124  degree : 519
+decrease
+size
+  degree : 29  degree : 137  degree : 503
+increase
+size
+  degree : 29  degree : 130  degree : 513  degree : 1900
+decrease
+size
+  degree : 30  degree : 137  degree : 559  degree : 1854
+increase
+size
+  degree : 27  degree : 127
+decrease
+size
+  degree : 31  degree : 123
+increase
+size
+  degree : 28  degree : 128  degree : 519
+decrease
+size
+  degree : 31  degree : 141  degree : 506
+increase
+size
+  degree : 28  degree : 125  degree : 518  degree : 1898
+decrease
+size
+  degree : 30  degree : 141  degree : 549  degree : 1867
+increase
+size
+  degree : 25  degree : 124
+decrease
+size
+  degree : 30  degree : 125
+increase
+size
+  degree : 28  degree : 130  degree : 526
+decrease
+size
+  degree : 30  degree : 137  degree : 508
+increase
+size
+  degree : 27  degree : 126  degree : 521  degree : 1926
+decrease
+size
+  degree : 30  degree : 143  degree : 557  degree : 1862
+increase
+size
+  degree : 27  degree : 126
+decrease
+size
+  degree : 32  degree : 123
+increase
+size
+  degree : 26  degree : 132  degree : 521
+decrease
+size
+  degree : 29  degree : 138  degree : 514
+increase
+size
+  degree : 27  degree : 126  degree : 520  degree : 1896
+decrease
+size
+  degree : 29  degree : 141  degree : 547  degree : 1892
+increase
+size
+  degree : 27  degree : 125
+decrease
+size
+  degree : 31  degree : 121
+increase
+size
+  degree : 26  degree : 128  degree : 524
+decrease
+size
+  degree : 31  degree : 139  degree : 509
+increase
+size
+  degree : 28  degree : 125  degree : 524  degree : 1909
+decrease
+size
+  degree : 29  degree : 139  degree : 553  degree : 1863
+increase
+size
+  degree : 26  degree : 127
+decrease
+size
+  degree : 30  degree : 124
+increase
+size
+  degree : 27  degree : 127  degree : 517
+decrease
+size
+  degree : 30  degree : 137  degree : 512
+increase
+size
+  degree : 27  degree : 127  degree : 519  degree : 1906
+decrease
+size
+  degree : 30  degree : 141  degree : 548  degree : 1866
+increase
+size
+  degree : 27  degree : 125
+decrease
+size
+  degree : 29  degree : 126
+increase
+size
+  degree : 27  degree : 126  degree : 520
+decrease
+size
+  degree : 30  degree : 135  degree : 514
+increase
+size
+  degree : 27  degree : 125  degree : 520  degree : 1915
+decrease
+size
+  degree : 30  degree : 139  degree : 554  degree : 1855
+increase
+size
+  degree : 25  degree : 123
+decrease
+size
+  degree : 31  degree : 126
+increase
+size
+  degree : 29  degree : 129  degree : 517
+decrease
+size
+  degree : 31  degree : 138  degree : 508
+increase
+size
+  degree : 27  degree : 125  degree : 513  degree : 1914
+decrease
+size
+  degree : 28  degree : 138  degree : 549  degree : 1860
+increase
+size
+  degree : 26  degree : 127
+decrease
+size
+  degree : 32  degree : 121
+increase
+size
+  degree : 27  degree : 126  degree : 528
+decrease
+size
+  degree : 32  degree : 137  degree : 507
+increase
+size
+  degree : 26  degree : 124  degree : 520  degree : 1906
+decrease
+size
+  degree : 30  degree : 143  degree : 559  degree : 1866
+increase
+size
+  degree : 26  degree : 130
+decrease
+size
+  degree : 31  degree : 126
+increase
+size
+  degree : 27  degree : 121  degree : 518
+decrease
+size
+  degree : 31  degree : 138  degree : 509
+increase
+size
+  degree : 26  degree : 125  degree : 519  degree : 1911
+decrease
+size
+  degree : 31  degree : 141  degree : 558  degree : 1866
+increase
+size
+  degree : 26  degree : 125
+decrease
+size
+  degree : 31  degree : 126
+increase
+size
+  degree : 26  degree : 127  degree : 517
+decrease
+size
+  degree : 31  degree : 136  degree : 513
+increase
+size
+  degree : 26  degree : 125  degree : 520  degree : 1897
+decrease
+size
+  degree : 31  degree : 142  degree : 555  degree : 1861
+increase
+size
+  degree : 27  degree : 126
+decrease
+size
+  degree : 32  degree : 120
+increase
+size
+  degree : 29  degree : 123  degree : 510
+decrease
+size
+  degree : 31  degree : 139  degree : 510
+increase
+size
+  degree : 26  degree : 123  degree : 518  degree : 1902
+decrease
+size
+  degree : 30  degree : 141  degree : 554  degree : 1868
+increase
+size
+  degree : 25  degree : 123
+decrease
+size
+  degree : 31  degree : 125
+increase
+size
+  degree : 27  degree : 127  degree : 516
+decrease
+size
+  degree : 32  degree : 135  degree : 505
+increase
+size
+  degree : 25  degree : 126  degree : 518  degree : 1910
+decrease
+size
+  degree : 31  degree : 139  degree : 554  degree : 1865
+increase
+size
+  degree : 25  degree : 126
+decrease
+size
+  degree : 30  degree : 121
+increase
+size
+  degree : 27  degree : 127  degree : 514
+decrease
+size
+  degree : 30  degree : 136  degree : 505
+increase
+size
+  degree : 26  degree : 126  degree : 522  degree : 1909
+decrease
+size
+  degree : 30  degree : 138  degree : 554  degree : 1871
+increase
+size
+  degree : 28  degree : 125
+decrease
+size
+  degree : 30  degree : 120
+increase
+size
+  degree : 28  degree : 129  degree : 520
+decrease
+size
+  degree : 31  degree : 137  degree : 512
+increase
+size
+  degree : 27  degree : 124  degree : 518  degree : 1916
+decrease
+size
+  degree : 30  degree : 140  degree : 552  degree : 1869
+increase
+size
+  degree : 25  degree : 127
+decrease
+size
+  degree : 32  degree : 123
+increase
+size
+  degree : 25  degree : 127  degree : 522
+decrease
+size
+  degree : 32  degree : 141  degree : 503
+increase
+size
+  degree : 27  degree : 123  degree : 521  degree : 1906
+decrease
+size
+  degree : 31  degree : 138  degree : 555  degree : 1863
+increase
+size
+  degree : 27  degree : 129
+decrease
+size
+  degree : 31  degree : 131
+increase
+size
+  degree : 27  degree : 125  degree : 519
+decrease
+size
+  degree : 32  degree : 139  degree : 508
+increase
+size
+  degree : 27  degree : 125  degree : 523  degree : 1916
+decrease
+size
+  degree : 31  degree : 138  degree : 555  degree : 1859
+increase
+size
+  degree : 27  degree : 131
+decrease
+size
+  degree : 29  degree : 125
+increase
+size
+  degree : 27  degree : 130  degree : 515
+decrease
+size
+  degree : 31  degree : 137  degree : 508
+increase
+size
+  degree : 26  degree : 127  degree : 525  degree : 1896
+decrease
+size
+  degree : 29  degree : 137  degree : 555  degree : 1878
+increase
+size
+  degree : 26  degree : 124
+decrease
+size
+  degree : 32  degree : 124
+increase
+size
+  degree : 25  degree : 128  degree : 518
+decrease
+size
+  degree : 31  degree : 138  degree : 515
+increase
+size
+  degree : 28  degree : 126  degree : 520  degree : 1907
+decrease
+size
+  degree : 33  degree : 137  degree : 555  degree : 1855
+increase
+size
+  degree : 24  degree : 126
+decrease
+size
+  degree : 29  degree : 124
+increase
+size
+  degree : 26  degree : 126  degree : 522
+decrease
+size
+  degree : 31  degree : 138  degree : 506
+increase
+size
+  degree : 26  degree : 128  degree : 517  degree : 1891
+decrease
+size
+  degree : 31  degree : 137  degree : 544  degree : 1870
+increase
+size
+  degree : 26  degree : 129
+decrease
+size
+  degree : 30  degree : 122
+increase
+size
+  degree : 26  degree : 128  degree : 525
+decrease
+size
+  degree : 30  degree : 137  degree : 507
+increase
+size
+  degree : 27  degree : 126  degree : 522  degree : 1900
+decrease
+size
+  degree : 30  degree : 139  degree : 553  degree : 1873
+increase
+size
+  degree : 26  degree : 126
+decrease
+size
+  degree : 32  degree : 125
+increase
+size
+  degree : 28  degree : 130  degree : 520
+decrease
+size
+  degree : 31  degree : 137  degree : 505
+increase
+size
+  degree : 28  degree : 127  degree : 528  degree : 1903
+decrease
+size
+  degree : 31  degree : 140  degree : 556  degree : 1867
+increase
+size
+  degree : 26  degree : 124
+decrease
+size
+  degree : 30  degree : 125
+increase
+size
+  degree : 25  degree : 132  degree : 522
+decrease
+size
+  degree : 31  degree : 143  degree : 511
+increase
+size
+  degree : 26  degree : 124  degree : 521  degree : 1909
+decrease
+size
+  degree : 31  degree : 138  degree : 555  degree : 1858
+26.200000762939453  126.06666564941406  
+30.866666793823242  123.53333282470703  
+26.733333587646484  127.13333129882812  519.2333374023438  
+30.766666412353516  137.93333435058594  509.23333740234375  
+26.799999237060547  125.9000015258789  519.9000244140625  1906.1666259765625  
+30.16666603088379  139.13333129882812  553.066650390625  1865.5  
+SUT1
+increase
+size
+  degree : 85  degree : 223
+decrease
+size
+  degree : 90  degree : 164
+increase
+size
+  degree : 85  degree : 224  degree : 703
+decrease
+size
+  degree : 86  degree : 243  degree : 661
+increase
+size
+  degree : 84  degree : 227  degree : 713  degree : 1478
+decrease
+size
+  degree : 83  degree : 243  degree : 613  degree : 1376
+increase
+size
+  degree : 86  degree : 225
+decrease
+size
+  degree : 90  degree : 167
+increase
+size
+  degree : 81  degree : 223  degree : 703
+decrease
+size
+  degree : 85  degree : 245  degree : 676
+increase
+size
+  degree : 88  degree : 229  degree : 714  degree : 1463
+decrease
+size
+  degree : 88  degree : 244  degree : 599  degree : 1340
+increase
+size
+  degree : 84  degree : 222
+decrease
+size
+  degree : 90  degree : 164
+increase
+size
+  degree : 88  degree : 225  degree : 713
+decrease
+size
+  degree : 90  degree : 245  degree : 664
+increase
+size
+  degree : 88  degree : 234  degree : 708  degree : 1472
+decrease
+size
+  degree : 83  degree : 246  degree : 606  degree : 1332
+increase
+size
+  degree : 86  degree : 228
+decrease
+size
+  degree : 91  degree : 173
+increase
+size
+  degree : 86  degree : 224  degree : 693
+decrease
+size
+  degree : 84  degree : 251  degree : 649
+increase
+size
+  degree : 84  degree : 227  degree : 706  degree : 1459
+decrease
+size
+  degree : 86  degree : 246  degree : 613  degree : 1335
+increase
+size
+  degree : 84  degree : 220
+decrease
+size
+  degree : 90  degree : 167
+increase
+size
+  degree : 84  degree : 223  degree : 699
+decrease
+size
+  degree : 82  degree : 246  degree : 668
+increase
+size
+  degree : 85  degree : 231  degree : 704  degree : 1476
+decrease
+size
+  degree : 84  degree : 247  degree : 614  degree : 1349
+increase
+size
+  degree : 85  degree : 220
+decrease
+size
+  degree : 89  degree : 166
+increase
+size
+  degree : 86  degree : 229  degree : 716
+decrease
+size
+  degree : 88  degree : 244  degree : 669
+increase
+size
+  degree : 86  degree : 233  degree : 706  degree : 1472
+decrease
+size
+  degree : 84  degree : 242  degree : 619  degree : 1332
+increase
+size
+  degree : 87  degree : 227
+decrease
+size
+  degree : 91  degree : 169
+increase
+size
+  degree : 88  degree : 226  degree : 699
+decrease
+size
+  degree : 85  degree : 240  degree : 662
+increase
+size
+  degree : 86  degree : 232  degree : 696  degree : 1448
+decrease
+size
+  degree : 83  degree : 247  degree : 603  degree : 1360
+increase
+size
+  degree : 88  degree : 236
+decrease
+size
+  degree : 90  degree : 168
+increase
+size
+  degree : 86  degree : 228  degree : 705
+decrease
+size
+  degree : 83  degree : 245  degree : 654
+increase
+size
+  degree : 87  degree : 227  degree : 708  degree : 1478
+decrease
+size
+  degree : 85  degree : 247  degree : 617  degree : 1352
+increase
+size
+  degree : 85  degree : 224
+decrease
+size
+  degree : 89  degree : 165
+increase
+size
+  degree : 85  degree : 240  degree : 690
+decrease
+size
+  degree : 86  degree : 241  degree : 670
+increase
+size
+  degree : 87  degree : 228  degree : 699  degree : 1474
+decrease
+size
+  degree : 84  degree : 248  degree : 608  degree : 1344
+increase
+size
+  degree : 86  degree : 226
+decrease
+size
+  degree : 91  degree : 172
+increase
+size
+  degree : 88  degree : 229  degree : 705
+decrease
+size
+  degree : 84  degree : 244  degree : 649
+increase
+size
+  degree : 85  degree : 222  degree : 687  degree : 1442
+decrease
+size
+  degree : 84  degree : 249  degree : 605  degree : 1327
+increase
+size
+  degree : 88  degree : 232
+decrease
+size
+  degree : 90  degree : 167
+increase
+size
+  degree : 86  degree : 224  degree : 691
+decrease
+size
+  degree : 87  degree : 248  degree : 655
+increase
+size
+  degree : 86  degree : 232  degree : 714  degree : 1475
+decrease
+size
+  degree : 82  degree : 249  degree : 617  degree : 1358
+increase
+size
+  degree : 86  degree : 229
+decrease
+size
+  degree : 90  degree : 165
+increase
+size
+  degree : 86  degree : 221  degree : 695
+decrease
+size
+  degree : 85  degree : 243  degree : 662
+increase
+size
+  degree : 86  degree : 233  degree : 709  degree : 1501
+decrease
+size
+  degree : 86  degree : 248  degree : 603  degree : 1346
+increase
+size
+  degree : 86  degree : 227
+decrease
+size
+  degree : 90  degree : 164
+increase
+size
+  degree : 88  degree : 225  degree : 702
+decrease
+size
+  degree : 87  degree : 246  degree : 667
+increase
+size
+  degree : 83  degree : 234  degree : 705  degree : 1473
+decrease
+size
+  degree : 83  degree : 248  degree : 612  degree : 1344
+increase
+size
+  degree : 85  degree : 234
+decrease
+size
+  degree : 90  degree : 171
+increase
+size
+  degree : 85  degree : 233  degree : 704
+decrease
+size
+  degree : 84  degree : 244  degree : 662
+increase
+size
+  degree : 86  degree : 224  degree : 688  degree : 1455
+decrease
+size
+  degree : 84  degree : 245  degree : 611  degree : 1335
+increase
+size
+  degree : 84  degree : 232
+decrease
+size
+  degree : 88  degree : 175
+increase
+size
+  degree : 85  degree : 225  degree : 699
+decrease
+size
+  degree : 87  degree : 245  degree : 654
+increase
+size
+  degree : 86  degree : 232  degree : 723  degree : 1478
+decrease
+size
+  degree : 83  degree : 246  degree : 612  degree : 1321
+increase
+size
+  degree : 89  degree : 226
+decrease
+size
+  degree : 90  degree : 166
+increase
+size
+  degree : 85  degree : 224  degree : 717
+decrease
+size
+  degree : 82  degree : 245  degree : 661
+increase
+size
+  degree : 85  degree : 225  degree : 707  degree : 1469
+decrease
+size
+  degree : 85  degree : 248  degree : 611  degree : 1352
+increase
+size
+  degree : 86  degree : 227
+decrease
+size
+  degree : 91  degree : 167
+increase
+size
+  degree : 87  degree : 229  degree : 716
+decrease
+size
+  degree : 85  degree : 242  degree : 659
+increase
+size
+  degree : 87  degree : 223  degree : 703  degree : 1444
+decrease
+size
+  degree : 83  degree : 248  degree : 612  degree : 1323
+increase
+size
+  degree : 87  degree : 223
+decrease
+size
+  degree : 90  degree : 165
+increase
+size
+  degree : 86  degree : 223  degree : 697
+decrease
+size
+  degree : 82  degree : 242  degree : 662
+increase
+size
+  degree : 85  degree : 225  degree : 699  degree : 1467
+decrease
+size
+  degree : 82  degree : 249  degree : 608  degree : 1349
+increase
+size
+  degree : 81  degree : 227
+decrease
+size
+  degree : 91  degree : 171
+increase
+size
+  degree : 88  degree : 229  degree : 696
+decrease
+size
+  degree : 84  degree : 247  degree : 663
+increase
+size
+  degree : 88  degree : 230  degree : 702  degree : 1461
+decrease
+size
+  degree : 88  degree : 245  degree : 614  degree : 1346
+increase
+size
+  degree : 87  degree : 221
+decrease
+size
+  degree : 90  degree : 166
+increase
+size
+  degree : 81  degree : 228  degree : 709
+decrease
+size
+  degree : 86  degree : 244  degree : 656
+increase
+size
+  degree : 88  degree : 224  degree : 693  degree : 1460
+decrease
+size
+  degree : 86  degree : 248  degree : 614  degree : 1345
+increase
+size
+  degree : 84  degree : 226
+decrease
+size
+  degree : 90  degree : 168
+increase
+size
+  degree : 88  degree : 234  degree : 709
+decrease
+size
+  degree : 86  degree : 241  degree : 668
+increase
+size
+  degree : 81  degree : 220  degree : 696  degree : 1458
+decrease
+size
+  degree : 86  degree : 249  degree : 603  degree : 1352
+increase
+size
+  degree : 85  degree : 227
+decrease
+size
+  degree : 90  degree : 171
+increase
+size
+  degree : 88  degree : 229  degree : 702
+decrease
+size
+  degree : 88  degree : 245  degree : 650
+increase
+size
+  degree : 85  degree : 223  degree : 692  degree : 1459
+decrease
+size
+  degree : 83  degree : 249  degree : 616  degree : 1351
+increase
+size
+  degree : 81  degree : 231
+decrease
+size
+  degree : 90  degree : 171
+increase
+size
+  degree : 87  degree : 220  degree : 702
+decrease
+size
+  degree : 84  degree : 243  degree : 673
+increase
+size
+  degree : 87  degree : 233  degree : 709  degree : 1452
+decrease
+size
+  degree : 82  degree : 239  degree : 605  degree : 1330
+increase
+size
+  degree : 85  degree : 221
+decrease
+size
+  degree : 91  degree : 170
+increase
+size
+  degree : 82  degree : 224  degree : 693
+decrease
+size
+  degree : 84  degree : 244  degree : 666
+increase
+size
+  degree : 88  degree : 225  degree : 699  degree : 1462
+decrease
+size
+  degree : 84  degree : 250  degree : 615  degree : 1340
+increase
+size
+  degree : 89  degree : 228
+decrease
+size
+  degree : 90  degree : 174
+increase
+size
+  degree : 85  degree : 232  degree : 703
+decrease
+size
+  degree : 83  degree : 247  degree : 660
+increase
+size
+  degree : 86  degree : 226  degree : 700  degree : 1491
+decrease
+size
+  degree : 84  degree : 244  degree : 615  degree : 1333
+increase
+size
+  degree : 85  degree : 225
+decrease
+size
+  degree : 88  degree : 165
+increase
+size
+  degree : 86  degree : 239  degree : 717
+decrease
+size
+  degree : 85  degree : 247  degree : 676
+increase
+size
+  degree : 90  degree : 230  degree : 711  degree : 1446
+decrease
+size
+  degree : 85  degree : 246  degree : 611  degree : 1338
+increase
+size
+  degree : 85  degree : 224
+decrease
+size
+  degree : 91  degree : 166
+increase
+size
+  degree : 90  degree : 225  degree : 704
+decrease
+size
+  degree : 85  degree : 242  degree : 650
+increase
+size
+  degree : 87  degree : 226  degree : 705  degree : 1488
+decrease
+size
+  degree : 84  degree : 247  degree : 605  degree : 1338
+increase
+size
+  degree : 82  degree : 226
+decrease
+size
+  degree : 90  degree : 163
+increase
+size
+  degree : 85  degree : 225  degree : 698
+decrease
+size
+  degree : 83  degree : 244  degree : 664
+increase
+size
+  degree : 85  degree : 218  degree : 703  degree : 1460
+decrease
+size
+  degree : 84  degree : 249  degree : 609  degree : 1323
+increase
+size
+  degree : 87  degree : 228
+decrease
+size
+  degree : 90  degree : 172
+increase
+size
+  degree : 85  degree : 231  degree : 701
+decrease
+size
+  degree : 84  degree : 246  degree : 666
+increase
+size
+  degree : 86  degree : 232  degree : 712  degree : 1471
+decrease
+size
+  degree : 83  degree : 246  degree : 605  degree : 1336
+increase
+size
+  degree : 88  degree : 222
+decrease
+size
+  degree : 90  degree : 164
+increase
+size
+  degree : 86  degree : 222  degree : 709
+decrease
+size
+  degree : 84  degree : 245  degree : 662
+increase
+size
+  degree : 88  degree : 229  degree : 711  degree : 1451
+decrease
+size
+  degree : 82  degree : 247  degree : 613  degree : 1318
+85.53333282470703  226.23333740234375  
+90.03333282470703  167.86666870117188  
+85.86666870117188  227.10000610351562  703.0  
+84.93333435058594  244.46665954589844  661.933349609375  
+86.0999984741211  227.8000030517578  704.066650390625  1466.0999755859375  
+84.0999984741211  246.63333129882812  610.2666625976562  1340.8333740234375  
+SUT2
+increase
+size
+  degree : 18  degree : 51
+decrease
+size
+  degree : 21  degree : 54
+increase
+size
+  degree : 17  degree : 55  degree : 135
+decrease
+size
+  degree : 20  degree : 58  degree : 134
+increase
+size
+  degree : 16  degree : 53  degree : 138  degree : 301
+decrease
+size
+  degree : 19  degree : 58  degree : 136  degree : 289
+increase
+size
+  degree : 17  degree : 54
+decrease
+size
+  degree : 19  degree : 53
+increase
+size
+  degree : 18  degree : 55  degree : 141
+decrease
+size
+  degree : 19  degree : 53  degree : 132
+increase
+size
+  degree : 17  degree : 56  degree : 138  degree : 306
+decrease
+size
+  degree : 20  degree : 55  degree : 136  degree : 296
+increase
+size
+  degree : 18  degree : 55
+decrease
+size
+  degree : 19  degree : 52
+increase
+size
+  degree : 17  degree : 55  degree : 138
+decrease
+size
+  degree : 20  degree : 55  degree : 133
+increase
+size
+  degree : 17  degree : 55  degree : 139  degree : 303
+decrease
+size
+  degree : 19  degree : 58  degree : 136  degree : 293
+increase
+size
+  degree : 17  degree : 55
+decrease
+size
+  degree : 19  degree : 52
+increase
+size
+  degree : 19  degree : 57  degree : 143
+decrease
+size
+  degree : 19  degree : 55  degree : 137
+increase
+size
+  degree : 18  degree : 57  degree : 137  degree : 311
+decrease
+size
+  degree : 19  degree : 55  degree : 136  degree : 290
+increase
+size
+  degree : 15  degree : 55
+decrease
+size
+  degree : 20  degree : 51
+increase
+size
+  degree : 17  degree : 51  degree : 138
+decrease
+size
+  degree : 17  degree : 55  degree : 138
+increase
+size
+  degree : 15  degree : 58  degree : 136  degree : 296
+decrease
+size
+  degree : 20  degree : 59  degree : 135  degree : 298
+increase
+size
+  degree : 18  degree : 53
+decrease
+size
+  degree : 17  degree : 54
+increase
+size
+  degree : 17  degree : 56  degree : 139
+decrease
+size
+  degree : 18  degree : 55  degree : 134
+increase
+size
+  degree : 18  degree : 54  degree : 141  degree : 303
+decrease
+size
+  degree : 18  degree : 55  degree : 134  degree : 287
+increase
+size
+  degree : 18  degree : 56
+decrease
+size
+  degree : 19  degree : 52
+increase
+size
+  degree : 17  degree : 55  degree : 137
+decrease
+size
+  degree : 20  degree : 55  degree : 136
+increase
+size
+  degree : 17  degree : 56  degree : 144  degree : 310
+decrease
+size
+  degree : 17  degree : 57  degree : 135  degree : 288
+increase
+size
+  degree : 17  degree : 56
+decrease
+size
+  degree : 19  degree : 48
+increase
+size
+  degree : 15  degree : 56  degree : 138
+decrease
+size
+  degree : 19  degree : 55  degree : 138
+increase
+size
+  degree : 17  degree : 52  degree : 136  degree : 305
+decrease
+size
+  degree : 18  degree : 60  degree : 134  degree : 291
+increase
+size
+  degree : 17  degree : 53
+decrease
+size
+  degree : 18  degree : 54
+increase
+size
+  degree : 17  degree : 53  degree : 134
+decrease
+size
+  degree : 20  degree : 53  degree : 131
+increase
+size
+  degree : 17  degree : 55  degree : 139  degree : 305
+decrease
+size
+  degree : 18  degree : 58  degree : 137  degree : 291
+increase
+size
+  degree : 18  degree : 55
+decrease
+size
+  degree : 20  degree : 56
+increase
+size
+  degree : 17  degree : 56  degree : 138
+decrease
+size
+  degree : 18  degree : 57  degree : 141
+increase
+size
+  degree : 16  degree : 55  degree : 145  degree : 303
+decrease
+size
+  degree : 18  degree : 59  degree : 138  degree : 285
+increase
+size
+  degree : 17  degree : 55
+decrease
+size
+  degree : 19  degree : 58
+increase
+size
+  degree : 18  degree : 53  degree : 142
+decrease
+size
+  degree : 19  degree : 58  degree : 136
+increase
+size
+  degree : 17  degree : 62  degree : 140  degree : 304
+decrease
+size
+  degree : 18  degree : 56  degree : 137  degree : 294
+increase
+size
+  degree : 17  degree : 52
+decrease
+size
+  degree : 16  degree : 55
+increase
+size
+  degree : 18  degree : 57  degree : 144
+decrease
+size
+  degree : 20  degree : 55  degree : 138
+increase
+size
+  degree : 16  degree : 54  degree : 134  degree : 300
+decrease
+size
+  degree : 20  degree : 58  degree : 136  degree : 289
+increase
+size
+  degree : 15  degree : 55
+decrease
+size
+  degree : 19  degree : 52
+increase
+size
+  degree : 15  degree : 56  degree : 137
+decrease
+size
+  degree : 19  degree : 57  degree : 138
+increase
+size
+  degree : 17  degree : 57  degree : 137  degree : 302
+decrease
+size
+  degree : 18  degree : 56  degree : 136  degree : 292
+increase
+size
+  degree : 18  degree : 55
+decrease
+size
+  degree : 20  degree : 55
+increase
+size
+  degree : 16  degree : 57  degree : 137
+decrease
+size
+  degree : 21  degree : 52  degree : 135
+increase
+size
+  degree : 17  degree : 56  degree : 135  degree : 318
+decrease
+size
+  degree : 19  degree : 60  degree : 135  degree : 289
+increase
+size
+  degree : 17  degree : 57
+decrease
+size
+  degree : 20  degree : 47
+increase
+size
+  degree : 16  degree : 56  degree : 142
+decrease
+size
+  degree : 20  degree : 58  degree : 136
+increase
+size
+  degree : 15  degree : 54  degree : 143  degree : 305
+decrease
+size
+  degree : 20  degree : 57  degree : 141  degree : 291
+increase
+size
+  degree : 18  degree : 55
+decrease
+size
+  degree : 19  degree : 55
+increase
+size
+  degree : 17  degree : 57  degree : 135
+decrease
+size
+  degree : 20  degree : 57  degree : 135
+increase
+size
+  degree : 17  degree : 55  degree : 143  degree : 304
+decrease
+size
+  degree : 19  degree : 58  degree : 138  degree : 297
+increase
+size
+  degree : 18  degree : 55
+decrease
+size
+  degree : 19  degree : 55
+increase
+size
+  degree : 16  degree : 53  degree : 140
+decrease
+size
+  degree : 19  degree : 57  degree : 137
+increase
+size
+  degree : 17  degree : 52  degree : 140  degree : 299
+decrease
+size
+  degree : 19  degree : 57  degree : 136  degree : 295
+increase
+size
+  degree : 18  degree : 52
+decrease
+size
+  degree : 20  degree : 51
+increase
+size
+  degree : 18  degree : 56  degree : 136
+decrease
+size
+  degree : 19  degree : 57  degree : 135
+increase
+size
+  degree : 17  degree : 55  degree : 141  degree : 296
+decrease
+size
+  degree : 18  degree : 53  degree : 141  degree : 292
+increase
+size
+  degree : 15  degree : 54
+decrease
+size
+  degree : 18  degree : 55
+increase
+size
+  degree : 18  degree : 52  degree : 145
+decrease
+size
+  degree : 19  degree : 56  degree : 134
+increase
+size
+  degree : 17  degree : 55  degree : 143  degree : 302
+decrease
+size
+  degree : 17  degree : 55  degree : 139  degree : 287
+increase
+size
+  degree : 17  degree : 52
+decrease
+size
+  degree : 20  degree : 50
+increase
+size
+  degree : 17  degree : 53  degree : 137
+decrease
+size
+  degree : 19  degree : 58  degree : 135
+increase
+size
+  degree : 17  degree : 56  degree : 140  degree : 296
+decrease
+size
+  degree : 18  degree : 54  degree : 133  degree : 292
+increase
+size
+  degree : 18  degree : 58
+decrease
+size
+  degree : 18  degree : 55
+increase
+size
+  degree : 17  degree : 56  degree : 133
+decrease
+size
+  degree : 18  degree : 54  degree : 137
+increase
+size
+  degree : 17  degree : 55  degree : 137  degree : 301
+decrease
+size
+  degree : 17  degree : 54  degree : 136  degree : 286
+increase
+size
+  degree : 19  degree : 53
+decrease
+size
+  degree : 19  degree : 56
+increase
+size
+  degree : 17  degree : 54  degree : 138
+decrease
+size
+  degree : 19  degree : 55  degree : 139
+increase
+size
+  degree : 16  degree : 57  degree : 137  degree : 302
+decrease
+size
+  degree : 18  degree : 55  degree : 133  degree : 289
+increase
+size
+  degree : 17  degree : 54
+decrease
+size
+  degree : 19  degree : 52
+increase
+size
+  degree : 18  degree : 55  degree : 137
+decrease
+size
+  degree : 19  degree : 53  degree : 134
+increase
+size
+  degree : 19  degree : 55  degree : 140  degree : 304
+decrease
+size
+  degree : 19  degree : 53  degree : 138  degree : 294
+increase
+size
+  degree : 18  degree : 50
+decrease
+size
+  degree : 19  degree : 57
+increase
+size
+  degree : 17  degree : 54  degree : 136
+decrease
+size
+  degree : 19  degree : 59  degree : 136
+increase
+size
+  degree : 17  degree : 56  degree : 141  degree : 306
+decrease
+size
+  degree : 18  degree : 60  degree : 133  degree : 291
+increase
+size
+  degree : 17  degree : 54
+decrease
+size
+  degree : 19  degree : 55
+increase
+size
+  degree : 17  degree : 57  degree : 142
+decrease
+size
+  degree : 20  degree : 55  degree : 137
+increase
+size
+  degree : 17  degree : 54  degree : 137  degree : 296
+decrease
+size
+  degree : 19  degree : 60  degree : 135  degree : 295
+increase
+size
+  degree : 18  degree : 54
+decrease
+size
+  degree : 19  degree : 55
+increase
+size
+  degree : 16  degree : 56  degree : 138
+decrease
+size
+  degree : 19  degree : 55  degree : 135
+increase
+size
+  degree : 18  degree : 55  degree : 138  degree : 293
+decrease
+size
+  degree : 17  degree : 59  degree : 136  degree : 286
+increase
+size
+  degree : 17  degree : 55
+decrease
+size
+  degree : 20  degree : 56
+increase
+size
+  degree : 16  degree : 53  degree : 136
+decrease
+size
+  degree : 19  degree : 57  degree : 133
+increase
+size
+  degree : 17  degree : 53  degree : 140  degree : 296
+decrease
+size
+  degree : 20  degree : 55  degree : 137  degree : 291
+increase
+size
+  degree : 16  degree : 55
+decrease
+size
+  degree : 19  degree : 52
+increase
+size
+  degree : 16  degree : 59  degree : 134
+decrease
+size
+  degree : 20  degree : 57  degree : 133
+increase
+size
+  degree : 17  degree : 54  degree : 136  degree : 299
+decrease
+size
+  degree : 18  degree : 57  degree : 137  degree : 290
+increase
+size
+  degree : 17  degree : 54
+decrease
+size
+  degree : 18  degree : 53
+increase
+size
+  degree : 18  degree : 56  degree : 141
+decrease
+size
+  degree : 19  degree : 58  degree : 134
+increase
+size
+  degree : 17  degree : 54  degree : 136  degree : 300
+decrease
+size
+  degree : 19  degree : 55  degree : 137  degree : 295
+increase
+size
+  degree : 18  degree : 52
+decrease
+size
+  degree : 20  degree : 55
+increase
+size
+  degree : 19  degree : 50  degree : 140
+decrease
+size
+  degree : 20  degree : 56  degree : 139
+increase
+size
+  degree : 19  degree : 54  degree : 137  degree : 301
+decrease
+size
+  degree : 19  degree : 55  degree : 135  degree : 297
+17.266666412353516  54.13333511352539  
+19.03333282470703  53.5  
+17.03333282470703  54.96666717529297  138.36666870117188  
+19.233333587646484  55.83333206176758  135.6666717529297  
+16.96666717529297  55.13333511352539  138.93333435058594  302.23333740234375  
+18.53333282470703  56.70000076293945  136.1999969482422  291.3333435058594  
+SUT3
+increase
+size
+  degree : 13  degree : 34
+decrease
+size
+  degree : 13  degree : 28
+increase
+size
+  degree : 12  degree : 34  degree : 93
+decrease
+size
+  degree : 13  degree : 35  degree : 83
+increase
+size
+  degree : 11  degree : 33  degree : 88  degree : 208
+decrease
+size
+  degree : 13  degree : 35  degree : 83  degree : 201
+increase
+size
+  degree : 12  degree : 33
+decrease
+size
+  degree : 12  degree : 33
+increase
+size
+  degree : 12  degree : 30  degree : 83
+decrease
+size
+  degree : 13  degree : 34  degree : 81
+increase
+size
+  degree : 12  degree : 30  degree : 84  degree : 203
+decrease
+size
+  degree : 12  degree : 35  degree : 85  degree : 194
+increase
+size
+  degree : 13  degree : 33
+decrease
+size
+  degree : 12  degree : 33
+increase
+size
+  degree : 12  degree : 33  degree : 89
+decrease
+size
+  degree : 13  degree : 33  degree : 76
+increase
+size
+  degree : 13  degree : 34  degree : 93  degree : 208
+decrease
+size
+  degree : 12  degree : 34  degree : 82  degree : 199
+increase
+size
+  degree : 12  degree : 33
+decrease
+size
+  degree : 12  degree : 31
+increase
+size
+  degree : 13  degree : 33  degree : 84
+decrease
+size
+  degree : 12  degree : 34  degree : 91
+increase
+size
+  degree : 15  degree : 34  degree : 84  degree : 201
+decrease
+size
+  degree : 12  degree : 35  degree : 82  degree : 199
+increase
+size
+  degree : 11  degree : 32
+decrease
+size
+  degree : 13  degree : 31
+increase
+size
+  degree : 12  degree : 36  degree : 90
+decrease
+size
+  degree : 12  degree : 31  degree : 83
+increase
+size
+  degree : 13  degree : 30  degree : 83  degree : 205
+decrease
+size
+  degree : 12  degree : 34  degree : 82  degree : 200
+increase
+size
+  degree : 11  degree : 32
+decrease
+size
+  degree : 12  degree : 34
+increase
+size
+  degree : 13  degree : 32  degree : 80
+decrease
+size
+  degree : 13  degree : 32  degree : 84
+increase
+size
+  degree : 12  degree : 35  degree : 85  degree : 205
+decrease
+size
+  degree : 12  degree : 36  degree : 84  degree : 201
+increase
+size
+  degree : 12  degree : 32
+decrease
+size
+  degree : 12  degree : 31
+increase
+size
+  degree : 14  degree : 35  degree : 93
+decrease
+size
+  degree : 13  degree : 34  degree : 78
+increase
+size
+  degree : 13  degree : 32  degree : 94  degree : 221
+decrease
+size
+  degree : 14  degree : 35  degree : 89  degree : 189
+increase
+size
+  degree : 13  degree : 35
+decrease
+size
+  degree : 13  degree : 32
+increase
+size
+  degree : 14  degree : 34  degree : 86
+decrease
+size
+  degree : 11  degree : 34  degree : 80
+increase
+size
+  degree : 14  degree : 37  degree : 86  degree : 210
+decrease
+size
+  degree : 15  degree : 32  degree : 85  degree : 201
+increase
+size
+  degree : 13  degree : 32
+decrease
+size
+  degree : 12  degree : 31
+increase
+size
+  degree : 12  degree : 32  degree : 82
+decrease
+size
+  degree : 13  degree : 32  degree : 85
+increase
+size
+  degree : 13  degree : 33  degree : 88  degree : 204
+decrease
+size
+  degree : 13  degree : 35  degree : 85  degree : 212
+increase
+size
+  degree : 10  degree : 34
+decrease
+size
+  degree : 14  degree : 29
+increase
+size
+  degree : 14  degree : 35  degree : 87
+decrease
+size
+  degree : 12  degree : 33  degree : 84
+increase
+size
+  degree : 14  degree : 32  degree : 89  degree : 207
+decrease
+size
+  degree : 12  degree : 35  degree : 82  degree : 204
+increase
+size
+  degree : 12  degree : 34
+decrease
+size
+  degree : 13  degree : 31
+increase
+size
+  degree : 13  degree : 32  degree : 86
+decrease
+size
+  degree : 12  degree : 32  degree : 77
+increase
+size
+  degree : 11  degree : 32  degree : 94  degree : 221
+decrease
+size
+  degree : 15  degree : 36  degree : 84  degree : 201
+increase
+size
+  degree : 13  degree : 35
+decrease
+size
+  degree : 12  degree : 32
+increase
+size
+  degree : 10  degree : 35  degree : 89
+decrease
+size
+  degree : 13  degree : 32  degree : 78
+increase
+size
+  degree : 13  degree : 34  degree : 88  degree : 204
+decrease
+size
+  degree : 13  degree : 35  degree : 84  degree : 191
+increase
+size
+  degree : 11  degree : 30
+decrease
+size
+  degree : 12  degree : 34
+increase
+size
+  degree : 14  degree : 35  degree : 97
+decrease
+size
+  degree : 14  degree : 31  degree : 87
+increase
+size
+  degree : 11  degree : 33  degree : 88  degree : 200
+decrease
+size
+  degree : 14  degree : 32  degree : 80  degree : 208
+increase
+size
+  degree : 12  degree : 33
+decrease
+size
+  degree : 13  degree : 30
+increase
+size
+  degree : 13  degree : 33  degree : 86
+decrease
+size
+  degree : 12  degree : 32  degree : 82
+increase
+size
+  degree : 11  degree : 37  degree : 85  degree : 216
+decrease
+size
+  degree : 14  degree : 35  degree : 85  degree : 192
+increase
+size
+  degree : 14  degree : 33
+decrease
+size
+  degree : 12  degree : 32
+increase
+size
+  degree : 11  degree : 30  degree : 77
+decrease
+size
+  degree : 13  degree : 32  degree : 88
+increase
+size
+  degree : 14  degree : 34  degree : 84  degree : 225
+decrease
+size
+  degree : 14  degree : 33  degree : 83  degree : 185
+increase
+size
+  degree : 12  degree : 33
+decrease
+size
+  degree : 14  degree : 35
+increase
+size
+  degree : 14  degree : 35  degree : 90
+decrease
+size
+  degree : 13  degree : 32  degree : 83
+increase
+size
+  degree : 12  degree : 33  degree : 88  degree : 216
+decrease
+size
+  degree : 13  degree : 33  degree : 82  degree : 193
+increase
+size
+  degree : 14  degree : 34
+decrease
+size
+  degree : 12  degree : 33
+increase
+size
+  degree : 11  degree : 32  degree : 89
+decrease
+size
+  degree : 11  degree : 33  degree : 86
+increase
+size
+  degree : 11  degree : 32  degree : 89  degree : 214
+decrease
+size
+  degree : 12  degree : 36  degree : 83  degree : 204
+increase
+size
+  degree : 12  degree : 33
+decrease
+size
+  degree : 12  degree : 31
+increase
+size
+  degree : 14  degree : 34  degree : 90
+decrease
+size
+  degree : 12  degree : 34  degree : 89
+increase
+size
+  degree : 12  degree : 33  degree : 90  degree : 210
+decrease
+size
+  degree : 12  degree : 35  degree : 81  degree : 192
+increase
+size
+  degree : 12  degree : 32
+decrease
+size
+  degree : 14  degree : 30
+increase
+size
+  degree : 13  degree : 33  degree : 89
+decrease
+size
+  degree : 12  degree : 33  degree : 77
+increase
+size
+  degree : 12  degree : 34  degree : 87  degree : 208
+decrease
+size
+  degree : 13  degree : 33  degree : 83  degree : 217
+increase
+size
+  degree : 13  degree : 35
+decrease
+size
+  degree : 14  degree : 30
+increase
+size
+  degree : 14  degree : 34  degree : 84
+decrease
+size
+  degree : 14  degree : 35  degree : 93
+increase
+size
+  degree : 11  degree : 32  degree : 90  degree : 214
+decrease
+size
+  degree : 12  degree : 34  degree : 83  degree : 209
+increase
+size
+  degree : 14  degree : 35
+decrease
+size
+  degree : 12  degree : 33
+increase
+size
+  degree : 14  degree : 35  degree : 85
+decrease
+size
+  degree : 12  degree : 34  degree : 93
+increase
+size
+  degree : 13  degree : 32  degree : 87  degree : 227
+decrease
+size
+  degree : 13  degree : 33  degree : 86  degree : 202
+increase
+size
+  degree : 11  degree : 31
+decrease
+size
+  degree : 12  degree : 31
+increase
+size
+  degree : 14  degree : 34  degree : 91
+decrease
+size
+  degree : 13  degree : 32  degree : 89
+increase
+size
+  degree : 13  degree : 32  degree : 86  degree : 209
+decrease
+size
+  degree : 13  degree : 35  degree : 84  degree : 191
+increase
+size
+  degree : 14  degree : 33
+decrease
+size
+  degree : 12  degree : 32
+increase
+size
+  degree : 13  degree : 33  degree : 86
+decrease
+size
+  degree : 12  degree : 35  degree : 79
+increase
+size
+  degree : 14  degree : 32  degree : 91  degree : 207
+decrease
+size
+  degree : 11  degree : 36  degree : 84  degree : 204
+increase
+size
+  degree : 11  degree : 33
+decrease
+size
+  degree : 12  degree : 31
+increase
+size
+  degree : 14  degree : 33  degree : 86
+decrease
+size
+  degree : 12  degree : 34  degree : 87
+increase
+size
+  degree : 14  degree : 34  degree : 87  degree : 219
+decrease
+size
+  degree : 13  degree : 33  degree : 82  degree : 195
+increase
+size
+  degree : 11  degree : 32
+decrease
+size
+  degree : 12  degree : 33
+increase
+size
+  degree : 11  degree : 33  degree : 83
+decrease
+size
+  degree : 12  degree : 32  degree : 84
+increase
+size
+  degree : 13  degree : 35  degree : 83  degree : 203
+decrease
+size
+  degree : 12  degree : 34  degree : 84  degree : 217
+increase
+size
+  degree : 11  degree : 32
+decrease
+size
+  degree : 13  degree : 30
+increase
+size
+  degree : 14  degree : 33  degree : 95
+decrease
+size
+  degree : 14  degree : 34  degree : 82
+increase
+size
+  degree : 13  degree : 31  degree : 86  degree : 215
+decrease
+size
+  degree : 12  degree : 34  degree : 82  degree : 204
+increase
+size
+  degree : 13  degree : 33
+decrease
+size
+  degree : 12  degree : 32
+increase
+size
+  degree : 11  degree : 33  degree : 85
+decrease
+size
+  degree : 12  degree : 35  degree : 85
+increase
+size
+  degree : 13  degree : 33  degree : 88  degree : 225
+decrease
+size
+  degree : 13  degree : 34  degree : 84  degree : 197
+increase
+size
+  degree : 13  degree : 34
+decrease
+size
+  degree : 12  degree : 30
+increase
+size
+  degree : 14  degree : 33  degree : 91
+decrease
+size
+  degree : 12  degree : 34  degree : 78
+increase
+size
+  degree : 12  degree : 32  degree : 85  degree : 228
+decrease
+size
+  degree : 13  degree : 35  degree : 80  degree : 215
+increase
+size
+  degree : 12  degree : 32
+decrease
+size
+  degree : 12  degree : 29
+increase
+size
+  degree : 13  degree : 31  degree : 83
+decrease
+size
+  degree : 13  degree : 33  degree : 79
+increase
+size
+  degree : 14  degree : 35  degree : 92  degree : 214
+decrease
+size
+  degree : 15  degree : 35  degree : 85  degree : 191
+increase
+size
+  degree : 12  degree : 32
+decrease
+size
+  degree : 12  degree : 31
+increase
+size
+  degree : 11  degree : 33  degree : 84
+decrease
+size
+  degree : 13  degree : 35  degree : 79
+increase
+size
+  degree : 13  degree : 34  degree : 83  degree : 217
+decrease
+size
+  degree : 12  degree : 35  degree : 84  degree : 196
+12.233333587646484  32.96666717529297  
+12.466666221618652  31.433332443237305  
+12.800000190734863  33.266666412353516  87.0999984741211  
+12.533333778381348  33.20000076293945  83.33333587646484  
+12.666666984558105  33.13333511352539  87.5  212.13333129882812  
+12.866666793823242  34.400001525878906  83.4000015258789  200.13333129882812  
+SUT4
+increase
+size
+  degree : 22  degree : 89
+decrease
+size
+  degree : 22  degree : 86
+increase
+size
+  degree : 19  degree : 82  degree : 303
+decrease
+size
+  degree : 24  degree : 91  degree : 296
+increase
+size
+  degree : 23  degree : 87  degree : 305  degree : 989
+decrease
+size
+  degree : 25  degree : 95  degree : 315  degree : 953
+increase
+size
+  degree : 23  degree : 85
+decrease
+size
+  degree : 23  degree : 86
+increase
+size
+  degree : 22  degree : 86  degree : 306
+decrease
+size
+  degree : 23  degree : 92  degree : 298
+increase
+size
+  degree : 23  degree : 85  degree : 303  degree : 988
+decrease
+size
+  degree : 25  degree : 88  degree : 319  degree : 965
+increase
+size
+  degree : 23  degree : 89
+decrease
+size
+  degree : 25  degree : 83
+increase
+size
+  degree : 21  degree : 89  degree : 308
+decrease
+size
+  degree : 23  degree : 88  degree : 303
+increase
+size
+  degree : 23  degree : 87  degree : 311  degree : 981
+decrease
+size
+  degree : 24  degree : 92  degree : 320  degree : 958
+increase
+size
+  degree : 20  degree : 82
+decrease
+size
+  degree : 22  degree : 88
+increase
+size
+  degree : 21  degree : 87  degree : 306
+decrease
+size
+  degree : 24  degree : 91  degree : 299
+increase
+size
+  degree : 22  degree : 87  degree : 311  degree : 982
+decrease
+size
+  degree : 23  degree : 93  degree : 320  degree : 960
+increase
+size
+  degree : 22  degree : 86
+decrease
+size
+  degree : 24  degree : 86
+increase
+size
+  degree : 23  degree : 87  degree : 311
+decrease
+size
+  degree : 25  degree : 92  degree : 301
+increase
+size
+  degree : 22  degree : 85  degree : 308  degree : 994
+decrease
+size
+  degree : 24  degree : 93  degree : 319  degree : 964
+increase
+size
+  degree : 22  degree : 85
+decrease
+size
+  degree : 24  degree : 84
+increase
+size
+  degree : 23  degree : 89  degree : 307
+decrease
+size
+  degree : 24  degree : 91  degree : 301
+increase
+size
+  degree : 20  degree : 85  degree : 306  degree : 975
+decrease
+size
+  degree : 23  degree : 90  degree : 316  degree : 969
+increase
+size
+  degree : 22  degree : 84
+decrease
+size
+  degree : 23  degree : 83
+increase
+size
+  degree : 21  degree : 83  degree : 305
+decrease
+size
+  degree : 24  degree : 93  degree : 299
+increase
+size
+  degree : 22  degree : 86  degree : 304  degree : 987
+decrease
+size
+  degree : 23  degree : 95  degree : 316  degree : 978
+increase
+size
+  degree : 23  degree : 84
+decrease
+size
+  degree : 22  degree : 85
+increase
+size
+  degree : 23  degree : 82  degree : 311
+decrease
+size
+  degree : 22  degree : 91  degree : 301
+increase
+size
+  degree : 24  degree : 88  degree : 305  degree : 978
+decrease
+size
+  degree : 23  degree : 94  degree : 320  degree : 955
+increase
+size
+  degree : 22  degree : 83
+decrease
+size
+  degree : 24  degree : 84
+increase
+size
+  degree : 22  degree : 86  degree : 304
+decrease
+size
+  degree : 23  degree : 89  degree : 307
+increase
+size
+  degree : 23  degree : 85  degree : 307  degree : 984
+decrease
+size
+  degree : 24  degree : 95  degree : 321  degree : 975
+increase
+size
+  degree : 20  degree : 85
+decrease
+size
+  degree : 23  degree : 81
+increase
+size
+  degree : 20  degree : 88  degree : 310
+decrease
+size
+  degree : 25  degree : 95  degree : 299
+increase
+size
+  degree : 25  degree : 90  degree : 311  degree : 981
+decrease
+size
+  degree : 24  degree : 95  degree : 319  degree : 965
+increase
+size
+  degree : 23  degree : 88
+decrease
+size
+  degree : 24  degree : 85
+increase
+size
+  degree : 22  degree : 85  degree : 308
+decrease
+size
+  degree : 25  degree : 91  degree : 303
+increase
+size
+  degree : 23  degree : 86  degree : 310  degree : 973
+decrease
+size
+  degree : 24  degree : 91  degree : 322  degree : 959
+increase
+size
+  degree : 19  degree : 82
+decrease
+size
+  degree : 23  degree : 85
+increase
+size
+  degree : 22  degree : 85  degree : 310
+decrease
+size
+  degree : 23  degree : 92  degree : 301
+increase
+size
+  degree : 23  degree : 88  degree : 308  degree : 978
+decrease
+size
+  degree : 23  degree : 94  degree : 322  degree : 957
+increase
+size
+  degree : 23  degree : 87
+decrease
+size
+  degree : 24  degree : 87
+increase
+size
+  degree : 22  degree : 88  degree : 305
+decrease
+size
+  degree : 26  degree : 89  degree : 301
+increase
+size
+  degree : 19  degree : 86  degree : 307  degree : 992
+decrease
+size
+  degree : 24  degree : 89  degree : 317  degree : 957
+increase
+size
+  degree : 21  degree : 85
+decrease
+size
+  degree : 25  degree : 87
+increase
+size
+  degree : 22  degree : 84  degree : 306
+decrease
+size
+  degree : 24  degree : 91  degree : 303
+increase
+size
+  degree : 23  degree : 88  degree : 310  degree : 993
+decrease
+size
+  degree : 23  degree : 92  degree : 317  degree : 968
+increase
+size
+  degree : 22  degree : 87
+decrease
+size
+  degree : 25  degree : 83
+increase
+size
+  degree : 23  degree : 85  degree : 307
+decrease
+size
+  degree : 24  degree : 93  degree : 299
+increase
+size
+  degree : 20  degree : 85  degree : 314  degree : 992
+decrease
+size
+  degree : 23  degree : 94  degree : 323  degree : 968
+increase
+size
+  degree : 22  degree : 87
+decrease
+size
+  degree : 22  degree : 85
+increase
+size
+  degree : 24  degree : 89  degree : 314
+decrease
+size
+  degree : 24  degree : 88  degree : 297
+increase
+size
+  degree : 21  degree : 85  degree : 299  degree : 980
+decrease
+size
+  degree : 23  degree : 91  degree : 317  degree : 967
+increase
+size
+  degree : 20  degree : 84
+decrease
+size
+  degree : 24  degree : 84
+increase
+size
+  degree : 22  degree : 87  degree : 305
+decrease
+size
+  degree : 23  degree : 90  degree : 306
+increase
+size
+  degree : 21  degree : 82  degree : 305  degree : 975
+decrease
+size
+  degree : 23  degree : 95  degree : 317  degree : 961
+increase
+size
+  degree : 23  degree : 83
+decrease
+size
+  degree : 23  degree : 88
+increase
+size
+  degree : 20  degree : 83  degree : 309
+decrease
+size
+  degree : 24  degree : 88  degree : 304
+increase
+size
+  degree : 23  degree : 86  degree : 316  degree : 981
+decrease
+size
+  degree : 24  degree : 95  degree : 319  degree : 966
+increase
+size
+  degree : 22  degree : 87
+decrease
+size
+  degree : 23  degree : 84
+increase
+size
+  degree : 22  degree : 84  degree : 310
+decrease
+size
+  degree : 23  degree : 94  degree : 303
+increase
+size
+  degree : 21  degree : 86  degree : 304  degree : 986
+decrease
+size
+  degree : 25  degree : 95  degree : 316  degree : 966
+increase
+size
+  degree : 21  degree : 87
+decrease
+size
+  degree : 22  degree : 85
+increase
+size
+  degree : 20  degree : 86  degree : 303
+decrease
+size
+  degree : 24  degree : 90  degree : 306
+increase
+size
+  degree : 20  degree : 83  degree : 306  degree : 986
+decrease
+size
+  degree : 24  degree : 94  degree : 319  degree : 974
+increase
+size
+  degree : 22  degree : 82
+decrease
+size
+  degree : 25  degree : 86
+increase
+size
+  degree : 21  degree : 86  degree : 305
+decrease
+size
+  degree : 24  degree : 90  degree : 301
+increase
+size
+  degree : 21  degree : 82  degree : 311  degree : 988
+decrease
+size
+  degree : 23  degree : 94  degree : 318  degree : 960
+increase
+size
+  degree : 20  degree : 86
+decrease
+size
+  degree : 24  degree : 87
+increase
+size
+  degree : 21  degree : 87  degree : 303
+decrease
+size
+  degree : 23  degree : 92  degree : 298
+increase
+size
+  degree : 21  degree : 85  degree : 301  degree : 979
+decrease
+size
+  degree : 23  degree : 91  degree : 318  degree : 964
+increase
+size
+  degree : 26  degree : 87
+decrease
+size
+  degree : 24  degree : 86
+increase
+size
+  degree : 23  degree : 84  degree : 302
+decrease
+size
+  degree : 25  degree : 90  degree : 304
+increase
+size
+  degree : 20  degree : 82  degree : 299  degree : 977
+decrease
+size
+  degree : 23  degree : 93  degree : 316  degree : 966
+increase
+size
+  degree : 21  degree : 84
+decrease
+size
+  degree : 23  degree : 87
+increase
+size
+  degree : 21  degree : 87  degree : 313
+decrease
+size
+  degree : 24  degree : 90  degree : 300
+increase
+size
+  degree : 21  degree : 89  degree : 309  degree : 988
+decrease
+size
+  degree : 23  degree : 93  degree : 314  degree : 954
+increase
+size
+  degree : 22  degree : 88
+decrease
+size
+  degree : 22  degree : 86
+increase
+size
+  degree : 21  degree : 84  degree : 308
+decrease
+size
+  degree : 24  degree : 92  degree : 299
+increase
+size
+  degree : 21  degree : 86  degree : 307  degree : 981
+decrease
+size
+  degree : 23  degree : 94  degree : 323  degree : 949
+increase
+size
+  degree : 21  degree : 85
+decrease
+size
+  degree : 24  degree : 82
+increase
+size
+  degree : 23  degree : 84  degree : 314
+decrease
+size
+  degree : 24  degree : 92  degree : 299
+increase
+size
+  degree : 22  degree : 88  degree : 307  degree : 995
+decrease
+size
+  degree : 25  degree : 92  degree : 322  degree : 957
+increase
+size
+  degree : 22  degree : 85
+decrease
+size
+  degree : 24  degree : 81
+increase
+size
+  degree : 21  degree : 86  degree : 314
+decrease
+size
+  degree : 25  degree : 90  degree : 302
+increase
+size
+  degree : 21  degree : 82  degree : 300  degree : 980
+decrease
+size
+  degree : 24  degree : 94  degree : 319  degree : 954
+increase
+size
+  degree : 25  degree : 85
+decrease
+size
+  degree : 23  degree : 84
+increase
+size
+  degree : 22  degree : 87  degree : 312
+decrease
+size
+  degree : 25  degree : 90  degree : 298
+increase
+size
+  degree : 21  degree : 82  degree : 304  degree : 997
+decrease
+size
+  degree : 24  degree : 92  degree : 316  degree : 959
+increase
+size
+  degree : 20  degree : 82
+decrease
+size
+  degree : 23  degree : 85
+increase
+size
+  degree : 22  degree : 86  degree : 309
+decrease
+size
+  degree : 24  degree : 95  degree : 301
+increase
+size
+  degree : 22  degree : 85  degree : 304  degree : 985
+decrease
+size
+  degree : 25  degree : 93  degree : 326  degree : 968
+increase
+size
+  degree : 23  degree : 89
+decrease
+size
+  degree : 24  degree : 86
+increase
+size
+  degree : 21  degree : 86  degree : 309
+decrease
+size
+  degree : 23  degree : 93  degree : 297
+increase
+size
+  degree : 21  degree : 88  degree : 309  degree : 978
+decrease
+size
+  degree : 25  degree : 91  degree : 320  degree : 955
+21.899999618530273  85.4000015258789  
+23.433332443237305  84.96666717529297  
+21.66666603088379  85.73332977294922  307.8999938964844  
+23.933332443237305  91.0999984741211  300.8666687011719  
+21.733333587646484  85.63333129882812  306.70001220703125  984.0999755859375  
+23.733333587646484  92.9000015258789  318.8666687011719  962.3666381835938  
+SUT5
+increase
+size
+  degree : 88  degree : 228
+decrease
+size
+  degree : 91  degree : 171
+increase
+size
+  degree : 88  degree : 232  degree : 710
+decrease
+size
+  degree : 87  degree : 242  degree : 686
+increase
+size
+  degree : 86  degree : 229  degree : 692  degree : 1444
+decrease
+size
+  degree : 84  degree : 250  degree : 623  degree : 1346
+increase
+size
+  degree : 87  degree : 228
+decrease
+size
+  degree : 90  degree : 167
+increase
+size
+  degree : 88  degree : 230  degree : 698
+decrease
+size
+  degree : 82  degree : 246  degree : 679
+increase
+size
+  degree : 86  degree : 221  degree : 697  degree : 1445
+decrease
+size
+  degree : 82  degree : 244  degree : 611  degree : 1331
+increase
+size
+  degree : 85  degree : 224
+decrease
+size
+  degree : 90  degree : 164
+increase
+size
+  degree : 87  degree : 226  degree : 703
+decrease
+size
+  degree : 86  degree : 244  degree : 662
+increase
+size
+  degree : 85  degree : 224  degree : 697  degree : 1478
+decrease
+size
+  degree : 83  degree : 250  degree : 613  degree : 1344
+increase
+size
+  degree : 86  degree : 220
+decrease
+size
+  degree : 91  degree : 164
+increase
+size
+  degree : 88  degree : 229  degree : 700
+decrease
+size
+  degree : 84  degree : 244  degree : 659
+increase
+size
+  degree : 86  degree : 226  degree : 695  degree : 1446
+decrease
+size
+  degree : 84  degree : 248  degree : 606  degree : 1351
+increase
+size
+  degree : 86  degree : 233
+decrease
+size
+  degree : 90  degree : 167
+increase
+size
+  degree : 88  degree : 229  degree : 698
+decrease
+size
+  degree : 85  degree : 245  degree : 660
+increase
+size
+  degree : 86  degree : 224  degree : 708  degree : 1456
+decrease
+size
+  degree : 85  degree : 247  degree : 612  degree : 1338
+increase
+size
+  degree : 83  degree : 227
+decrease
+size
+  degree : 90  degree : 166
+increase
+size
+  degree : 86  degree : 225  degree : 710
+decrease
+size
+  degree : 82  degree : 241  degree : 663
+increase
+size
+  degree : 87  degree : 221  degree : 697  degree : 1449
+decrease
+size
+  degree : 85  degree : 247  degree : 616  degree : 1317
+increase
+size
+  degree : 88  degree : 234
+decrease
+size
+  degree : 90  degree : 168
+increase
+size
+  degree : 86  degree : 224  degree : 695
+decrease
+size
+  degree : 86  degree : 248  degree : 659
+increase
+size
+  degree : 86  degree : 225  degree : 712  degree : 1472
+decrease
+size
+  degree : 83  degree : 246  degree : 615  degree : 1346
+increase
+size
+  degree : 86  degree : 230
+decrease
+size
+  degree : 90  degree : 166
+increase
+size
+  degree : 85  degree : 229  degree : 693
+decrease
+size
+  degree : 83  degree : 246  degree : 662
+increase
+size
+  degree : 88  degree : 225  degree : 700  degree : 1459
+decrease
+size
+  degree : 86  degree : 247  degree : 614  degree : 1337
+increase
+size
+  degree : 81  degree : 228
+decrease
+size
+  degree : 90  degree : 165
+increase
+size
+  degree : 84  degree : 221  degree : 700
+decrease
+size
+  degree : 86  degree : 243  degree : 655
+increase
+size
+  degree : 85  degree : 224  degree : 709  degree : 1469
+decrease
+size
+  degree : 84  degree : 243  degree : 608  degree : 1370
+increase
+size
+  degree : 86  degree : 231
+decrease
+size
+  degree : 90  degree : 169
+increase
+size
+  degree : 84  degree : 228  degree : 692
+decrease
+size
+  degree : 82  degree : 244  degree : 677
+increase
+size
+  degree : 81  degree : 219  degree : 696  degree : 1472
+decrease
+size
+  degree : 83  degree : 242  degree : 615  degree : 1376
+increase
+size
+  degree : 85  degree : 232
+decrease
+size
+  degree : 90  degree : 168
+increase
+size
+  degree : 88  degree : 227  degree : 712
+decrease
+size
+  degree : 86  degree : 244  degree : 662
+increase
+size
+  degree : 88  degree : 229  degree : 694  degree : 1449
+decrease
+size
+  degree : 88  degree : 243  degree : 606  degree : 1334
+increase
+size
+  degree : 86  degree : 232
+decrease
+size
+  degree : 91  degree : 172
+increase
+size
+  degree : 88  degree : 223  degree : 701
+decrease
+size
+  degree : 83  degree : 246  degree : 644
+increase
+size
+  degree : 85  degree : 229  degree : 706  degree : 1487
+decrease
+size
+  degree : 83  degree : 247  degree : 624  degree : 1347
+increase
+size
+  degree : 86  degree : 225
+decrease
+size
+  degree : 90  degree : 168
+increase
+size
+  degree : 90  degree : 228  degree : 715
+decrease
+size
+  degree : 87  degree : 239  degree : 657
+increase
+size
+  degree : 85  degree : 230  degree : 701  degree : 1457
+decrease
+size
+  degree : 84  degree : 243  degree : 615  degree : 1359
+increase
+size
+  degree : 86  degree : 227
+decrease
+size
+  degree : 89  degree : 165
+increase
+size
+  degree : 88  degree : 236  degree : 712
+decrease
+size
+  degree : 86  degree : 244  degree : 658
+increase
+size
+  degree : 87  degree : 235  degree : 706  degree : 1474
+decrease
+size
+  degree : 82  degree : 248  degree : 609  degree : 1323
+increase
+size
+  degree : 88  degree : 227
+decrease
+size
+  degree : 90  degree : 165
+increase
+size
+  degree : 85  degree : 225  degree : 705
+decrease
+size
+  degree : 84  degree : 245  degree : 668
+increase
+size
+  degree : 86  degree : 229  degree : 705  degree : 1447
+decrease
+size
+  degree : 84  degree : 246  degree : 613  degree : 1354
+increase
+size
+  degree : 84  degree : 227
+decrease
+size
+  degree : 90  degree : 163
+increase
+size
+  degree : 86  degree : 223  degree : 694
+decrease
+size
+  degree : 87  degree : 242  degree : 659
+increase
+size
+  degree : 85  degree : 226  degree : 702  degree : 1458
+decrease
+size
+  degree : 85  degree : 243  degree : 615  degree : 1333
+increase
+size
+  degree : 86  degree : 228
+decrease
+size
+  degree : 90  degree : 170
+increase
+size
+  degree : 84  degree : 224  degree : 686
+decrease
+size
+  degree : 88  degree : 242  degree : 660
+increase
+size
+  degree : 88  degree : 232  degree : 702  degree : 1467
+decrease
+size
+  degree : 81  degree : 252  degree : 603  degree : 1342
+increase
+size
+  degree : 86  degree : 225
+decrease
+size
+  degree : 90  degree : 168
+increase
+size
+  degree : 88  degree : 225  degree : 698
+decrease
+size
+  degree : 84  degree : 246  degree : 667
+increase
+size
+  degree : 88  degree : 226  degree : 705  degree : 1479
+decrease
+size
+  degree : 86  degree : 241  degree : 610  degree : 1347
+increase
+size
+  degree : 87  degree : 230
+decrease
+size
+  degree : 90  degree : 167
+increase
+size
+  degree : 88  degree : 235  degree : 723
+decrease
+size
+  degree : 87  degree : 247  degree : 659
+increase
+size
+  degree : 87  degree : 226  degree : 692  degree : 1439
+decrease
+size
+  degree : 81  degree : 249  degree : 605  degree : 1336
+increase
+size
+  degree : 87  degree : 231
+decrease
+size
+  degree : 90  degree : 167
+increase
+size
+  degree : 88  degree : 223  degree : 695
+decrease
+size
+  degree : 89  degree : 245  degree : 656
+increase
+size
+  degree : 88  degree : 230  degree : 706  degree : 1465
+decrease
+size
+  degree : 86  degree : 244  degree : 619  degree : 1361
+increase
+size
+  degree : 86  degree : 226
+decrease
+size
+  degree : 90  degree : 165
+increase
+size
+  degree : 82  degree : 228  degree : 703
+decrease
+size
+  degree : 84  degree : 248  degree : 672
+increase
+size
+  degree : 85  degree : 226  degree : 687  degree : 1432
+decrease
+size
+  degree : 85  degree : 250  degree : 614  degree : 1364
+increase
+size
+  degree : 86  degree : 231
+decrease
+size
+  degree : 91  degree : 170
+increase
+size
+  degree : 86  degree : 230  degree : 696
+decrease
+size
+  degree : 88  degree : 246  degree : 663
+increase
+size
+  degree : 86  degree : 230  degree : 700  degree : 1470
+decrease
+size
+  degree : 84  degree : 247  degree : 621  degree : 1336
+increase
+size
+  degree : 86  degree : 222
+decrease
+size
+  degree : 90  degree : 166
+increase
+size
+  degree : 90  degree : 221  degree : 698
+decrease
+size
+  degree : 87  degree : 244  degree : 670
+increase
+size
+  degree : 88  degree : 230  degree : 712  degree : 1448
+decrease
+size
+  degree : 84  degree : 240  degree : 605  degree : 1309
+increase
+size
+  degree : 84  degree : 222
+decrease
+size
+  degree : 90  degree : 165
+increase
+size
+  degree : 83  degree : 228  degree : 703
+decrease
+size
+  degree : 85  degree : 244  degree : 681
+increase
+size
+  degree : 84  degree : 227  degree : 705  degree : 1459
+decrease
+size
+  degree : 83  degree : 246  degree : 605  degree : 1325
+increase
+size
+  degree : 90  degree : 232
+decrease
+size
+  degree : 91  degree : 170
+increase
+size
+  degree : 86  degree : 226  degree : 697
+decrease
+size
+  degree : 89  degree : 241  degree : 669
+increase
+size
+  degree : 86  degree : 223  degree : 704  degree : 1458
+decrease
+size
+  degree : 85  degree : 246  degree : 611  degree : 1342
+increase
+size
+  degree : 84  degree : 227
+decrease
+size
+  degree : 90  degree : 166
+increase
+size
+  degree : 88  degree : 226  degree : 710
+decrease
+size
+  degree : 85  degree : 245  degree : 667
+increase
+size
+  degree : 85  degree : 227  degree : 692  degree : 1436
+decrease
+size
+  degree : 85  degree : 242  degree : 618  degree : 1333
+increase
+size
+  degree : 87  degree : 232
+decrease
+size
+  degree : 89  degree : 168
+increase
+size
+  degree : 88  degree : 232  degree : 700
+decrease
+size
+  degree : 90  degree : 244  degree : 669
+increase
+size
+  degree : 88  degree : 224  degree : 711  degree : 1477
+decrease
+size
+  degree : 85  degree : 249  degree : 615  degree : 1330
+increase
+size
+  degree : 88  degree : 235
+decrease
+size
+  degree : 90  degree : 170
+increase
+size
+  degree : 86  degree : 229  degree : 708
+decrease
+size
+  degree : 84  degree : 246  degree : 658
+increase
+size
+  degree : 86  degree : 228  degree : 704  degree : 1462
+decrease
+size
+  degree : 81  degree : 247  degree : 613  degree : 1317
+increase
+size
+  degree : 85  degree : 225
+decrease
+size
+  degree : 92  degree : 168
+increase
+size
+  degree : 83  degree : 223  degree : 692
+decrease
+size
+  degree : 86  degree : 246  degree : 661
+increase
+size
+  degree : 86  degree : 225  degree : 691  degree : 1441
+decrease
+size
+  degree : 81  degree : 243  degree : 602  degree : 1345
+increase
+size
+  degree : 84  degree : 229
+decrease
+size
+  degree : 90  degree : 166
+increase
+size
+  degree : 86  degree : 224  degree : 700
+decrease
+size
+  degree : 83  degree : 243  degree : 644
+increase
+size
+  degree : 86  degree : 217  degree : 690  degree : 1437
+decrease
+size
+  degree : 82  degree : 246  degree : 606  degree : 1344
+85.9000015258789  228.26666259765625  
+90.16666412353516  167.13333129882812  
+86.5  226.96665954589844  701.566650390625  
+85.5  244.3333282470703  663.5333251953125  
+86.0999984741211  226.23333740234375  700.5999755859375  1457.7332763671875  
+83.80000305175781  245.86666870117188  612.066650390625  1341.2332763671875  
+SUT6
+increase
+size
+  degree : 29  degree : 99
+decrease
+size
+  degree : 28  degree : 98
+increase
+size
+  degree : 29  degree : 98  degree : 332
+decrease
+size
+  degree : 28  degree : 106  degree : 330
+increase
+size
+  degree : 29  degree : 99  degree : 328  degree : 947
+decrease
+size
+  degree : 29  degree : 109  degree : 313  degree : 899
+increase
+size
+  degree : 33  degree : 102
+decrease
+size
+  degree : 30  degree : 96
+increase
+size
+  degree : 28  degree : 99  degree : 339
+decrease
+size
+  degree : 29  degree : 107  degree : 329
+increase
+size
+  degree : 29  degree : 100  degree : 330  degree : 939
+decrease
+size
+  degree : 26  degree : 103  degree : 313  degree : 893
+increase
+size
+  degree : 32  degree : 101
+decrease
+size
+  degree : 30  degree : 94
+increase
+size
+  degree : 35  degree : 103  degree : 345
+decrease
+size
+  degree : 31  degree : 101  degree : 329
+increase
+size
+  degree : 30  degree : 105  degree : 321  degree : 942
+decrease
+size
+  degree : 29  degree : 105  degree : 316  degree : 937
+increase
+size
+  degree : 33  degree : 104
+decrease
+size
+  degree : 32  degree : 99
+increase
+size
+  degree : 31  degree : 100  degree : 341
+decrease
+size
+  degree : 29  degree : 103  degree : 330
+increase
+size
+  degree : 28  degree : 104  degree : 331  degree : 945
+decrease
+size
+  degree : 31  degree : 106  degree : 315  degree : 876
+increase
+size
+  degree : 30  degree : 97
+decrease
+size
+  degree : 30  degree : 93
+increase
+size
+  degree : 27  degree : 99  degree : 340
+decrease
+size
+  degree : 30  degree : 103  degree : 318
+increase
+size
+  degree : 28  degree : 102  degree : 336  degree : 956
+decrease
+size
+  degree : 29  degree : 104  degree : 319  degree : 909
+increase
+size
+  degree : 29  degree : 99
+decrease
+size
+  degree : 29  degree : 95
+increase
+size
+  degree : 26  degree : 100  degree : 342
+decrease
+size
+  degree : 30  degree : 106  degree : 320
+increase
+size
+  degree : 32  degree : 98  degree : 327  degree : 966
+decrease
+size
+  degree : 27  degree : 105  degree : 308  degree : 896
+increase
+size
+  degree : 28  degree : 101
+decrease
+size
+  degree : 28  degree : 99
+increase
+size
+  degree : 28  degree : 102  degree : 352
+decrease
+size
+  degree : 30  degree : 104  degree : 314
+increase
+size
+  degree : 29  degree : 104  degree : 339  degree : 953
+decrease
+size
+  degree : 29  degree : 107  degree : 309  degree : 896
+increase
+size
+  degree : 31  degree : 100
+decrease
+size
+  degree : 30  degree : 94
+increase
+size
+  degree : 30  degree : 98  degree : 339
+decrease
+size
+  degree : 30  degree : 103  degree : 346
+increase
+size
+  degree : 32  degree : 98  degree : 321  degree : 959
+decrease
+size
+  degree : 26  degree : 105  degree : 314  degree : 920
+increase
+size
+  degree : 27  degree : 99
+decrease
+size
+  degree : 27  degree : 101
+increase
+size
+  degree : 32  degree : 102  degree : 343
+decrease
+size
+  degree : 26  degree : 103  degree : 313
+increase
+size
+  degree : 31  degree : 98  degree : 346  degree : 991
+decrease
+size
+  degree : 28  degree : 101  degree : 318  degree : 876
+increase
+size
+  degree : 31  degree : 98
+decrease
+size
+  degree : 31  degree : 97
+increase
+size
+  degree : 34  degree : 103  degree : 334
+decrease
+size
+  degree : 28  degree : 102  degree : 338
+increase
+size
+  degree : 27  degree : 106  degree : 348  degree : 944
+decrease
+size
+  degree : 28  degree : 104  degree : 312  degree : 908
+increase
+size
+  degree : 30  degree : 102
+decrease
+size
+  degree : 29  degree : 89
+increase
+size
+  degree : 30  degree : 105  degree : 322
+decrease
+size
+  degree : 30  degree : 103  degree : 339
+increase
+size
+  degree : 27  degree : 100  degree : 341  degree : 974
+decrease
+size
+  degree : 30  degree : 104  degree : 314  degree : 879
+increase
+size
+  degree : 27  degree : 98
+decrease
+size
+  degree : 32  degree : 86
+increase
+size
+  degree : 29  degree : 101  degree : 341
+decrease
+size
+  degree : 30  degree : 104  degree : 333
+increase
+size
+  degree : 32  degree : 105  degree : 326  degree : 955
+decrease
+size
+  degree : 28  degree : 105  degree : 314  degree : 906
+increase
+size
+  degree : 32  degree : 99
+decrease
+size
+  degree : 30  degree : 100
+increase
+size
+  degree : 28  degree : 99  degree : 338
+decrease
+size
+  degree : 27  degree : 105  degree : 317
+increase
+size
+  degree : 29  degree : 97  degree : 316  degree : 954
+decrease
+size
+  degree : 28  degree : 108  degree : 308  degree : 894
+increase
+size
+  degree : 30  degree : 105
+decrease
+size
+  degree : 28  degree : 95
+increase
+size
+  degree : 26  degree : 99  degree : 331
+decrease
+size
+  degree : 31  degree : 102  degree : 315
+increase
+size
+  degree : 33  degree : 102  degree : 333  degree : 940
+decrease
+size
+  degree : 28  degree : 103  degree : 314  degree : 903
+increase
+size
+  degree : 28  degree : 101
+decrease
+size
+  degree : 29  degree : 97
+increase
+size
+  degree : 28  degree : 102  degree : 329
+decrease
+size
+  degree : 30  degree : 102  degree : 320
+increase
+size
+  degree : 28  degree : 101  degree : 341  degree : 951
+decrease
+size
+  degree : 27  degree : 105  degree : 310  degree : 894
+increase
+size
+  degree : 30  degree : 105
+decrease
+size
+  degree : 30  degree : 95
+increase
+size
+  degree : 28  degree : 99  degree : 321
+decrease
+size
+  degree : 28  degree : 102  degree : 331
+increase
+size
+  degree : 31  degree : 100  degree : 344  degree : 943
+decrease
+size
+  degree : 31  degree : 101  degree : 308  degree : 893
+increase
+size
+  degree : 26  degree : 98
+decrease
+size
+  degree : 28  degree : 97
+increase
+size
+  degree : 32  degree : 105  degree : 335
+decrease
+size
+  degree : 27  degree : 102  degree : 323
+increase
+size
+  degree : 27  degree : 97  degree : 325  degree : 932
+decrease
+size
+  degree : 27  degree : 103  degree : 307  degree : 895
+increase
+size
+  degree : 27  degree : 101
+decrease
+size
+  degree : 28  degree : 99
+increase
+size
+  degree : 33  degree : 102  degree : 340
+decrease
+size
+  degree : 33  degree : 101  degree : 329
+increase
+size
+  degree : 28  degree : 98  degree : 329  degree : 968
+decrease
+size
+  degree : 30  degree : 105  degree : 314  degree : 881
+increase
+size
+  degree : 32  degree : 100
+decrease
+size
+  degree : 27  degree : 99
+increase
+size
+  degree : 26  degree : 103  degree : 331
+decrease
+size
+  degree : 27  degree : 103  degree : 316
+increase
+size
+  degree : 32  degree : 94  degree : 327  degree : 970
+decrease
+size
+  degree : 31  degree : 104  degree : 313  degree : 897
+increase
+size
+  degree : 30  degree : 102
+decrease
+size
+  degree : 29  degree : 98
+increase
+size
+  degree : 28  degree : 101  degree : 339
+decrease
+size
+  degree : 28  degree : 101  degree : 319
+increase
+size
+  degree : 27  degree : 97  degree : 333  degree : 921
+decrease
+size
+  degree : 29  degree : 103  degree : 312  degree : 879
+increase
+size
+  degree : 29  degree : 99
+decrease
+size
+  degree : 27  degree : 95
+increase
+size
+  degree : 29  degree : 104  degree : 344
+decrease
+size
+  degree : 27  degree : 103  degree : 327
+increase
+size
+  degree : 27  degree : 106  degree : 334  degree : 957
+decrease
+size
+  degree : 26  degree : 104  degree : 313  degree : 906
+increase
+size
+  degree : 26  degree : 92
+decrease
+size
+  degree : 29  degree : 95
+increase
+size
+  degree : 31  degree : 100  degree : 348
+decrease
+size
+  degree : 31  degree : 104  degree : 328
+increase
+size
+  degree : 31  degree : 98  degree : 341  degree : 950
+decrease
+size
+  degree : 29  degree : 106  degree : 317  degree : 891
+increase
+size
+  degree : 27  degree : 101
+decrease
+size
+  degree : 27  degree : 101
+increase
+size
+  degree : 28  degree : 101  degree : 334
+decrease
+size
+  degree : 28  degree : 103  degree : 316
+increase
+size
+  degree : 31  degree : 104  degree : 332  degree : 939
+decrease
+size
+  degree : 29  degree : 102  degree : 320  degree : 892
+increase
+size
+  degree : 27  degree : 101
+decrease
+size
+  degree : 27  degree : 95
+increase
+size
+  degree : 31  degree : 101  degree : 329
+decrease
+size
+  degree : 28  degree : 102  degree : 323
+increase
+size
+  degree : 30  degree : 99  degree : 347  degree : 973
+decrease
+size
+  degree : 28  degree : 98  degree : 308  degree : 893
+increase
+size
+  degree : 30  degree : 103
+decrease
+size
+  degree : 31  degree : 95
+increase
+size
+  degree : 28  degree : 102  degree : 327
+decrease
+size
+  degree : 30  degree : 101  degree : 320
+increase
+size
+  degree : 29  degree : 104  degree : 357  degree : 984
+decrease
+size
+  degree : 29  degree : 103  degree : 312  degree : 886
+increase
+size
+  degree : 30  degree : 102
+decrease
+size
+  degree : 29  degree : 94
+increase
+size
+  degree : 26  degree : 93  degree : 335
+decrease
+size
+  degree : 29  degree : 102  degree : 316
+increase
+size
+  degree : 28  degree : 101  degree : 328  degree : 977
+decrease
+size
+  degree : 27  degree : 104  degree : 314  degree : 906
+increase
+size
+  degree : 29  degree : 101
+decrease
+size
+  degree : 26  degree : 93
+increase
+size
+  degree : 29  degree : 106  degree : 336
+decrease
+size
+  degree : 27  degree : 106  degree : 319
+increase
+size
+  degree : 25  degree : 95  degree : 334  degree : 941
+decrease
+size
+  degree : 29  degree : 103  degree : 311  degree : 887
+increase
+size
+  degree : 31  degree : 103
+decrease
+size
+  degree : 30  degree : 100
+increase
+size
+  degree : 28  degree : 97  degree : 336
+decrease
+size
+  degree : 31  degree : 104  degree : 339
+increase
+size
+  degree : 26  degree : 102  degree : 347  degree : 952
+decrease
+size
+  degree : 30  degree : 101  degree : 317  degree : 877
+increase
+size
+  degree : 28  degree : 98
+decrease
+size
+  degree : 29  degree : 97
+increase
+size
+  degree : 31  degree : 99  degree : 346
+decrease
+size
+  degree : 29  degree : 102  degree : 323
+increase
+size
+  degree : 32  degree : 99  degree : 328  degree : 953
+decrease
+size
+  degree : 31  degree : 106  degree : 311  degree : 921
+increase
+size
+  degree : 34  degree : 99
+decrease
+size
+  degree : 30  degree : 98
+increase
+size
+  degree : 31  degree : 97  degree : 335
+decrease
+size
+  degree : 30  degree : 100  degree : 326
+increase
+size
+  degree : 30  degree : 100  degree : 346  degree : 943
+decrease
+size
+  degree : 29  degree : 101  degree : 315  degree : 892
+29.53333282470703  100.33333587646484  
+29.0  96.13333129882812  
+29.33333396911621  100.66666412353516  336.79998779296875  
+29.066667556762695  103.0  324.8666687011719  
+29.266666412353516  100.43333435058594  334.5333251953125  953.9666748046875  
+28.600000381469727  103.93333435058594  312.9666748046875  896.066650390625  
+SUT7
+increase
+size
+  degree : 22  degree : 77
+decrease
+size
+  degree : 22  degree : 69
+increase
+size
+  degree : 22  degree : 79  degree : 223
+decrease
+size
+  degree : 22  degree : 79  degree : 200
+increase
+size
+  degree : 22  degree : 78  degree : 213  degree : 554
+decrease
+size
+  degree : 22  degree : 78  degree : 203  degree : 516
+increase
+size
+  degree : 21  degree : 77
+decrease
+size
+  degree : 23  degree : 74
+increase
+size
+  degree : 20  degree : 73  degree : 214
+decrease
+size
+  degree : 22  degree : 76  degree : 205
+increase
+size
+  degree : 20  degree : 76  degree : 212  degree : 552
+decrease
+size
+  degree : 20  degree : 76  degree : 217  degree : 524
+increase
+size
+  degree : 22  degree : 76
+decrease
+size
+  degree : 21  degree : 73
+increase
+size
+  degree : 21  degree : 75  degree : 227
+decrease
+size
+  degree : 20  degree : 77  degree : 203
+increase
+size
+  degree : 23  degree : 76  degree : 217  degree : 548
+decrease
+size
+  degree : 23  degree : 72  degree : 218  degree : 521
+increase
+size
+  degree : 20  degree : 94
+decrease
+size
+  degree : 22  degree : 77
+increase
+size
+  degree : 20  degree : 74  degree : 221
+decrease
+size
+  degree : 22  degree : 72  degree : 210
+increase
+size
+  degree : 19  degree : 73  degree : 209  degree : 559
+decrease
+size
+  degree : 23  degree : 76  degree : 213  degree : 512
+increase
+size
+  degree : 21  degree : 78
+decrease
+size
+  degree : 22  degree : 75
+increase
+size
+  degree : 22  degree : 80  degree : 217
+decrease
+size
+  degree : 21  degree : 76  degree : 198
+increase
+size
+  degree : 22  degree : 84  degree : 222  degree : 570
+decrease
+size
+  degree : 22  degree : 79  degree : 211  degree : 514
+increase
+size
+  degree : 20  degree : 74
+decrease
+size
+  degree : 21  degree : 74
+increase
+size
+  degree : 22  degree : 77  degree : 221
+decrease
+size
+  degree : 21  degree : 75  degree : 201
+increase
+size
+  degree : 22  degree : 78  degree : 219  degree : 585
+decrease
+size
+  degree : 22  degree : 76  degree : 208  degree : 504
+increase
+size
+  degree : 21  degree : 69
+decrease
+size
+  degree : 21  degree : 70
+increase
+size
+  degree : 20  degree : 72  degree : 216
+decrease
+size
+  degree : 20  degree : 76  degree : 200
+increase
+size
+  degree : 22  degree : 71  degree : 226  degree : 561
+decrease
+size
+  degree : 21  degree : 75  degree : 213  degree : 516
+increase
+size
+  degree : 21  degree : 74
+decrease
+size
+  degree : 20  degree : 73
+increase
+size
+  degree : 21  degree : 76  degree : 216
+decrease
+size
+  degree : 22  degree : 79  degree : 212
+increase
+size
+  degree : 21  degree : 74  degree : 214  degree : 566
+decrease
+size
+  degree : 21  degree : 75  degree : 214  degree : 528
+increase
+size
+  degree : 22  degree : 85
+decrease
+size
+  degree : 20  degree : 84
+increase
+size
+  degree : 22  degree : 75  degree : 210
+decrease
+size
+  degree : 22  degree : 77  degree : 205
+increase
+size
+  degree : 20  degree : 82  degree : 217  degree : 552
+decrease
+size
+  degree : 20  degree : 83  degree : 207  degree : 509
+increase
+size
+  degree : 22  degree : 82
+decrease
+size
+  degree : 23  degree : 77
+increase
+size
+  degree : 22  degree : 80  degree : 214
+decrease
+size
+  degree : 21  degree : 75  degree : 206
+increase
+size
+  degree : 19  degree : 70  degree : 218  degree : 558
+decrease
+size
+  degree : 21  degree : 77  degree : 211  degree : 516
+increase
+size
+  degree : 20  degree : 73
+decrease
+size
+  degree : 23  degree : 78
+increase
+size
+  degree : 22  degree : 80  degree : 228
+decrease
+size
+  degree : 21  degree : 78  degree : 206
+increase
+size
+  degree : 22  degree : 79  degree : 223  degree : 553
+decrease
+size
+  degree : 21  degree : 77  degree : 212  degree : 517
+increase
+size
+  degree : 20  degree : 73
+decrease
+size
+  degree : 20  degree : 73
+increase
+size
+  degree : 21  degree : 78  degree : 222
+decrease
+size
+  degree : 20  degree : 77  degree : 208
+increase
+size
+  degree : 20  degree : 72  degree : 219  degree : 560
+decrease
+size
+  degree : 22  degree : 76  degree : 211  degree : 516
+increase
+size
+  degree : 20  degree : 76
+decrease
+size
+  degree : 22  degree : 75
+increase
+size
+  degree : 22  degree : 72  degree : 217
+decrease
+size
+  degree : 22  degree : 76  degree : 205
+increase
+size
+  degree : 18  degree : 75  degree : 217  degree : 558
+decrease
+size
+  degree : 22  degree : 73  degree : 212  degree : 517
+increase
+size
+  degree : 21  degree : 76
+decrease
+size
+  degree : 20  degree : 72
+increase
+size
+  degree : 21  degree : 70  degree : 212
+decrease
+size
+  degree : 24  degree : 76  degree : 202
+increase
+size
+  degree : 20  degree : 73  degree : 217  degree : 549
+decrease
+size
+  degree : 21  degree : 75  degree : 212  degree : 512
+increase
+size
+  degree : 19  degree : 81
+decrease
+size
+  degree : 22  degree : 74
+increase
+size
+  degree : 21  degree : 74  degree : 217
+decrease
+size
+  degree : 21  degree : 76  degree : 201
+increase
+size
+  degree : 22  degree : 73  degree : 213  degree : 553
+decrease
+size
+  degree : 23  degree : 76  degree : 214  degree : 512
+increase
+size
+  degree : 22  degree : 77
+decrease
+size
+  degree : 21  degree : 75
+increase
+size
+  degree : 21  degree : 75  degree : 215
+decrease
+size
+  degree : 21  degree : 72  degree : 207
+increase
+size
+  degree : 21  degree : 77  degree : 219  degree : 547
+decrease
+size
+  degree : 22  degree : 75  degree : 214  degree : 535
+increase
+size
+  degree : 23  degree : 75
+decrease
+size
+  degree : 22  degree : 75
+increase
+size
+  degree : 21  degree : 71  degree : 215
+decrease
+size
+  degree : 23  degree : 75  degree : 198
+increase
+size
+  degree : 22  degree : 74  degree : 210  degree : 556
+decrease
+size
+  degree : 21  degree : 79  degree : 210  degree : 511
+increase
+size
+  degree : 23  degree : 78
+decrease
+size
+  degree : 21  degree : 76
+increase
+size
+  degree : 23  degree : 80  degree : 222
+decrease
+size
+  degree : 23  degree : 73  degree : 204
+increase
+size
+  degree : 22  degree : 76  degree : 217  degree : 563
+decrease
+size
+  degree : 22  degree : 77  degree : 210  degree : 521
+increase
+size
+  degree : 20  degree : 79
+decrease
+size
+  degree : 24  degree : 80
+increase
+size
+  degree : 19  degree : 72  degree : 212
+decrease
+size
+  degree : 22  degree : 77  degree : 204
+increase
+size
+  degree : 19  degree : 72  degree : 210  degree : 550
+decrease
+size
+  degree : 20  degree : 76  degree : 212  degree : 511
+increase
+size
+  degree : 22  degree : 73
+decrease
+size
+  degree : 21  degree : 80
+increase
+size
+  degree : 21  degree : 74  degree : 229
+decrease
+size
+  degree : 21  degree : 74  degree : 204
+increase
+size
+  degree : 23  degree : 78  degree : 224  degree : 570
+decrease
+size
+  degree : 22  degree : 77  degree : 215  degree : 514
+increase
+size
+  degree : 21  degree : 75
+decrease
+size
+  degree : 20  degree : 78
+increase
+size
+  degree : 22  degree : 80  degree : 220
+decrease
+size
+  degree : 22  degree : 76  degree : 207
+increase
+size
+  degree : 22  degree : 77  degree : 223  degree : 560
+decrease
+size
+  degree : 22  degree : 77  degree : 212  degree : 517
+increase
+size
+  degree : 23  degree : 77
+decrease
+size
+  degree : 21  degree : 69
+increase
+size
+  degree : 22  degree : 79  degree : 218
+decrease
+size
+  degree : 22  degree : 79  degree : 198
+increase
+size
+  degree : 22  degree : 79  degree : 208  degree : 547
+decrease
+size
+  degree : 22  degree : 75  degree : 211  degree : 523
+increase
+size
+  degree : 19  degree : 77
+decrease
+size
+  degree : 21  degree : 75
+increase
+size
+  degree : 20  degree : 73  degree : 220
+decrease
+size
+  degree : 23  degree : 82  degree : 197
+increase
+size
+  degree : 22  degree : 71  degree : 215  degree : 566
+decrease
+size
+  degree : 20  degree : 75  degree : 219  degree : 516
+increase
+size
+  degree : 22  degree : 74
+decrease
+size
+  degree : 22  degree : 76
+increase
+size
+  degree : 22  degree : 76  degree : 215
+decrease
+size
+  degree : 20  degree : 76  degree : 201
+increase
+size
+  degree : 23  degree : 81  degree : 218  degree : 563
+decrease
+size
+  degree : 22  degree : 74  degree : 209  degree : 522
+increase
+size
+  degree : 21  degree : 75
+decrease
+size
+  degree : 20  degree : 81
+increase
+size
+  degree : 21  degree : 71  degree : 218
+decrease
+size
+  degree : 21  degree : 72  degree : 206
+increase
+size
+  degree : 22  degree : 72  degree : 214  degree : 559
+decrease
+size
+  degree : 22  degree : 76  degree : 212  degree : 516
+increase
+size
+  degree : 20  degree : 73
+decrease
+size
+  degree : 22  degree : 74
+increase
+size
+  degree : 20  degree : 71  degree : 212
+decrease
+size
+  degree : 23  degree : 77  degree : 200
+increase
+size
+  degree : 21  degree : 70  degree : 209  degree : 544
+decrease
+size
+  degree : 21  degree : 76  degree : 207  degree : 514
+increase
+size
+  degree : 22  degree : 79
+decrease
+size
+  degree : 22  degree : 68
+increase
+size
+  degree : 23  degree : 76  degree : 215
+decrease
+size
+  degree : 21  degree : 77  degree : 203
+increase
+size
+  degree : 20  degree : 79  degree : 225  degree : 563
+decrease
+size
+  degree : 22  degree : 78  degree : 208  degree : 497
+increase
+size
+  degree : 22  degree : 76
+decrease
+size
+  degree : 20  degree : 81
+increase
+size
+  degree : 21  degree : 73  degree : 215
+decrease
+size
+  degree : 23  degree : 77  degree : 201
+increase
+size
+  degree : 21  degree : 79  degree : 220  degree : 571
+decrease
+size
+  degree : 21  degree : 72  degree : 210  degree : 537
+increase
+size
+  degree : 20  degree : 73
+decrease
+size
+  degree : 22  degree : 75
+increase
+size
+  degree : 21  degree : 70  degree : 223
+decrease
+size
+  degree : 22  degree : 75  degree : 210
+increase
+size
+  degree : 21  degree : 75  degree : 212  degree : 548
+decrease
+size
+  degree : 19  degree : 73  degree : 205  degree : 520
+increase
+size
+  degree : 22  degree : 79
+decrease
+size
+  degree : 22  degree : 74
+increase
+size
+  degree : 20  degree : 81  degree : 224
+decrease
+size
+  degree : 19  degree : 80  degree : 208
+increase
+size
+  degree : 22  degree : 77  degree : 207  degree : 541
+decrease
+size
+  degree : 21  degree : 82  degree : 211  degree : 520
+21.133333206176758  76.83333587646484  
+21.433332443237305  75.16666412353516  
+21.200000762939453  75.23332977294922  218.26666259765625  
+21.566667556762695  76.23332977294922  203.6666717529297  
+21.16666603088379  75.69999694824219  216.23333740234375  557.5333251953125  
+21.433332443237305  76.19999694824219  211.36666870117188  516.933349609375  
+SUT8
+increase
+size
+  degree : 16  degree : 57
+decrease
+size
+  degree : 19  degree : 54
+increase
+size
+  degree : 16  degree : 54  degree : 160
+decrease
+size
+  degree : 19  degree : 55  degree : 166
+increase
+size
+  degree : 17  degree : 54  degree : 167  degree : 449
+decrease
+size
+  degree : 17  degree : 59  degree : 165  degree : 430
+increase
+size
+  degree : 18  degree : 58
+decrease
+size
+  degree : 18  degree : 54
+increase
+size
+  degree : 17  degree : 54  degree : 167
+decrease
+size
+  degree : 19  degree : 56  degree : 159
+increase
+size
+  degree : 16  degree : 52  degree : 170  degree : 448
+decrease
+size
+  degree : 18  degree : 56  degree : 161  degree : 434
+increase
+size
+  degree : 19  degree : 56
+decrease
+size
+  degree : 18  degree : 51
+increase
+size
+  degree : 17  degree : 54  degree : 163
+decrease
+size
+  degree : 17  degree : 56  degree : 154
+increase
+size
+  degree : 17  degree : 52  degree : 169  degree : 450
+decrease
+size
+  degree : 18  degree : 59  degree : 161  degree : 404
+increase
+size
+  degree : 17  degree : 56
+decrease
+size
+  degree : 18  degree : 51
+increase
+size
+  degree : 18  degree : 55  degree : 161
+decrease
+size
+  degree : 18  degree : 56  degree : 162
+increase
+size
+  degree : 17  degree : 55  degree : 159  degree : 441
+decrease
+size
+  degree : 19  degree : 58  degree : 161  degree : 421
+increase
+size
+  degree : 17  degree : 55
+decrease
+size
+  degree : 16  degree : 53
+increase
+size
+  degree : 17  degree : 55  degree : 168
+decrease
+size
+  degree : 18  degree : 57  degree : 162
+increase
+size
+  degree : 16  degree : 54  degree : 165  degree : 444
+decrease
+size
+  degree : 17  degree : 57  degree : 156  degree : 425
+increase
+size
+  degree : 15  degree : 53
+decrease
+size
+  degree : 17  degree : 54
+increase
+size
+  degree : 16  degree : 55  degree : 169
+decrease
+size
+  degree : 18  degree : 56  degree : 162
+increase
+size
+  degree : 16  degree : 53  degree : 172  degree : 446
+decrease
+size
+  degree : 17  degree : 57  degree : 160  degree : 402
+increase
+size
+  degree : 17  degree : 56
+decrease
+size
+  degree : 18  degree : 50
+increase
+size
+  degree : 17  degree : 53  degree : 164
+decrease
+size
+  degree : 17  degree : 60  degree : 157
+increase
+size
+  degree : 17  degree : 55  degree : 158  degree : 436
+decrease
+size
+  degree : 18  degree : 59  degree : 157  degree : 418
+increase
+size
+  degree : 18  degree : 58
+decrease
+size
+  degree : 18  degree : 53
+increase
+size
+  degree : 16  degree : 54  degree : 182
+decrease
+size
+  degree : 18  degree : 58  degree : 164
+increase
+size
+  degree : 15  degree : 54  degree : 159  degree : 434
+decrease
+size
+  degree : 18  degree : 59  degree : 159  degree : 415
+increase
+size
+  degree : 18  degree : 54
+decrease
+size
+  degree : 17  degree : 55
+increase
+size
+  degree : 17  degree : 53  degree : 166
+decrease
+size
+  degree : 19  degree : 54  degree : 162
+increase
+size
+  degree : 16  degree : 58  degree : 167  degree : 447
+decrease
+size
+  degree : 19  degree : 57  degree : 161  degree : 425
+increase
+size
+  degree : 16  degree : 55
+decrease
+size
+  degree : 17  degree : 54
+increase
+size
+  degree : 18  degree : 54  degree : 166
+decrease
+size
+  degree : 17  degree : 55  degree : 154
+increase
+size
+  degree : 16  degree : 56  degree : 159  degree : 446
+decrease
+size
+  degree : 18  degree : 56  degree : 158  degree : 415
+increase
+size
+  degree : 18  degree : 55
+decrease
+size
+  degree : 17  degree : 53
+increase
+size
+  degree : 18  degree : 55  degree : 172
+decrease
+size
+  degree : 17  degree : 59  degree : 159
+increase
+size
+  degree : 16  degree : 55  degree : 162  degree : 440
+decrease
+size
+  degree : 18  degree : 58  degree : 163  degree : 407
+increase
+size
+  degree : 18  degree : 55
+decrease
+size
+  degree : 18  degree : 50
+increase
+size
+  degree : 19  degree : 57  degree : 165
+decrease
+size
+  degree : 18  degree : 55  degree : 161
+increase
+size
+  degree : 17  degree : 56  degree : 168  degree : 434
+decrease
+size
+  degree : 17  degree : 56  degree : 160  degree : 416
+increase
+size
+  degree : 16  degree : 55
+decrease
+size
+  degree : 16  degree : 54
+increase
+size
+  degree : 17  degree : 56  degree : 170
+decrease
+size
+  degree : 18  degree : 58  degree : 170
+increase
+size
+  degree : 17  degree : 56  degree : 172  degree : 446
+decrease
+size
+  degree : 17  degree : 59  degree : 160  degree : 403
+increase
+size
+  degree : 17  degree : 56
+decrease
+size
+  degree : 17  degree : 51
+increase
+size
+  degree : 18  degree : 56  degree : 170
+decrease
+size
+  degree : 19  degree : 57  degree : 165
+increase
+size
+  degree : 18  degree : 56  degree : 161  degree : 439
+decrease
+size
+  degree : 18  degree : 55  degree : 163  degree : 412
+increase
+size
+  degree : 16  degree : 56
+decrease
+size
+  degree : 18  degree : 53
+increase
+size
+  degree : 18  degree : 56  degree : 170
+decrease
+size
+  degree : 18  degree : 56  degree : 161
+increase
+size
+  degree : 17  degree : 56  degree : 166  degree : 435
+decrease
+size
+  degree : 18  degree : 57  degree : 158  degree : 400
+increase
+size
+  degree : 17  degree : 54
+decrease
+size
+  degree : 17  degree : 53
+increase
+size
+  degree : 17  degree : 55  degree : 171
+decrease
+size
+  degree : 16  degree : 57  degree : 161
+increase
+size
+  degree : 15  degree : 54  degree : 165  degree : 461
+decrease
+size
+  degree : 16  degree : 59  degree : 161  degree : 457
+increase
+size
+  degree : 17  degree : 52
+decrease
+size
+  degree : 19  degree : 52
+increase
+size
+  degree : 17  degree : 55  degree : 170
+decrease
+size
+  degree : 18  degree : 56  degree : 163
+increase
+size
+  degree : 16  degree : 55  degree : 166  degree : 465
+decrease
+size
+  degree : 18  degree : 55  degree : 156  degree : 424
+increase
+size
+  degree : 17  degree : 57
+decrease
+size
+  degree : 17  degree : 53
+increase
+size
+  degree : 17  degree : 56  degree : 163
+decrease
+size
+  degree : 18  degree : 55  degree : 164
+increase
+size
+  degree : 17  degree : 58  degree : 171  degree : 451
+decrease
+size
+  degree : 18  degree : 57  degree : 164  degree : 432
+increase
+size
+  degree : 16  degree : 53
+decrease
+size
+  degree : 18  degree : 55
+increase
+size
+  degree : 17  degree : 56  degree : 164
+decrease
+size
+  degree : 17  degree : 57  degree : 161
+increase
+size
+  degree : 17  degree : 54  degree : 166  degree : 439
+decrease
+size
+  degree : 19  degree : 57  degree : 159  degree : 409
+increase
+size
+  degree : 16  degree : 54
+decrease
+size
+  degree : 17  degree : 53
+increase
+size
+  degree : 16  degree : 55  degree : 166
+decrease
+size
+  degree : 20  degree : 55  degree : 157
+increase
+size
+  degree : 16  degree : 50  degree : 164  degree : 430
+decrease
+size
+  degree : 18  degree : 59  degree : 161  degree : 412
+increase
+size
+  degree : 18  degree : 56
+decrease
+size
+  degree : 18  degree : 55
+increase
+size
+  degree : 16  degree : 56  degree : 168
+decrease
+size
+  degree : 18  degree : 55  degree : 155
+increase
+size
+  degree : 16  degree : 53  degree : 169  degree : 459
+decrease
+size
+  degree : 17  degree : 57  degree : 159  degree : 410
+increase
+size
+  degree : 17  degree : 53
+decrease
+size
+  degree : 19  degree : 53
+increase
+size
+  degree : 18  degree : 56  degree : 168
+decrease
+size
+  degree : 18  degree : 57  degree : 161
+increase
+size
+  degree : 17  degree : 54  degree : 163  degree : 433
+decrease
+size
+  degree : 17  degree : 56  degree : 165  degree : 414
+increase
+size
+  degree : 16  degree : 55
+decrease
+size
+  degree : 20  degree : 50
+increase
+size
+  degree : 16  degree : 55  degree : 168
+decrease
+size
+  degree : 18  degree : 56  degree : 158
+increase
+size
+  degree : 16  degree : 51  degree : 158  degree : 432
+decrease
+size
+  degree : 17  degree : 57  degree : 162  degree : 437
+increase
+size
+  degree : 18  degree : 55
+decrease
+size
+  degree : 17  degree : 56
+increase
+size
+  degree : 18  degree : 56  degree : 167
+decrease
+size
+  degree : 18  degree : 54  degree : 159
+increase
+size
+  degree : 17  degree : 56  degree : 175  degree : 465
+decrease
+size
+  degree : 19  degree : 55  degree : 160  degree : 414
+increase
+size
+  degree : 16  degree : 55
+decrease
+size
+  degree : 17  degree : 51
+increase
+size
+  degree : 17  degree : 55  degree : 165
+decrease
+size
+  degree : 20  degree : 54  degree : 158
+increase
+size
+  degree : 17  degree : 55  degree : 163  degree : 455
+decrease
+size
+  degree : 17  degree : 55  degree : 155  degree : 428
+increase
+size
+  degree : 17  degree : 55
+decrease
+size
+  degree : 18  degree : 58
+increase
+size
+  degree : 18  degree : 56  degree : 170
+decrease
+size
+  degree : 19  degree : 56  degree : 157
+increase
+size
+  degree : 17  degree : 55  degree : 157  degree : 442
+decrease
+size
+  degree : 18  degree : 58  degree : 162  degree : 400
+increase
+size
+  degree : 18  degree : 59
+decrease
+size
+  degree : 18  degree : 55
+increase
+size
+  degree : 17  degree : 57  degree : 161
+decrease
+size
+  degree : 18  degree : 54  degree : 160
+increase
+size
+  degree : 17  degree : 55  degree : 165  degree : 438
+decrease
+size
+  degree : 18  degree : 61  degree : 156  degree : 410
+increase
+size
+  degree : 17  degree : 53
+decrease
+size
+  degree : 18  degree : 53
+increase
+size
+  degree : 16  degree : 55  degree : 162
+decrease
+size
+  degree : 18  degree : 57  degree : 164
+increase
+size
+  degree : 17  degree : 55  degree : 161  degree : 446
+decrease
+size
+  degree : 17  degree : 59  degree : 158  degree : 416
+increase
+size
+  degree : 17  degree : 52
+decrease
+size
+  degree : 16  degree : 53
+increase
+size
+  degree : 15  degree : 54  degree : 170
+decrease
+size
+  degree : 19  degree : 54  degree : 163
+increase
+size
+  degree : 17  degree : 56  degree : 163  degree : 430
+decrease
+size
+  degree : 19  degree : 57  degree : 158  degree : 428
+increase
+size
+  degree : 17  degree : 53
+decrease
+size
+  degree : 17  degree : 54
+increase
+size
+  degree : 16  degree : 56  degree : 167
+decrease
+size
+  degree : 18  degree : 60  degree : 161
+increase
+size
+  degree : 18  degree : 55  degree : 165  degree : 442
+decrease
+size
+  degree : 19  degree : 56  degree : 162  degree : 425
+17.0  55.03333282470703  
+17.600000381469727  53.13333511352539  
+17.0  55.13333511352539  167.10000610351562  
+18.100000381469727  56.16666793823242  160.6666717529297  
+16.600000381469727  54.599998474121094  164.8333282470703  444.1000061035156  
+17.799999237060547  57.33333206176758  160.03334045410156  418.1000061035156  
