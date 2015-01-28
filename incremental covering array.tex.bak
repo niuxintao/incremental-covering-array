@@ -365,30 +365,44 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{Two strategies for generating incremental covering arrays}
+\title{Two Strategies for generating incremental covering arrays}
 
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Xintao Niu and Changhai nie}
-\IEEEauthorblockA{State Key Laboratory for Novel \\
-Software Technology\\
-Nanjing University, China, 210023\\
-Email: changhainie@nju.edu.com}
-\and
-\IEEEauthorblockN{Hareton Leung}
-\IEEEauthorblockA{Department of computing \\
-Hong Kong Polytechnic University\\
-Kowloon, Hong Kong\\
-Email: cshleung@comp.polyu.edu.hk
-\and
-\IEEEauthorblockN{Jeff Y. Lei}
-\IEEEauthorblockA{Department of Computer Science\\
-and Engineering\\
-The University of Texas at Arlington\\
-Email: ylei@cse.uta.edu}
-}}
+%\author{\IEEEauthorblockN{Xintao Niu and Changhai nie}
+%\IEEEauthorblockA{State Key Laboratory for Novel \\
+%Software Technology\\
+%Nanjing University, China, 210023\\
+%Email: niuxintao@gmail.com}
+%\and
+%\IEEEauthorblockN{Changhai nie}
+%\IEEEauthorblockA{State Key Laboratory for Novel \\
+%Software Technology\\
+%Nanjing University, China, 210023\\
+%Email: changhainie@nju.edu.com}
+%\and
+%\IEEEauthorblockN{Hareton Leung}
+%\IEEEauthorblockA{Department of computing \\
+%Hong Kong Polytechnic University\\
+%Kowloon, Hong Kong\\
+%Email: cshleung@comp.polyu.edu.hk}
+%\and
+%\IEEEauthorblockN{Jeff Y. Lei}
+%\IEEEauthorblockA{Department of Computer Science\\
+%and Engineering\\
+%The University of Texas at Arlington\\
+%Email: ylei@cse.uta.edu}
+%\and
+%\IEEEauthorblockN{Xiaoyin Wang}
+%\IEEEauthorblockA{
+%        Department of Computer Science \\
+%        University of Texas at San Antonio\\
+% %      \affaddr{China, 211171}\\
+%%       \email{xujiaxi@njxzc.edu.cn} \\
+%       Email: Xiaoyin.Wang@utsa.edu}
+%}
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
 % the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
@@ -397,19 +411,24 @@ Email: ylei@cse.uta.edu}
 % for over three affiliations, or if they all won't fit within the width
 % of the page, use this alternative format:
 %
-%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
-%Homer Simpson\IEEEauthorrefmark{2},
-%James Kirk\IEEEauthorrefmark{3},
-%Montgomery Scott\IEEEauthorrefmark{3} and
-%Eldon Tyrell\IEEEauthorrefmark{4}}
-%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
-%Georgia Institute of Technology,
-%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
-%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
-%Email: homer@thesimpsons.com}
-%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
-%Telephone: (800) 555--1212, Fax: (888) 555--1212}
-%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+\author{\IEEEauthorblockN{Xintao Niu\IEEEauthorrefmark{1},
+Changhai Nie\IEEEauthorrefmark{1},
+Hareton Leung\IEEEauthorrefmark{2},
+Jeff Y. Lei\IEEEauthorrefmark{3} and
+Xiaoyin Wang\IEEEauthorrefmark{4}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}State Key Laboratory for Novel Software Technology\\
+Nanjing University, China, 210023\\
+Email: niuxintao@gmail.com, changhainie@nju.edu.cn}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}Department of computing Hong Kong Polytechnic University\\
+Kowloon, Hong Kong\\
+Email: cshleung@comp.polyu.edu.hk}
+\IEEEauthorblockA{\IEEEauthorrefmark{3} Dpartment of Computer Science and Engineering\\
+The University of Texas at Arlington\\
+Email: ylei@cse.uta.edu}
+\IEEEauthorblockA{\IEEEauthorrefmark{4} Department of Computer Science \\
+University of Texas at San Antonio\\
+Email: Xiaoyin.Wang@utsa.edu}
+}
 
 
 
@@ -463,10 +482,11 @@ Many algorithms are proposed to generate covering arrays. Despite many differenc
 
 %In fact, in the worst case, any interaction with any strength can have an distinct affect of the SUT.
 
-To address these shortcomings of traditional covering arrays, the notion of incremental covering array \cite{fouche2009incremental} has been proposed. Such object can be deemed as adaptive covering array, which can increase the degree \emph{t} when required. As it can generate higher strength covering array based on lower strength covering array, it can reduce the cost when comparing with generating multiple ways of covering arrays. Additionally, it can be better applied on testing the software of which the released time is  frequently changed and cannot be predicted. Another advantage for generating incremental covering array is that testers can detect most faults in the software as soon as possible. This is because according to \cite{kuhn2002investigation}, most faults (about 70\% to 80\%) are caused by 2-way interactions, and almost all the faults can be covered by 6-way covering arrays. As incremental covering arrays first cover those lower-degree interactions, then the faults caused by them will be detected sooner.
+To address these shortcomings of traditional covering arrays, the notion of incremental covering array \cite{fouche2009incremental} has been proposed. Such object can be deemed as adaptive covering array, which can increase the degree \emph{t} when required. As it can generate higher strength covering array based on lower strength covering array, it can reduce the cost when comparing with generating multiple ways of covering arrays. Additionally, it can be better applied on testing the software of which the released time is  frequently changed and cannot be predicted. Another advantage for generating incremental covering array is that testers can detect most faults in the software as soon as possible. This is because according to \cite{kuhn2002investigation}, most faults (about 70\% to 80\%) are caused by 2-degree interactions, and almost all the faults can be covered by 6-way covering arrays. As incremental covering arrays first cover those lower-degree interactions, then the faults caused by them will be detected sooner.
 
+% the incremental covering array is a merged covering array for multiple covering arrays.
 
-In consideration of the size of the overall test cases, we argue that this approach of generating incremental covering array may produce too many test cases. This can be easily understood, as generating higher-strength covering array based on the lower-strength covering array (called \emph{bottom-up} strategy later) does not aim to optimize the size of the higher-strength covering array. As a result, it may generate more test cases than those approaches that focus on generating a particular higher-strength covering array.
+In consideration of the size of the total number of test cases, we argue that this approach of generating incremental covering array may produce too many test cases. This can be easily understood, as generating higher-strength covering array based on the lower-strength covering array (called \emph{bottom-up} strategy later) does not aim to optimize the size of the higher-strength covering array. As a result, it may generate more test cases than those approaches that focus on generating a particular higher-strength covering array.
 
 Then a natural question, and also the motivation of this paper is, \textbf{is it possible to generate an incremental covering array with the same number of the overall test cases as those by the particular high-way covering array generation algorithms ?}  Before answering this question, one obvious conclusion to note is that any high way covering array must cover all the lower way interactions. So the answer for the previous question is \emph{yes}, as we just need apply a particular covering array generation algorithm to generate the high-strength covering array, and then generate the lower-strength covering arrays by extracting some subset of the test cases which can cover all the lower degree interactions. We refer to this strategy as the \emph{top-down} strategy.
 
@@ -630,7 +650,7 @@ This strategy generates the covering array from lower-strength to higher-strengt
 %
 %Then it is of course we need to generate the coverin array based on the previous covering array, such that we can utilze the previous tesing results. For this, a natural idea, is to set the as the seeds, like this.
 
-Fig.\ref{increase-example} presents an example for constructing $ICA([6,13,24];[2,4], $ $ 5, 2)$ by this strategy. In this example, the covering array generation algorithm used is AETG \cite{cohen1997aetg}. The two-way covering array (test cases $c_{1}$ to $c_{6}$) is directly generated, and the three-way covering array (test cases $c_{1}$ to $ c_{13}$) is generated by adding additional test cases (test cases $c_{7}$ to $c_{13}$) based on the previous two-way covering array. The four-way covering array (test cases $c_{1}$ to $c_{24}$) is constructed on the previous three-way covering array. In total, to reach the 4-way covering array, 24 test cases are needed for this strategy.
+Fig.\ref{increase-example} presents an example for constructing $ICA([6,13,24];$ $  [2,4], 5, 2)$ by this strategy. In this example, the covering array generation algorithm used is AETG \cite{cohen1997aetg}. The two-way covering array (test cases $c_{1}$ to $c_{6}$) is directly generated, and the three-way covering array (test cases $c_{1}$ to $ c_{13}$) is generated by adding additional test cases (test cases $c_{7}$ to $c_{13}$) based on the previous two-way covering array. The four-way covering array (test cases $c_{1}$ to $c_{24}$) is constructed on the previous three-way covering array. In total, to reach the 4-way covering array, 24 test cases are needed for this strategy.
 \begin{figure}
 \center
  \includegraphics[width=3.0in]{increase_example.eps}
@@ -768,7 +788,7 @@ From Fig.\ref{experiement}, we can observe that for most cases, \emph{top-down} 
 
 Above all, the preliminary results suggested that when the coverage strength of the final covering array is low, \emph{bottom-up} strategy is preferred, otherwise, \emph{top-down} is a better choice.
 
-Note that the top down strategy may generate larger lower strength arrays which are definitely to be executed while the bottom up strategy may generate larger higher strength arrays which may not be executed. This should be discussed as one aspect of the comparison.
+Besides this, it is noted that the \emph{top down} strategy may generate larger lower strength arrays which are definitely to be executed while the \emph{bottom up} strategy may generate larger higher strength arrays which may not be executed. This is usually happened when the currently software under testing is expired for the releasing of the next version. In that case, \emph{bottom-up} strategy is recommended.
 
 %\begin{table}
 %\caption{The incremental covering array to be constructed}

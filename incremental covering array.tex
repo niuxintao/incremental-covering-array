@@ -365,30 +365,44 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{Two strategies for generating incremental covering arrays}
+\title{Two Strategies for Generating Incremental Covering Arrays}
 
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Xintao Niu and Changhai nie}
-\IEEEauthorblockA{State Key Laboratory for Novel \\
-Software Technology\\
-Nanjing University, China, 210023\\
-Email: changhainie@nju.edu.com}
-\and
-\IEEEauthorblockN{Hareton Leung}
-\IEEEauthorblockA{Department of computing \\
-Hong Kong Polytechnic University\\
-Kowloon, Hong Kong\\
-Email: cshleung@comp.polyu.edu.hk
-\and
-\IEEEauthorblockN{Jeff Y. Lei}
-\IEEEauthorblockA{Department of Computer Science\\
-and Engineering\\
-The University of Texas at Arlington\\
-Email: ylei@cse.uta.edu}
-}}
+%\author{\IEEEauthorblockN{Xintao Niu and Changhai nie}
+%\IEEEauthorblockA{State Key Laboratory for Novel \\
+%Software Technology\\
+%Nanjing University, China, 210023\\
+%Email: niuxintao@gmail.com}
+%\and
+%\IEEEauthorblockN{Changhai nie}
+%\IEEEauthorblockA{State Key Laboratory for Novel \\
+%Software Technology\\
+%Nanjing University, China, 210023\\
+%Email: changhainie@nju.edu.com}
+%\and
+%\IEEEauthorblockN{Hareton Leung}
+%\IEEEauthorblockA{Department of computing \\
+%Hong Kong Polytechnic University\\
+%Kowloon, Hong Kong\\
+%Email: cshleung@comp.polyu.edu.hk}
+%\and
+%\IEEEauthorblockN{Jeff Y. Lei}
+%\IEEEauthorblockA{Department of Computer Science\\
+%and Engineering\\
+%The University of Texas at Arlington\\
+%Email: ylei@cse.uta.edu}
+%\and
+%\IEEEauthorblockN{Xiaoyin Wang}
+%\IEEEauthorblockA{
+%        Department of Computer Science \\
+%        University of Texas at San Antonio\\
+% %      \affaddr{China, 211171}\\
+%%       \email{xujiaxi@njxzc.edu.cn} \\
+%       Email: Xiaoyin.Wang@utsa.edu}
+%}
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
 % the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
@@ -397,19 +411,24 @@ Email: ylei@cse.uta.edu}
 % for over three affiliations, or if they all won't fit within the width
 % of the page, use this alternative format:
 %
-%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
-%Homer Simpson\IEEEauthorrefmark{2},
-%James Kirk\IEEEauthorrefmark{3},
-%Montgomery Scott\IEEEauthorrefmark{3} and
-%Eldon Tyrell\IEEEauthorrefmark{4}}
-%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
-%Georgia Institute of Technology,
-%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
-%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
-%Email: homer@thesimpsons.com}
-%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
-%Telephone: (800) 555--1212, Fax: (888) 555--1212}
-%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+\author{\IEEEauthorblockN{Xintao Niu\IEEEauthorrefmark{1},
+Changhai Nie\IEEEauthorrefmark{1},
+Hareton Leung\IEEEauthorrefmark{2},
+Jeff Y. Lei\IEEEauthorrefmark{3} and
+Xiaoyin Wang\IEEEauthorrefmark{4}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}State Key Laboratory for Novel Software Technology\\
+Nanjing University, China, 210023\\
+Email: niuxintao@gmail.com, changhainie@nju.edu.cn}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}Department of computing Hong Kong Polytechnic University\\
+Kowloon, Hong Kong\\
+Email: cshleung@comp.polyu.edu.hk}
+\IEEEauthorblockA{\IEEEauthorrefmark{3} Dpartment of Computer Science and Engineering\\
+The University of Texas at Arlington\\
+Email: ylei@cse.uta.edu}
+\IEEEauthorblockA{\IEEEauthorrefmark{4} Department of Computer Science \\
+University of Texas at San Antonio\\
+Email: Xiaoyin.Wang@utsa.edu}
+}
 
 
 
@@ -426,7 +445,7 @@ Email: ylei@cse.uta.edu}
 
 \begin{abstract}
 %\boldmath
-Combinatorial testing (CT) is an effective technique for testing the interactions of factors in the software under test (SUT). By designing an efficient set of test cases, i.e., a covering array, CT aims to check every possible valid interactions in SUT. Most existing covering array generation algorithms require a given \emph{degree} \emph{t} in prior, such that only the interactions with no more than $t$ factors are to be checked.  In practice, however, such $t$ cannot be properly determined, especially for systems with complex interaction space.  Hence, incremental arrays are preferred. In this paper, we propose two strategies for generating incremental covering arrays which can increase the coverage strength when required. A preliminary evaluation of the two strategies is presented, which showed that both strategies have their own advantages with respect to covering array size
+Combinatorial Testing (CT) is an effective technique for testing the interactions of factors in the Software Under Test (SUT). By designing an efficient set of test cases, i.e., a covering array, CT aims to check every possible valid interactions in SUT. Most existing covering array generation algorithms require a given \emph{degree} \emph{t} in prior, such that only the interactions with no more than $t$ factors are to be checked.  In practice, however, the value of $t$ cannot be properly determined, especially for systems with complex interaction space.  Hence, incremental covering arrays are preferred. In this paper, we propose two strategies for generating incremental covering arrays which can increase the coverage strength when required. A preliminary evaluation of the two strategies is presented, which showes that both strategies have their own advantages with respect to covering array size
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -453,22 +472,23 @@ Combinatorial testing (CT) is an effective technique for testing the interaction
 
 
 \section{Introduction}
-With the growing complexity and scale of modern software systems, various factors, such as input values and configure options, can affect the behaviour of a system. Worse, some interactions between them can trigger unexpected negative effects on the software. To ensure the correctness and quality of the software system, it is desirable to detect and locate these \emph{bad} interactions. The simplest way to solve this problem is to perform exhaustive testing for all the possible valid interactions of the software system. It is, however, not impractical due to the combinatorial explosion. Therefore, to select a group of representative test cases from the whole testing space is required.
+With the growing complexity and scale of modern software systems, various factors, such as input values and configure options, can affect the behaviour of a system. Even worse, some interactions between them can trigger unexpected negative effects on the software. To ensure the correctness and quality of the software system, it is desirable to detect and locate these \emph{bad} interactions. The simplest way to solve this problem is to perform exhaustive testing for all the possible valid interactions of the software system. It is, however, not practical due to the combinatorial explosion. Therefore, the selection of a group of representative test cases from the whole testing space is required.
 
-Combinatorial testing has been proven to be effective in identifying a good sample \cite{nie2011survey}. It works by generating a relatively small set of test cases, i.e., a covering array, to test the interactions involving a given number of factors that may affect the behavior of a system. The number of factors involved in those selected interactions is limited in a moderate range, which is usually from 2 to 6 \cite{kuhn2002investigation}.
+Combinatorial testing has been proven to be effective in sampling an effective set of test cases\cite{nie2011survey}. It works by generating a relatively small set of test cases, i.e., a covering array, to test the interactions involving a given number of factors that may affect the behavior of a system. The number of factors involved in those selected interactions is limited in a moderate range, which is usually from 2 to 6 \cite{kuhn2002investigation}.
 
 % The justification behind of this range is that based on empirical studies \cite{kuhn2002investigation}, most failures in the system are caused by the interactions with number of involved factors no more than 6 \cite{kuhn2002investigation}. And hence can fulfil testing requirement at most time.
 
-Many algorithms are proposed to generate covering arrays. Despite many differences between them,  those works all assume that the degree \emph{t} is given a priori.  The degree \emph{t} indicates the largest number of factors involved in the interactions to be covered, and the corresponding covering arrays which can satisfy this coverage criteria is called \emph{t}-way covering arrays. In practice, however, such a \emph{t} is difficult to determine in practice. There are two reasons for this. First, many software systems suffer from complex interaction space which make it challenging to estimate \emph{t}. In such case, even experienced testers can make mistakes and estimate a wrong value for \emph{t}, which can significantly affect the effectiveness and efficiency of CT. Specifically, if $t$ is estimated to be too large than required, many redundant test cases will be generated, which is a waste of computing resource. And if $t$ is estimated to be too small, then the generated covering array is not sufficient to obtain an effective test set. Second, even though \emph{t} has been properly determined, there may not be enough time to completely execute all the test cases in the covering array. This is because testing software only makes sense before the next version is released. This time interval between two release versions may sometimes be too short for a complete testing of a high-strength covering array \cite{fouche2009incremental}.
+Many algorithms are proposed to generate covering arrays. Despite many differences between them,  those works all assume that the degree \emph{t} is a given priori.  The degree \emph{t} indicates the largest number of factors involved in the interactions to be covered, and the corresponding covering arrays which can satisfy this coverage criteria is called \emph{t}-way covering arrays. In practice, however, the value of \emph{t} is difficult to determine due to two reasons as follows. First, many software systems suffer from complex interaction space which make it challenging to estimate \emph{t}. In such case, even experienced testers can make mistakes and estimate a wrong value for \emph{t}, which can significantly affect the effectiveness and efficiency of CT. Specifically, if $t$ is estimated to be larger than required, many redundant test cases will be generated, which is a waste of computing resource. And if $t$ is estimated to be smaller than required, then the generated covering array is not sufficient to obtain an effective test set. Second, even though \emph{t} has been properly determined, there may not be enough time to completely execute all the test cases in the covering array. This is because testing software only makes sense before the next version is released. This time interval between two release versions may sometimes be too short for a complete testing of a high-strength covering array, especially in the scenario of continuous integration \cite{fouche2009incremental}.
 
 %In fact, in the worst case, any interaction with any strength can have an distinct affect of the SUT.
 
-To address these shortcomings of traditional covering arrays, the notion of incremental covering array \cite{fouche2009incremental} has been proposed. Such object can be deemed as adaptive covering array, which can increase the degree \emph{t} when required. As it can generate higher strength covering array based on lower strength covering array, it can reduce the cost when comparing with generating multiple ways of covering arrays. Additionally, it can be better applied on testing the software of which the released time is  frequently changed and cannot be predicted. Another advantage for generating incremental covering array is that testers can detect most faults in the software as soon as possible. This is because according to \cite{kuhn2002investigation}, most faults (about 70\% to 80\%) are caused by 2-degree interactions, and almost all the faults can be covered by 6-way covering arrays. As incremental covering arrays first cover those lower-degree interactions, then the faults caused by them will be detected sooner.
+To address these shortcomings of traditional covering arrays, the notion of incremental covering array \cite{fouche2009incremental} has been proposed. Such object can be deemed as adaptive covering array, which can increase the degree \emph{t} when required. As it can generate higher strength covering array based on lower strength covering array, it can reduce the cost when comparing with generating multiple ways of covering arrays. Additionally, it can be better applied on testing the software of which the released time is  frequently changed and cannot be predicted. Another advantage for generating incremental covering array is that, testers can detect most faults in the software as soon as possible. This is because according to \cite{kuhn2002investigation}, most faults (about 70\% to 80\%) are caused by 2-degree interactions, and almost all faults can be covered by 6-way covering arrays. As incremental covering arrays first cover those lower-degree interactions, the faults caused by them will be detected sooner.
 
+% the incremental covering array is a merged covering array for multiple covering arrays.
 
-In consideration of the size of the overall test cases, we argue that this approach of generating incremental covering array may produce too many test cases. This can be easily understood, as generating higher-strength covering array based on the lower-strength covering array (called \emph{bottom-up} strategy later) does not aim to optimize the size of the higher-strength covering array. As a result, it may generate more test cases than those approaches that focus on generating a particular higher-strength covering array.
+In consideration of the size of the total number of test cases, we argue that this approach of generating incremental covering array may produce too many test cases. This is obvious, as generating higher-strength covering array based on the lower-strength covering array (called \emph{bottom-up} strategy later) does not aim to optimize the size of the higher-strength covering array. As a result, it may generate more test cases than those approaches that focus on generating a particular higher-strength covering array.
 
-Then a natural question, and also the motivation of this paper is, \textbf{is it possible to generate an incremental covering array with the same number of the overall test cases as those by the particular high-way covering array generation algorithms ?}  Before answering this question, one obvious conclusion to note is that any high way covering array must cover all the lower way interactions. So the answer for the previous question is \emph{yes}, as we just need apply a particular covering array generation algorithm to generate the high-strength covering array, and then generate the lower-strength covering arrays by extracting some subset of the test cases which can cover all the lower degree interactions. We refer to this strategy as the \emph{top-down} strategy.
+Then, a natural question, and also the motivation of this paper is, \textbf{is it possible to generate an incremental covering array with the same number of the overall test cases as those by the particular high-way covering array generation algorithms ?}  Due to the obvious conclusion that any high way covering array must cover all the lower way interactions, the answer for this question is \emph{yes}, as we just need apply a particular covering array generation algorithm to generate the high-strength covering array, and then generate the lower-strength covering arrays by extracting some subset of the test cases which can cover all the lower degree interactions. We refer to this strategy as the \emph{top-down} strategy.
 
 In this paper, we propose these two strategies and evaluate their performance by comparing them at constructing several incremental covering arrays. The results of the experiments showed that the \emph{top-down} strategy has an significant advantage at the size of the higher-strength covering array, while the \emph{bottom-up} strategy is better at constructing those lower-strength covering arrays with smaller size.
 
@@ -491,7 +511,7 @@ Our contributions include:
  \begin{enumerate}
  \item  We propose two strategies for generating incremental covering arrays.
  \item  We conduct a series of experiments to compare and evaluate these two strategies.
- \item  We offer a recommendation for selecting which strategy when generating incremental covering array in practice.
+ \item  We offer a guideline for selecting which strategy when generating incremental covering array in practice.
 \end{enumerate}
 %\section{Motivation}
 %
@@ -502,11 +522,11 @@ This section gives some formal definitions related to CT. Assume that the behavi
 
 \subsection{Covering array}
 
-\begin{definition}A $t$-way \emph{covering array} $MCA(N; t, k,$ $(a_{1}, a_{2}, ..., a_{k})$) is test set in the form of $N \times k$ table, where each row represents a \emph{test case} and each column represents a parameter.  For any \emph{t} columns, each possible \emph{t}-degree interaction of the $t$ parameters must appear at least once. When $ a_{1} = a_{2} = ... = a_{k} = v $, $t$-way covering array can be denoted as $CA(N; t, k, v)$.
+\begin{definition}A $t$-way \emph{covering array} $MCA(N; t, k,$ $(a_{1}, a_{2}, ..., a_{k})$) is test set in the form of $N \times k$ table, where each row represents a \emph{test case} and each column represents a parameter.  For any \emph{t} columns, each possible \emph{t}-degree interaction of the $t$ parameters must appear at least once. When $ a_{1} = a_{2} = ... = a_{k} = v $, a $t$-way covering array can be denoted as $CA(N; t, k, v)$.
 \end{definition}
 
 
-For example, Table \ref{ica_example} (a) shows a 2-way covering array $CA(5;2,4,2)$ for the SUT with 4 binary parameters. For any two columns, any 2-degree interaction is covered.  Covering array has proven to be effective in detecting the failures caused by interactions of parameters of the SUT. Many existing algorithms focus on constructing covering arrays such that the number of test cases, i.e., $N$, can be as small as possible.
+For example, Table \ref{ica_example} (a) shows a 2-way covering array $CA(5;2,4,2)$ for the SUT with 4 boolean parameters. For any two columns, any 2-degree interaction is covered.  Covering array has proven to be effective in detecting the failures caused by interactions of parameters of the SUT. Many existing algorithms focus on constructing covering arrays such that the number of test cases, i.e., $N$, can be as small as possible.
 
 
 \subsection{Incremental covering array}
@@ -582,15 +602,17 @@ For each covering array $MCA(N_{t_{2}}; t_{2}, k, (a_{1},a_{2},$ $...,a_{k}))$, 
 %According to the definition of $ICA$, it can be easily got that $ICA([N_{t_{1}},N_{t_{1} + 1},...,N_{t_{2}}];[t_{1},t_{2}]$ $, k, v)$ is a $CA(N_{t_{2}}; t_{2}, k, v)$ covering array. For the second statement,
 We just need to prove that for any covering array, $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$, we can find a $MCA(N_{t-1}; t-1, k, (a_{1},a_{2},$ $...,a_{k}))$, such that, $N_{t-1} < N_{t}$ and for any test case  $f \in MCA(N_{t-1}; t-1, k, (a_{1},a_{2},$ $...,a_{k}))$, it has $f \in MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$.
 
- First, $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$ itself must be an $MCA(N_{t}; t - 1, k, (a_{1},a_{2},$ $...,a_{k}))$, as it must cover all the $(t$ $ -1)$-degree interactions. Then assume to obtain a $(t-1)$-way covering array, any one test case in $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$ can not be reduced. By this assumption, any test case will cover at least one $(t-1)$-degree interaction that only appears in this test case. Without loss of generality,  let test case  ($v_{1}, v_{2}, ..., v_{k}$) cover the $(t-1)$-degree interaction $(-, -, v_{3},.. -,...,v_{k})$ which only appears in the test case. Then obviously the $t$-degree interaction $(v_{1}', -, v_{3},.. -,...,v_{k})$ ($v_{1}' \neq v_{1}$) will never be covered by any test case in $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$, and hence $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$ is not a $t$-way covering array (Note this is based on that the parameter can take more than one value).
+ First, $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$ itself must be an $MCA(N_{t}; t - 1, k, (a_{1},a_{2},$ $...,a_{k}))$, as it must cover all the $(t$ $ -1)$-degree interactions. 
+ 
+ Then, assume to obtain a $(t-1)$-way covering array, any one test case in $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$ can not be reduced. With this assumption, any test case will cover at least one $(t-1)$-degree interaction that only appears in this test case. Without loss of generality,  let test case  ($v_{1}, v_{2}, ..., v_{k}$) cover the $(t-1)$-degree interaction $(-, ..., v_{p_{1}},...-,... v_{p_{2}},...,-, ..., v_{p_{t-1}},...-...,v_{p_{t}},...,-, ...)$ which only appears in the test case. Then obviously the $t$-degree interaction $(v_{1}', ..., v_{p_{1}},...-,... v_{p_{2}},...,-, ..., v_{p_{t-1}},...-...,v_{p_{t}},...,-, ...)$  ($v_{1}' \neq v_{1}$) will never be covered by any test case in $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$, and hence $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$ is not a $t$-way covering array (Note this is based on that the parameter can take more than one value).
 
  It is contradiction, and means that we can reduce at least one test case in $MCA(N_{t}; t, k, (a_{1},a_{2},$ $...,a_{k}))$, so that it is still a $(t-1)$-way covering array.
 \end{proof}
 
-This theorem shows the existence of the incremental covering arrays. As discussed before, generating the incremental covering arrays is of importance, as it supports adaptively increasing the coverage strength. By this, when testing a SUT, testers can firstly execute the lowest-strength covering array in the incremental covering arrays, and then execute additional test cases from those higher-strength covering arrays as required. The reuse of previous executed test cases will reduce cost generating multiple different-ways covering arrays.
+This theorem shows the existence of the incremental covering arrays. As discussed before, generating the incremental covering arrays is of importance, as it supports adaptively increasing the coverage strength. According to this theorem, when testing a SUT, testers can firstly execute the lowest-strength covering array in the incremental covering arrays, and then execute additional test cases from those higher-strength covering arrays as required. The reuse of previous executed test cases will reduce cost generating multiple different-ways covering arrays.
 
 \section{Generating incremental covering arrays}
-This section presents two strategies to generate the incremental covering arrays. The first strategy, i.e., the \emph{bottom-up} strategy starts from generating the lowest-strength covering array and then the higher-strenth ones. The second strategy, i.e., the  \emph{top-down} strategy firstly generated the highest-strength covering array, then the lower-strength covering array.
+This section presents two strategies to generate the incremental covering arrays. The first strategy, i.e., the \emph{bottom-up} strategy starts from generating the lowest-strength covering array and then the higher-strength ones. The second strategy, i.e., the  \emph{top-down} strategy firstly generated the highest-strength covering array, then the lower-strength covering array.
 
 \subsection{Bottom-up strategy}
 This strategy is listed as Strategy 1.
@@ -625,7 +647,7 @@ This strategy is listed as Strategy 1.
 \end{algorithm}
 The inputs for this strategy consists of the values for each parameter of the SUT --$Params$,  the lowest strength $t_{1}$ of the covering array in the incremental covering array, and the highest strength $t_{2}$ of the covering array . The output of this strategy is an incremental covering array -- $ICA$.
 
-This strategy generates the covering array from lower-strength to higher-strength (line 2). If the current coverage strength $t_{i}$ is equal to $t_{1}$, it just utilize a covering array generation algorithm to generate the particular covering array (line 4 - 5). Otherwise, it will first take the previous generated covering array $CA_{i - 1}$ as seeds, and then utilize covering array generation algorithm to append additional test cases to satisfy higher coverage criteria (line 6 - 7).
+This strategy generates the covering array from lower-strength to higher-strength (line 2). If the current coverage strength $t_{i}$ is equal to $t_{1}$, it just utilizes a covering array generation algorithm to generate the particular covering array (line 4 - 5). Otherwise, it will first take the previous generated covering array $CA_{i - 1}$ as seeds, and then utilize covering array generation algorithm to append additional test cases to satisfy higher coverage criteria (line 6 - 7).
 %the example for . Consider we are testing a object, initially, we believe 1 way is enough, but when we give so, it find that is not , then we must increase the , to three way. In such a case, to take a Coverin array to regenerate 3-way covering array is follish, as it may introuduce many redunenta.t For example, many 3 way schemas in fact have been checked before.
 %
 %Then it is of course we need to generate the coverin array based on the previous covering array, such that we can utilze the previous tesing results. For this, a natural idea, is to set the as the seeds, like this.
@@ -639,7 +661,7 @@ Fig.\ref{increase-example} presents an example for constructing $ICA([6,13,24];$
 \end{figure}
 
 \subsection{Top-down strategy}
-This strategy is listed as Strategy 2, which generates covering arrays in the opposite order (line 2) against the previous strategy. Similarly, if the current coverage strength $t_{i}$ is equal to $t_{2}$, it directly generates the particular covering array (line 4 - 5). Otherwise, it will extract the covering array from a higher covering array ($CA_{i + 1}$) (line 6 - 7). The extraction process is a greedy approach in this paper. At each iteration, the test case which can cover most number of uncovered $t$-degree interactions will be selected from the higher-strength covering array.  Note that this greedy selection does not promise to obtain the $CA_{i}$ covering array with the minimal size. But to get the minimal size, we need to exhaustive check every possible subset of the higher-covering array $CA_{i+1}$. This is impractical if the size of $CA_{i + 1}$ is too large.
+This strategy is listed as Strategy 2, which generates covering arrays in the opposite order (line 2) of the previous strategy. Similarly, if the current coverage strength $t_{i}$ is equal to $t_{2}$, it directly generates the particular covering array (line 4 - 5). Otherwise, it will extract the covering array from a higher covering array ($CA_{i + 1}$) (line 6 - 7). The extraction process is a greedy approach in this paper. At each iteration, the test case which can cover most number of uncovered $t_{i}$-degree interactions will be selected from the $t_{i+1}$-way covering array.  Note that this greedy selection does not promise to obtain the $CA_{i}$ covering array with the minimal size. But to get the minimal size, we need to exhaustively check every possible subset of the higher-covering array $CA_{i+1}$. This is impractical if the size of $CA_{i + 1}$ is too large.
 %Another reason we does not focus on obtaining the minimal size of $CA_{i}$, is that even though we have, it does not have so that $CA_{i - 1}$.
 
 %Now let us think the following problem, as the . If we had first generate the 3-way covering array, and .
@@ -688,7 +710,7 @@ An example for this strategy is given in Fig.\ref{decrease-example}. In this exa
 \end{figure}
 
 
-From the two examples, an obvious observation is that for the \emph{top-down} strategy, it has a significant advantage over the \emph{bottom-up} strategy with respect to the size of the 4-way covering array (16 for \emph{top-down} and 24 for \emph{bottom-up}). But when  considering the lower-strength covering arrays, the \emph{bottom-up} performed better (13 and 6 for \emph{bottom-up}, while 14 and 8 for \emph{top-down} respectively).  To evaluate the generality of this observation , we conduct experiments in the next section.
+From the two examples, an obvious observation is that for the \emph{top-down} strategy, it has a significant advantage over the \emph{bottom-up} strategy with respect to the size of the 4-way covering array (16 for \emph{top-down} and 24 for \emph{bottom-up}). But when  considering the lower-strength covering arrays, the \emph{bottom-up} performs better (13 and 6 for \emph{bottom-up}, while 14 and 8 for \emph{top-down} respectively).  To evaluate the generality of this observation , we conduct experiments in the next section.
 
 
 %\section{}
@@ -758,17 +780,17 @@ With respect to comparison of the size of incremental covering array for the two
 \end{figure*}
 
 
-In Fig.\ref{experiement}, there are three main rows, representing the results of three incremental covering arrays , $ICA([N_{2},N_{3}]; [2, 3],$ $ k ,v)$, $ICA$ $([N_{2},$ $N_{3}$ $,N_{4}];[2, 3,4], k ,v)$, and $ICA([N_{2},N_{3}$ $,N_{4},$ $N_{5}]$ $;[2,$ $ 3,4,5], k ,v)$, respectively.  The nine columns represents the nine SUTs in Table \ref{ica_to_constuct}. For each sub-figure in Fig.\ref{experiement}, the horizontal axis depicts the results of covering arrays of different strengths, and vertical axis represents size of the covering array. Note that we did not directly show the value of the size, instead, we normalize them so that they can be put into one figure. In detail, for each covering array of a subject, the point in the figure for one strategy indicates the proportion of the average size obtained by this strategy and maximal one between the two strategies.
+In Fig.\ref{experiement}, there are three main rows, representing the results of three incremental covering arrays , $ICA([N_{2},N_{3}]; [2, 3],$ $ k ,v)$, $ICA$ $([N_{2},$ $N_{3}$ $,N_{4}];[2, 3,4], k ,v)$, and $ICA([N_{2},N_{3}$ $,N_{4},$ $N_{5}]$ $;[2,$ $ 3,4,5], k ,v)$, respectively.  The nine columns represents the nine SUTs in Table \ref{ica_to_constuct}. For each sub-figure in Fig.\ref{experiement}, the horizontal axis depicts the results of covering arrays of different strengths, and vertical axis represents size of the covering array. Note that we do not directly show the value of the size, instead, we normalize them so that they can be put into one figure. In detail, for each covering array of a subject, the point in the figure for one strategy indicates the proportion of the average size obtained by this strategy and larger one of the two strategies.
 % we put the into the figure, such that .
 %
 %This is because, the gap between the size of different-way covering array is too big to put into one figure.
 
-From Fig.\ref{experiement}, we can observe that for most cases, \emph{top-down} strategy obtained smaller higher-strength covering arrays (about 90 \% of that of \emph{bottom-up}), while the \emph{bottom-up} strategy performed better at the lower-strength covering arrays. This conclusion coincides with the case study presented in Section 3.  There are also some exceptions; for example in the second row in Fig. \ref{experiement} ($ICA([N_{2},N_{3},N_{4}]; [2, 4], k ,v)$), \emph{top-down} strategy generated smaller 2-way covering arrays for $SUT_{2}$, $SUT_{4}$, and $SUT_{6}$ than that of \emph{bottom-up}. One possible explanation for the exception is that the covering array generated by greedy approach AETG sometimes may produce more test cases than needed.
+From Fig.\ref{experiement}, we can observe that, for most cases, \emph{top-down} strategy obtained smaller higher-strength covering arrays (about 90 \% of that of \emph{bottom-up}), while the \emph{bottom-up} strategy performed better at the lower-strength covering arrays. This conclusion coincides with the case study presented in Section 3.  There are also some exceptions; for example in the second row in Fig. \ref{experiement} ($ICA([N_{2},N_{3},N_{4}]; [2, 4], k ,v)$), \emph{top-down} strategy generated smaller 2-way covering arrays for $SUT_{2}$, $SUT_{4}$, and $SUT_{6}$ than that of \emph{bottom-up}. One possible explanation for the exception is that the covering array generated by greedy approach AETG sometimes may produce more test cases than needed.
 
 
 Above all, the preliminary results suggested that when the coverage strength of the final covering array is low, \emph{bottom-up} strategy is preferred, otherwise, \emph{top-down} is a better choice.
 
-Besides this, it is noted that the \emph{top down} strategy may generate larger lower strength arrays which are definitely to be executed while the \emph{bottom up} strategy may generate larger higher strength arrays which may not be executed. This is usually happened when the currently software under testing is expired for the releasing of the next version. In that case, \emph{bottom-up} strategy is recommended.
+Besides this, it is noted that the \emph{top down} strategy may generate larger lower strength arrays which are definitely to be executed while the \emph{bottom up} strategy may generate larger higher strength arrays which may not be executed. This usually happens when the current software under testing is expired for the releasing of the next version. In that case, \emph{bottom-up} strategy is recommended.
 
 %\begin{table}
 %\caption{The incremental covering array to be constructed}
@@ -787,13 +809,13 @@ Besides this, it is noted that the \emph{top down} strategy may generate larger 
 Nie et al. \cite{nie2011survey} gave a survey for combinatorial testing, in which the methods for generating covering
 arrays are classified. Further Nie et al.\cite{nie2013adaptive} proposed a model for adaptive CT, in which the coverage strength of covering array needs to be adaptively changed as required.
 
-S.Fouch{\'e}  et al. \cite{fouche2009incremental} proposed the incremental covering array, and gave a method to generate it. The method can be deemed as one special case of \emph{bottom-up} strategy, the only difference is that it used multiple lower-strength covering arrays instead only one in this paper to construct the higher-strength covering array. This is because their work needed to characterize the failure-inducing interactions in the covering array, in which ,multiple covering arrays can support a better diagnosis information.
+S.Fouch{\'e}  et al. \cite{fouche2009incremental} proposed the incremental covering array, and gave a method to generate it. The method can be deemed as one special case of \emph{bottom-up} strategy, the only difference is that it used multiple lower-strength covering arrays instead only one in this paper to construct the higher-strength covering array. This is because their work needs to characterize the failure-inducing interactions in the covering array, in which ,multiple covering arrays can support a better diagnosis.
 %
 %it hence use the classification tree method to classify the failure-inducing interaction, such that it should need to run multiple test cases, which is an augment of the bottom-up.
 
 
 \section{Conclusions and future works}
-This paper proposed two strategies for generating incremental covering arrays. Experimental results showed that both strategies have their own advantages; \emph{top-down} strategy is better at generating higher-strength covering arrays, while \emph{bottom up} performed better at lower-strength ones .
+This paper proposed two strategies for generating incremental covering arrays. Experimental results show that both strategies have their own advantages; \emph{top-down} strategy is better at generating higher-strength covering arrays, while \emph{bottom up} strategy performs better at lower-strength ones .
 
 As a future work, we will apply more covering array generation algorithms, to compare their performance at generating incremental covering arrays. Another interesting work is to combine the two strategies, so that we can first select a median coverage strength \emph{t} and generate incremental covering arrays by \emph{top-down} strategy. Then if the maximal-way covering array is generated, we can use \emph{bottom-up} strategy to generate further higher-strength covering arrays. We believe such a combination strategy may offer a better performance.
 % An example of a floating figure using the graphicx package.
