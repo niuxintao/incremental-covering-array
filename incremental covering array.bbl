@@ -42,6 +42,90 @@ D.~M. Cohen, S.~R. Dalal, M.~L. Fredman, and G.~C. Patton, ``The aetg system:
   An approach to testing based on combinatorial design,'' \emph{Software
   Engineering, IEEE Transactions on}, vol.~23, no.~7, pp. 437--444, 1997.
 
+\bibitem{lei2007ipog}
+Y.~Lei, R.~Kacker, D.~R. Kuhn, V.~Okun, and J.~Lawrence, ``Ipog: A general
+  strategy for t-way software testing,'' in \emph{Engineering of Computer-Based
+  Systems, 2007. ECBS'07. 14th Annual IEEE International Conference and
+  Workshops on the}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2007, pp.
+  549--556.
+
+\bibitem{lei2008ipog}
+------, ``Ipog/ipog-d: efficient test generation for multi-way combinatorial
+  testing,'' \emph{Software Testing, Verification and Reliability}, vol.~18,
+  no.~3, pp. 125--148, 2008.
+
+\bibitem{yu2013efficient}
+L.~Yu, Y.~Lei, M.~Nourozborazjany, R.~N. Kacker, and D.~R. Kuhn, ``An efficient
+  algorithm for constraint handling in combinatorial test generation,'' in
+  \emph{Software Testing, Verification and Validation (ICST), 2013 IEEE Sixth
+  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2013, pp. 242--251.
+
+\bibitem{yu2014combinatorial}
+L.~Yu, F.~Duan, Y.~Lei, R.~N. Kacker, and D.~R. Kuhn, ``Combinatorial test
+  generation for software product lines using minimum invalid tuples,'' in
+  \emph{High-Assurance Systems Engineering (HASE), 2014 IEEE 15th International
+  Symposium on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2014, pp. 65--72.
+
+\bibitem{yu2015constraint}
+------, ``Constraint handling in combinatorial test generation using forbidden
+  tuples,'' in \emph{Software Testing, Verification and Validation Workshops
+  (ICSTW), 2015 IEEE Eighth International Conference on}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2015, pp. 1--9.
+
+\bibitem{segall2011using}
+I.~Segall, R.~Tzoref-Brill, and E.~Farchi, ``Using binary decision diagrams for
+  combinatorial test design,'' in \emph{Proceedings of the 2011 International
+  Symposium on Software Testing and Analysis}.\hskip 1em plus 0.5em minus
+  0.4em\relax ACM, 2011, pp. 254--264.
+
+\bibitem{jia2015learning}
+Y.~Jia, M.~B. Cohen, M.~Harman, and J.~Petke, ``Learning combinatorial
+  interaction test generation strategies using hyperheuristic search,'' in
+  \emph{Software Engineering (ICSE), 2015 IEEE/ACM 37th IEEE International
+  Conference on}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2015,
+  pp. 540--550.
+
+\bibitem{choi2016distance}
+E.-H. Choi, C.~Artho, T.~Kitamura, O.~Mizuno, and A.~Yamada,
+  ``Distance-integrated combinatorial testing,'' in \emph{Software Reliability
+  Engineering (ISSRE), 2016 IEEE 27th International Symposium on}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2016, pp. 93--104.
+
+\bibitem{cohen2007interaction}
+M.~B. Cohen, M.~B. Dwyer, and J.~Shi, ``Interaction testing of
+  highly-configurable systems in the presence of constraints,'' in
+  \emph{Proceedings of the 2007 international symposium on Software testing and
+  analysis}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2007, pp. 129--139.
+
+\bibitem{cohen2008constructing}
+------, ``Constructing interaction test suites for highly-configurable systems
+  in the presence of constraints: A greedy approach,'' \emph{Software
+  Engineering, IEEE Transactions on}, vol.~34, no.~5, pp. 633--650, 2008.
+
+\bibitem{kuhn2006pseudo}
+D.~R. Kuhn and V.~Okun, ``Pseudo-exhaustive testing for software,'' in
+  \emph{Software Engineering Workshop, 2006. SEW'06. 30th Annual
+  IEEE/NASA}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2006, pp. 153--158.
+
+\bibitem{garvin2009improved}
+B.~J. Garvin, M.~B. Cohen, and M.~B. Dwyer, ``An improved meta-heuristic search
+  for constrained interaction testing,'' in \emph{Search Based Software
+  Engineering, 2009 1st International Symposium on}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2009, pp. 13--22.
+
+\bibitem{garvin2011evaluating}
+------, ``Evaluating improvements to a meta-heuristic search for constrained
+  interaction testing,'' \emph{Empirical Software Engineering}, vol.~16, no.~1,
+  pp. 61--102, 2011.
+
+\bibitem{lin2015tca}
+J.~Lin, C.~Luo, S.~Cai, K.~Su, D.~Hao, and L.~Zhang, ``Tca: An efficient
+  two-mode meta-heuristic algorithm for combinatorial test generation (t),'' in
+  \emph{Automated Software Engineering (ASE), 2015 30th IEEE/ACM International
+  Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2015, pp.
+  494--505.
+
 \bibitem{kuhn2010practical}
 D.~R. Kuhn, R.~N. Kacker, and Y.~Lei, ``Practical combinatorial testing,''
   \emph{NIST Special Publication}, vol. 800, p. 142, 2010.
@@ -81,26 +165,15 @@ M.~B. Cohen, M.~B. Dwyer, and J.~Shi, ``Exploiting constraint solving history
   Industrial Conference Practice and Research Techniques-MUTATION, 2007.}\hskip
   1em plus 0.5em minus 0.4em\relax IEEE, 2007, pp. 121--132.
 
-\bibitem{cohen2008constructing}
-------, ``Constructing interaction test suites for highly-configurable systems
-  in the presence of constraints: A greedy approach,'' \emph{Software
-  Engineering, IEEE Transactions on}, vol.~34, no.~5, pp. 633--650, 2008.
-
-\bibitem{dumlu2011feedback}
-E.~Dumlu, C.~Yilmaz, M.~B. Cohen, and A.~Porter, ``Feedback driven adaptive
-  combinatorial testing,'' in \emph{Proceedings of the 2011 International
-  Symposium on Software Testing and Analysis}.\hskip 1em plus 0.5em minus
-  0.4em\relax ACM, 2011, pp. 243--253.
-
-\bibitem{yilmaz2013reducing}
-C.~Yilmaz, E.~Dumlu, M.~Cohen, and A.~Porter, ``Reducing masking effects in
-  combinatorialinteraction testing: A feedback drivenadaptive approach,''
-  \emph{Software Engineering, IEEE Transactions on}, vol.~40, no.~1, pp.
-  43--66, Jan 2014.
-
 \bibitem{nie2013adaptive}
 C.~Nie, H.~Leung, and K.-Y. Cai, ``Adaptive combinatorial testing,'' in
   \emph{Quality Software (QSIC), 2013 13th International Conference on}.\hskip
   1em plus 0.5em minus 0.4em\relax IEEE, 2013, pp. 284--287.
+
+\bibitem{calvagna2013incrementally}
+A.~Calvagna and E.~Tramontana, ``Incrementally applicable t-wise combinatorial
+  test suites for high-strength interaction testing,'' in \emph{Computer
+  Software and Applications Conference Workshops (COMPSACW), 2013 IEEE 37th
+  Annual}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2013, pp. 77--82.
 
 \end{thebibliography}

@@ -446,3 +446,77 @@ ISSN={0098-5589}
   year={2006},
   organization={IEEE}
 }
+@inproceedings{kuhn2002investigation,
+  title={An investigation of the applicability of design of experiments to software testing},
+  author={Kuhn, D Richard and Reilly, Michael J},
+  booktitle={Software Engineering Workshop, 2002. Proceedings. 27th Annual NASA Goddard/IEEE},
+  pages={91--95},
+  year={2002},
+  organization={IEEE}
+}
+@inproceedings{calvagna2013incrementally,
+  title={Incrementally applicable t-wise combinatorial test suites for high-strength interaction testing},
+  author={Calvagna, Andrea and Tramontana, Emiliano},
+  booktitle={Computer Software and Applications Conference Workshops (COMPSACW), 2013 IEEE 37th Annual},
+  pages={77--82},
+  year={2013},
+  organization={IEEE}
+}
+@inproceedings{garvin2009improved,
+  title={An improved meta-heuristic search for constrained interaction testing},
+  author={Garvin, Brady J and Cohen, Myra B and Dwyer, Matthew B},
+  booktitle={Search Based Software Engineering, 2009 1st International Symposium on},
+  pages={13--22},
+  year={2009},
+  organization={IEEE}
+}
+@inproceedings{lin2015tca,
+  title={TCA: An efficient two-mode meta-heuristic algorithm for combinatorial test generation (t)},
+  author={Lin, Jinkun and Luo, Chuan and Cai, Shaowei and Su, Kaile and Hao, Dan and Zhang, Lu},
+  booktitle={Automated Software Engineering (ASE), 2015 30th IEEE/ACM International Conference on},
+  pages={494--505},
+  year={2015},
+  organization={IEEE}
+}
+@inproceedings{lei2007ipog,
+  title={IPOG: A general strategy for t-way software testing},
+  author={Lei, Yu and Kacker, Raghu and Kuhn, D Richard and Okun, Vadim and Lawrence, James},
+  booktitle={Engineering of Computer-Based Systems, 2007. ECBS'07. 14th Annual IEEE International Conference and Workshops on the},
+  pages={549--556},
+  year={2007},
+  organization={IEEE}
+}
+
+@inproceedings{yu2013efficient,
+  title={An efficient algorithm for constraint handling in combinatorial test generation},
+  author={Yu, Linbin and Lei, Yu and Nourozborazjany, Mehra and Kacker, Raghu N and Kuhn, D Richard},
+  booktitle={Software Testing, Verification and Validation (ICST), 2013 IEEE Sixth International Conference on},
+  pages={242--251},
+  year={2013},
+  organization={IEEE}
+}
+
+@inproceedings{yu2014combinatorial,
+  title={Combinatorial test generation for software product lines using minimum invalid tuples},
+  author={Yu, Linbin and Duan, Feng and Lei, Yu and Kacker, Raghu N and Kuhn, D Richard},
+  booktitle={High-Assurance Systems Engineering (HASE), 2014 IEEE 15th International Symposium on},
+  pages={65--72},
+  year={2014},
+  organization={IEEE}
+}
+@inproceedings{yu2015constraint,
+  title={Constraint handling in combinatorial test generation using forbidden tuples},
+  author={Yu, Linbin and Duan, Feng and Lei, Yu and Kacker, Raghu N and Kuhn, D Richard},
+  booktitle={Software Testing, Verification and Validation Workshops (ICSTW), 2015 IEEE Eighth International Conference on},
+  pages={1--9},
+  year={2015},
+  organization={IEEE}
+}
+@inproceedings{segall2011using,
+  title={Using binary decision diagrams for combinatorial test design},
+  author={Segall, Itai and Tzoref-Brill, Rachel and Farchi, Eitan},
+  booktitle={Proceedings of the 2011 International Symposium on Software Testing and Analysis},
+  pages={254--264},
+  year={2011},
+  organization={ACM}
+}
