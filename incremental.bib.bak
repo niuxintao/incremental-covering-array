@@ -520,3 +520,28 @@ ISSN={0098-5589}
   year={2011},
   organization={ACM}
 }
+@inproceedings{jia2015learning,
+  title={Learning combinatorial interaction test generation strategies using hyperheuristic search},
+  author={Jia, Yue and Cohen, Myra B and Harman, Mark and Petke, Justyna},
+  booktitle={Software Engineering (ICSE), 2015 IEEE/ACM 37th IEEE International Conference on},
+  volume={1},
+  pages={540--550},
+  year={2015},
+  organization={IEEE}
+}
+@inproceedings{choi2016distance,
+  title={Distance-Integrated Combinatorial Testing},
+  author={Choi, Eun-Hye and Artho, Cyrille and Kitamura, Takashi and Mizuno, Osamu and Yamada, Akihisa},
+  booktitle={Software Reliability Engineering (ISSRE), 2016 IEEE 27th International Symposium on},
+  pages={93--104},
+  year={2016},
+  organization={IEEE}
+}
+@inproceedings{li2014refining,
+  title={Refining a randomized post-optimization method for covering arrays},
+  author={Li, Xiaohua and Dong, Zhao and Wu, Huayao and Nie, Changhai and Cai, Kai-Yuan},
+  booktitle={Software Testing, Verification and Validation Workshops (ICSTW), 2014 IEEE Seventh International Conference on},
+  pages={143--152},
+  year={2014},
+  organization={IEEE}
+}

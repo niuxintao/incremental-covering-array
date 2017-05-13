@@ -126,6 +126,18 @@ J.~Lin, C.~Luo, S.~Cai, K.~Su, D.~Hao, and L.~Zhang, ``Tca: An efficient
   Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2015, pp.
   494--505.
 
+\bibitem{li2014refining}
+X.~Li, Z.~Dong, H.~Wu, C.~Nie, and K.-Y. Cai, ``Refining a randomized
+  post-optimization method for covering arrays,'' in \emph{Software Testing,
+  Verification and Validation Workshops (ICSTW), 2014 IEEE Seventh
+  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2014, pp. 143--152.
+
+\bibitem{nayeri2013randomized}
+P.~Nayeri, C.~J. Colbourn, and G.~Konjevod, ``Randomized post-optimization of
+  covering arrays,'' \emph{European Journal of Combinatorics}, vol.~34, no.~1,
+  pp. 91--103, 2013.
+
 \bibitem{kuhn2010practical}
 D.~R. Kuhn, R.~N. Kacker, and Y.~Lei, ``Practical combinatorial testing,''
   \emph{NIST Special Publication}, vol. 800, p. 142, 2010.

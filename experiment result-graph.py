@@ -2,94 +2,249 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as co
 
+
+def mean(data):
+    """Return the sample arithmetic mean of data."""
+    n = len(data)
+    if n < 1:
+        raise ValueError('mean requires at least one data point')
+    return sum(data)/n # in Python 2 use sum(data)/float(n)
+
+def _ss(data):
+    """Return sum of square deviations of sequence data."""
+    c = mean(data)
+    ss = sum((x-c)**2 for x in data)
+    return ss
+
+def pstdev(data):
+    """Calculates the population standard deviation."""
+    n = len(data)
+    if n < 2:
+        raise ValueError('variance requires at least two data points')
+    ss = _ss(data)
+    pvar = ss/n # the population variance
+    return pvar**0.5
+
+
+
 #data
-x2= [2,3]
-x3= [2,3,4]
-x4= [2,3,4,5]
+x= [[2,3],[2,3,4],[2,3,4,5],[2,3,4,5,6]]
 
-out1 = [0.848812116,1]
-out1_ = [1,0.979904816]
-out2 = [0.868905758,0.921701283,1]	
-out2_ =[1,1,0.980740836]
-out3 = [0.888397783,0.904887422,0.940031412,1]
-out3_ =[1,1,1,0.978665755]
-out4= [0.950018511,1]
-out4_ = [1,0.742006773]
-out5= [1,0.928961056,1]	
-out5_=[0.989130423,1,0.941583712]	
-out6=[1,0.923638349,1,1]
-out6_=[0.976771196,1,0.866773994,0.91455794]
-out7=[0.907180396,1]
-out7_=[1,0.98830046]
-out8=[0.885615213,0.984477643,1]	
-out8_ =[1,1,0.980486652	]
-out9= [0.915467678,0.972369213,1,1]
-out9_=[1,1,0.980326266,0.96393517]
-out10=[0.981283478,1]
-out10_=[1,0.95348833]
-out11=[1,1,1]
-out11_=[0.979166687,0.997996023,0.956754734]	
-out12=[0.984455974,0.963178304,1,1]
-out12_=[1,1,0.953142875,0.943431803]
-out13=[0.934566164,1]
-out13_=[1,0.994925827]
-out14=[0.905292486,0.941090354,1]	
-out14_=[1,1,0.977157112]
-out15=[0.915730338,0.921779654,0.961844063,1]
-out15_=[1,1,1,0.977915519]
-out16=[0.952680266,1]
-out16_=[1,0.732184584]
-out17=[1,0.928922228,1]
-out17_=[0.988439306,1,0.945788009]	
-out18=[1,0.92014643,1,1]
-out18_=[0.973286928,1,0.873632132,0.920081402]
-out19=[1,1]
-out19_=[0.981941326,0.95813949]
-out20=[1,0.977346254,1]
-out20_=[0.9909091,1,0.964568529]	
-out21=[1,0.966324567,1,1]
-out21_=[0.977220978,1,0.935532132,0.93930603]
-out22=[0.986003145,1]
-out22_=[1,0.978307961]
-out23=[0.982998449,0.986882378,1]	
-out23_=[1,1,0.933109387]
-out24=[0.987558332,0.99343832,1,1]
-out24_=[1,1,0.977493439,0.927179285]
-out25=[0.96590907,1]
-out25_=[1,0.965475511]
-out26=[0.9392265,0.981602383,1]	
-out26_=[1,1,0.961500095]
-out27=[0.932584331,0.952325576,1,1]
-out27_=[1,1,0.97087975,0.941454628]
 
-##out2 = [1236,1673,2203,2803,3288,3610,3675,4132]
-##out3 = [492,626,731,850,865,817,659,550]
-##out4 = [68,205,325,421,611,883,1343,1646]
-##out5 = [1612,2274,2894,3643,4206,4287,4934,5475]
-##out6 = [1346,1833,2383,3576,2919,3306,3517,3364]
-##out7 = [1252,1634,2149,2761,3071,3205,3088,3278]
-##out8 = [13595,18271,23755,29429,33968,36602,36706,39761]
-##out9 = [6341,9619,17873,15622,23714,18384,20295,21127]
-##out10 = [84,112.6,248.3936402,420.9011487,632,825,971.27,1343.7]
-##out11 = [374,535.1847201,821.9746154,1147.672,1526.072807,1857.583225,2165.713401,2712.648204]
-##I_out1 = [1305,1991.881,2671.393,3394.5,4093.24719,4706.72,5243.552,6016.643]
-##gas1 = [4186,7473,10356,11242,11475,12149,12149,12149]
-##gas2 = [0,0,0,7,62,601,342,396,]
-##gas3 = [3,7,7.8,13,16,19,20,23]
-##flux1 = [0,0,0,1.5001,10.35221696,12.4,25.934,33.727]
-##flux2 = [6,13.69,22.358,31.7604005,42.0262,47.8298,56.31445151,72.54693]
-##flux3 = [17,20.048,27.779,31.7394,31.211,29.0254371,23.9779,29.64697]
-##flux4 = [98,75,91,18,64,88,33,48]
+out_bot_up = [
+[15,57,153,212,],
+[11,35,99,229,529,],
+[19,51,95,166,243,],
+[6,8,8,8,],
+[30,109,338,868,1780,],
+[16,66,228,706,2052,],
+[38,214,1026,4327,16241,],
+[49,304,1675,8294,38373,],
+[527,6950,75676,511471,2942290,],
+[112,1117,6429,30411,119219,],
+[29,154,649,2595,9329,],
+[36,195,904,3900,15305,],
+[106,932,6866,38077,164999,],
+[17,25,25,],
+[18,77,217,486,],
+[50,244,758,2154,5321,],
+[121,923,6136,36423,185212,],
+[218,1887,13334,78874,400356,],
+[17,59,162,353,654,],
+[30,128,415,1135,2672,],
+[26,112,428,1434,4247,],
+[45,293,1676,8547,],
+[23,106,444,],
+[33,180,867,],
+[19,73,236,739,2193,],
+[48,303,1719,8794,],
+[32,185,892,3977,],
+[19,76,211,605,1591,],
+[22,103,381,1322,],
+[54,380,2471,],
+[25,124,501,1725,],
+[12,35,96,248,613,],
+[47,325,1979,],
+[22,83,272,845,],
+[47,336,2125,],
+[47,322,1959,10416,],
+[43,269,1476,],
+[40,214,1036,],
+[39,253,1222,5444,],
+[32,180,789,3041,],
+[25,121,460,1633,],
+[41,278,1586,],
+[52,334,2095,],
+[51,377,2528,],
+[60,472,3295,],
+[39,238,1140,4651,],
+[37,171,696,2529,],
+[14,50,141,379,971,],
+[48,349,2170,],
+[52,407,2682,],
+[34,209,1154,5356,],
+[37,213,1037,4525,],
+[57,427,2891,],
+[29,153,696,],
+[22,100,388,1367,],
+]
 
-###function to normalize data(right y axis)
-##def norm(y):
-##    normf = co.normalize()
-##    normr = normf(y)
-##    return normr
-##
+out_top_down = [
+[55,204,211,212,],
+[51,104,248,360,523,],
+[86,213,221,230,240,],
+[7,8,8,8,],
+[93,584,671,1394,1776,],
+[143,171,571,1581,1978,],
+[153,656,1004,],
+[252,1039,1644,],
+[5240,6866,],
+[1033,1125,],
+[85,1815,2409,2588,],
+[124,788,3511,3880,],
+[1822,4622,6855,],
+[25,25,25,],
+[436,468,484,486,],
+[355,1100,1712,2106,],
+[758,898,],
+[966,1879,],
+[47,390,487,488,540,],
+[290,1085,1674,2285,2565,],
+[140,512,1519,4095,4185,],
+[147,1046,1631,],
+[134,350,444,],
+[128,527,838,],
+[41,184,626,1737,2183,],
+[200,1084,1680,],
+[153,872,2721,3852,],
+[64,265,626,1157,1571,],
+[118,337,892,1323,],
+[210,1237,2442,],
+[154,592,1510,1644,],
+[23,63,149,413,604,],
+[183,1040,1988,],
+[72,201,592,829,],
+[301,1246,2063,],
+[291,1384,1885,],
+[317,977,1465,],
+[121,719,1040,],
+[143,875,1163,],
+[174,885,2443,2992,],
+[173,507,1175,1614,],
+[163,1083,1514,],
+[150,1309,2145,],
+[188,1262,2535,],
+[248,1576,3278,],
+[174,765,1070,],
+[143,691,1953,2509,],
+[50,167,342,782,956,],
+[199,1190,2105,],
+[228,1467,2673,],
+[190,711,1111,],
+[162,720,1004,],
+[194,1497,2888,],
+[102,589,681,],
+[91,519,1108,1362,],
+]
 
-#define figure and figure size figsize=(width, height)
-fig = plt.figure(figsize=(9, 6))
+
+out_issta = [
+[17.333333333333332,57.333333333333336,158.0,212.0,212.0,],
+[12.0,37.666666666666664,99.66666666666667,236.33333333333334,529.0,],
+[19.666666666666668,52.0,103.33333333333333,169.33333333333334,241.0,],
+[6.0,8.0,8.0,8.0],
+[31.666666666666668,108.33333333333333,340.3333333333333,873.6666666666666,1828.6666666666667,],
+[18.0,67.0,229.0,722.3333333333334,2052.0,],
+[38.333333333333336,214.66666666666666,1031.6666666666667,4326.0,16241.0,],
+[50.333333333333336,304.3333333333333,1682.0,8294.0,],
+[534.0,6953.666666666667,75676.0,],
+[117.66666666666667,1118.0,6480.333333333333,30762.666666666668,119219.0,],
+[30.666666666666668,164.66666666666666,645.3333333333334,2601.6666666666665,9329.0,],
+[35.666666666666664,190.0,902.6666666666666,3917.3333333333335,15305.0,],
+[110.66666666666667,927.6666666666666,6919.0,38394.0,164999.0,],
+[18.0,25.0,25.0],
+[20.333333333333332,77.33333333333333,221.0,485.0],
+[52.333333333333336,241.66666666666666,765.0,2182.0,5321.0,],
+[124.66666666666667,913.3333333333334,6192.333333333333,36601.333333333336,185212.0,],
+[220.0,1881.0,13342.666666666666,79099.0,400356.0,],
+[18.0,59.666666666666664,161.0,360.6666666666667,654.0,],
+[31.333333333333332,127.33333333333333,413.0,1156.3333333333333,2672.0,],
+[27.0,114.66666666666667,428.0,1464.3333333333333,4247.0,],
+[45.0,295.0,1676.0,],
+[23.333333333333332,106.0,],
+[34.333333333333336,180.0,],
+[19.333333333333332,71.66666666666667,235.0,739.0,],
+[47.0,301.6666666666667,1713.6666666666667,8794.0,],
+[35.0,184.33333333333334,901.6666666666666,3977.0,],
+[20.333333333333332,72.66666666666667,213.0,610.6666666666666,1591.0,],
+[24.0,104.0,381.0,],
+[53.333333333333336,380.0,],
+[28.333333333333332,122.33333333333333,501.0,],
+[12.0,35.333333333333336,96.66666666666667,251.0,613.0,],
+[48.666666666666664,325.3333333333333,1979.0,],
+[22.0,82.33333333333333,275.0,845.0,],
+[49.0,337.3333333333333,2125.0,],
+[49.0,323.6666666666667,1959.0,10416.0,],
+[45.0,269.0,],
+[42.0,211.33333333333334,1036.0,],
+[45.0,250.66666666666666,1235.0,5444.0,],
+[35.333333333333336,177.66666666666666,795.6666666666666,3056.3333333333335,10678.0,],
+[27.666666666666668,121.66666666666667,466.6666666666667,1633.0,],
+[46.0,276.6666666666667,1586.0,],
+[50.0,340.6666666666667,2095.0,],
+[52.0,377.0,],
+[59.333333333333336,471.0,3295.0,],
+[44.0,239.33333333333334,1145.0,4651.0,],
+[39.333333333333336,171.33333333333334,694.6666666666666,2529.0,],
+[14.666666666666666,49.666666666666664,142.33333333333334,387.0,971.0,],
+[49.666666666666664,350.0,2170.0,],
+[55.666666666666664,407.0,],
+[36.0,211.0,1166.3333333333333,5356.0,],
+[40.333333333333336,212.66666666666666,1043.0,4525.0,],
+[56.666666666666664,426.0,2891.0,],
+[31.0,153.0,],
+[23.666666666666668,100.0,388.0,],
+]
+
+out1 = []
+out2 = []
+out3 = []
+for i in range(0, 55):
+    tempout1=[]
+    tempout2=[]
+    tempout3=[]
+    for j in range(0, 5):
+        temp = []
+        temp2 = []
+        for k in range(0, 3):
+            if (len(out_bot_up[i]) > j):
+                temp.append(out_bot_up[i][j])
+                temp2.append(out_bot_up[i][j])
+            else:
+                temp.append(0)
+            if (len(out_top_down[i]) > j):
+                temp.append(out_top_down[i][j])
+                temp2.append(out_top_down[i][j])
+            else:
+                temp.append(0)
+            if (len(out_issta[i]) > j):
+                temp.append(out_issta[i][j])
+                temp2.append(out_issta[i][j])
+            else:
+                temp.append(0)
+                
+        if not temp[0] == 0:
+            tempout1.append(float(temp[0])/(max(temp2) + 0.001))
+        if not temp[1] == 0:
+            tempout2.append(float(temp[1])/(max(temp2) + 0.001))
+        if not temp[2] == 0:
+            tempout3.append(float(temp[2])/(max(temp2) + 0.001))
+    out1.append(tempout1)
+    out2.append(tempout2)
+    out3.append(tempout3)
+
+
+fig = plt.figure(figsize=(15, 22))
 
 #define subplots 3x6
 # 1        2    3 
@@ -99,592 +254,96 @@ fig = plt.figure(figsize=(9, 6))
 # 13    14    15
 # 16    17    18
 
+ax = []
+ax1 = []
+ax2 = []
+
+for i in range(1, 56):
+     ax.append(fig.add_subplot(11, 5, i))
+     ax1.append(fig.add_subplot(11, 5, i, sharex=ax[i-1], sharey=ax[i-1], frameon=False) )
+     ax2.append(fig.add_subplot(11, 5, i, sharex=ax[i-1], sharey=ax[i-1], frameon=False) )
+
+fig.tight_layout()
+fig.text(0.5, 0.04, 'Degree', ha='center', fontsize=15)
+fig.text(0.02, 0.5, 'Size (normalized)', va='center', rotation='vertical', fontsize=15)
+
+#plot data and normalized data
+xx = x[len(out1[0])-2]
+line_up, = ax[0].plot(xx, out1[0],  marker="o", mfc="None", color="k")
+xx = x[len(out2[0])-2]
+line_down, = ax1[0].plot(xx, out2[0], ls="--", marker="s",   color="k")
+xx = x[len(out3[0])-2]
+line_issta, = ax2[0].plot(xx, out3[0], ls=":", marker="x",   mfc="None", color="k")
+
+for i in range(1, 55):
+    xx = x[len(out1[i])-2]
+    ax[i].plot(xx, out1[i],  marker="o", mfc="None", color="k")
+    xx = x[len(out2[i])-2]
+    ax1[i].plot(xx, out2[i], ls="--", marker="s",  color="k")
+    xx = x[len(out3[i])-2]
+    ax1[i].plot(xx, out3[i], ls=":", marker="x",  mfc="None", color="k")
 
-ax1 = fig.add_subplot(3,9,1) #gas1
-ax1n = fig.add_subplot(3,9,1, sharex=ax1, sharey=ax1, frameon=False) #gas1 nomeeritud
-
-
-ax2 = fig.add_subplot(3,9,10) #out9
-ax2n = fig.add_subplot(3,9,10, sharex=ax2,sharey=ax2, frameon=False) #out9
-
-
-ax3 = fig.add_subplot(3,9,19) #out8
-ax3n = fig.add_subplot(3,9,19, sharex=ax3, sharey=ax3, frameon=False) #out8
-
-
-ax4 = fig.add_subplot(3,9,2) #out2
-ax4n = fig.add_subplot(3,9,2, sharex=ax4, sharey=ax4, frameon=False) #out2
-
-ax5 = fig.add_subplot(3,9,11) #out5
-ax5n = fig.add_subplot(3,9,11, sharex=ax5, sharey=ax5, frameon=False) #out5
-
-
-ax6 = fig.add_subplot(3,9,20) #I_out1
-ax6n = fig.add_subplot(3,9,20, sharex=ax6, sharey=ax6, frameon=False) #I_out1
-
-
-ax7 = fig.add_subplot(3,9,3) #out11
-ax7n = fig.add_subplot(3,9,3, sharex=ax7, sharey=ax7,  frameon=False) #out11
-
-ax8 = fig.add_subplot(3,9,12) #out7
-ax8n = fig.add_subplot(3,9,12,sharex=ax8, sharey=ax8, frameon=False) #out7
-
-
-ax9 = fig.add_subplot(3,9,21) #out6
-ax9n = fig.add_subplot(3,9,21, sharex=ax9, sharey=ax9,  frameon=False) #out6
-
-
-ax10 = fig.add_subplot(3,9,4) #out3
-ax10n = fig.add_subplot(3,9,4, sharex=ax10, sharey=ax10, frameon=False) #out3
-
-
-ax11 = fig.add_subplot(3,9,13) #out10
-ax11n = fig.add_subplot(3,9,13, sharex=ax11,  sharey=ax11, frameon=False) #out10
-
-
-ax12 = fig.add_subplot(3,9,22) #out4
-ax12n = fig.add_subplot(3,9,22, sharex=ax12,  sharey=ax12, frameon=False) #out4
-
-ax13 = fig.add_subplot(3,9,5) #flux2
-ax13n = fig.add_subplot(3,9,5, sharex=ax13,  sharey=ax13, frameon=False) #flux2
-
-
-ax14 = fig.add_subplot(3,9,14) #flux4
-ax14n = fig.add_subplot(3,9,14, sharex=ax14,  sharey=ax14, frameon=False) #flux4
-
-ax15 = fig.add_subplot(3,9,23) #gas2
-ax15n = fig.add_subplot(3,9,23, sharex=ax15,  sharey=ax15, frameon=False) #gas2
-
-
-
-ax16 = fig.add_subplot(3,9,6) #gas3
-ax16n = fig.add_subplot(3,9,6, sharex=ax16,  sharey=ax16, frameon=False) #gas3
-
-ax17 = fig.add_subplot(3,9,15) #flux1
-ax17n = fig.add_subplot(3,9,15, sharex=ax17,  sharey=ax17, frameon=False) #flux1
-
-
-ax18 = fig.add_subplot(3,9,24) #flux3
-ax18n = fig.add_subplot(3,9,24, sharex=ax18,  sharey=ax18, frameon=False) #flux3
-
-ax19 = fig.add_subplot(3,9,7) #flux3
-ax19n = fig.add_subplot(3,9,7, sharex=ax19,  sharey=ax19, frameon=False) #flux3
-
-
-ax20 = fig.add_subplot(3,9,16) #flux3
-ax20n = fig.add_subplot(3,9,16, sharex=ax20,  sharey=ax20, frameon=False) #flux3
-
-
-ax21 = fig.add_subplot(3,9,25) #flux3
-ax21n = fig.add_subplot(3,9,25, sharex=ax21,  sharey=ax21, frameon=False) #flux3
-
-
-ax22 = fig.add_subplot(3,9,8) #flux3
-ax22n = fig.add_subplot(3,9,8, sharex=ax22,  sharey=ax22, frameon=False) #flux3
-
-
-ax23 = fig.add_subplot(3,9,17) #flux3
-ax23n = fig.add_subplot(3,9,17, sharex=ax23,  sharey=ax23, frameon=False) #flux3
-
-
-ax24 = fig.add_subplot(3,9,26) #flux3
-ax24n = fig.add_subplot(3,9,26, sharex=ax24,  sharey=ax24, frameon=False) #flux3
-
-
-ax25 = fig.add_subplot(3,9,9) #flux3
-ax25n = fig.add_subplot(3,9,9, sharex=ax25,  sharey=ax25, frameon=False) #flux3
-
-ax26 = fig.add_subplot(3,9,18) #flux3
-ax26n = fig.add_subplot(3,9,18, sharex=ax26,  sharey=ax26, frameon=False) #flux3
-
-ax27 = fig.add_subplot(3,9,27) #flux3
-ax27n = fig.add_subplot(3,9,27, sharex=ax27,  sharey=ax27, frameon=False) #flux3
-
-#plot data and normalized data 
-line_up, = ax1.plot(x2, out1,  marker="s",  color="k")
-line_down, = ax1n.plot(x2, out1_, ls="--", marker="d", mfc="None",   color="k")
-
-ax2.plot(x3, out2,  marker="s", color="k")
-ax2n.plot(x3, out2_, ls="--", marker="d", mfc="None", color="k")
-
-ax3.plot(x4, out3,  marker="s", color="k")
-ax3n.plot(x4, out3_, ls="--",marker="d", mfc="None", color="k")
-
-ax4.plot(x2, out4, marker="s", color="k")
-ax4n.plot(x2, out4_, ls="--",marker="d", color="k")
-
-ax5.plot(x3, out5, marker="s", color="k")
-ax5n.plot(x3, out5_, ls="--",marker="d", mfc="None",color="k")
-
-
-ax6.plot(x4, out6 , marker="s", color="k")
-ax6n.plot(x4, out6_, ls="--", marker="d", mfc="None",color="k")
-
-ax7.plot(x2, out7 , marker="s", color="k")
-ax7n.plot(x2, out7_, ls="--", marker="d", mfc="None", color="k")
-
-ax8.plot(x3, out8 , marker="s", color="k")
-ax8n.plot(x3, out8_, ls="--",marker="d", mfc="None", color="k")
-
-
-ax9.plot(x4, out9, marker="s", color="k")
-ax9n.plot(x4, out9_, ls="--",marker="d", mfc="None",color="k")
-
-ax10.plot(x2, out10 , marker="s", color="k")
-ax10n.plot(x2, out10_, ls="--",marker="d",mfc="None", color="k")
-
-ax11.plot(x3, out11 , marker="s", color="k")
-ax11n.plot(x3, out11_, ls="--", marker="d",mfc="None", color="k")
-
-ax12.plot(x4, out12 , marker="s",color="k")
-ax12n.plot(x4, out12_, ls="--",marker="d", mfc="None", color="k")
-
-ax13.plot(x2, out13 , marker="s", color="k")
-ax13n.plot(x2, out13_, ls="--",marker="d",mfc="None",   color="k")
-
-ax14.plot(x3, out14 , marker="s", color="k")
-ax14n.plot(x3, out14_, ls="--",marker="d", mfc="None",  color="k")
-
-ax15.plot(x4, out15 , marker="s", color="k")
-ax15n.plot(x4, out15_, ls="--",marker="d", mfc="None",  color="k")
-
-ax16.plot(x2, out16 , marker="s", color="k")
-ax16n.plot(x2, out16_, ls="--",marker="d",mfc="None",  color="k")
-
-ax17.plot(x3, out17 , marker="s", color="k")
-ax17n.plot(x3, out17_, ls="--",marker="d",mfc="None",  color="k")
-
-ax18.plot(x4, out18, marker="s", color="k")
-ax18n.plot(x4, out18_, ls="--", marker="d", mfc="None", color="k")
-
-ax19.plot(x2, out19, marker="s", color="k")
-ax19n.plot(x2, out19_, ls="--", marker="d", mfc="None", color="k")
-
-ax20.plot(x3, out20, marker="s", color="k")
-ax20n.plot(x3, out20_, ls="--", marker="d", mfc="None", color="k")
-
-ax21.plot(x4, out21, marker="s",  color="k")
-ax21n.plot(x4, out21_, ls="--", marker="d",mfc="None", color="k")
-
-ax22.plot(x2, out22, marker="s",  color="k")
-ax22n.plot(x2, out22_, ls="--",marker="d", mfc="None", color="k")
-
-ax23.plot(x3, out23, marker="s", color="k")
-ax23n.plot(x3, out23_, ls="--",marker="d", mfc="None", color="k")
-
-ax24.plot(x4, out24, marker="s", color="k")
-ax24n.plot(x4, out24_, ls="--", marker="d",mfc="None", color="k")
-
-ax25.plot(x2, out25, marker="s",color="k")
-ax25n.plot(x2, out25_, ls="--", marker="d",mfc="None", color="k")
-
-ax26.plot(x3, out26, marker="s", color="k")
-ax26n.plot(x3, out26_, ls="--",marker="d", mfc="None", color="k")
-
-ax27.plot(x4, out27, marker="s",color="k")
-ax27n.plot(x4, out27_, ls="--", marker="d",mfc="None", color="k")
 
 #configure legend
-fig.legend([line_up, line_down], ['bottom-up', 'top-down'],'upper left',
-           ncol=2,prop={'size':10})
+fig.legend([line_up, line_down, line_issta], ['bottom-up', 'top-down', 'traditional'],'upper left',
+           ncol=3,prop={'size':10})
 
+
+
+for i in range (0, 55):
+    ax[i].set_xlim(2, 6)
+    ax[i].set_xticks(np.arange(2, 7, 1))
+    ax[i].set_xticklabels(['2','3','4','5','6'])
+    ax[i].set_ylim(0, 1.05)
+    ax[i].set_yticks(np.arange(0, 1.05, 0.2))
+
+
+models1 =['Banking1','Banking2','CommProtocol','Concurrency','Healthcare1','Healthcare2','Healthcare3','Healthcare4','Insurance','NetworkMgmt','ProcessorComm1','ProcessorComm2','Services','Storage1','Storage2','Storage3','Storage4','Storage5','SystemMgmt','Telecom']
+
+models2 =['SPIN-S','SPIN-V','GCC','Apache','Bugzilla',]
+
+for i in range (0, 20):
+    ax[i].set_title(models1[i], fontsize=12)
+
+for i in range (20, 25):
+    ax[i].set_title(models2[i-20], fontsize=12)
+
+for i in range (25, 55):
+    ax[i].set_title('Syn' + str(i-24), fontsize=12)
 
 #configure axis
 
 #123
-ax1.set_ylim(0.7, 1.05)
-ax2.set_ylim(0.8, 1.05)
-ax3.set_ylim(0.8, 1.05)
+#ax1.set_ylim(0.7, 1.05)
 
-ax1.set_yticks(np.arange(0.7, 1.05, 0.1))
-ax2.set_yticks(np.arange(0.8, 1.05, 0.1))
-ax3.set_yticks(np.arange(0.8, 1.05, 0.1))
+
+#ax1.set_yticks(np.arange(0.7, 1.05, 0.1))
+
 
 #hide Y tick labels for some plots(only plots on the left and right have labels and ticklabels
 ##ax2.set_yticklabels([]) 
 ##ax3.set_yticklabels([])
 
-ax1.set_xlim(2, 3)
-ax2.set_xlim(2, 4)
-ax3.set_xlim(2, 5)
+#ax1.set_xlim(2, 6)
 
-ax1.set_xticks(np.arange(2, 4, 1))
-ax2.set_xticks(np.arange(2, 5, 1))
-ax3.set_xticks(np.arange(2, 6, 1))
+#ax1.set_xticks(np.arange(2, 6, 1))
 
+#ax1.set_xticklabels(['2','3','4','5','6'])
 
-ax1.set_xticklabels(['2','3'])
-ax2.set_xticklabels(['2','3','4'])
-ax3.set_xticklabels(['2','3','4','5'])
+#ax3.yaxis.tick_left()
 
-#456
-ax4.set_ylim(0.7, 1.05)
-ax5.set_ylim(0.8, 1.05)
-ax6.set_ylim(0.8, 1.05)
-
-##ax4.set_yticks(np.arange(1000, 8000, 1500))
-##ax5.set_yticks(np.arange(1000, 8000, 1500))
-##ax6.set_yticks(np.arange(1000, 8000, 1500))
-
-ax4.set_yticklabels([])
-ax5.set_yticklabels([])
-ax6.set_yticklabels([])
-
-ax4.set_xlim(2, 3)
-ax5.set_xlim(2, 4)
-ax6.set_xlim(2, 5)
-
-ax4.set_xticks(np.arange(2, 4, 1))
-ax5.set_xticks(np.arange(2, 5, 1))
-ax6.set_xticks(np.arange(2, 6, 1))
-
-
-ax4.set_xticklabels(['2','3'])
-ax5.set_xticklabels(['2','3','4'])
-ax6.set_xticklabels(['2','3','4','5'])
-#789
-ax7.set_ylim(0.7, 1.05)
-ax8.set_ylim(0.8, 1.05)
-ax9.set_ylim(0.8, 1.05)
-
-##ax7.set_yticks(np.arange(500, 4000, 1000))
-##ax8.set_yticks(np.arange(500, 4000, 1000))
-##ax9.set_yticks(np.arange(500, 4000, 1000))
-
-ax7.set_yticklabels([])
-ax8.set_yticklabels([])
-ax9.set_yticklabels([])
-
-ax7.set_xlim(2, 3)
-ax8.set_xlim(2, 4)
-ax9.set_xlim(2, 5)
-
-ax7.set_xticks(np.arange(2, 4, 1))
-ax8.set_xticks(np.arange(2, 5, 1))
-ax9.set_xticks(np.arange(2, 6, 1))
-
-
-ax7.set_xticklabels(['2','3'])
-ax8.set_xticklabels(['2','3','4'])
-ax9.set_xticklabels(['2','3','4','5'])
-
-# 10, 11, 12
-ax10.set_ylim(0.7, 1.05)
-ax11.set_ylim(0.8, 1.05)
-ax12.set_ylim(0.8, 1.05)
-
-##ax10.set_yticks(np.arange(0, 1900, 300))
-##ax11.set_yticks(np.arange(0, 1900, 300))
-##ax12.set_yticks(np.arange(0, 1900, 300))
-
-ax10.set_yticklabels([])
-ax11.set_yticklabels([])
-ax12.set_yticklabels([])
-
-ax10.set_xlim(2, 3)
-ax11.set_xlim(2, 4)
-ax12.set_xlim(2, 5)
-
-ax10.set_xticks(np.arange(2, 4, 1))
-ax11.set_xticks(np.arange(2, 5, 1))
-ax12.set_xticks(np.arange(2, 6, 1))
-
-
-ax10.set_xticklabels(['2','3'])
-ax11.set_xticklabels(['2','3','4'])
-ax12.set_xticklabels(['2','3','4','5'])
-
-# 13, 14, 15
-ax13.set_ylim(0.7, 1.05)
-ax14.set_ylim(0.8, 1.05)
-ax15.set_ylim(0.8, 1.05)
-
-##ax13.set_yticks(np.arange(0, 750, 150))
-##ax14.set_yticks(np.arange(0, 750, 150))
-##ax15.set_yticks(np.arange(0, 750, 150))
-
-ax13.set_yticklabels([])
-ax14.set_yticklabels([])
-ax15.set_yticklabels([])
-
-ax13.set_xlim(2, 3)
-ax14.set_xlim(2, 4)
-ax15.set_xlim(2, 5)
-
-ax13.set_xticks(np.arange(2, 4, 1))
-ax14.set_xticks(np.arange(2, 5, 1))
-ax15.set_xticks(np.arange(2, 6, 1))
-
-
-ax13.set_xticklabels(['2','3'])
-ax14.set_xticklabels(['2','3','4'])
-ax15.set_xticklabels(['2','3','4','5'])
-
-# 16, 17, 18
-ax16.set_ylim(0.7, 1.05)
-ax17.set_ylim(0.8, 1.05)
-ax18.set_ylim(0.8, 1.05)
-
-##ax16.set_yticks(np.arange(0, 50, 10))
-##ax17.set_yticks(np.arange(0, 50, 10))
-##ax18.set_yticks(np.arange(0, 50, 10))
-
-ax16.set_yticklabels([])
-ax17.set_yticklabels([])
-ax18.set_yticklabels([])
-
-ax16.set_xlim(2, 3)
-ax17.set_xlim(2, 4)
-ax18.set_xlim(2, 5)
-
-ax16.set_xticks(np.arange(2, 4, 1))
-ax17.set_xticks(np.arange(2, 5, 1))
-ax18.set_xticks(np.arange(2, 6, 1))
-
-
-ax16.set_xticklabels(['2','3'])
-ax17.set_xticklabels(['2','3','4'])
-ax18.set_xticklabels(['2','3','4','5'])
-
-
-
-# 19, 20, 21
-ax19.set_ylim(0.7, 1.05)
-ax20.set_ylim(0.8, 1.05)
-ax21.set_ylim(0.8, 1.05)
-
-##ax16.set_yticks(np.arange(0, 50, 10))
-##ax17.set_yticks(np.arange(0, 50, 10))
-##ax18.set_yticks(np.arange(0, 50, 10))
-
-ax19.set_yticklabels([])
-ax20.set_yticklabels([])
-ax21.set_yticklabels([])
-
-ax19.set_xlim(2, 3)
-ax20.set_xlim(2, 4)
-ax21.set_xlim(2, 5)
-
-ax19.set_xticks(np.arange(2, 4, 1))
-ax20.set_xticks(np.arange(2, 5, 1))
-ax21.set_xticks(np.arange(2, 6, 1))
-
-
-ax19.set_xticklabels(['2','3'])
-ax20.set_xticklabels(['2','3','4'])
-ax21.set_xticklabels(['2','3','4','5'])
-
-
-# 22, 23, 24
-ax22.set_ylim(0.7, 1.05)
-ax23.set_ylim(0.8, 1.05)
-ax24.set_ylim(0.8, 1.05)
-
-##ax16.set_yticks(np.arange(0, 50, 10))
-##ax17.set_yticks(np.arange(0, 50, 10))
-##ax18.set_yticks(np.arange(0, 50, 10))
-
-ax22.set_yticklabels([])
-ax23.set_yticklabels([])
-ax24.set_yticklabels([])
-
-ax22.set_xlim(2, 3)
-ax23.set_xlim(2, 4)
-ax24.set_xlim(2, 5)
-
-ax22.set_xticks(np.arange(2, 4, 1))
-ax23.set_xticks(np.arange(2, 5, 1))
-ax24.set_xticks(np.arange(2, 6, 1))
-
-
-ax22.set_xticklabels(['2','3'])
-ax23.set_xticklabels(['2','3','4'])
-ax24.set_xticklabels(['2','3','4','5'])
-
-# 25, 26, 27
-ax25.set_ylim(0.7, 1.05)
-ax26.set_ylim(0.8, 1.05)
-ax27.set_ylim(0.8, 1.05)
-
-##ax16.set_yticks(np.arange(0, 50, 10))
-##ax17.set_yticks(np.arange(0, 50, 10))
-##ax18.set_yticks(np.arange(0, 50, 10))
-ax25.set_yticklabels([])
-ax26.set_yticklabels([])
-ax27.set_yticklabels([])
-
-ax25.set_xlim(2, 3)
-ax26.set_xlim(2, 4)
-ax27.set_xlim(2, 5)
-
-ax25.set_xticks(np.arange(2, 4, 1))
-ax26.set_xticks(np.arange(2, 5, 1))
-ax27.set_xticks(np.arange(2, 6, 1))
-
-
-ax1.set_xticklabels(['2','3'])
-ax2.set_xticklabels(['2','3','4'])
-ax3.set_xticklabels(['2','3','4','5'])
-
-
-
-#disable labels for some plots
-##ax1n.set_yticklabels([])
-##ax2n.set_yticklabels([])
-##ax3n.set_yticklabels([])
-##
-##ax4n.set_yticklabels([])
-##ax5n.set_yticklabels([])
-##ax6n.set_yticklabels([])
-
-##ax7n.set_yticklabels([])
-##ax8n.set_yticklabels([])
-##ax9n.set_yticklabels([])
-##
-##ax10n.set_yticklabels([])
-##ax11n.set_yticklabels([])
-##ax12n.set_yticklabels([])
-##
-##ax13n.set_yticklabels([])
-##ax14n.set_yticklabels([])
-##ax15n.set_yticklabels([])
-##
-##ax16n.set_yticklabels([])
-##ax17n.set_yticklabels([])
-##ax18n.set_yticklabels([])
-##
-##ax19n.set_yticklabels([])
-##ax20n.set_yticklabels([])
-##ax21n.set_yticklabels([])
-##
-##ax22n.set_yticklabels([])
-##ax23n.set_yticklabels([])
-##ax24n.set_yticklabels([])
-##
-##ax25n.set_yticklabels([])
-##ax26n.set_yticklabels([])
-##ax27n.set_yticklabels([])
-
-#define the location of ticks
-
-##ax1n.yaxis.tick_right()
-##ax2n.yaxis.tick_right()
-##ax3n.yaxis.tick_right()
-##ax4n.yaxis.tick_right()
-##ax5n.yaxis.tick_right()
-##ax6n.yaxis.tick_right()
-##ax7n.yaxis.tick_right()
-##ax8n.yaxis.tick_right()
-##ax9n.yaxis.tick_right()
-##ax10n.yaxis.tick_right()
-##ax11n.yaxis.tick_right()
-##ax12n.yaxis.tick_right()
-##ax13n.yaxis.tick_right()
-##ax14n.yaxis.tick_right()
-##ax15n.yaxis.tick_right()
-##ax16n.yaxis.tick_right()
-##ax17n.yaxis.tick_right()
-##ax18n.yaxis.tick_right()
-
-ax1.yaxis.tick_left()
-ax2.yaxis.tick_left()
-ax3.yaxis.tick_left()
-ax4.yaxis.tick_left()
-ax5.yaxis.tick_left()
-ax6.yaxis.tick_left()
-ax7.yaxis.tick_left()
-ax8.yaxis.tick_left()
-ax9.yaxis.tick_left()
-ax10.yaxis.tick_left()
-ax11.yaxis.tick_left()
-ax12.yaxis.tick_left()
-ax13.yaxis.tick_left()
-ax14.yaxis.tick_left()
-ax15.yaxis.tick_left()
-ax16.yaxis.tick_left()
-ax17.yaxis.tick_left()
-ax18.yaxis.tick_left()
-ax19.yaxis.tick_left()
-ax20.yaxis.tick_left()
-ax21.yaxis.tick_left()
-ax22.yaxis.tick_left()
-ax23.yaxis.tick_left()
-ax24.yaxis.tick_left()
-ax25.yaxis.tick_left()
-ax26.yaxis.tick_left()
-ax27.yaxis.tick_left()
-
-
-
-##
-##ax1n.set_ylim(-0.1,1.05)
-##ax2n.set_ylim(-0.1,1.05)
-##ax3n.set_ylim(-0.1,1.05)
-##ax4n.set_ylim(-0.1,1.05)
-##ax5n.set_ylim(-0.1,1.05)
-##ax6n.set_ylim(-0.1,1.05)
-##ax7n.set_ylim(-0.1,1.05)
-##ax8n.set_ylim(-0.1,1.05)
-##ax9n.set_ylim(-0.1,1.05)
-##ax10n.set_ylim(-0.1,1.05)
-##ax11n.set_ylim(-0.1,1.05)
-##ax12n.set_ylim(-0.1,1.05)
-##ax13n.set_ylim(-0.1,1.05)
-##ax14n.set_ylim(-0.1,1.05)
-##ax15n.set_ylim(-0.1,1.05)
-##ax16n.set_ylim(-0.1,1.05)
-##ax17n.set_ylim(-0.1,1.05)
-##ax18n.set_ylim(-0.1,1.05)
-##
-
-##ax3n.yaxis.set_label_position("right")
-##ax6n.yaxis.set_label_position("right")
-##ax9n.yaxis.set_label_position("right")
-##ax12n.yaxis.set_label_position("right")
-##ax15.yaxis.set_label_position("right")
-##ax18.yaxis.set_label_position("right")
-
-
-#enable grid lines
-
-##ax1.grid(True)
-##ax2.grid(True)
-##ax3.grid(True)
-##ax4.grid(True)
-##ax5.grid(True)
-##ax6.grid(True)
-##ax7.grid(True)
-##ax8.grid(True)
-##ax9.grid(True)
-##ax10.grid(True)
-##ax11.grid(True)
-##ax12.grid(True)
-##ax13.grid(True)
-##ax14.grid(True)
-##ax15.grid(True)
-##ax16.grid(True)
-##ax17.grid(True)
-##ax18.grid(True)
 
 
 
 #set Y labels
-ax3.set_xlabel(r"$SUT_{1}$")
-ax6.set_xlabel(r"$SUT_{2}$")
-ax9.set_xlabel(r"$SUT_{3}$")
-ax12.set_xlabel(r"$SUT_{4}$")
-ax15.set_xlabel(r"$SUT_{5}$")
-ax18.set_xlabel(r"$SUT_{6}$")
-ax21.set_xlabel(r"$SUT_{7}$")
-ax24.set_xlabel(r"$SUT_{8}$")
-ax27.set_xlabel(r"$SUT_{9}$")
+#ax3.set_xlabel(r"$SUT_{1}$")
+
 #set X labels
-ax1.set_ylabel(r"$2-way\ to\ 3-way$")
-ax2.set_ylabel(r"$2-way\ to\ 4-way$")
-ax3.set_ylabel(r"$2-way\ to\ 5-way$")
+
+#ax3.set_ylabel(r"$2-way\ to\ 5-way$")
 
 #adjust plot spacing
-plt.subplots_adjust(left=0.07, bottom=0.11, right=0.97, top=0.94, wspace=0.25, hspace=0.25)
+plt.subplots_adjust(left=0.07, bottom=0.11, right=0.97, top=0.95, wspace=0.25, hspace=0.55)
 
 #finally draw the plot
 plt.show()

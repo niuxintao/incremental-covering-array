@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  2 MAY 2017 08:19
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  13 MAY 2017 10:48
 entering extended mode
 **incremental*covering*array.tex
 
@@ -6,16 +6,18 @@ entering extended mode
 .tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\CTEX\MiKTeX\tex\latex\ieeetran\IEEEtran.cls
-Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+(C:\Users\xintao\Desktop\incremental-covering-array\IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
 \@IEEEtrantmpdimenA=\dimen102
 \@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
 \@IEEEtrantmpcountA=\count80
 \@IEEEtrantmpcountB=\count81
+\@IEEEtrantmpcountC=\count82
 \@IEEEtrantmptoksA=\toks14
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 366.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
 (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -25,152 +27,173 @@ Requested font "ptmr7t" at 10.0pt
 
 -- Using 8.5in x 11in (letter) paper.
 -- Using DVI output.
-\@IEEEnormalsizeunitybaselineskip=\dimen104
+\@IEEEnormalsizeunitybaselineskip=\dimen105
 -- This is a 10 point document.
-\CLASSINFOnormalsizebaselineskip=\dimen105
-\CLASSINFOnormalsizeunitybaselineskip=\dimen106
-\IEEEnormaljot=\dimen107
+Requested font "ptmr7t" at 9.0pt
+ -> ptmr7t
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
 Requested font "ptmr7t" at 5.0pt
  -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 5.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 5.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 5.0pt
  -> ptmbi7t
 Requested font "ptmr7t" at 7.0pt
  -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 7.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 7.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 7.0pt
  -> ptmbi7t
 Requested font "ptmr7t" at 8.0pt
  -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 8.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 8.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 8.0pt
  -> ptmbi7t
-Requested font "ptmr7t" at 9.0pt
- -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 9.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 9.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 9.0pt
  -> ptmbi7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 10.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 10.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 10.0pt
  -> ptmbi7t
 Requested font "ptmr7t" at 11.0pt
  -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 11.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 11.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 11.0pt
  -> ptmbi7t
 Requested font "ptmr7t" at 12.0pt
  -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 12.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 12.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 12.0pt
  -> ptmbi7t
 Requested font "ptmr7t" at 17.0pt
  -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 17.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 17.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 17.0pt
  -> ptmbi7t
 Requested font "ptmr7t" at 20.0pt
  -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 20.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 20.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 20.0pt
  -> ptmbi7t
 Requested font "ptmr7t" at 24.0pt
  -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 Requested font "ptmb7t" at 24.0pt
  -> ptmb7t
 Requested font "ptmri7t" at 24.0pt
  -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 Requested font "ptmbi7t" at 24.0pt
  -> ptmbi7t
-\IEEEilabelindentA=\dimen108
-\IEEEilabelindentB=\dimen109
-\IEEEilabelindent=\dimen110
-\IEEEelabelindent=\dimen111
-\IEEEdlabelindent=\dimen112
-\IEEElabelindent=\dimen113
-\IEEEiednormlabelsep=\dimen114
-\IEEEiedmathlabelsep=\dimen115
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
 \IEEEiedtopsep=\skip41
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@IEEEsubequation=\count86
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@IEEEsubequation=\count87
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count87
-\c@table=\count88
-\@IEEEeqnnumcols=\count89
-\@IEEEeqncolcnt=\count90
-\@IEEEtmpitemindent=\dimen116
-\c@IEEEbiography=\count91
-\@IEEEtranrubishbin=\box26
+\c@figure=\count88
+\c@table=\count89
+\@IEEEeqnnumcols=\count90
+\@IEEEeqncolcnt=\count91
+\@IEEEsubeqnnumrollback=\count92
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count93
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count94
+\@IEEEtranrubishbin=\box27
 ) (C:\CTEX\MiKTeX\tex\latex\algorithmicx\algpseudocode.sty
 Package: algpseudocode 
 
@@ -181,15 +204,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count92
-\c@ALG@rem=\count93
-\c@ALG@nested=\count94
+\c@ALG@line=\count95
+\c@ALG@rem=\count96
+\c@ALG@nested=\count97
 \ALG@tlm=\skip44
 \ALG@thistlm=\skip45
-\c@ALG@Lnr=\count95
-\c@ALG@blocknr=\count96
-\c@ALG@storecount=\count97
-\c@ALG@tmpcounter=\count98
+\c@ALG@Lnr=\count98
+\c@ALG@blocknr=\count99
+\c@ALG@storecount=\count100
+\c@ALG@tmpcounter=\count101
 \ALG@tmplength=\skip46
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -200,14 +223,14 @@ nment
 
 (C:\CTEX\MiKTeX\tex\latex\float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count99
+\c@float@type=\count102
 \float@exts=\toks15
-\float@box=\box27
+\float@box=\box28
 \@float@everytoks=\toks16
-\@floatcapt=\box28
+\@floatcapt=\box29
 )
 \@float@every@algorithm=\toks17
-\c@algorithm=\count100
+\c@algorithm=\count103
 )
 (C:\CTEX\MiKTeX\tex\latex\subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
@@ -221,12 +244,12 @@ Package: caption 2011/11/10 v3.2e Customizing captions (AR)
 
 (C:\CTEX\MiKTeX\tex\latex\caption\caption3.sty
 Package: caption3 2011/11/01 v1.4a caption3 kernel (AR)
-\captionmargin=\dimen117
-\captionmargin@=\dimen118
-\captionwidth=\dimen119
-\caption@indent=\dimen120
-\caption@parindent=\dimen121
-\caption@hangindent=\dimen122
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@indent=\dimen129
+\caption@parindent=\dimen130
+\caption@hangindent=\dimen131
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -236,28 +259,30 @@ Package caption Warning: Unsupported document class (or package) detected,
 See the caption package documentation for explanation.
 
 Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
-blestring \footnotesize \begin {center}{\normalfont \footnotesize #1}\\{\normal
-font \footnotesize \scshape #2}\end {center}\@IEEEtablecaptionsepspace \else \@
-IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {
-#1.}~~ #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \
-footnotesize {#1.}~~ }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent 
-\unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfon
-t \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont 
-\footnotesize \box \@tempboxa \hfil }\fi \fi \fi .
-\c@ContinuedFloat=\count101
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi .
+\c@ContinuedFloat=\count104
 Package caption Info: float package is loaded.
 )
-\c@KVtest=\count102
+\c@KVtest=\count105
 \sf@farskip=\skip47
-\sf@captopadj=\dimen123
+\sf@captopadj=\dimen132
 \sf@capskip=\skip48
 \sf@nearskip=\skip49
-\c@subfigure=\count103
-\c@subfigure@save=\count104
-\c@lofdepth=\count105
-\c@subtable=\count106
-\c@subtable@save=\count107
-\c@lotdepth=\count108
+\c@subfigure=\count106
+\c@subfigure@save=\count107
+\c@lofdepth=\count108
+\c@subtable=\count109
+\c@subtable@save=\count110
+\c@lotdepth=\count111
 \sf@top=\skip50
 \sf@bottom=\skip51
 ) (C:\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty
@@ -290,13 +315,13 @@ Package graphics Info: Driver file: xetex.def on input line 91.
 File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
 
 ))
-\Gin@req@height=\dimen124
-\Gin@req@width=\dimen125
+\Gin@req@height=\dimen133
+\Gin@req@width=\dimen134
 )
 (C:\CTEX\MiKTeX\tex\latex\multirow\multirow.sty
-\bigstrutjot=\dimen126
+\bigstrutjot=\dimen135
 )
-\c@definition=\count109
+\c@definition=\count112
 
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux")
@@ -312,69 +337,38 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 364.
 LaTeX Font Info:    ... okay on input line 364.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 364.
 LaTeX Font Info:    ... okay on input line 364.
+
+-- Lines per column: 56 (exact).
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 449.
-Requested font "cmr10" at 10.95pt
- -> cmr10
-Requested font "cmr8" at 8.0pt
- -> cmr8
-Requested font "cmmi10" at 10.95pt
- -> cmmi10
-Requested font "cmmi8" at 8.0pt
- -> cmmi8
-Requested font "cmsy10" at 10.95pt
- -> cmsy10
-Requested font "cmsy8" at 8.0pt
- -> cmsy8
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 449.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 449.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 449.
-Requested font "ptmr7t" at 7.69997pt
- -> ptmr7t
+Requested font "cmr9" at 9.0pt
+ -> cmr9
 Requested font "cmr6" at 6.0pt
  -> cmr6
+Requested font "cmmi9" at 9.0pt
+ -> cmmi9
 Requested font "cmmi6" at 6.0pt
  -> cmmi6
+Requested font "cmsy9" at 9.0pt
+ -> cmsy9
 Requested font "cmsy6" at 6.0pt
  -> cmsy6
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 449.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 449.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 449.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 449.
-
-Overfull \hbox (38.68953pt too wide) in paragraph at lines 449--449
- [] 
- []
-
-
-Overfull \hbox (38.68953pt too wide) in paragraph at lines 449--449
- [] 
- []
-
-Requested font "cmr9" at 9.0pt
- -> cmr9
-Requested font "cmmi9" at 9.0pt
- -> cmmi9
-Requested font "cmsy9" at 9.0pt
- -> cmsy9
-LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 454.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 454.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 454.
 Requested font "ptmrc7t" at 10.0pt
  -> ptmrc7t
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 495.
 [1
 
 
 ]
-Underfull \hbox (badness 4832) in paragraph at lines 541--542
+Underfull \hbox (badness 4832) in paragraph at lines 543--544
 \OT1/ptm/b/n/10 Definition 1. \OT1/ptm/m/n/10 A $\OML/cmm/m/it/10 t$\OT1/ptm/m/
 n/10 -way \OT1/ptm/m/it/10 cov-er-ing ar-ray $\OML/cmm/m/it/10 MCA\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 t; k;$
@@ -382,26 +376,31 @@ n/10 -way \OT1/ptm/m/it/10 cov-er-ing ar-ray $\OML/cmm/m/it/10 MCA\OT1/cmr/m/n/
 
 File: incremental_covering_ex.eps Graphic file (type eps)
 <incremental_covering_ex.eps>
-Overfull \hbox (5.71754pt too wide) in paragraph at lines 565--568
+Overfull \hbox (5.71754pt too wide) in paragraph at lines 567--570
  [][] 
  []
 
-** ATTENTION: \proof is deprecated (line 617). Use \IEEEproof instead.
 
-Underfull \hbox (badness 1354) in paragraph at lines 619--620
- \OT1/ptm/m/it/10 Proof: \OT1/ptm/m/n/10 We just need to prove that for any cov
--er-
+Underfull \hbox (badness 4242) in paragraph at lines 621--622
+[]\OT1/ptm/m/n/10 We just need to prove that for any cov-er-ing
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 623--624
+Underfull \hbox (badness 5924) in paragraph at lines 621--622
+\OT1/ptm/m/n/10 ar-ray, $\OML/cmm/m/it/10 MCA\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+N[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 t; k; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a
+[]; a[];$ $:::; a[]\OT1/cmr/m/n/10 ))$\OT1/ptm/m/n/10 , we can find a
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 625--626
 \OT1/ptm/m/n/10 cov-er at least one $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t \OMS/c
 msy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)$\OT1/ptm/m/n/10 -degree in-ter-ac-tion that o
 n-ly
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 623--624
+Underfull \hbox (badness 3078) in paragraph at lines 625--626
 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 ; :::; v[]; :::\OMS/cmsy/
 m/n/10 ^^@\OML/cmm/m/it/10 ; :::v[]; :::; \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 
 ; :::; v[]; ::: \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 :::; v[]; :::; \OMS/cmsy/
@@ -409,7 +408,7 @@ m/n/10 ^^@\OML/cmm/m/it/10 ; :::\OT1/cmr/m/n/10 )$
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 623--624
+Underfull \hbox (badness 1629) in paragraph at lines 625--626
 \OML/cmm/m/it/10 :::; v[]; :::; \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 ; :::\OT1/
 cmr/m/n/10 )$ \OT1/ptm/m/n/10 ($\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 6\OT1/cmr
 /m/n/10 = \OML/cmm/m/it/10 v[]$\OT1/ptm/m/n/10 ) will n-ev-er be cov-ered by
@@ -418,68 +417,46 @@ cmr/m/n/10 )$ \OT1/ptm/m/n/10 ($\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 6\OT1/cmr
 [2]
 File: increase_example.eps Graphic file (type eps)
  <increase_example.eps>
-Underfull \hbox (badness 2401) in paragraph at lines 723--724
+Underfull \hbox (badness 2401) in paragraph at lines 725--726
 []\OT1/ptm/m/n/10 An ex-am-ple for this s-trat-e-gy is giv-en in Fig.2[]. In
  []
 
+[3]
 File: decrease_example.eps Graphic file (type eps)
-<decrease_example.eps> [3] [4]
-Overfull \hbox (3.61832pt too wide) in paragraph at lines 787--847
-[][] 
+ <decrease_example.eps> [4]
+Requested font "cmr8" at 8.0pt
+ -> cmr8
+Requested font "cmmi8" at 8.0pt
+ -> cmmi8
+Requested font "cmsy8" at 8.0pt
+ -> cmsy8
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 796.
+ [5]
+File: size.eps Graphic file (type eps)
+ <size.eps>
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 913--914
+ [] 
  []
 
-
-LaTeX Warning: Reference `ica_to_constuct' on page 5 undefined on input line 85
-4.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 854--856
-[]\OT1/ptm/m/n/10 Then for each SUT, we gen-er-ate a in-cre-men-tal
+File: time.eps Graphic file (type eps)
+<time.eps>
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 934--935
+ [] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 854--856
-\OT1/ptm/m/n/10 cov-er-ing ar-rays, shown in Ta-ble []. which
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 854--856
-\OT1/ptm/m/n/10 are $\OML/cmm/m/it/10 ICA\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 N[]
-; N[]\OT1/cmr/m/n/10 ]; [2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3]\OML/cmm/m/it/10
- ; k; v\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 , $\OML/cmm/m/it/10 ICA$ $\OT1/cmr/m/n
-/10 ([\OML/cmm/m/it/10 N[];$ $N[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 854--856
-\OML/cmm/m/it/10 ; N[]\OT1/cmr/m/n/10 ]; [2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3
-\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4]\OML/cmm/m/it/10 ; k; v\OT1/cmr/m/n/10 )$\
-OT1/ptm/m/n/10 , and $\OML/cmm/m/it/10 ICA\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 N[
-]; N[]; N[]; N[]\OT1/cmr/m/n/10 ]$ $; [2\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 854--856
-\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cm
-r/m/n/10 5]\OML/cmm/m/it/10 ; k; v\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 , re-spec-t
-ive-ly. Each in-cre-men-tal cov-er-ing
- []
-
-[5]
-Overfull \hbox (12.02174pt too wide) in paragraph at lines 952--974
-[][] 
- []
-
-File: experiment.eps Graphic file (type eps)
-<experiment.eps> [6]
+[6] [7] [8]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
-.bbl" [7]
+.bbl"
 Underfull \hbox (badness 2020) in paragraph at lines 107--110
 \OT1/ptm/m/n/8 in \OT1/ptm/m/it/8 Soft-ware En-gi-neer-ing Work-shop, 2006. SEW
 '06. 30th An-nu-al
  []
 
-)
+
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+ [9])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -491,20 +468,18 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8]
+[10
+
+]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
-.aux")
-
-LaTeX Warning: There were undefined references.
-
- ) 
+.aux") ) 
 Here is how much of TeX's memory you used:
- 3183 strings out of 430478
- 50950 string characters out of 3191502
- 123755 words of memory out of 3000000
- 6328 multiletter control sequences out of 15000+200000
- 29514 words of font info for 68 fonts, out of 3000000 for 9000
+ 3313 strings out of 430478
+ 54096 string characters out of 3191502
+ 127432 words of memory out of 3000000
+ 6458 multiletter control sequences out of 15000+200000
+ 28091 words of font info for 64 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 44i,12n,42p,1576b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,9n,42p,1577b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on incremental*covering*array.pdf (8 pages).
+Output written on incremental*covering*array.pdf (10 pages).

@@ -411,29 +411,29 @@
 % for over three affiliations, or if they all won't fit within the width
 % of the page, use this alternative format:
 %
-\author{\IEEEauthorblockN{Xintao Niu\IEEEauthorrefmark{1},
-Changhai Nie\IEEEauthorrefmark{1},
-Hareton Leung\IEEEauthorrefmark{2},
-Jeff Y. Lei\IEEEauthorrefmark{3},
-Xiaoyin Wang\IEEEauthorrefmark{4},
-Yan Wang \IEEEauthorrefmark{5},
-Mengfan Zeng\IEEEauthorrefmark{1}, and
-Jiaxi Xu \IEEEauthorrefmark{5}}
-\IEEEauthorblockA{\IEEEauthorrefmark{1}State Key Laboratory for Novel Software Technology\\
-Nanjing University, China, 210023\\
-Email: niuxintao@gmail.com, changhainie@nju.edu.cn, zengmengfan@foxmail.com}
-\IEEEauthorblockA{\IEEEauthorrefmark{2}Department of Computing Hong Kong Polytechnic University\\
-Kowloon, Hong Kong\\
-Email: cshleung@comp.polyu.edu.hk}
-\IEEEauthorblockA{\IEEEauthorrefmark{3} Dpartment of Computer Science and Engineering\\
-The University of Texas at Arlington\\
-Email: ylei@cse.uta.edu}
-\IEEEauthorblockA{\IEEEauthorrefmark{4} Department of Computer Science \\
-University of Texas at San Antonio\\
-Email: Xiaoyin.Wang@utsa.edu}
-\IEEEauthorblockA{\IEEEauthorrefmark{5} School of Information Engineering\\
-Nanjing Xiaozhuang University\\
-Email: wangyan@njxzc.edu.cn, xujiaxi@njxzc.edu.cn}
+\author{%\IEEEauthorblockN{Xintao Niu\IEEEauthorrefmark{1},
+%Changhai Nie\IEEEauthorrefmark{1},
+%Hareton Leung\IEEEauthorrefmark{2},
+%Jeff Y. Lei\IEEEauthorrefmark{3},
+%Xiaoyin Wang\IEEEauthorrefmark{4},
+%Yan Wang \IEEEauthorrefmark{5},
+%Mengfan Zeng\IEEEauthorrefmark{1}, and
+%Jiaxi Xu \IEEEauthorrefmark{5}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}State Key Laboratory for Novel Software Technology\\
+%Nanjing University, China, 210023\\
+%Email: niuxintao@gmail.com, changhainie@nju.edu.cn, zengmengfan@foxmail.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Department of Computing Hong Kong Polytechnic University\\
+%Kowloon, Hong Kong\\
+%Email: cshleung@comp.polyu.edu.hk}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3} Department of Computer Science and Engineering\\
+%The University of Texas at Arlington\\
+%Email: ylei@cse.uta.edu}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4} Department of Computer Science \\
+%University of Texas at San Antonio\\
+%Email: Xiaoyin.Wang@utsa.edu}
+%\IEEEauthorblockA{\IEEEauthorrefmark{5} School of Information Engineering\\
+%Nanjing Xiaozhuang University\\
+%Email: wangyan@njxzc.edu.cn, xujiaxi@njxzc.edu.cn}
 }
 
 
@@ -451,7 +451,7 @@ Email: wangyan@njxzc.edu.cn, xujiaxi@njxzc.edu.cn}
 
 \begin{abstract}
 %\boldmath
-Combinatorial Testing (CT) is an effective technique for testing the interactions of factors in the Software Under Test (SUT). By designing an efficient set of test cases, i.e., a covering array, CT aims to check every possible valid interaction in SUT. Most existing covering array generation algorithms require a given \emph{degree} \emph{t} in prior, such that only the interactions with no more than $t$ factors are to be checked.  In practice, however, the value of $t$ cannot be properly determined, especially for systems with complex interaction space.  Hence, incremental covering arrays are preferred. In this paper, we propose two strategies for generating incremental covering arrays which can increase the coverage strength when required. A preliminary evaluation of the two strategies is presented, which shows that both strategies have their own advantages with respect to covering array size.
+Combinatorial Testing (CT) is an effective technique for testing the interactions of factors in the Software Under Test (SUT). By designing an efficient set of test cases, i.e., a covering array, CT aims to check every possible valid interaction in SUT. Most existing covering array generation algorithms require a given \emph{degree} \emph{t} in prior, such that only the interactions with no more than $t$ factors are to be checked.  In practice, however, the value of $t$ cannot be properly determined, especially for systems with complex interaction space.  Hence, incremental covering arrays are preferred. In this paper, we propose two strategies (\emph{Bottom-up} and \emph{Top-down}) for generating incremental covering arrays which can increase the coverage strength when required. A comparative evaluation of these two strategies is performed on 55 software subjects (including 25 real-world software and 30 synthetic systems). The results shows that strategy \emph{Bottom-up} have a significant advantage over strategy \emph{Top-down}, and it also performs better than the traditional approach.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -504,7 +504,9 @@ In consideration of the size of the total number of test cases, we argue that th
 
 Then, a natural question, and also the motivation of this paper is, \textbf{is it possible to generate an incremental covering array with the same number of the overall test cases as those by the particular high-way covering array generation algorithms ?}  Due to the obvious conclusion that any high way covering array must cover all the lower way interactions, the answer for this question is \emph{yes}, as we can just apply a particular covering array generation algorithm to generate the high-strength covering array, and then generate the lower-strength covering arrays by extracting some subset of the test cases which can cover all the lower degree interactions. We refer to this strategy as the \emph{top-down} strategy.
 
-In this paper, we propose these two strategies and evaluate their performance by comparing them at constructing several incremental covering arrays. The results of the experiments showed that the \emph{top-down} strategy has an significant advantage at the size of the higher-strength covering array, while the \emph{bottom-up} strategy is better at constructing those lower-strength covering arrays with smaller size. Based on this observation, we applied our two strategies on testing an industrial software (Tomcat). The results of this empirical study showed that our approach generates smaller size of test cases than traditional approach, while keeps a high rate of fault detection.
+In this paper, we propose these two strategies and evaluate their performance by comparing them at constructing several incremental covering arrays on 55 wildly used subjects (including 25 real-world software and 30 synthetic systems). The results shows that strategy \emph{Bottom-up} have a significant advantage over strategy \emph{Top-down} at the size of covering arrays (especially for the lower-strength covering array) and the time cost.  Additionally, strategy \emph{Bottom-up} also performs better than the traditional approach.
+
+ %The results of the experiments showed that the \emph{top-down} strategy has an significant advantage at the size of the higher-strength covering array, while the \emph{bottom-up} strategy is better at constructing those lower-strength covering arrays with smaller size. Based on this observation, we applied our two strategies on testing an industrial software (Tomcat). The results of this empirical study showed that our approach generates smaller size of test cases than traditional approach, while keeps a high rate of fault detection.
 
 %The answer is yes.
 %For this, And also the key idea of this paper : To generate higher strength covering array from the lower strength, may be not effective at the size of the overall needed test cases. This can be easily understood, as it is not focus on the  higher covering array, which should . to in the .
@@ -729,7 +731,8 @@ An example for this strategy is given in Fig.\ref{decrease-example}. In this exa
 \end{figure}
 
 
-From the two examples, an obvious observation is that for the \emph{top-down} strategy, it has a significant advantage over the \emph{bottom-up} strategy with respect to the size of the 4-way covering array (16 for \emph{top-down} and 24 for \emph{bottom-up}). But when  considering the lower-strength covering arrays, the \emph{bottom-up} strategy performs better (13 and 6 for \emph{bottom-up}, while 14 and 8 for \emph{top-down} respectively).  To evaluate the generality of this observation , we conduct experiments in the next section.
+From the two examples, an obvious observation is that for the \emph{top-down} strategy, it has a significant advantage over the \emph{bottom-up} strategy with respect to the size of the 4-way covering array (16 test cases generated by \emph{top-down}, while 24 by \emph{bottom-up}). But when considering the lower-strength covering arrays, the \emph{bottom-up} strategy performs slightly better (13 and 6 by \emph{bottom-up} for degree 3 and 2, respectively; while 14 and 8 by \emph{top-down}).
+%To evaluate the generality of this observation, we conduct experiments in the next section.
 
 
 %\section{}
@@ -739,107 +742,118 @@ From the two examples, an obvious observation is that for the \emph{top-down} st
 In this section, we will describe a specific implementation of the two strategies proposed in the previous section.
 
 \subsection{Covering array generation method}
-Our covering array generation approach is IPOG \cite{lei2007ipog,lei2008ipog,yu2013efficient}, which firstly builds a \emph{t}-way test set for the first \emph{t} parameters, then extends the test set to build a t-way test set for the first t+1 parameters, and then continues to extend the test set until it builds a t-way test set for all the parameters. We select this algorithm mainly because of its efficiency, that is, it can quickly generate a t-way covering array even though \emph{t} is a relatively large number (up to 6). This is important, as in our experiment section, some subjects contain an extremely large input space, which is unfavorable to apply some time-consuming covering array generation approaches.
+Our covering array generation approach is IPOG \cite{lei2007ipog,lei2008ipog,yu2013efficient}, which firstly builds a \emph{t}-way test set for the first \emph{t} parameters, then extends the test set to build a t-way test set for the first \emph{t+1} parameters, and then continues to extend the test set until it builds a t-way test set for all the parameters. We select this algorithm mainly because it is very efficient, that is, it can quickly generate a t-way covering array even though \emph{t} is a relatively large number (up to 6). This is important, as in our experiments, some subjects contain an extremely large input space, which is unfavorable to apply some time-consuming covering array generation approaches.
 
 \subsection{Constraints handling}
 Our constraints handling technique is based on Minimum Forbidden Tuples (MFTs) \cite{yu2014combinatorial,yu2015constraint}, which is well supported by IPOG generation algorithm. A forbidden tuple is a tuple as the value assignment of some parameters that violates constraints. A minimum forbidden tuple is a forbidden tuple of minimum size that covers no other forbidden tuples. Given some constraints for one SUT, we should compute all the MFTs of the SUT, and then limit the test cases to the ones that do not contain any tuple in the MFTs.
+%Utilizing Minimum Forbidden Tuples to handle constraints is also very efficient, because it does not need to call any constraint satisfaction solver, which is very time-consuming if there is too many constraints.
 
-\subsection{Seeding technique}
-Seeding test cases is the key part for the bottom-up strategy, which regards the lower-way covering array as the seeds of the higher-way covering array. Specifically, we need to eliminated those higher-degree tuples that have already been covered by the lower-way covering array. Then we just need to continue the test case generation approach  to cover the remaining un-covered higher-degree tuples.
+\subsection{Seeding test cases}
+When given a lower-way covering array as seeds, we need to eliminated those higher-degree tuples that have already been covered by this covering array. After this, we need to generate additional test cases to cover the un-covered higher-degree tuples until all the higher-degree tuples are covered.
 
 
 \subsection{Extract lower-way covering array}
-This is the key part for the top-down strategy. The extraction process is a greedy approach in this paper. For any $t_{i+1}$ covering array, at each iteration, we only select the test case which can cover most uncovered $t_{i}$-degree interactions from the $t_{i+1}$-way covering array. The selection process repeats until we obtain a complete $t_{i}$-way covering array.  Note that this greedy selection does not promise to obtain the $CA_{i}$ covering array with the minimal size. But to get the minimal size, we need to exhaustively check every possible subset of the higher-covering array $CA_{i+1}$. This is impractical if the size of $CA_{i + 1}$ is too large.
+This is the key part for the top-down strategy. Considering the test cost, it is desirable to obtain a minimal $t$-way covering array $CA_{t}$  from a $t+1$-way covering array $CA_{t+1}$. However, this is impractical if $CA_{t+1}$ is too large, because to get the minimal $CA_{t}$, we need to exhaustively check every possible subset of the $CA_{t+1}$. Hence, in this paper, we decide to adopt a greedy method. Specifically, at each iteration, we will select the test case from $CA_{t+1}$ which has the longest hamming distance from the test cases that have already been selected.  The hamming distance between two test cases, say, $c_{1}$ and $c_{2}$, is computed in the following formula:
+
+$$ \frac{\#the\ num\ of\ different\ elements\ between\ c_{1}\ and\ c_{2}}{\#the\ num\ of\ all\ the\ elements\ in\ c_{1}\ and\ c_{2}} $$
+
+The selection process repeats until we obtain a complete $t$-way covering array.
+
+
+%A straightforward idea is that, at each iteration, we select the test case which can cover most uncovered $t$-degree interactions from the $t_{i+1}$-way covering array. The selection process repeats until we obtain a complete $t_{i}$-way covering array. Although this greedy method is much smaller than the optimal method, it is still far from practice. This method can .
+
+%The extraction process is a greedy approach in this paper. For any $t_{i+1}$ covering array, at each iteration, we only select the test case which can cover most uncovered $t_{i}$-degree interactions from the $t_{i+1}$-way covering array. The selection process repeats until we obtain a complete $t_{i}$-way covering array.  Note that this greedy selection does not promise to obtain the $CA_{i}$ covering array with the minimal size. But to get the minimal size, we need to exhaustively check every possible subset of the higher-covering array $CA_{i+1}$. This is impractical if the size of $CA_{i + 1}$ is too large.
 
 \section{Experiments and Results}
 \subsection{Research Questions}
-We set up the following four research questions to investigate
-the eectiveness and the eciency of our approach.
-RQ1. Compared with the traditional t-way test generation,
-can DICOT deliver higher t0-way coverage with
-higher interaction strength t0(> t)? If so, how big
-are the improvement and computational overhead?
-RQ2. Compared with the Enumerating Choice (EC) approach,
-how eective and ecient is DICOT w. r. t.
-t0(> t)-way coverage and computational overhead?
-RQ3. Compared with the DT approach, how eective and
-ecient is DICOT w. r. t. the t-way test suite size and
-t0(> t)-way coverage?
-RQ4. How different is the performance when using Hamming
-distance and chi-square distance as a distance
-metric in DICOT?
-DICOT employs another appr
-This section describes the experiments.
-\subsection{Benchmarks}
-We used 55 SUT as the subjects of our experiments, which are shown in Table \ref{model_of_sut_of_subjects}. These subjects are wildly used to evaluate the performance of the covering array generation approach. Among these subjects, the first 20 subjects (from \emph{Banking1} to \emph{Telecom}), come from a recent benchmark created by Segall et al \cite{segall2011using}, which have already been used in several works \cite{jia2015learning,choi2016distance}. There 20 subjects cover a wide range of applications, including telecommunications, health care, storage and banking systems.  The following five subjects (from \emph{SPIN-S}  to \emph{Bugzilla} ) were firstly introduced by Cohen et al. \cite{cohen2007interaction,cohen2008constructing}. Among them, SPIN-S and SPIN-V are two components for model simulation and verification, GCC is a compiler system, Apache is a web server application, and Bugzilla is a web-based bug tracking system. These five subjects have been wildly used in literatures \cite{kuhn2006pseudo,cohen2007interaction,cohen2008constructing,garvin2009improved,garvin2011evaluating,lin2015tca,choi2016distance}. The last 30 (from Syn1 to Syn30) are synthetic subject models were designed to simulate configurations with constraints in
-real-world programs, generated by Cohen et al. [35] and adopted in follow-up research by Garvin et al. [2], [25].
+We set up the following three research questions to investigate the effectiveness and the efficiency of the two strategies.
 
-In Table \ref{model_of_sut_of_subjects}, the model is presented in the abbreviated form $\#values^{\#number\ of\ parameters}$, e.g., $7^{3}6^{2}$ indicates the software has 3 parameters that can take 7 values and 2 parameters take 6 values.  The constraint is presented in the form $\#degree^{\#number\ of\ constraints}$, e.g., $2^{3}3^{18}$ means that the SUT contains 3 constraints with  2-degree and 18 constraints with 3-degree. The last Column \emph{ICA} shows the specific incremental covering array that needs to be generated for each model. For most subjects we will generate incremental covering array from 2-way to 6 way (2-6). 
+\textbf{RQ1.What is the size of the incremental covering array generated by the two strategies \emph{bottom-up}, and \emph{top-down}?}
+
+To evaluate the two strategies, the size of the covering array is one important metric. In CT, the main goal is to make the size of the covering array as small as possible. With respect to the incremental covering array, instead of focusing on one covering array, we should evaluate all the covering arrays with different strengths in it. How to apply the two strategies in practice depends on the strength of the covering arrays they have advantages at generating them. For example, if one strategy can generate smaller size of lower-way covering array, it is a better choice at generating incremental covering array within a short testing time (current software under testing will be soon expired for the releasing of the next version). On the contrary, if one strategy can generate smaller size of higher-way covering array, it is better to be applied on testing the software within a long testing time.
+
+\textbf{RQ2.How efficient is the two strategies?}
+
+The time that needs to generate covering array is also a very important metric to evaluate the two strategies. 
+Another important issue in CIT is the time to find a test suite that is as close to the minimal one as possible given
+time budgeted for the search. Depending on the application, one might want to sacrifice minimality for efficiency (or viceversa).
+This question investigates whether  can generate small test suites in reasonable time.
+
+\textbf{RQ3. Compared with the traditional approach, do the two strategies have any advantage at effectiveness and efficiency?}
+
+At last, we need to compare with traditional approach. To our best knowledge, study in \cite{fouche2009incremental} is the only approach that is proposed to handle the incremental covering array generation problem.
+
+
+\subsection{Benchmarks}
+We used 55 SUT as the subjects of our experiments, which are shown in Table \ref{model_of_sut_of_subjects}. These subjects are wildly used to evaluate the performance of the covering array generation approach. Among these subjects, the first 20 subjects (from \emph{Banking1} to \emph{Telecom}), are obtained from a recent benchmark created by Segall et al \cite{segall2011using}, which have already been used in several works \cite{jia2015learning,choi2016distance}. These 20 subjects cover a wide range of applications, including telecommunications, health care, storage and banking systems.  The following five subjects (from \emph{SPIN-S}  to \emph{Bugzilla} ) were firstly introduced by Cohen et al. \cite{cohen2007interaction,cohen2008constructing}. Among them, SPIN-S and SPIN-V are two components for model simulation and verification, GCC is a compiler system, Apache is a web server application, and Bugzilla is a web-based bug tracking system. These five subjects have been wildly used in literatures \cite{kuhn2006pseudo,cohen2007interaction,cohen2008constructing,garvin2009improved,garvin2011evaluating,lin2015tca,choi2016distance}. The last 30 (from Syn1 to Syn30) are synthetic subject models that are generated by Cohen et al. \cite{cohen2008constructing}. These synthetic subject models are designed with similar characterization (input space, constraints, etc.) of those real subjects and have been used in following studies\cite{garvin2009improved,garvin2011evaluating,lin2015tca,choi2016distance}.
+
+In Table \ref{model_of_sut_of_subjects}, the model is presented in the abbreviated form $\#values^{\#number\ of\ parameters}$, e.g., $7^{3}6^{2}$ indicates the software has 3 parameters that can take 7 values and 2 parameters take 6 values.  The constraint is presented in the form $\#degree^{\#number\ of\ constraints}$, e.g., $2^{3}3^{18}$ means that the SUT contains 3 constraints with  2-degree and 18 constraints with 3-degree.
+%The last Column \emph{ICA} shows the specific incremental covering array that needs to be generated for each model. For most of these subjects, we will generate incremental covering arrays from 2-way to 6-way (2-6), but for some specific subjects with extremely large input space, we decide to limit the degree of the covering array up to 5 or 4 (2-5, or 2-4).
 
 
 \begin{table}[!ht]
 \caption{The models of the SUT}
 \label{model_of_sut_of_subjects}
-%\center
+\center
 %\setlength{\tabcolsep}{3pt}
-    \begin{tabular}{|c|c|c|c|} \hline
-    \textbf{Name} & \textbf{Model} & \textbf{Constraint}  & \textbf{ICA} \\
+    \begin{tabular}{|c|c|c|} \hline
+    \textbf{Name} & \textbf{Model} & \textbf{Constraint}  \\
     \hline
-    \textbf{Banking1} & $3^{4}4^{1}$ & $5^{112}$ & 2-6\\
-    \textbf{Banking2} & $2^{14}4^{1}$ & $2^{3}$ & 2-6\\
-    \textbf{CommonProtocal} & $2^{10}7^{1}$ & $2^{10}3^{10}4^{12}5^{96}$& 2-6\\
-    \textbf{Concurrency} & $2^{5}$ & $2^{4}3^{1}5^{2}$& 2-6 \\
-    \textbf{Healthcare1} & $2^{6}3^{2}5^{1}6^{1}$ & $2^{3}3^{18}$& 2-6 \\
-    \textbf{Healthcare2} & $2^{5}3^{6}4^{1}$ & $2^{1}3^{6}5^{18}$ & 2-6\\
-    \textbf{Helathcare3} & $2^{16}3^{6}4^{5}5^{1}6^{1}$ & $2^{31}$& 2-6 \\
-    \textbf{Helathcare4} & $2^{13}3^{12}4^{6}5^{2}6^{1}7^{1}$ & $2^{22}$ & 2-6\\
-    \textbf{Insurance} & $2^{6}3^{1}5^{1}6^{2}11^{1}13^{1}17^{1}31^{1}$ & - & 2-6\\
-    \textbf{NetworkMgmt} & $2^{2}4^{1}5^{3}10^{2}11^{1}$ & $2^{20}$& 2-6 \\
-    \textbf{ProcessorComm1} & $2^{3}3^{6}4^{6}$ & $2^{13}$ & 2-6\\
-    \textbf{ProcessorComm2} & $2^{3}3^{12}4^{8}5^{2}$ & $1^{4}2^{121}$& 2-6 \\
-    \textbf{Services} & $2^{3}3^{4}5^{2}8^{2}10^{2}$ & $3^{386}4^{2}$& 2-6 \\
-    \textbf{Storage1} & $2^{1}3^{1}4^{1}5^{1}$ & $4^{95}$& 2-6 \\
-    \textbf{Storage2} & $3^{4}6^{1}$ & - & 2-6\\
-    \textbf{Storage3} & $2^{9}3^{1}5^{3}6^{1}8^{1}$ & $2^{38}3^{10}$& 2-6 \\
-    \textbf{Storage4} & $2^{5}3^{7}4^{1}5^{2}6^{2}7^{1}9^{1}13^{1}$ & $2^{24}$ & 2-6\\
-    \textbf{Storage5} & $2^{5}3^{8}5^{3}6^{2}8^{1}9^{1}10^{2}11^{1}$ & $2^{151}$ & 2-6\\
-    \textbf{SystemMgmt} & $2^{5}3^{4}5^{1}$ & $2^{13}3^{4}$ & 2-6\\
-    \textbf{Telecom} & $2^{5}3^{1}4^{2}5^{1}6^{1}$ & $2^{11}3^{1}4^{9}$ & 2-6\\
-    \textbf{SPIN-S} & $2^{13}4^{5}$ & $2^{13}$ & 2-6\\
-    \textbf{SPIN-V} & $2^{42}3^{2}4^{11}$ & $2^{47}3^{2}$& 2-5 \\
-    \textbf{GCC} & $2^{189}3^{10}$ & $2^{37}3^{3}$ & 2-4\\
-    \textbf{Apache} & $2^{158}3^{8}4^{4}5^{1}6^{1}$ & $2^{3}3^{1}4^{2}5^{1}$  & 2-4 \\
-    \textbf{Bugzilla} & $2^{49}3^{1}4^{2}$ & $2^{4}3^{1}$ & 2-6\\
-    \textbf{Syn1} & $2^{86}3^{3}4^{1}5^{5}6^{2}$ & $2^{20}3^{3}4^{1}$& 2-4 \\
-    \textbf{Syn2} & $2^{86}3^{3}4^{3}5^{1}6^{1}$ & $2^{19}3^{3}$& 2-5 \\
-    \textbf{Syn3} & $2^{27}4^{2}$ & $2^{9}3^{1}$ & 2-6\\
-    \textbf{Syn4} & $2^{51}3^{4}4^{2}5^{1}$ & $2^{15}3^{2}$& 2-5 \\
-    \textbf{Syn5} & $2^{155}3^{7}4^{3}5^{5}6^{4}$ & $2^{32}3^{6}4^{1}$& 2-4\\
-    \textbf{Syn6} & $2^{73}4^{3}6^{1}$ & $2^{26}3^{4}$ & 2-5\\
-    \textbf{Syn7} & $2^{29}3^{1}$ & $2^{13}3^{2}$ & 2-6\\
-    \textbf{Syn8} & $2^{109}3^{2}4^{2}5^{3}6^{3}$ & $2^{32}3^{4}4^{1}$ & 2-5\\
-    \textbf{Syn9} & $2^{57}3^{1}4^{1}5^{1}6^{1}$ & $2^{30}3^{7}$ & 2-5\\
-    \textbf{Syn10} & $2^{130}3^{6}4^{5}5^{2}6^{4}$ & $2^{40}3^{7}$ & 2-4\\
-    \textbf{Syn11} & $2^{84}3^{4}4^{2}5^{2}6^{4}$ & $2^{28}3^{7}$& 2-5\\
-    \textbf{Syn12} & $2^{136}3^{4}4^{3}5^{1}6^{3}$ & $2^{23}3^{4}$ & 2-4\\
-    \textbf{Syn13} & $2^{124}3^{4}4^{1}5^{2}6^{2}$ & $2^{22}3^{4}$& 2-4 \\
-    \textbf{Syn14} & $2^{81}3^{5}4^{3}6^{3}$ & $2^{13}3^{2}$ & 2-5\\
-    \textbf{Syn15} & $2^{50}3^{4}4^{1}5^{2}6^{1}$ & $2^{20}3^{2}$ & 2-5\\
-    \textbf{Syn16} & $2^{81}3^{3}4^{2}6^{1}$ & $2^{30}3^{4}$& 2-5 \\
-    \textbf{Syn17} & $2^{128}3^{3}4^{2}5^{1}6^{3}$ & $2^{25}3^{4}$& 2-4 \\
-    \textbf{Syn18} & $2^{127}3^{2}4^{4}5^{6}6^{2}$ & $2^{23}3^{4}4^{1}$ & 2-4\\
-    \textbf{Syn19} & $2^{172}3^{9}4^{9}5^{3}6^{4}$ & $2^{38}3^{5}$& 2-4 \\
-    \textbf{Syn20} & $2^{138}3^{4}4^{5}5^{4}6^{7}$ & $2^{42}3^{6}$ & 2-4\\
-    \textbf{Syn21} & $2^{76}3^{3}4^{2}5^{1}6^{3}$ & $2^{40}3^{6}$ & 2-5\\
-    \textbf{Syn22} & $2^{72}3^{4}4^{1}6^{2}$ & $2^{31}3^{4}$& 2-5 \\
-    \textbf{Syn23} & $2^{25}3^{1}6^{1}$ & $2^{13}3^{2}$ & 2-6\\
-    \textbf{Syn24} & $2^{110}3^{2}5^{1}6^{4}$ & $2^{25}3^{4}$ & 2-4\\
-    \textbf{Syn25} & $2^{118}3^{6}4^{2}5^{1}6^{4}$ & $2^{23}3^{3}4^{1}$ & 2-4\\
-    \textbf{Syn26} & $2^{87}3^{1}4^{3}5^{4}$ & $2^{28}3^{4}$ & 2-5\\
-    \textbf{Syn27} & $2^{55}3^{2}4^{2}5^{1}6^{4}$ & $2^{17}3^{3}$  & 2-5\\
-    \textbf{Syn28} & $2^{167}3^{16}4^{2}5^{3}6^{6}$ & $2^{31}3^{6}$ & 2-4\\
-    \textbf{Syn29} & $2^{134}3^{7}5^{3}$ & $2^{19}3^{3}$& 2-4 \\
-    \textbf{Syn30} & $2^{73}3^{3}4^{3}$ & $2^{20}3^{2}$ & 2-5\\
+    \textbf{Banking1} & $3^{4}4^{1}$ & $5^{112}$ \\
+    \textbf{Banking2} & $2^{14}4^{1}$ & $2^{3}$ \\
+    \textbf{CommonProtocal} & $2^{10}7^{1}$ & $2^{10}3^{10}4^{12}5^{96}$\\
+    \textbf{Concurrency} & $2^{5}$ & $2^{4}3^{1}5^{2}$ \\
+    \textbf{Healthcare1} & $2^{6}3^{2}5^{1}6^{1}$ & $2^{3}3^{18}$ \\
+    \textbf{Healthcare2} & $2^{5}3^{6}4^{1}$ & $2^{1}3^{6}5^{18}$\\
+    \textbf{Helathcare3} & $2^{16}3^{6}4^{5}5^{1}6^{1}$ & $2^{31}$ \\
+    \textbf{Helathcare4} & $2^{13}3^{12}4^{6}5^{2}6^{1}7^{1}$ & $2^{22}$\\
+    \textbf{Insurance} & $2^{6}3^{1}5^{1}6^{2}11^{1}13^{1}17^{1}31^{1}$ & - \\
+    \textbf{NetworkMgmt} & $2^{2}4^{1}5^{3}10^{2}11^{1}$ & $2^{20}$\\
+    \textbf{ProcessorComm1} & $2^{3}3^{6}4^{6}$ & $2^{13}$ \\
+    \textbf{ProcessorComm2} & $2^{3}3^{12}4^{8}5^{2}$ & $1^{4}2^{121}$ \\
+    \textbf{Services} & $2^{3}3^{4}5^{2}8^{2}10^{2}$ & $3^{386}4^{2}$ \\
+    \textbf{Storage1} & $2^{1}3^{1}4^{1}5^{1}$ & $4^{95}$ \\
+    \textbf{Storage2} & $3^{4}6^{1}$ & - \\
+    \textbf{Storage3} & $2^{9}3^{1}5^{3}6^{1}8^{1}$ & $2^{38}3^{10}$ \\
+    \textbf{Storage4} & $2^{5}3^{7}4^{1}5^{2}6^{2}7^{1}9^{1}13^{1}$ & $2^{24}$ \\
+    \textbf{Storage5} & $2^{5}3^{8}5^{3}6^{2}8^{1}9^{1}10^{2}11^{1}$ & $2^{151}$ \\
+    \textbf{SystemMgmt} & $2^{5}3^{4}5^{1}$ & $2^{13}3^{4}$ \\
+    \textbf{Telecom} & $2^{5}3^{1}4^{2}5^{1}6^{1}$ & $2^{11}3^{1}4^{9}$ \\
+    \textbf{SPIN-S} & $2^{13}4^{5}$ & $2^{13}$ \\
+    \textbf{SPIN-V} & $2^{42}3^{2}4^{11}$ & $2^{47}3^{2}$ \\
+    \textbf{GCC} & $2^{189}3^{10}$ & $2^{37}3^{3}$ \\
+    \textbf{Apache} & $2^{158}3^{8}4^{4}5^{1}6^{1}$ & $2^{3}3^{1}4^{2}5^{1}$  \\
+    \textbf{Bugzilla} & $2^{49}3^{1}4^{2}$ & $2^{4}3^{1}$ \\
+    \textbf{Syn1} & $2^{86}3^{3}4^{1}5^{5}6^{2}$ & $2^{20}3^{3}4^{1}$ \\
+    \textbf{Syn2} & $2^{86}3^{3}4^{3}5^{1}6^{1}$ & $2^{19}3^{3}$ \\
+    \textbf{Syn3} & $2^{27}4^{2}$ & $2^{9}3^{1}$ \\
+    \textbf{Syn4} & $2^{51}3^{4}4^{2}5^{1}$ & $2^{15}3^{2}$ \\
+    \textbf{Syn5} & $2^{155}3^{7}4^{3}5^{5}6^{4}$ & $2^{32}3^{6}4^{1}$\\
+    \textbf{Syn6} & $2^{73}4^{3}6^{1}$ & $2^{26}3^{4}$ \\
+    \textbf{Syn7} & $2^{29}3^{1}$ & $2^{13}3^{2}$ \\
+    \textbf{Syn8} & $2^{109}3^{2}4^{2}5^{3}6^{3}$ & $2^{32}3^{4}4^{1}$ \\
+    \textbf{Syn9} & $2^{57}3^{1}4^{1}5^{1}6^{1}$ & $2^{30}3^{7}$ \\
+    \textbf{Syn10} & $2^{130}3^{6}4^{5}5^{2}6^{4}$ & $2^{40}3^{7}$ \\
+    \textbf{Syn11} & $2^{84}3^{4}4^{2}5^{2}6^{4}$ & $2^{28}3^{7}$\\
+    \textbf{Syn12} & $2^{136}3^{4}4^{3}5^{1}6^{3}$ & $2^{23}3^{4}$ \\
+    \textbf{Syn13} & $2^{124}3^{4}4^{1}5^{2}6^{2}$ & $2^{22}3^{4}$ \\
+    \textbf{Syn14} & $2^{81}3^{5}4^{3}6^{3}$ & $2^{13}3^{2}$ \\
+    \textbf{Syn15} & $2^{50}3^{4}4^{1}5^{2}6^{1}$ & $2^{20}3^{2}$ \\
+    \textbf{Syn16} & $2^{81}3^{3}4^{2}6^{1}$ & $2^{30}3^{4}$\\
+    \textbf{Syn17} & $2^{128}3^{3}4^{2}5^{1}6^{3}$ & $2^{25}3^{4}$ \\
+    \textbf{Syn18} & $2^{127}3^{2}4^{4}5^{6}6^{2}$ & $2^{23}3^{4}4^{1}$ \\
+    \textbf{Syn19} & $2^{172}3^{9}4^{9}5^{3}6^{4}$ & $2^{38}3^{5}$\\
+    \textbf{Syn20} & $2^{138}3^{4}4^{5}5^{4}6^{7}$ & $2^{42}3^{6}$ \\
+    \textbf{Syn21} & $2^{76}3^{3}4^{2}5^{1}6^{3}$ & $2^{40}3^{6}$ \\
+    \textbf{Syn22} & $2^{72}3^{4}4^{1}6^{2}$ & $2^{31}3^{4}$\\
+    \textbf{Syn23} & $2^{25}3^{1}6^{1}$ & $2^{13}3^{2}$ \\
+    \textbf{Syn24} & $2^{110}3^{2}5^{1}6^{4}$ & $2^{25}3^{4}$ \\
+    \textbf{Syn25} & $2^{118}3^{6}4^{2}5^{1}6^{4}$ & $2^{23}3^{3}4^{1}$ \\
+    \textbf{Syn26} & $2^{87}3^{1}4^{3}5^{4}$ & $2^{28}3^{4}$ \\
+    \textbf{Syn27} & $2^{55}3^{2}4^{2}5^{1}6^{4}$ & $2^{17}3^{3}$  \\
+    \textbf{Syn28} & $2^{167}3^{16}4^{2}5^{3}6^{6}$ & $2^{31}3^{6}$ \\
+    \textbf{Syn29} & $2^{134}3^{7}5^{3}$ & $2^{19}3^{3}$ \\
+    \textbf{Syn30} & $2^{73}3^{3}4^{3}$ & $2^{20}3^{2}$ \\
     \hline
     \end{tabular}%
   \end{table}
@@ -849,149 +863,81 @@ In Table \ref{model_of_sut_of_subjects}, the model is presented in the abbreviat
 
 
 \subsection{Experiment set-up}
-Then for each SUT, we generate a incremental covering arrays, shown in Table \ref{ica_to_constuct}. which are $ICA([N_{2},N_{3}]; [2, 3], k ,v)$, $ICA$ $([N_{2},$ $N_{3}$ $,N_{4}];[2, 3,4], k ,v)$, and $ICA([N_{2},N_{3},N_{4},N_{5}]$ $;[2,$ $ 3,4,5], k ,v)$, respectively.
-Each incremental covering array will be repeatedly generated 30 times by two strategies. Finally, we will compare their average sizes. The results are shown in Table \ref{experiment_table}.
+For each SUT listed in Table \ref{model_of_sut_of_subjects}, we adopted the two strategies, i.e., \emph{Top-down} and \emph{Bottom-up}, to generate an incremental covering array from 2-way to 6-way. The size of each covering array contained in this  incremental covering array is recorded. We also record the time (seconds) that is consumed to generate these covering arrays.
 
+Besides these two strategies, we also adopted the strategy proposed in the study \cite{fouche2009incremental} to generate these incremental covering arrays. This strategy can be regarded as one special bottom-up strategy, but with one difference: it should generate a higher-way covering array at first, and then take some part in it to fill in the lower-covering array.
 
-%\begin{table}[htbp]
-%\caption{The ICA needs to be constructed}
-%\label{ica_to_constuct}
-%\center
-%%\setlength{\tabcolsep}{3pt}
-%    \begin{tabular}{|c|c|} \hline
-%    \textbf{Name} & \textbf{ICA} \\
-%    \hline
-%    \textbf{Banking1} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Banking2} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{CommonProtocal} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Concurrency} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Healthcare1} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Healthcare2} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Helathcare3} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Helathcare4} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Insurance} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{NetworkMgmt} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{ProcessorComm1} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{ProcessorComm2} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Services} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Storage1} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Storage2} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Storage3} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Storage4} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Storage5} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{SystemMgmt} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Telecom} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{SPIN-S} &  $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{SPIN-V} &  $ICA$ $([2, 3,4, 5, 6])$ \\
-%    \textbf{GCC} &     $ICA$ $([2, 3,4])$ \\
-%    \textbf{Apache} & $ICA$ $([2, 3,4])$  \\
-%    \textbf{Bugzilla} & $ICA$ $([2, 3,4, 5, 6])$ \\
-%    \textbf{Sy1} & $ICA$ $([2, 3,4,5 ])$\\
-%    \textbf{Sy2} & $ICA$ $([2, 3,4 ,5 ])$\\
-%    \textbf{Sy3} &  $ICA$ $([2, 3,4, 5, 6])$ \\
-%    \textbf{Sy4} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Sy5} & $ICA$ $([2, 3,4])$ \\
-%    \textbf{Sy6} & $ICA$ $([2, 3,4, 5])$\\
-%    \textbf{Sy7} & $ICA$ $([2, 3,4, 5 ,6])$ \\
-%    \textbf{Sy8} & $ICA$ $([2, 3,4, 5])$ \\
-%    \textbf{Sy9} & $ICA$ $([2, 3,4, 5, 6])$ \\
-%    \textbf{Sy10} & $ICA$ $([2, 3,4])$ \\
-%    \textbf{Sy11} & $ICA$ $([2, 3,4, 5])$\\
-%    \textbf{Sy12} & $ICA$ $([2, 3,4])$ \\
-%    \textbf{Sy13} & $ICA$ $([2, 3,4])$\\
-%    \textbf{Sy14} & $ICA$ $([2, 3,4, 5])$\\
-%    \textbf{Sy15} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Sy16} & $ICA$ $([2, 3,4, 5])$\\
-%    \textbf{Sy17} & $ICA$ $([2, 3,4])$\\
-%    \textbf{Sy18} & $ICA$ $([2, 3,4])$\\
-%    \textbf{Sy19} & $ICA$ $([2, 3,4])$\\
-%    \textbf{Sy20} & $ICA$ $([2, 3,4])$ \\
-%    \textbf{Sy21} & $ICA$ $([2, 3,4, 5])$ \\
-%    \textbf{Sy22} & $ICA$ $([2, 3,4, 5])$\\
-%    \textbf{Sy23} & $ICA$ $([2, 3,4, 5, 6])$\\
-%    \textbf{Sy24} & $ICA$ $([2, 3,4])$\\
-%    \textbf{Sy25} & $ICA$ $([2, 3,4])$\\
-%    \textbf{Sy26} & $ICA$ $([2, 3,4, 5])$ \\
-%    \textbf{Sy27} & $ICA$ $([2, 3,4, 5, 6])$ \\
-%    \textbf{Sy28} & $ICA$ $([2, 3,4])$\\
-%    \textbf{Sy29} & $ICA$ $([2, 3,4])$\\
-%    \textbf{Sy30} & $ICA$ $([2, 3,4, 5])$ \\
-%    \hline
-%    \end{tabular}%
-%  \end{table}
+Note that the study \cite{fouche2009incremental} did not give a specific implementation of the strategy. Hence, in this paper, we implemented this strategy with the covering array generation approach--IPOG, which is same approach used in our approaches.  By doing this, we can eliminated the influence from the covering array generation approach, and only focus on the performance among different strategies. Another point that needs to note is that the approach listed in \cite{fouche2009incremental} generates three distinct incremental covering arrays for one SUT. Generating multiple covering arrays can increase their abilities to handle the random or non-determined failures. To make a fair comparison, we only record one covering array in it (with the minimal size among the three covering arrays), and the corresponding time that is needed to generate it.
 
-
-
-We run them for two weeks for all these subjects. Our machine is a .
+We ran all the experiments on a server which has a 6-core CPU of 2.0GHz (Intel Xeon E5-2640 v2), and a 16 GB memory. It took us two weeks in total to obtain all the results. Note that not all the covering arrays can run up to 6 way because of the memory limitation and computing time.
 \subsection{Results and Discussion}
+The results are listed in Fig. \ref{experiement} and Fig. \ref{experiement_time} for covering array size and consuming time, respectively. There are 55 sub figures in these two main figures, one for each subject. In each subject, the x-, listed the detail covering array strength, ranged from 2-way to 6-way. The y shows the , which are nomralized to.
 
-We consider three metrics for the experiments.
+These data are normalized to rend a clear view.
 
-The coverage and fault rfd is .
+One important observation in this figure is that there is significant advantage over the lower covering array. Specifically, among the 55 subjects, there are XXX subjects (including  , , etc) that peforms good than in 4-way or equal, XXX subjects that ,2-way or equal . 2 way . On the other hand, there are only XXX subjects that (Note that the adavantge is trival such that it can not be ), and only XXX subjects.
 
-From this point of view.
+This result implies that . One reason is that our extracting covering array is not optimal. Due to the greedy , we use ,. this may. Another reason is our algorithm IPOG. This is beaccause that even though for higher-covering array, the is not as week as . It indicates that IPOG did not optiaml the higher-coverin array (mainly because it is enssitall build on lower covering array, ).
+
+Above all, the answer to the first question is :
 
 
-For each subject in this table, we list the results of the two strategies for the three incremental covering arrays. In detail, for each incremental covering array, we list the average size of the covering array and the corresponding standard deviation of the 30 repeated experiments. For example, consider the result of $ICA([N_{2},N_{3}];[2,3],k,v)$ for $SUT_{1}$. There are two columns, representing the results of 2-way covering array and 3-way covering array, respectively. For each cell in this table, the result is shown in the form \emph{` average size / standard deviation'}.
 
 
-One observation is that the result is relatively stable according to the small standard deviation against the average value. In fact, the deviation is about 1 to 2 for the 2-way covering array, 1 to 3 for the 3-way covering array, 1 to 7 for 4-way, and 6 to 15 for the 5-way. The stability of the results is owe to the covering array generation algorithm AETG, by which the size of the covering array is similar for different runs.
+With respect to the effiecy, we can also find that bottom-up can performs well than top-down. In detail, among the 55 subjects, there are . and there, while in 55, there is .
 
-With respect to comparison of the size of incremental covering array for the two strategies, one observation is that \emph{bottom-up} strategy obtained smaller size of the lower-strength covering array in the incremental covering array, while \emph{top-down} strategy achieved smaller size of the higher-strength covering array.  To make the observation more clear, we depict the  average sizes of the covering arrays by the two strategies in Fig\ref{experiement}.
+Another important observation that can support the conclusion is that Bottom-up can run more higher-way covering array. Specifically, there are 6 subjects that bottom up can run more strength than top down.
+
+Hence, the answer to the second question is :
+
+
+For the last reaseach question, we can first observe that .
+ 
+When compared to bottom up. With repsect to the size, the is almost the same as bot up strategy, only with slightl disadavantage (See subject). We believe the reason is that they are all eseensal bottom up strategy.  With respect to the time cost. We found that is much more than bot up. In fact, among 55 subjects, there are.  We believe the reason is that it should geneates a higher-way covering array first, which does no need in our bot-up startegy.
+
+When compared to top down. The approach has also signficant adavantge over it . In fact, among 55 subjects, there are,  while for top down , it only has XXXX  over traditinoal. Even for the time cost, traditional apprapoch also has adavange on it (there are XXX subjects, that.
+
+Above all, the answer to the 3rd question is:
+
+\textbf{traditional is better than top-down, but not as good as bot up.}
+
+
+%One observation is that the result is relatively stable according to the small standard deviation against the average value. In fact, the deviation is about 1 to 2 for the 2-way covering array, 1 to 3 for the 3-way covering array, 1 to 7 for 4-way, and 6 to 15 for the 5-way. The stability of the results is owe to the covering array generation algorithm AETG, by which the size of the covering array is similar for different runs.
+
+%With respect to comparison of the size of incremental covering array for the two strategies, one observation is that \emph{bottom-up} strategy obtained smaller size of the lower-strength covering array in the incremental covering array, while \emph{top-down} strategy achieved smaller size of the higher-strength covering array.  To make the observation more clear, we depict the  average sizes of the covering arrays by the two strategies in Fig\ref{experiement}.
 
  %Fig.\ref{experiement}.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
-\begin{table*}[htbp]
-%  \centering
-  \caption{Experiment results}
-  \label{experiment_table}
-\begin{tabular}{|l|l|ll|lll|llll|}
-\hline
-\multicolumn{2}{|l|}{}            & \multicolumn{2}{l|}{$ICA([2, 3])$ (avg/stdev)}& \multicolumn{3}{l|}{$ICA$ $([2, 3,4])$ (avg/stdev)}    & \multicolumn{4}{l|}{$ICA([2, 3,4,5])$ (avg/stdev) }                   \\ \hline
-\multirow{2}{*}{$SUT_{1}$} & Bottom-up & 26.2/0.91        & 126.07/2.16      & 26.73/1.12 & 127.13/2.38 & 519.23/3.88 & 26.8/0.95  & 125.9/1.62  & 519.9/0.95  & 1906.17/8.01  \\
-                      & Top-down  & 30.87/1.06       & 123.53/2.46      & 30.77/0.8  & 137.93/1.95 & 509.23/0.8  & 30.17/1.04 & 139.13/1.93 & 553.07/1.04 & 1865.5/7.75   \\ \hline
-\multirow{2}{*}{$SUT_{1}$} & Bottom-up & 85.53/1.98       & 226.23/3.95      & 85.87/2.03 & 227.1/4.78  & 703/7.51    & 86.1/1.76  & 227.8/4.28  & 704.07/1.76 & 1466.1/13.88  \\
-                      & Top-down  & 90.03/0.75       & 167.87/3.3       & 84.93/1.88 & 244.47/2.26 & 661.93/1.88 & 84.1/1.58  & 246.63/2.39 & 610.27/1.58 & 1340.83/12.63 \\ \hline
-\multirow{2}{*}{$SUT_{3}$} & Bottom-up & 17.27/0.96       & 54.13/1.71       & 17.03/0.98 & 54.97/1.97  & 138.37/3.02 & 16.97/0.87 & 55.13/1.89  & 138.93/0.87 & 302.23/5.04   \\
-                      & Top-down  & 19.03/0.98       & 53.5/2.47        & 19.23/0.8  & 55.83/1.75  & 135.67/0.8  & 18.53/0.92 & 56.7/2.12   & 136.2/0.92  & 291.33/3.47   \\ \hline
-\multirow{2}{*}{$SUT_{4}$} & Bottom-up & 12.23/1.05       & 32.97/1.2        & 12.8/1.22  & 33.27/1.44  & 87.1/4.37   & 12.67/1.11 & 33.13/1.65  & 87.5/1.11   & 212.13/7.91   \\
-                      & Top-down  & 12.47/0.72       & 31.43/1.58       & 12.53/0.76 & 33.2/1.22   & 83.33/0.76  & 12.87/1.02 & 34.4/1.11   & 83.4/1.02   & 200.13/8.2    \\ \hline
-\multirow{2}{*}{$SUT_{5}$} & Bottom-up & 21.9/1.47        & 85.4/2.12        & 21.67/1.11 & 85.73/1.93  & 307.9/3.46  & 21.73/1.34 & 85.63/2.17  & 306.7/1.34  & 984.1/6.39    \\
-                      & Top-down  & 23.43/0.96       & 84.97/1.82       & 23.93/0.85 & 91.1/1.83   & 300.87/0.85 & 23.73/0.77 & 92.9/1.87   & 318.87/0.77 & 962.37/6.87   \\ \hline
-\multirow{2}{*}{$SUT_{6}$} & Bottom-up & 85.9/1.72        & 228.27/3.63      & 86.5/2.01  & 226.97/3.7  & 701.57/7.93 & 86.1/1.49  & 226.23/3.78 & 700.6/1.49  & 1457.73/14.43 \\
-                      & Top-down  & 90.17/0.58       & 167.13/2.2       & 85.5/2.14  & 244.33/2.05 & 663.53/2.14 & 83.8/1.7   & 245.87/2.95 & 612.07/1.7  & 1341.23/15.25 \\ \hline
-\multirow{2}{*}{$SUT_{7}$} & Bottom-up & 29.53/2.12       & 100.33/2.57      & 29.33/2.33 & 100.67/2.71 & 336.8/7.07  & 29.27/2.06 & 100.43/3.19 & 334.53/2.06 & 953.97/15.52  \\
-                      & Top-down  & 29/1.51          & 96.13/3.26       & 29.07/1.59 & 103/1.67    & 324.87/1.59 & 28.6/1.45  & 103.93/2.24 & 312.97/1.45 & 896.07/13.89  \\ \hline
-\multirow{2}{*}{$SUT_{8}$} & Bottom-up & 21.13/1.12       & 76.83/4.45       & 21.2/0.95  & 75.23/3.4   & 218.27/4.84 & 21.17/1.29 & 75.7/3.56   & 216.23/1.29 & 557.53/9.34   \\
-                      & Top-down  & 21.43/1.05       & 75.17/3.66       & 21.57/1.12 & 76.23/2.26  & 203.67/1.12 & 21.43/0.96 & 76.2/2.41   & 211.37/0.96 & 516.93/7.78   \\ \hline
-\multirow{2}{*}{$SUT_{9}$} & Bottom-up & 17/0.89          & 55.03/1.72       & 17/0.89    & 55.13/1.02  & 167.1/4.22  & 16.6/0.71  & 54.6/1.76   & 164.83/0.71 & 444.1/9.64    \\
-                      & Top-down  & 17.6/0.92        & 53.13/1.82       & 18.1/0.87  & 56.17/1.63  & 160.67/0.87 & 17.8/0.79  & 57.33/1.51  & 160.03/0.79 & 418.1/12.46   \\ \hline
-\end{tabular}
-\end{table*}
 
 \begin{figure*}[htbp]
 \center
- \includegraphics[width=6.0in]{experiment.eps}
-\caption{The comparison of the two strategies}
+ \includegraphics[width=7.4in]{size.eps}
+\caption{The comparison of the three strategies with respect to the size of covering arrays}
 \label{experiement}
 \end{figure*}
 
 
-In Fig.\ref{experiement}, there are three main rows, representing the results of three incremental covering arrays , $ICA([N_{2},N_{3}]; [2, 3],$ $ k ,v)$, $ICA$ $([N_{2},$ $N_{3}$ $,N_{4}];[2, 3,4], k ,v)$, and $ICA([N_{2},N_{3}$ $,N_{4},$ $N_{5}]$ $;[2,$ $ 3,4,5], k ,v)$, respectively.  The nine columns represents the nine SUTs in Table \ref{model_of_sut_of_subjects}. For each sub-figure in Fig.\ref{experiement}, the horizontal axis depicts the results of covering arrays of different strengths, and the vertical axis represents the size of the covering array. Note that we do not directly show the value of the size; instead, we normalize them so that they can be put into one figure. In detail, for each covering array of a subject, the point in the figure for one strategy indicates the proportion of the average size obtained by this strategy and the larger one of the two strategies.
-% we put the into the figure, such that .
+%In Fig.\ref{experiement}, there are three main rows, representing the results of three incremental covering arrays , $ICA([N_{2},N_{3}]; [2, 3],$ $ k ,v)$, $ICA$ $([N_{2},$ $N_{3}$ $,N_{4}];[2, 3,4], k ,v)$, and $ICA([N_{2},N_{3}$ $,N_{4},$ $N_{5}]$ $;[2,$ $ 3,4,5], k ,v)$, respectively.  The nine columns represents the nine SUTs in Table \ref{model_of_sut_of_subjects}. For each sub-figure in Fig.\ref{experiement}, the horizontal axis depicts the results of covering arrays of different strengths, and the vertical axis represents the size of the covering array. Note that we do not directly show the value of the size; instead, we normalize them so that they can be put into one figure. In detail, for each covering array of a subject, the point in the figure for one strategy indicates the proportion of the average size obtained by this strategy and the larger one of the two strategies.
+%% we put the into the figure, such that .
+%%
+%%This is because, the gap between the size of different-way covering array is too big to put into one figure.
 %
-%This is because, the gap between the size of different-way covering array is too big to put into one figure.
-
-From Fig.\ref{experiement}, we can observe that, for most cases, the \emph{top-down} strategy obtained smaller higher-strength covering arrays (about 90 \% of that of \emph{bottom-up}), while the \emph{bottom-up} strategy performed better at the lower-strength covering arrays. This conclusion coincides with the case study presented in Section 3.  There are also some exceptions; for example in the second row in Fig. \ref{experiement} ($ICA([N_{2},N_{3},N_{4}]; [2, 4], k ,v)$), the \emph{top-down} strategy generated smaller 2-way covering arrays for $SUT_{2}$, $SUT_{4}$, and $SUT_{6}$ than that of \emph{bottom-up}. One possible explanation for the exception is that the covering array generated by greedy approach AETG sometimes may produce more test cases than needed.
-
-
-Above all, the preliminary results suggested that when the coverage strength of the final covering array is low, the \emph{bottom-up} strategy is preferred; otherwise, the \emph{top-down} strategy is a better choice.
-
-Besides this, it is noted that the \emph{top down} strategy may generate larger lower strength arrays which are definitely to be executed while the \emph{bottom up} strategy may generate larger higher strength arrays which may not be executed. This usually happens when the current software under testing is expired for the releasing of the next version. In that case, the \emph{bottom-up} strategy is recommended.
+%From Fig.\ref{experiement}, we can observe that, for most cases, the \emph{top-down} strategy obtained smaller higher-strength covering arrays (about 90 \% of that of \emph{bottom-up}), while the \emph{bottom-up} strategy performed better at the lower-strength covering arrays. This conclusion coincides with the case study presented in Section 3.  There are also some exceptions; for example in the second row in Fig. \ref{experiement} ($ICA([N_{2},N_{3},N_{4}]; [2, 4], k ,v)$), the \emph{top-down} strategy generated smaller 2-way covering arrays for $SUT_{2}$, $SUT_{4}$, and $SUT_{6}$ than that of \emph{bottom-up}. One possible explanation for the exception is that the covering array generated by greedy approach AETG sometimes may produce more test cases than needed.
+%
+%
+%Above all, the preliminary results suggested that when the coverage strength of the final covering array is low, the \emph{bottom-up} strategy is preferred; otherwise, the \emph{top-down} strategy is a better choice.
+%
+%Besides this, it is noted that the \emph{top down} strategy may generate larger lower strength arrays which are definitely to be executed while the \emph{bottom up} strategy may generate larger higher strength arrays which may not be executed. This usually happens when the current software under testing is expired for the releasing of the next version. In that case, the \emph{bottom-up} strategy is recommended.
 
 
+\begin{figure*}[htbp]
+\center
+ \includegraphics[width=7.4in]{time.eps}
+\caption{The comparison of the three strategies with respect to the time cost}
+\label{experiement_time}
+\end{figure*}
 
 
 %\begin{table}
@@ -1007,7 +953,13 @@ Besides this, it is noted that the \emph{top down} strategy may generate larger 
 %\end{tabular}
 %  \end{table}
 \section{Threats to Validity}
-In this section, we will co
+There are several threats to validity in our studies.
+
+First, our incremental covering array generation approach is implemented by using IPOG. Although IPOG can efficiently generate higher-way covering array for the SUT with large input space, it may generate too many test cases (due to the greedy strategy). It is necessary to try more covering array generation approaches to make the conclusion more general.
+
+Second, the method to extract lower-way covering arrays from higher coverings is a greedy algorithm in this paper. This may result in that the size of the lower-way covering arrays generated by \emph{Top-down} strategy may be larger than needed. If adopted some other methods, e.g., the post-optimal approach \cite{li2014refining,nayeri2013randomized}, the number of test cases generated by \emph{Top-down} strategy may be significantly decreased.
+
+At last, our results are based on the 55 wildly used input models. That is, with other input models, the results may be different from listed in this paper. It is appealing to further study the influence of the characteristics of the input models, e.g., the number of parameters, the number of values, and the constraints, on the results of incremental covering array generation approach.
 
 \section{Related work}
 
@@ -1018,15 +970,17 @@ arrays are classified. However, traditional static covering arrays can be hardly
 
 Cohen et al. \cite{cohen2007exploiting,cohen2008constructing} studied the constraints that can render some test cases in the covering array invalid. They proposed a SAT-based approach to avoid the impact.
 %Further, Ylimaz  \cite{dumlu2011feedback,yilmaz2013reducing} proposed a feed-back approach which can support dynamically detect and identify the unknown constraints, i.e., \emph{masking effects}. This approach can help to avoid the constraints in the latter generated test cases.
-Nie et al.\cite{nie2013adaptive} proposed a model for adaptive CT, in which both the failure-inducing interactions and constraints can be dynamically detected and removed in the early test cases generation iteration. Further, the coverage strength of covering array can be adaptively changed as required. S.Fouch{\'e}  et al. \cite{fouche2009incremental} proposed the incremental covering array, and gave a method to generate it. The method can be deemed as a special case of \emph{bottom-up} strategy, with the only difference being that it used multiple lower-strength covering arrays instead only one in this paper to construct the higher-strength covering array. This is because their work needs to characterize the failure-inducing interactions in the covering array, in which ,multiple covering arrays can support a better diagnosis.
+Nie et al.\cite{nie2013adaptive} proposed a model for adaptive CT, in which both the failure-inducing interactions and constraints can be dynamically detected and removed in the early test cases generation iteration. Further, the coverage strength of covering array can be adaptively changed as required.
 
-Calvagna et al. \cite{calvagna2013incrementally} proposed another work
+S.Fouch{\'e}  et al. \cite{fouche2009incremental} proposed the incremental covering array, and gave a method to generate it. The method can be deemed as a special case of \emph{bottom-up} strategy, with the only difference being that it used multiple lower-strength covering arrays instead only one in this paper to construct the higher-strength covering array. This is because their work needs to characterize the failure-inducing interactions in the covering array, in which ,multiple covering arrays can support a better diagnosis.
+
+Calvagna et al. \cite{calvagna2013incrementally} proposed another work to generate higher-way in an iterative way. Different than our work, its main task to generate a covering array with a specific given degree. It builds a relationship between higher-way covering array with lower-covering array.  Based on this, it can reduce the higher-way covering array generation problem to multiple lower covering array generation problem.
 %
 %it hence use the classification tree method to classify the failure-inducing interaction, such that it should need to run multiple test cases, which is an augment of the bottom-up.
 
 
 \section{Conclusions and future works}
-This paper proposed two strategies for generating incremental covering arrays. Experimental results show that both strategies have their own advantages; \emph{top-down} strategy is better at generating higher-strength covering arrays, while \emph{bottom up} strategy performs better at lower-strength ones .
+Incremental covering array is an important object to make CT used in practice, because it makes CT more adaptive, such that we do not need to give the specific test strength in prior. This paper formally defined the incremental covering array and gave a proof to its existence. Furthermore, this paper proposed two strategies for generating incremental covering arrays. Experimental results show that strategy \emph{bottom-up} have a significant advantage over \emph{top-down} at the size of the covering arrays and time cost. It is also performs more efficient than traditional approach with respect to the time cost.
 
 As a future work, we will apply more covering array generation algorithms, to compare their performance at generating incremental covering arrays. Another interesting work is to combine the two strategies, so that we can first select a median coverage strength \emph{t} and generate incremental covering arrays by \emph{top-down} strategy. Then if the maximal-way covering array is generated, we can use \emph{bottom-up} strategy to generate further higher-strength covering arrays. We believe such a combination strategy may offer a better performance.
 % An example of a floating figure using the graphicx package.
@@ -1116,9 +1070,9 @@ As a future work, we will apply more covering array generation algorithms, to co
 % conference papers do not normally have an appendix
 
 
-% use section* for acknowledgement
-\section*{Acknowledgment}
-This work was supported by the National Natural Science Foundation of China (No. 61272079), the Research Fund for the Doctoral Program of Higher Education of China (No.20130091110032), the Science Fund for Creative Research Groups of the National Natural Science Foundation of China(No. 61321491), and the Major Program of National Natural Science Foundation of China (No. 91318301)
+% use section* for acknowledgement%
+%\section*{Acknowledgment}
+%This work was supported by the National Natural Science Foundation of China (No. 61272079), the Research Fund for the Doctoral Program of Higher Education of China (No.20130091110032), the Science Fund for Creative Research Groups of the National Natural Science Foundation of China(No. 61321491), and the Major Program of National Natural Science Foundation of China (No. 91318301)
 
 
 
