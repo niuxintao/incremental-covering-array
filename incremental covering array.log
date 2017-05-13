@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  13 MAY 2017 10:48
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  13 MAY 2017 11:05
 entering extended mode
 **incremental*covering*array.tex
 
@@ -453,10 +453,7 @@ Underfull \hbox (badness 2020) in paragraph at lines 107--110
 '06. 30th An-nu-al
  []
 
-
-Underfull \vbox (badness 1077) has occurred while \output is active []
-
- [9])
+[9])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -476,7 +473,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  3313 strings out of 430478
  54096 string characters out of 3191502
- 127432 words of memory out of 3000000
+ 126432 words of memory out of 3000000
  6458 multiletter control sequences out of 15000+200000
  28091 words of font info for 64 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
