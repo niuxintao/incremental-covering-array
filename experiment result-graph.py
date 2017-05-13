@@ -216,22 +216,22 @@ for i in range(0, 55):
     for j in range(0, 5):
         temp = []
         temp2 = []
-        for k in range(0, 3):
-            if (len(out_bot_up[i]) > j):
-                temp.append(out_bot_up[i][j])
-                temp2.append(out_bot_up[i][j])
-            else:
-                temp.append(0)
-            if (len(out_top_down[i]) > j):
-                temp.append(out_top_down[i][j])
-                temp2.append(out_top_down[i][j])
-            else:
-                temp.append(0)
-            if (len(out_issta[i]) > j):
-                temp.append(out_issta[i][j])
-                temp2.append(out_issta[i][j])
-            else:
-                temp.append(0)
+
+        if (len(out_bot_up[i]) > j):
+            temp.append(out_bot_up[i][j])
+            temp2.append(out_bot_up[i][j])
+        else:
+            temp.append(0)
+        if (len(out_top_down[i]) > j):
+            temp.append(out_top_down[i][j])
+            temp2.append(out_top_down[i][j])
+        else:
+            temp.append(0)
+        if (len(out_issta[i]) > j):
+            temp.append(out_issta[i][j])
+            temp2.append(out_issta[i][j])
+        else:
+            temp.append(0)
                 
         if not temp[0] == 0:
             tempout1.append(float(temp[0])/(max(temp2) + 0.001))

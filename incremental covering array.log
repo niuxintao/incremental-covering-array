@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  13 MAY 2017 11:05
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  13 MAY 2017 17:30
 entering extended mode
 **incremental*covering*array.tex
 
@@ -435,17 +435,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [5]
 File: size.eps Graphic file (type eps)
  <size.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 913--914
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 873--874
  [] 
  []
 
 File: time.eps Graphic file (type eps)
 <time.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 934--935
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 880--881
  [] 
  []
 
-[6] [7] [8]
+[6] [7] [8] [9]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .bbl"
 Underfull \hbox (badness 2020) in paragraph at lines 107--110
@@ -453,7 +453,7 @@ Underfull \hbox (badness 2020) in paragraph at lines 107--110
 '06. 30th An-nu-al
  []
 
-[9])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -465,16 +465,14 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[10
-
-]
+[10]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux") ) 
 Here is how much of TeX's memory you used:
- 3313 strings out of 430478
- 54096 string characters out of 3191502
+ 3316 strings out of 430478
+ 54193 string characters out of 3191502
  126432 words of memory out of 3000000
- 6458 multiletter control sequences out of 15000+200000
+ 6461 multiletter control sequences out of 15000+200000
  28091 words of font info for 64 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
  44i,9n,42p,1577b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
