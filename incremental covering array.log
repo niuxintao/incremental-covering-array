@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  13 MAY 2017 19:53
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  10 NOV 2017 03:22
 entering extended mode
 **incremental*covering*array.tex
 
@@ -342,28 +342,66 @@ LaTeX Font Info:    ... okay on input line 364.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-Requested font "cmr9" at 9.0pt
- -> cmr9
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 449.
+Requested font "cmr10" at 10.95pt
+ -> cmr10
+Requested font "cmr8" at 8.0pt
+ -> cmr8
+Requested font "cmmi10" at 10.95pt
+ -> cmmi10
+Requested font "cmmi8" at 8.0pt
+ -> cmmi8
+Requested font "cmsy10" at 10.95pt
+ -> cmsy10
+Requested font "cmsy8" at 8.0pt
+ -> cmsy8
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11> on input line 449.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.69997> on input line 449.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.5> on input line 449.
+Requested font "ptmr7t" at 7.69997pt
+ -> ptmr7t
 Requested font "cmr6" at 6.0pt
  -> cmr6
-Requested font "cmmi9" at 9.0pt
- -> cmmi9
 Requested font "cmmi6" at 6.0pt
  -> cmmi6
-Requested font "cmsy9" at 9.0pt
- -> cmsy9
 Requested font "cmsy6" at 6.0pt
  -> cmsy6
 LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 449.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 449.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 449.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 449.
+
+Overfull \hbox (38.68953pt too wide) in paragraph at lines 449--449
+ [] 
+ []
+
+
+Overfull \hbox (38.68953pt too wide) in paragraph at lines 449--449
+ [] 
+ []
+
+
+Overfull \hbox (38.68953pt too wide) in paragraph at lines 449--449
+ [] 
+ []
+
+Requested font "cmr9" at 9.0pt
+ -> cmr9
+Requested font "cmmi9" at 9.0pt
+ -> cmmi9
+Requested font "cmsy9" at 9.0pt
+ -> cmsy9
+LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 454.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 454.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 454.
 Requested font "ptmrc7t" at 10.0pt
  -> ptmrc7t
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 495.
 [1
 
 
@@ -421,34 +459,40 @@ Underfull \hbox (badness 2401) in paragraph at lines 725--726
 []\OT1/ptm/m/n/10 An ex-am-ple for this s-trat-e-gy is giv-en in Fig.2[]. In
  []
 
-[3]
 File: decrease_example.eps Graphic file (type eps)
- <decrease_example.eps> [4]
-Requested font "cmr8" at 8.0pt
- -> cmr8
-Requested font "cmmi8" at 8.0pt
- -> cmmi8
-Requested font "cmsy8" at 8.0pt
- -> cmsy8
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 796.
- [5]
+<decrease_example.eps> [3] [4]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 784.
+
+ (C:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 784.
+
+[5]
+File: differentIncremental.eps Graphic file (type eps)
+ <differentIncremental.eps>
+Overfull \hbox (8.17244pt too wide) in paragraph at lines 884--885
+[][] 
+ []
+
+[6]
 File: size.eps Graphic file (type eps)
  <size.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 873--874
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 898--899
  [] 
  []
 
 File: time.eps Graphic file (type eps)
 <time.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 880--881
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 905--906
  [] 
  []
 
-[6] [7] [8] [9]
+[7] [8] [9] [10]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .bbl"
-Underfull \hbox (badness 2020) in paragraph at lines 107--110
+Underfull \hbox (badness 2020) in paragraph at lines 113--116
 \OT1/ptm/m/n/8 in \OT1/ptm/m/it/8 Soft-ware En-gi-neer-ing Work-shop, 2006. SEW
 '06. 30th An-nu-al
  []
@@ -465,16 +509,16 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[10]
+[11]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux") ) 
 Here is how much of TeX's memory you used:
- 3317 strings out of 430478
- 54233 string characters out of 3191502
- 126432 words of memory out of 3000000
- 6462 multiletter control sequences out of 15000+200000
- 28091 words of font info for 64 fonts, out of 3000000 for 9000
+ 3356 strings out of 430478
+ 54865 string characters out of 3191502
+ 130432 words of memory out of 3000000
+ 6497 multiletter control sequences out of 15000+200000
+ 29514 words of font info for 68 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 44i,9n,42p,1577b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,11n,42p,1577b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on incremental*covering*array.pdf (10 pages).
+Output written on incremental*covering*array.pdf (11 pages).

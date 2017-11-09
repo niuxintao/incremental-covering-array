@@ -73,6 +73,12 @@ L.~Yu, F.~Duan, Y.~Lei, R.~N. Kacker, and D.~R. Kuhn, ``Combinatorial test
   (ICSTW), 2015 IEEE Eighth International Conference on}.\hskip 1em plus 0.5em
   minus 0.4em\relax IEEE, 2015, pp. 1--9.
 
+\bibitem{nie2015combinatorial}
+C.~Nie, H.~Wu, X.~Niu, F.-C. Kuo, H.~Leung, and C.~J. Colbourn, ``Combinatorial
+  testing, random testing, and adaptive random testing for detecting
+  interaction triggered failures,'' \emph{Information and Software Technology},
+  vol.~62, pp. 198--213, 2015.
+
 \bibitem{segall2011using}
 I.~Segall, R.~Tzoref-Brill, and E.~Farchi, ``Using binary decision diagrams for
   combinatorial test design,'' in \emph{Proceedings of the 2011 International
