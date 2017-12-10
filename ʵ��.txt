@@ -1,0 +1,3 @@
+先是ipog跑一边
+然后 driverDecrease
+然后  analyze

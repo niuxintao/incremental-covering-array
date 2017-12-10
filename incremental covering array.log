@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  10 NOV 2017 03:22
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  11 DEC 2017 05:12
 entering extended mode
 **incremental*covering*array.tex
 
@@ -324,7 +324,11 @@ File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
 \c@definition=\count112
 
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
-.aux")
+.aux"
+
+LaTeX Warning: Label `experiement_time' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 364.
 LaTeX Font Info:    ... okay on input line 364.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 364.
@@ -406,39 +410,40 @@ Requested font "ptmrc7t" at 10.0pt
 
 
 ]
-Underfull \hbox (badness 4832) in paragraph at lines 543--544
+Underfull \hbox (badness 4832) in paragraph at lines 545--546
 \OT1/ptm/b/n/10 Definition 1. \OT1/ptm/m/n/10 A $\OML/cmm/m/it/10 t$\OT1/ptm/m/
 n/10 -way \OT1/ptm/m/it/10 cov-er-ing ar-ray $\OML/cmm/m/it/10 MCA\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 t; k;$
  []
 
+[2]
 File: incremental_covering_ex.eps Graphic file (type eps)
-<incremental_covering_ex.eps>
-Overfull \hbox (5.71754pt too wide) in paragraph at lines 567--570
+ <incremental_covering_ex.eps>
+Overfull \hbox (5.71754pt too wide) in paragraph at lines 569--572
  [][] 
  []
 
 
-Underfull \hbox (badness 4242) in paragraph at lines 621--622
+Underfull \hbox (badness 4242) in paragraph at lines 623--624
 []\OT1/ptm/m/n/10 We just need to prove that for any cov-er-ing
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 621--622
+Underfull \hbox (badness 5924) in paragraph at lines 623--624
 \OT1/ptm/m/n/10 ar-ray, $\OML/cmm/m/it/10 MCA\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
 N[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 t; k; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a
 []; a[];$ $:::; a[]\OT1/cmr/m/n/10 ))$\OT1/ptm/m/n/10 , we can find a
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 625--626
+Underfull \hbox (badness 1527) in paragraph at lines 627--628
 \OT1/ptm/m/n/10 cov-er at least one $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t \OMS/c
 msy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)$\OT1/ptm/m/n/10 -degree in-ter-ac-tion that o
 n-ly
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 625--626
+Underfull \hbox (badness 3078) in paragraph at lines 627--628
 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 ; :::; v[]; :::\OMS/cmsy/
 m/n/10 ^^@\OML/cmm/m/it/10 ; :::v[]; :::; \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 
 ; :::; v[]; ::: \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 :::; v[]; :::; \OMS/cmsy/
@@ -446,46 +451,50 @@ m/n/10 ^^@\OML/cmm/m/it/10 ; :::\OT1/cmr/m/n/10 )$
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 625--626
+Underfull \hbox (badness 1629) in paragraph at lines 627--628
 \OML/cmm/m/it/10 :::; v[]; :::; \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 ; :::\OT1/
 cmr/m/n/10 )$ \OT1/ptm/m/n/10 ($\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 6\OT1/cmr
 /m/n/10 = \OML/cmm/m/it/10 v[]$\OT1/ptm/m/n/10 ) will n-ev-er be cov-ered by
  []
 
-[2]
 File: increase_example.eps Graphic file (type eps)
- <increase_example.eps>
-Underfull \hbox (badness 2401) in paragraph at lines 725--726
+<increase_example.eps> [3]
+Underfull \hbox (badness 2401) in paragraph at lines 727--728
 []\OT1/ptm/m/n/10 An ex-am-ple for this s-trat-e-gy is giv-en in Fig.2[]. In
  []
 
 File: decrease_example.eps Graphic file (type eps)
-<decrease_example.eps> [3] [4]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 784.
+<decrease_example.eps> [4]
+File: differentIncremental.eps Graphic file (type eps)
+ <differentIncremental.eps>
+Overfull \hbox (8.17244pt too wide) in paragraph at lines 764--765
+[][] 
+ []
+
+[5]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 808.
 
  (C:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 784.
-
-[5]
-File: differentIncremental.eps Graphic file (type eps)
- <differentIncremental.eps>
-Overfull \hbox (8.17244pt too wide) in paragraph at lines 884--885
-[][] 
- []
-
-[6]
-File: size.eps Graphic file (type eps)
- <size.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 898--899
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 808.
+ [6]
+File: size-degree.eps Graphic file (type eps)
+ <size-degree.eps>
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 932--933
  [] 
  []
 
-File: time.eps Graphic file (type eps)
-<time.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 905--906
+File: time-degree.eps Graphic file (type eps)
+<time-degree.eps>
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 944--945
+ [] 
+ []
+
+File: rfd-degree.eps Graphic file (type eps)
+<rfd-degree.eps>
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 954--955
  [] 
  []
 
@@ -511,12 +520,16 @@ Before submitting the final camera ready copy, remember to:
 
 [11]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
-.aux") ) 
+.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3356 strings out of 430478
- 54865 string characters out of 3191502
+ 3359 strings out of 430478
+ 54925 string characters out of 3191502
  130432 words of memory out of 3000000
- 6497 multiletter control sequences out of 15000+200000
+ 6498 multiletter control sequences out of 15000+200000
  29514 words of font info for 68 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
  44i,11n,42p,1577b,351s stack positions out of 5000i,500n,10000p,200000b,50000s

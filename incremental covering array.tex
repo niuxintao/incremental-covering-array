@@ -451,7 +451,7 @@ Email: wangyan@njxzc.edu.cn, xujiaxi@njxzc.edu.cn}
 
 \begin{abstract}
 %\boldmath
-Combinatorial Testing (CT) is an effective technique for testing the interactions of factors in the Software Under Test (SUT). By designing an efficient set of test cases, i.e., a covering array, CT aims to check every possible valid interaction in SUT. Most existing covering array generation algorithms require a given \emph{degree} \emph{t} in prior, such that only the interactions with no more than $t$ factors are to be checked.  In practice, however, the value of $t$ cannot be properly determined, especially for systems with complex interaction space.  Hence, incremental covering arrays are preferred. In this paper, we propose two strategies (\emph{Bottom-up} and \emph{Top-down}) for generating incremental covering arrays which can increase the coverage strength when required. A comparative evaluation of these two strategies is performed on 55 software subjects (including 25 real-world software and 30 synthetic systems). The results shows that strategy \emph{Bottom-up} have a significant advantage over strategy \emph{Top-down}, and it also performs better than the traditional approach.
+Combinatorial Testing (CT) is an effective technique for testing the interactions of factors in the Software Under Test (SUT). By designing an efficient set of test cases, i.e., a covering array, CT aims to check every possible valid interaction in SUT. Most existing covering array generation algorithms require a given \emph{degree} \emph{t} in prior, such that only the interactions with no more than $t$ factors are to be checked.  In practice, however, the value of $t$ cannot be properly determined, especially for systems with complex interaction space.  Hence, incremental covering arrays are preferred. In this paper, we propose two strategies (\emph{Bottom-up} and \emph{Top-down}) for generating incremental covering arrays which can increase the coverage strength when required. A comparative evaluation of these two strategies is performed on 55 software subjects (including 25 real-world software and 30 synthetic systems). The results mainly shows that strategy \emph{Bottom-up} have an advantage over strategy \emph{Top-down} at lower degrees with respect to the size of covering arrays, while strategy \emph{Top-down} performs better at higher degrees. However, when concerning the fault detection rate, strategy \emph{Top-down} gets higher scores at lower degrees, while \emph{Bottom-up} is better at higher degrees.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -502,9 +502,11 @@ To address these shortcomings of traditional covering arrays, the notion of incr
 
 In consideration of the size of the total number of test cases, we argue that this approach of generating incremental covering array may produce too many test cases. This is obvious, as generating higher-strength covering array based on the lower-strength covering array (called \emph{bottom-up} strategy later) does not aim to optimize the size of the higher-strength covering array. As a result, it may generate more test cases than those approaches that focus on generating a particular higher-strength covering array.
 
-Then, a natural question, and also the motivation of this paper is, \textbf{is it possible to generate an incremental covering array with the same number of the overall test cases as those by the particular high-way covering array generation algorithms ?}  Due to the obvious conclusion that any high way covering array must cover all the lower way interactions, the answer for this question is \emph{yes}, as we can just apply a particular covering array generation algorithm to generate the high-strength covering array, and then generate the lower-strength covering arrays by extracting some subset of the test cases which can cover all the lower degree interactions. We refer to this strategy as the \emph{top-down} strategy.
+Then, a natural question, and also the motivation of this paper is, \textbf{is it possible to generate an incremental covering array with the same number of the overall test cases as those by the particular high-way covering array generation algorithms?}  Due to the obvious conclusion that any high way covering array must cover all the lower way interactions, the answer for this question is \emph{yes}, as we can just apply a particular covering array generation algorithm to generate the high-strength covering array, and then generate the lower-strength covering arrays by extracting some subset of the test cases which can cover all the lower degree interactions. We refer to this strategy as the \emph{top-down} strategy.
 
-In this paper, we propose these two strategies and evaluate their performance by comparing them at constructing several incremental covering arrays on 55 wildly used subjects (including 25 real-world software and 30 synthetic systems). The results shows that strategy \emph{Bottom-up} have a significant advantage over strategy \emph{Top-down} at the size of covering arrays (especially for the lower-strength covering array) and the time cost.  Additionally, strategy \emph{Bottom-up} also performs better than the traditional approach.
+In this paper, we give two different implementations for each strategy. Specifically, for \emph{bottom-up} strategy, we first gives an approach which is based on directly seeding test cases of lower-way covering array. Another approach comes from the existing incremental covering array algorithm \cite{fouche2009incremental}, which uses multiple covering arrays instead of one for seeding test cases. For \emph{top-down} strategy, the key of the first implementation is to select the test cases with as much un-covered interactions as possible from higher-way covering arrays, while the second implementation is to select test cases with maximal hamming distances at each iteration.
+
+We evaluated these four approaches by comparing them at constructing several incremental covering arrays on 55 wildly used subjects (including 25 real-world software and 30 synthetic systems). There are three metrics that are used in the empirical studies, i.e., the size of the incremental covering arrays for each degrees, the time cost when generating these test cases, and the fault detection rate of these covering arrays. The results mainly show that strategy \emph{Bottom-up} have an advantage over strategy \emph{Top-down} at lower degrees with respect to the size of covering arrays, while strategy \emph{Top-down} performs better at higher degrees. However, when concerning the fault detection rate, strategy \emph{Top-down} gets higher scores at lower degrees, while \emph{Bottom-up} is better at higher degrees. Besides these observations, we also found that different implementations of these generation strategies also have impacts on the performance, especially for strategy \emph{Top-down}, of which the implementation with considering un-covered interactions had a significant advantage over the one based on hamming distance.
 
  %The results of the experiments showed that the \emph{top-down} strategy has an significant advantage at the size of the higher-strength covering array, while the \emph{bottom-up} strategy is better at constructing those lower-strength covering arrays with smaller size. Based on this observation, we applied our two strategies on testing an industrial software (Tomcat). The results of this empirical study showed that our approach generates smaller size of test cases than traditional approach, while keeps a high rate of fault detection.
 
@@ -526,8 +528,8 @@ Our contributions include:
 
  \begin{enumerate}
  \item  We propose a formal description of incremental covering array, and give a proof of the existence of it.
- \item  We propose two strategies for generating incremental covering arrays.
- \item  We conduct a series of experiments to evaluate the characteristics of these two strategies, and compare the performance of our approach with traditional approach.
+ \item  We propose two strategies for generating incremental covering arrays, and for each strategy we give two different implementations.
+ \item  We conduct a series of empirical experiments to evaluate the characteristics (test size, time cost, and fault detection) of these four approaches.
  %\item  We apply our approach on testing an industrial software and compare the performance between the traditional approach with ours.
  \item  We offer a guideline for selecting which strategy when generating incremental covering array in practice.
 \end{enumerate}
@@ -738,34 +740,56 @@ From the two examples, an obvious observation is that for the \emph{top-down} st
 %\section{}
 
 
-\section{Implementation of the approach}
+\section{Implementation of the two strategies}
 In this section, we will describe a specific implementation of the two strategies proposed in the previous section.
 
-\subsection{Covering array generation method}
+\subsection{Common parts of two strategies}
+
+\subsubsection{Covering array generation method}
 Our covering array generation approach is IPOG \cite{lei2007ipog,lei2008ipog,yu2013efficient}, which firstly builds a \emph{t}-way test set for the first \emph{t} parameters, then extends the test set to build a t-way test set for the first \emph{t+1} parameters, and then continues to extend the test set until it builds a t-way test set for all the parameters. We select this algorithm mainly because it is very efficient, that is, it can quickly generate a t-way covering array even though \emph{t} is a relatively large number (up to 6). This is important, as in our experiments, some subjects contain an extremely large input space, which is unfavorable to apply some time-consuming covering array generation approaches.
 
-\subsection{Constraints handling}
+\subsubsection{Constraints handling}
 Our constraints handling technique is based on Minimum Forbidden Tuples (MFTs) \cite{yu2014combinatorial,yu2015constraint}, which is well supported by IPOG generation algorithm. A forbidden tuple is a tuple as the value assignment of some parameters that violates constraints. A minimum forbidden tuple is a forbidden tuple of minimum size that covers no other forbidden tuples. Given some constraints for one SUT, we should compute all the MFTs of the SUT, and then limit the test cases to the ones that do not contain any tuple in the MFTs.
 %Utilizing Minimum Forbidden Tuples to handle constraints is also very efficient, because it does not need to call any constraint satisfaction solver, which is very time-consuming if there is too many constraints.
 
-\subsection{Seeding test cases}
-When given a lower-way covering array as seeds, we need to eliminated those higher-degree tuples that have already been covered by this covering array. After this, we need to generate additional test cases to cover the un-covered higher-degree tuples until all the higher-degree tuples are covered.
+%\subsection{Seeding test cases}
+\subsection{Implementation of strategy \emph{Bottom-up}}
 
+The key part of strategy \emph{Bottom-up} is seeding existing test cases for higher-way covering array. Specifically, when given a lower-way covering array as seed, we need to eliminated those higher-degree tuples that have already been covered by this covering array. After this, we need to generate additional test cases to cover the un-covered higher-degree tuples until all the higher-degree tuples are covered. 
 
-\subsection{Extract lower-way covering array}
-This is the key part for the top-down strategy. Considering the test cost, it is desirable to obtain a minimal $t$-way covering array $CA_{t}$  from a $t+1$-way covering array $CA_{t+1}$. However, this is impractical if $CA_{t+1}$ is too large, because to get the minimal $CA_{t}$, we need to exhaustively check every possible subset of the $CA_{t+1}$. Hence, in this paper, we decide to adopt a greedy method. Specifically, at each iteration, we will select the test case from $CA_{t+1}$ which has the longest hamming distance from the test cases that have already been selected.  The hamming distance between two test cases, say, $c_{1}$ and $c_{2}$, is computed in the following formula:
+In this paper, we offer two approaches with different seeding process. The first one is simple: We directly take all the test cases in the lower covering array as the initial test set of higher covering array. We latter call them the \emph{Bottom-up} approach. The second approach comes from an existing study \cite{fouche2009incremental}, of which the seeding test cases are consist of two parts: one part is partial test cases (instead of the whole covering array) from the lower-way covering array, the other part comes from an existing incremental covering array which is generated along with this covering array. We latter call this approach the \emph{Collaborative bottom-up} approach. The main reason that \emph{collaborative bottom-up} generates distinct incremental covering arrays for one SUT is for handling un-determined failures and fault localization issues.
+
+More specifically, Figure \ref{comparebottomupwithcollaborative} depicts the differences between these two approaches.
+\begin{figure}
+ \includegraphics[width=3.6in]{differentIncremental.eps}
+\caption{Bottom-up strategy and Collaborative bottom-up strategy}
+\label{comparebottomupwithcollaborative}
+\end{figure}
+In this figure, the left side simply shows how do approach \emph{bottom-up} generate incremental covering arrays, while the right side shows the \emph{collaborative bottom-up} approach.  From this figure, we can easily learn that the bottom-up is very simple and straightforward, it only needs to build the $t$-way covering array based on the seed of $t-1$-way covering array. While for \emph{collaborative bottom-up} approach, the process is slightly more complicated. First of all, its target is to generate several incremental covering arrays. For the first one in these incremental covering arrays, it follows the \emph{bottom-up} approach, i.e., take $t-1$-way covering array as the seed to build $t$-way covering array. For the remaining incremental covering arrays, the $t$-way covering arrays needs seeding test cases from their own $t-1$-way covering arrays and some test cases from the initially generated $t+1$ covering array (the first incremental covering array). For example, in the second incremental covering array (at the middle) generated by ``collaborative bottom-up'' approach in Figure \ref{comparebottomupwithcollaborative}, we can find some part (\emph{E}) of the 3-way covering array comes from the 2-way covering array at the middle, while the other part(G) comes from the 4-way covering array at the left.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Note that the study \cite{fouche2009incremental} did not give a specific implementation of the strategy. Hence, in this paper, we implemented this strategy with the covering array generation approach--IPOG, which is the same approach used in our strategies.  By doing this, we can eliminated the influence from the covering array generation approach, and only focus on the performance among different strategies.
+
+\subsection{Implementation of strategy \emph{Top-down}}
+The key part of the top-down strategy is extracting test cases from higher-way covering array. It is desirable to obtain a minimal $t$-way covering array $CA_{t}$  from a $t+1$-way covering array $CA_{t+1}$. However, this is impractical if $CA_{t+1}$ is too large, because to get the minimal $CA_{t}$, we need to exhaustively check every possible subset of the $CA_{t+1}$. Hence, in this paper, we offer two pragmatic approaches to resolve this issue. 
+
+The first approach selects the test cases from $CA_{t+1}$ with the maximal un-covered t-degree interactions at each interaction until the $CA_{t}$ is constructed. Note that after one test case is selected, the un-covered interactions of each of the remaining test cases should be re-computed. One simple method is to completely search each t-degree interactions of each test case and then judge whether it is already covered. However, it is very time consuming, especially considering the fact that there are more than 60 million 5-degree interactions of one test case for some subjects in our empirical studies. In fact, we do not need to re-compute all the interactions for all the remaining test cases when one test case is selected. Instead, we only need to record the newly covered interactions of the last selected test case, and then check each of the remaining test case whether it contains some of these newly covered interactions, if so, the  number of un-covered interactions should be updated by subtracting the number of these contained interactions. We latter call this approach the \emph{top-down} approach.
+
+The second approach selects the test case from $CA_{t+1}$ which has the longest hamming distance from the test cases that have already been selected.  The hamming distance between two test cases, say, $c_{1}$ and $c_{2}$, is computed in the following formula:
 
 $$ \frac{\#the\ num\ of\ different\ elements\ between\ c_{1}\ and\ c_{2}}{\#the\ num\ of\ all\ the\ elements\ in\ c_{1}\ and\ c_{2}} $$
 
-The selection process repeats until we obtain a complete $t$-way covering array.
+The selection process repeats until we obtain a complete $t$-way covering array. Note that computing the hamming distance of one test case is much easier than computing the un-covered interactions for the first approach, because the number of elements in one test case is normally much fewer than the number of interactions in one test case. The second approach is referred to as \emph{top-down hamming} approach in the remaining of the paper.
+
+%\subsection{Extract lower-way covering array}
+
 
 
 %A straightforward idea is that, at each iteration, we select the test case which can cover most uncovered $t$-degree interactions from the $t_{i+1}$-way covering array. The selection process repeats until we obtain a complete $t_{i}$-way covering array. Although this greedy method is much smaller than the optimal method, it is still far from practice. This method can .
 
 %The extraction process is a greedy approach in this paper. For any $t_{i+1}$ covering array, at each iteration, we only select the test case which can cover most uncovered $t_{i}$-degree interactions from the $t_{i+1}$-way covering array. The selection process repeats until we obtain a complete $t_{i}$-way covering array.  Note that this greedy selection does not promise to obtain the $CA_{i}$ covering array with the minimal size. But to get the minimal size, we need to exhaustively check every possible subset of the higher-covering array $CA_{i+1}$. This is impractical if the size of $CA_{i + 1}$ is too large.
 
-\section{Experiments and Results}
-\subsection{Research Questions}
+
+\section{Research Questions}
 We set up the following three research questions to investigate the effectiveness and the efficiency of the two strategies.
 
 \textbf{RQ1.What about the size of the incremental covering array generated by the two strategies \emph{bottom-up}, and \emph{top-down}?}
@@ -779,21 +803,25 @@ The computation time that is needed to generate covering array is also a very im
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{RQ3.How efficient are the two strategies with respect to fault detection?}
 
-A $\tau$-way covering array guarantees all the $\tau$-degree (or less than $\tau$-degree) faulty interactions can be detected after execution. However, for different $\tau$-way covering arrays, the rate of faults detection varies.  This reason is obvious: The test cases and test sequences are different for those $\tau$-way covering arrays, and hence, the number of tests that must be run varies for detecting specific $\tau$-degree faulty interactions. In this paper, we use the metric ``Rate of Fault Detection''(RFD) \cite{nie2015combinatorial} to evaluate the efficiency of covering arrays with respect to fault detection.
+A $\tau$-way covering array guarantees all the $\tau$-degree (or less than $\tau$-degree) faulty interactions can be detected after execution. However, for different $\tau$-way covering arrays, the rate of faults detection varies.  This reason is obvious: The test cases and test sequences are different for those $\tau$-way covering arrays, and hence, the number of tests that must be run varies for detecting specific $\tau$-degree faulty interactions. In this paper, we firstly use the metric ``Rate of Fault Detection''(RFD) \cite{nie2015combinatorial} to evaluate the efficiency of covering arrays with respect to fault detection.
 
 More formally \cite{nie2015combinatorial}, Let T=\{$t_{1}, t_{2}, ... , t_{m}$\} be a test suite for SUT, with test cases in T to be run in the order: $t_{1} \rightarrow t_{2} \rightarrow ... \rightarrow t_{m}$. Let $T_{i}$ = \{$t_{1}, t_{2}, ... , t_{i}$\} for $1 \leq i \leq m$,  and let $T_{i}(\tau - degree)$ be the set of t-degree interactions that are covered by test set $T_{i}$. Then,
 the $\tau$ way RFD of test suite T is:
 
 $\tau$-RFD($T$) = $\sum_{i=1}^{m}$ $ \mid T_{i}(\tau - degree) \mid$.
 
-In the experiment section, we will compute the $\tau$-RFD value for each $\tau$-way coveting array to compare their fault detection rates.
+Note that, the $\tau$-RFD value of one test suite is influenced by the number of tests in this suite. In order to reduce the influence of the number of tests, we define a standard RFD value for one covering array. We only compute the $\tau$-RFD with the minimal size.
+
+In the experiment section, we will compute the $\tau$-RFD value and  $\tau$-SRFD for each $\tau$-way coveting array to compare their fault detection rates.
 %As the number and distribution of faulty interactions are unknown, it is difficult to give a precise definition of the ``rate of fault detection'' [12,13]. But if we assume that every k-way interaction has the same probability of being faulty, and that faults arise independently, then we can give a formal definition of the rate of fault detection. Of course, both assumptions may not be realistic in practice, but in the absence of a specific fault model, these assumptions are reasonable.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{RQ4. Compared with the traditional approach, do the two strategies have any advantages at effectiveness and efficiency?}
+%\textbf{RQ4. Compared with the traditional approach, do the two strategies have any advantages at effectiveness and efficiency?}
+%
+%At last, we need to compare our strategies with traditional approach. To our best knowledge, the study in \cite{fouche2009incremental} is the only research that aims at handling the incremental covering array generation problem. We need to investigate the differences between it with our two strategies, and also need to make a comparative evaluation among them. Specifically, it is needed to obtain the size of the incremental covering array and the generation time cost of this approach, and compare them with that of these two strategies proposed in this paper.
 
-At last, we need to compare our strategies with traditional approach. To our best knowledge, the study in \cite{fouche2009incremental} is the only research that aims at handling the incremental covering array generation problem. We need to investigate the differences between it with our two strategies, and also need to make a comparative evaluation among them. Specifically, it is needed to obtain the size of the incremental covering array and the generation time cost of this approach, and compare them with that of these two strategies proposed in this paper.
 
+\section{Experiment set-ups}
 
 \subsection{Benchmarks}
 We used 55 SUT as the subjects of our experiments, which are shown in Table \ref{model_of_sut_of_subjects}. These subjects are wildly used to evaluate the performance of the covering array generation approach. Among these subjects, the first 20 subjects (from \emph{Banking1} to \emph{Telecom}), are obtained from a recent benchmark created by Segall et al \cite{segall2011using}, which have already been used in several works \cite{jia2015learning,choi2016distance}. These 20 subjects cover a wide range of applications, including telecommunications, health care, storage and banking systems.  The following five subjects (from \emph{SPIN-S}  to \emph{Bugzilla} ) were firstly introduced by Cohen et al. \cite{cohen2007interaction,cohen2008constructing}. Among them, SPIN-S and SPIN-V are two components for model simulation and verification, GCC is a compiler system, Apache is a web server application, and Bugzilla is a web-based bug tracking system. These five subjects have been wildly used in literatures \cite{kuhn2006pseudo,cohen2007interaction,cohen2008constructing,garvin2009improved,garvin2011evaluating,lin2015tca,choi2016distance}. The last 30 (from Syn1 to Syn30) are synthetic subject models that are generated by Cohen et al. \cite{cohen2008constructing}. These synthetic subject models are designed with similar characterization (input space, constraints, etc.) of those real subjects and have been used in following studies\cite{garvin2009improved,garvin2011evaluating,lin2015tca,choi2016distance}.
@@ -871,44 +899,65 @@ In Table \ref{model_of_sut_of_subjects}, the model is presented in the abbreviat
 
 
 
-
-
 \subsection{Experiment set-up}
 For each SUT listed in Table \ref{model_of_sut_of_subjects}, we adopted the two strategies, i.e., \emph{Top-down} and \emph{Bottom-up}, to generate an incremental covering array from 2-way to 6-way. The size of each covering array contained in this  incremental covering array is recorded. We also record the time (seconds) that is consumed to generate these covering arrays.
 
-Besides these two strategies, we also adopted the strategy proposed in the study \cite{fouche2009incremental} to generate these incremental covering arrays. This strategy can be regarded as one special bottom-up strategy, but with one important difference: it should generate a higher-way covering array at first, and then take some part in it to fill in the lower-covering array.
+%Besides these two strategies, we also adopted the strategy proposed in the study \cite{fouche2009incremental} to generate these incremental covering arrays. This strategy can be regarded as one special bottom-up strategy, but with one important difference: it should generate a higher-way covering array at first, and then take some part in it to fill in the lower-covering array.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-More specifically, Figure \ref{comparebottomupwithcollaborative} depicts the differences between them.
 
-\begin{figure}
- \includegraphics[width=3.6in]{differentIncremental.eps}
-\caption{Bottom-up strategy and Collaborative bottom-up strategy}
-\label{comparebottomupwithcollaborative}
-\end{figure}
-.
-In this figure, the left side simply shows how do Strategy bottom-up generate incremental covering arrays, while the right side shows the method proposed by Fouch{\'e} et al \cite{fouche2009incremental}. We will latter call this method the ``Collaborative bottom-up'' in this paper. From this figure, we can easily learn that the bottom-up is very simple and straightforward, it only needs to build the $t$-way covering array based on the seed of $t-1$-way covering array. While for ``Collaborative bottom-up'', the process is slightly more complicated. First of all, its target is to generate several incremental covering arrays (replication). For the first one in these incremental covering arrays, it follows the ``Bottom-up'' strategy, i.e., take $t-1$-way covering array as the seed to build $t$-way covering array. For the remaining incremental covering arrays, the $t$-way covering arrays needs seeds both come from $t-1$-way covering array and $t+1$ covering array. For example, in the second incremental covering array (at the middle) generated by ``Collaborative bottom-up'' strategy in Figure \ref{comparebottomupwithcollaborative}, we can find some part (\emph{E}) of the 3-way covering array comes from the 2-way covering array at the middle, while some other part (G) comes from the 4-way covering array at the left.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Another point that needs to note is that the approach listed in \cite{fouche2009incremental} generates three distinct incremental covering arrays for one SUT. Generating multiple covering arrays can increase their abilities to handle the random or non-determined failures.
 
-Note that the study \cite{fouche2009incremental} did not give a specific implementation of the strategy. Hence, in this paper, we implemented this strategy with the covering array generation approach--IPOG, which is the same approach used in our strategies.  By doing this, we can eliminated the influence from the covering array generation approach, and only focus on the performance among different strategies. Another point that needs to note is that the approach listed in \cite{fouche2009incremental} generates three distinct incremental covering arrays for one SUT. Generating multiple covering arrays can increase their abilities to handle the random or non-determined failures. To make a fair comparison, we record the average data of these covering arrays, which includes the average size, corresponding time cost and RFD.
+Note that, as we mentioned before, \emph{collaborative bottom-up} generates multiple incremental covering arrays for one SUT to increase their abilities to handle the random or non-determined failures. Hence, to make a fair comparison, we  recorded the average data of these covering arrays, which includes the average size, corresponding time cost and RFD, and then compared them with those of other approaches.
 
 We ran all the experiments on a server which has a 6-core CPU of 2.0GHz (Intel Xeon E5-2640 v2), and a 16 GB memory. It took us four weeks in total to obtain all the results. Note that not all the covering arrays can run up to 6 way because of the memory limitation and computing time.
-\subsection{Results and Discussion}
+\section{Results and Discussion}
+
+\subsection{RQ1. The size of the incremental covering array}
+
+%\begin{figure*}[t!]
+%    \begin{subfloat}
+%        \centering
+%        \includegraphics[width=7.4in]{size-degree.eps}
+%    \end{subfloat}%
+%    ~
+%    \begin{subfloat}
+%        \centering
+%        \includegraphics[height=1in]{size_trend.eps}
+%    \end{subfloat}
+%    \caption{Caption place holder}
+%\end{figure*}
+
 \begin{figure*}[htbp]
 \center
- \includegraphics[width=7.4in]{size.eps}
+ \includegraphics[width=7.4in]{size-degree.eps}
 \caption{The comparison of the three strategies with respect to the size of covering arrays}
 \label{experiement}
 \end{figure*}
 
+
+
+
+\subsection{RQ2. The time cost of the incremental covering array}
+
 \begin{figure*}[htbp]
 \center
- \includegraphics[width=7.4in]{time.eps}
+ \includegraphics[width=7.4in]{time-degree.eps}
 \caption{The comparison of the three strategies with respect to the time cost}
 \label{experiement_time}
 \end{figure*}
 
 
-The results are listed in Fig. \ref{experiement} and Fig. \ref{experiement_time} for covering array size and consuming time, respectively. There are 55 sub figures in these two main figures, one for each subject. In each subject, the x axis lists the covering array strength, which is ranged from 2-way to 6-way. The y axis shows the size of each covering array, which is normalized to between 0 to 1. There are three polygonal lines in each sub-figure, each of which shows the results for one of the three strategies: \emph{Bottom-up},\emph{Top-down}, and \emph{Traditional} \cite{fouche2009incremental}.
+\subsection{RQ3. The RFD of the incremental covering array}
+
+\begin{figure*}[htbp]
+\center
+ \includegraphics[width=7.4in]{rfd-degree.eps}
+\caption{The comparison of the three strategies with respect to the RFD}
+\label{experiement_time}
+\end{figure*}
+
+
+The results are listed in Fig. \ref{experiement} and Fig. \ref{experiement_time} for covering array size and consuming time, respectively. There are 55 sub figures in these two main figures, one for each subject. In each subject, the x axis lists the covering array strength, which is ranged from 2-way to 6-way. The y axis shows the size of each covering array, which is normalized to between 0 to 1. There are three polygonal lines in each sub-figure, each of which shows the results for one of the three strategies: \emph{Bottom-up},\emph{Top-down}, and \emph{Collaborative Bottom-up} \cite{fouche2009incremental}.
 
 %These data are normalized to rend a clear view.
 
@@ -993,12 +1042,12 @@ At first sight of Fig \ref{experiement}, we can hardly distinguish the tradition
 But on closer inspection, these still exists differences between them.
 
 \begin{table}[!ht]
-\caption{Compare traditional approach with Bottom-up strategy (Size)}
+\caption{Compare Bottom-up strategy with Collaborative bottom-up strategy(Size)}
 \label{statistic_of_subjects_size_tranditional}
 \center
 %\setlength{\tabcolsep}{3pt}
     \begin{tabular}{|c|c|c|c|} \hline
-\multirow{2}{*}{Degree} & Bottom-up & Traditional & \multirow{2}{*}{Equal} \\\cline{2-3}
+\multirow{2}{*}{Degree} & Bottom-up & Collaborative bottom-up & \multirow{2}{*}{Equal} \\\cline{2-3}
  & \#subjects (\#test cases) & \#subjects (\#test cases) &  \\\hline
 2 & 45 (2.33) & 6 (0.83) & 4 \\
 3 & 24 (1.82) & 21 (2.33) & 10 \\
@@ -1013,12 +1062,12 @@ We list the comparative data in Table \ref{statistic_of_subjects_size_trandition
 With respect to the time cost, it is easy to figure out that our approach \emph{Bottom-up} performs better than the traditional approach. Similar to the size, we list the comparative data in Table \ref{statistic_of_subjects_time_traditional} for a clear view. In this table, we can learn that almost for all the subjects (54 for degree 2, 54 for degree 3, 46 for degree 4, 28 for degree 5, and 14 for degree 6), our approach \emph{Bottom-up} costs less time than the traditional approach.  The reason why our approach performs more efficiently is mainly because our approach does not need to generate a higher-way covering array in prior. This task is very time-consuming if the input space is too large.
 
 \begin{table}[!ht]
-\caption{Compare traditional approach with Bottom-up strategy (Time)}
+\caption{Compare Bottom-up strategy with Collaborative bottom-up strategy (Time)}
 \label{statistic_of_subjects_time_traditional}
 \center
 %\setlength{\tabcolsep}{3pt}
     \begin{tabular}{|c|c|c|} \hline
-    \multirow{2}{*}{Degree} & Traditional & Top-down \\\cline{2-3}
+    \multirow{2}{*}{Degree} & Collaborative bottom-up & Top-down \\\cline{2-3}
  & \#subjects (\#seconds) & \#subjects (\#seconds) \\\hline
 2 & 54 (0.18) & 1 (0.08) \\
 3 & 54 (0.82) & 1 (5.9)  \\

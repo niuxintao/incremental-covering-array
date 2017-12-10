@@ -285,7 +285,7 @@ for i in range(1, 55):
 
 
 #configure legend
-fig.legend([line_up, line_down, line_issta], ['bottom-up', 'top-down', 'traditional'],'upper left',
+fig.legend([line_up, line_down, line_issta], ['bottom-up', 'top-down', 'collaborative bottom-up'],'upper left',
            ncol=3,prop={'size':10})
 
 
