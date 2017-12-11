@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  11 DEC 2017 05:12
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  11 DEC 2017 17:26
 entering extended mode
 **incremental*covering*array.tex
 
@@ -324,11 +324,7 @@ File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
 \c@definition=\count112
 
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
-.aux"
-
-LaTeX Warning: Label `experiement_time' multiply defined.
-
-)
+.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 364.
 LaTeX Font Info:    ... okay on input line 364.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 364.
@@ -520,16 +516,12 @@ Before submitting the final camera ready copy, remember to:
 
 [11]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
-.aux")
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+.aux") ) 
 Here is how much of TeX's memory you used:
- 3359 strings out of 430478
- 54925 string characters out of 3191502
+ 3360 strings out of 430478
+ 54942 string characters out of 3191502
  130432 words of memory out of 3000000
- 6498 multiletter control sequences out of 15000+200000
+ 6499 multiletter control sequences out of 15000+200000
  29514 words of font info for 68 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
  44i,11n,42p,1577b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
