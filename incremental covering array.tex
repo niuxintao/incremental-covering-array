@@ -506,7 +506,7 @@ Then, a natural question, and also the motivation of this paper is, \textbf{is i
 
 In this paper, we give two different implementations for each strategy. Specifically, for \emph{bottom-up} strategy, we first gives an approach which is based on directly seeding test cases of lower-way covering array. Another approach comes from the existing incremental covering array algorithm \cite{fouche2009incremental}, which uses multiple covering arrays instead of one for seeding test cases. For \emph{top-down} strategy, the key of the first implementation is to select the test cases with as much un-covered interactions as possible from higher-way covering arrays, while the second implementation is to select test cases with maximal hamming distances at each iteration.
 
-We evaluated these four approaches by comparing them at constructing several incremental covering arrays on 55 wildly used subjects (including 25 real-world software and 30 synthetic systems). There are three metrics that are used in the empirical studies, i.e., the size of the incremental covering arrays for each degrees, the time cost when generating these test cases, and the fault detection rate of these covering arrays. The results mainly show that strategy \emph{Bottom-up} have an advantage over strategy \emph{Top-down} at lower degrees with respect to the size of covering arrays, while strategy \emph{Top-down} performs better at higher degrees. However, when concerning the fault detection rate, strategy \emph{Top-down} gets higher scores at lower degrees, while \emph{Bottom-up} is better at higher degrees. Besides these observations, we also found that different implementations of these generation strategies also have impacts on the performance, especially for strategy \emph{Top-down}, of which the implementation with considering un-covered interactions had a significant advantage over the one based on hamming distance.
+We evaluated these four approaches by comparing them at constructing several incremental covering arrays on 55 wildly used subjects (including 25 real-world software and 30 synthetic systems). There are three metrics that are used in the empirical studies, i.e., the size of the incremental covering arrays for each degrees, the time cost when generating these test cases, and the fault detection rate of these covering arrays. The results mainly show that strategy \emph{Bottom-up} has an advantage over strategy \emph{Top-down} at lower degrees with respect to the size of covering arrays, while strategy \emph{Top-down} performs better at higher degrees. However, when concerning the fault detection rate, strategy \emph{Top-down} gets higher scores at lower degrees, while \emph{Bottom-up} is better at higher degrees. Besides these observations, we also found that different implementations of these generation strategies also have impacts on the performance, especially for strategy \emph{Top-down}, of which the implementation with considering un-covered interactions had a significant advantage over the one based on hamming distance.
 
  %The results of the experiments showed that the \emph{top-down} strategy has an significant advantage at the size of the higher-strength covering array, while the \emph{bottom-up} strategy is better at constructing those lower-strength covering arrays with smaller size. Based on this observation, we applied our two strategies on testing an industrial software (Tomcat). The results of this empirical study showed that our approach generates smaller size of test cases than traditional approach, while keeps a high rate of fault detection.
 
@@ -899,7 +899,7 @@ In Table \ref{model_of_sut_of_subjects}, the model is presented in the abbreviat
 
 
 
-\subsection{Set-up and procedure}
+\subsection{Set-ups}
 For each SUT listed in Table \ref{model_of_sut_of_subjects}, we adopted four approaches i.e., \emph{bottom-up}, \emph{Collaborative bottom-up}, \emph{top-down}, and \emph{top-down hamming}, to generate an incremental covering array from 2-way to 6-way. We recorded the size of each covering array contained in this  incremental covering array, the generation time (seconds) that is consumed to generate these covering arrays. After that, we computed the RFD for each covering array.
 %Besides these two strategies, we also adopted the strategy proposed in the study \cite{fouche2009incremental} to generate these incremental covering arrays. This strategy can be regarded as one special bottom-up strategy, but with one important difference: it should generate a higher-way covering array at first, and then take some part in it to fill in the lower-covering array.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -914,18 +914,7 @@ We ran all the experiments on a server which has a 6-core CPU of 2.0GHz (Intel X
 
 \subsection{RQ1. The size of the incremental covering array}
 
-%\begin{figure*}[t!]
-%    \begin{subfloat}
-%        \centering
-%        \includegraphics[width=7.4in]{size-degree.eps}
-%    \end{subfloat}%
-%    ~
-%    \begin{subfloat}
-%        \centering
-%        \includegraphics[height=1in]{size_trend.eps}
-%    \end{subfloat}
-%    \caption{Caption place holder}
-%\end{figure*}
+The results are listed in Fig.\ref{experiement}. There are 5 sub figures in this figure, each of which focus on reporting one specific strength covering array in the incremental covering array. For each sub-figure, there are four polygonal lines that represent the size of the generated covering array by the four approaches respectively. The x axis means the 55 subjects listed in Table \ref{model_of_sut_of_subjects}, while the y axis means the covering array size (which is normalized between 0 to 1 for visualization purposes). Note the value of "-1" in y axis means we cannot generate the specific covering array of the corresponding subject due to the limitation of memory and computing time.
 
 \begin{figure*}[htbp]
 \center
@@ -934,56 +923,44 @@ We ran all the experiments on a server which has a 6-core CPU of 2.0GHz (Intel X
 \label{experiement}
 \end{figure*}
 
-
-
-
-\subsection{RQ2. The time cost of the incremental covering array}
-
-\begin{figure*}[htbp]
-\center
- \includegraphics[width=7.4in]{time-degree.eps}
-\caption{The comparison of the three strategies with respect to the time cost}
-\label{experiement_time}
-\end{figure*}
-
-
-\subsection{RQ3. The RFD of the incremental covering array}
-
-\begin{figure*}[htbp]
-\center
- \includegraphics[width=7.4in]{rfd-degree.eps}
-\caption{The comparison of the three strategies with respect to the RFD}
-\label{experiement_rfd}
-\end{figure*}
-
-
-The results are listed in Fig. \ref{experiement} and Fig. \ref{experiement_time} for covering array size and consuming time, respectively. There are 55 sub figures in these two main figures, one for each subject. In each subject, the x axis lists the covering array strength, which is ranged from 2-way to 6-way. The y axis shows the size of each covering array, which is normalized to between 0 to 1. There are three polygonal lines in each sub-figure, each of which shows the results for one of the three strategies: \emph{Bottom-up},\emph{Top-down}, and \emph{Collaborative Bottom-up} \cite{fouche2009incremental}.
-
 %These data are normalized to rend a clear view.
+There are several observations that can be made:
 
-One important observation in this figure is that there is a significant advantage of strategy \emph{Bottom-up} over \emph{Top-down} at the size of covering arrays. Specifically, among the 55 subjects, there are 55 subjects (all the subjects) on which \emph{Bottom-up} generates smaller size of 2-way covering array than \emph{Top-down}, 50 subjects on 3-way covering array, 28 subjects on 4-way covering array, and 12 subjects on 5-way covering array.  In contrast, \emph{Top-down} only generates smaller size of test cases for 3 subjects on 3-way covering array, 20 subjects on 4-way, 10 subjects on 5-way, and 11 subjects on 6-way.
+ \begin{enumerate}
+ \item  Approach A performs well at the remaing at, while Approach B performs well at subjects with degree
+ \item  Approach C performs well at degree ,  Approach D peforms well at degree (there are 5 in 6 better than the strategy)
+ \item  Approach and Approach is similar, .
+ %\item  We apply our approach on testing an industrial software and compare the performance between the traditional approach with ours.
+ \item Approach and Approach varies.
+ \item Approach A and B performs well at subjects with paramters number big.
+ \item Approach C and D performs well at subjects with input space small (number of parameters better than ).
+\end{enumerate}
 
-We list these comparative data in Table \ref{statistic_of_subjects_size}. Column ``Bottom-up'' shows the number of subjects that strategy \emph{Bottom-up} performs better. We attached the number of test cases that is decreased on average in the parentheses.  Column ``Top-down'' shows the better results for strategy \emph{Top-down}, and Column ``Equal'' shows the number of subjects that these two strategies generate the same size of covering array.
+In summary,  we can learn that, besides the number of subjects, \emph{Bottom-up} strategy also has a significant advantage on the extent to which it has decreased the size of test cases. In fact, \emph{Bottom-up} strategy has decreased the number of test cases ranged from 270 to 657 on average, while \emph{Top-down} strategy just decreased the number of test cases no more than 40.
 
+ 
 
-\begin{table}[!ht]
-\caption{Comparative data between two strategies (Size) }
-\label{statistic_of_subjects_size}
-\center
-%\setlength{\tabcolsep}{3pt}
-    \begin{tabular}{|c|c|c|c|} \hline
-\multirow{2}{*}{Degree} & Bottom-up & Top-down & \multirow{2}{*}{Equal} \\\cline{2-3}
- & \#subjects (\#test cases) & \#subjects (\#test cases) &  \\\hline
-2 & 55 (270.04) & 0 (-) & 0 \\
-3 & 50 (624.4) & 3 (39.0) & 2 \\
-4 & 28 (657.71) & 20 (36.95) & 3 \\
-5 & 12 (638.42) & 10 (39.0) & 3 \\
-6 & 0 (-) & 11 (38.55) & 0 \\
-        \hline
-    \end{tabular}%
-\end{table}
-
-Based on Table \ref{statistic_of_subjects_size}, we can learn that, besides the number of subjects, \emph{Bottom-up} strategy also has a significant advantage on the extent to which it has decreased the size of test cases. In fact, \emph{Bottom-up} strategy has decreased the number of test cases ranged from 270 to 657 on average, while \emph{Top-down} strategy just decreased the number of test cases no more than 40.
+%We list these comparative data in Table \ref{statistic_of_subjects_size}. Column ``Bottom-up'' shows the number of subjects that strategy \emph{Bottom-up} performs better. We attached the number of test cases that is decreased on average in the parentheses.  Column ``Top-down'' shows the better results for strategy \emph{Top-down}, and Column ``Equal'' shows the number of subjects that these two strategies generate the same size of covering array.
+%
+%
+%\begin{table}[!ht]
+%\caption{Comparative data between two strategies (Size) }
+%\label{statistic_of_subjects_size}
+%\center
+%%\setlength{\tabcolsep}{3pt}
+%    \begin{tabular}{|c|c|c|c|} \hline
+%\multirow{2}{*}{Degree} & Bottom-up & Top-down & \multirow{2}{*}{Equal} \\\cline{2-3}
+% & \#subjects (\#test cases) & \#subjects (\#test cases) &  \\\hline
+%2 & 55 (270.04) & 0 (-) & 0 \\
+%3 & 50 (624.4) & 3 (39.0) & 2 \\
+%4 & 28 (657.71) & 20 (36.95) & 3 \\
+%5 & 12 (638.42) & 10 (39.0) & 3 \\
+%6 & 0 (-) & 11 (38.55) & 0 \\
+%        \hline
+%    \end{tabular}%
+%\end{table}
+%
+%Based on Table \ref{statistic_of_subjects_size}, we can learn that, besides the number of subjects, \emph{Bottom-up} strategy also has a significant advantage on the extent to which it has decreased the size of test cases. In fact, \emph{Bottom-up} strategy has decreased the number of test cases ranged from 270 to 657 on average, while \emph{Top-down} strategy just decreased the number of test cases no more than 40.
 
 Above all, the answer to research question 1 is:
 
@@ -991,6 +968,16 @@ Above all, the answer to research question 1 is:
 
 One reason for this result is because the method to extract lower-way covering arrays from higher coverings is not optimal. As mentioned before, considering of the efficiency, we use a greedy method to select test cases from higher covering arrays. This may result in that, for strategy \emph{Top-down}, the number of test cases of the lower-way covering array may be larger than needed. We believe another reason for this result is the covering array generation approach IPOG. This is because that even though for higher-way covering array (6-way), strategy \emph{Top-down} did not have any significant advantages over \emph{Bottom-up}, which indicates that IPOG is not good at generating higher-way covering array.
 
+
+\subsection{RQ2. The time cost of the incremental covering array}
+Fig.\ref{experiement_time}  consuming time.
+
+\begin{figure*}[htbp]
+\center
+ \includegraphics[width=7.4in]{time-degree.eps}
+\caption{The comparison of the three strategies with respect to the time cost}
+\label{experiement_time}
+\end{figure*}
 
 With respect to the second research question, we can also find that \emph{Bottom-up} performs better than \emph{Top-down}. Similar to the first question, we list the comparative data of time cost in Table \ref{statistic_of_subjects_time}.  Column ``Bottom-up'' shows the number of subjects that strategy \emph{Bottom-up} performs better. We also attached the seconds that are decreased on average to generate the covering array in the parentheses.  Column ``Top-down'' shows the better results for strategy \emph{Top-down}.
 
@@ -1017,6 +1004,15 @@ Besides this, another important observation is that strategy \emph{Bottom-up} ca
 Hence, the answer to the second question is :
 
 \textbf{Strategy \emph{Bottom-up} is the better approach when considering the time cost for generating incremental covering array. }
+
+\subsection{RQ3. The RFD of the incremental covering array}
+
+\begin{figure*}[htbp]
+\center
+ \includegraphics[width=7.4in]{rfd-degree.eps}
+\caption{The comparison of the three strategies with respect to the RFD}
+\label{experiement_rfd}
+\end{figure*}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1079,7 +1075,7 @@ With respect to the time cost, it is easy to figure out that our approach \emph{
 
 We do not give a closer inspection for comparing the traditional approach with \emph{Top-down} strategy. This is because based on Fig. \ref{experiement} and Fig. \ref{experiement_time}, we can easily find that the traditional approach also has a significant advantage over \emph{Top-down} strategy at the covering array size and time cost.
 
-Above all, the answer to the 4th question is:
+Above all, the answer to the last question is:
 
 \textbf{With respect to the size of incremental covering array, strategy \emph{Bottom-up} is slightly better than the traditional approach. Strategy \emph{Bottom-up} also needs less time than the traditional approach to generate the covering arrays.}
 
@@ -1128,7 +1124,7 @@ There are several threats to validity in our studies.
 
 First, our incremental covering array generation approach is implemented by using IPOG. Although IPOG can efficiently generate higher-way covering array for the SUT with large input space, it may generate too many test cases (due to the greedy strategy). It is necessary to try more covering array generation approaches to make the conclusion more general.
 
-Second, the method to extract lower-way covering arrays from higher coverings is a greedy algorithm in this paper. This may result in that the size of the lower-way covering arrays generated by \emph{Top-down} strategy may be larger than needed. If adopted some other methods, e.g., the post-optimal approach \cite{li2014refining,nayeri2013randomized}, the number of test cases generated by \emph{Top-down} strategy may be significantly decreased.
+Second, the method to extract lower-way covering arrays from higher coverings is  two greedy algorithms in this paper. This may result in that the size of the lower-way covering arrays generated by \emph{Top-down} strategy may be larger than needed. If adopted some other methods, e.g., the post-optimal approach \cite{li2014refining,nayeri2013randomized}, or alternatively heuristic searching methods, the number of test cases generated by \emph{Top-down} strategy may be significantly decreased.
 
 At last, our results are based on the 55 wildly used input models. That is, with other input models, the results may be different from this paper. It is appealing to further study the influence of the characteristics of the input models, e.g., the number of parameters, and the constraints, on the results of incremental covering array generation approach.
 
@@ -1151,7 +1147,11 @@ Calvagna et al. \cite{calvagna2013incrementally} proposed another work to genera
 
 
 \section{Conclusions and future works}
-Incremental covering array is an important object to make CT used in practice, because it makes CT more adaptive, such that we do not need to give the specific test strength in prior. This paper formally defined the incremental covering array and gave a proof to its existence. Furthermore, this paper proposed two strategies for generating incremental covering arrays. Experimental results show that strategy \emph{bottom-up} have a significant advantage over \emph{top-down} at the size of the covering arrays and time cost. It is also performs more efficient than traditional approach with respect to the time cost.
+Incremental covering array is an important object to make CT used in practice, because it makes CT more flexible, such that we do not need to give the specific test strength in prior. This paper formally defined the incremental covering array and gave a proof to its existence. Furthermore, this paper proposed two strategies, i.e., strategy \emph{Bottom-up} and \emph{Top-down} to generate the incremental covering array. \emph{Bottom-up} strategy generates incremental covering array from low-degree to high degree sequently, while \emph{Top-down} strategy first generates the highest-way covering array and then extract lower-way covering arrays.
+
+For each strategy we offer two different implements, which forms four generation approaches in total for generating incremental covering arrays. Experimental results showed that both strategies have their own advantages; \emph{Bottom-up} has an advantage over strategy \emph{Top-down} at lower degrees with respect to the size of covering arrays, while strategy \emph{Top-down} performs better at higher degrees. However, when concerning the fault detection rate, strategy \emph{Top-down} gets higher scores at lower degrees, while \emph{Bottom-up} is better at higher degrees. Additionally, different implementations of the two strategies also have influences of the results, especially for strategy \emph{Top-down}, of which the implementation with considering un-covered interactions had a significant advantage over the implementation based on hamming distance.
+
+%show that strategy \emph{bottom-up} have a significant advantage over \emph{top-down} at the size of the covering arrays and time cost. It is also performs more efficient than traditional approach with respect to the time cost.
 
 As a future work, we will apply more covering array generation algorithms, to compare their performance at generating incremental covering arrays. Another interesting work is to combine the two strategies, so that we can first select a median coverage strength \emph{t} and generate incremental covering arrays by \emph{top-down} strategy. Then if the maximal-way covering array is generated, we can use \emph{bottom-up} strategy to generate further higher-strength covering arrays. We believe such a combination strategy may offer a better performance.
 % An example of a floating figure using the graphicx package.

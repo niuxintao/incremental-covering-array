@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  11 DEC 2017 17:26
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  14 DEC 2017 02:25
 entering extended mode
 **incremental*covering*array.tex
 
@@ -478,23 +478,24 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
  [6]
 File: size-degree.eps Graphic file (type eps)
  <size-degree.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 932--933
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 921--922
  [] 
  []
 
 File: time-degree.eps Graphic file (type eps)
 <time-degree.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 944--945
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 977--978
  [] 
  []
 
+[7] [8]
 File: rfd-degree.eps Graphic file (type eps)
-<rfd-degree.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 954--955
+ <rfd-degree.eps>
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 1012--1013
  [] 
  []
 
-[7] [8] [9] [10]
+[9] [10]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .bbl"
 Underfull \hbox (badness 2020) in paragraph at lines 113--116
@@ -516,11 +517,15 @@ Before submitting the final camera ready copy, remember to:
 
 [11]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
-.aux") ) 
+.aux")
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  3360 strings out of 430478
  54942 string characters out of 3191502
- 130432 words of memory out of 3000000
+ 129432 words of memory out of 3000000
  6499 multiletter control sequences out of 15000+200000
  29514 words of font info for 68 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
