@@ -73,7 +73,7 @@ for i in range(1, 5):
 
 #configure legend
 
-fig.legend([line_up, line_issta, line_down, line_haiming ], ['bottom-up', 'collaborative bottom-up', 'top-down',  'top-down-hamming'],'upper left',
+fig.legend([line_up, line_issta, line_down, line_haiming ], ['bottom-up', 'collaborative bottom-up', 'coverage-based top-down',  'hamming distance-based top-down'],'upper left',
            ncol=4,prop={'size':10})
 
 #fig.legend([line_up, line_issta, line_down ], ['bottom-up', 'collaborative bottom-up', 'top-down'],'upper left',

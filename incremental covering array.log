@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  14 DEC 2017 02:25
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  15 DEC 2017 07:40
 entering extended mode
 **incremental*covering*array.tex
 
@@ -484,16 +484,20 @@ Overfull \hbox (18.79755pt too wide) in paragraph at lines 921--922
 
 File: time-degree.eps Graphic file (type eps)
 <time-degree.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 977--978
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 976--977
  [] 
  []
 
 [7] [8]
 File: rfd-degree.eps Graphic file (type eps)
  <rfd-degree.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 1012--1013
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 1011--1012
  [] 
  []
+
+
+LaTeX Warning: Reference `statistic_of_subjects_size' on page 9 undefined on in
+put line 1055.
 
 [9] [10]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
@@ -519,7 +523,7 @@ Before submitting the final camera ready copy, remember to:
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux")
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:

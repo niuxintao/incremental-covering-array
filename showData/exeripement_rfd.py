@@ -56,7 +56,7 @@ for i in range(1, 6):
 
 fig.tight_layout()
 fig.text(0.5, 0.04, 'Subjects', ha='center', fontsize=15)
-fig.text(0.02, 0.5, 'Time (normalized)', va='center', rotation='vertical', fontsize=15)
+fig.text(0.02, 0.5, 'RFD (normalized)', va='center', rotation='vertical', fontsize=15)
 
 #plot data and normalized data
 line_up, = ax[0].plot(x, data[0],  marker="o", mfc="None", color="k")
@@ -73,7 +73,7 @@ for i in range(1, 5):
 
 #configure legend
 
-fig.legend([line_up, line_issta, line_down, line_haiming ], ['bottom-up', 'collaborative bottom-up', 'top-down',  'top-down-hamming'],'upper left',
+fig.legend([line_up, line_issta, line_down, line_haiming ], ['bottom-up', 'collaborative bottom-up', 'coverage-based top-down',  'hamming distance-based top-down'],'upper left',
            ncol=4,prop={'size':10})
 
 #fig.legend([line_up, line_issta, line_down ], ['bottom-up', 'collaborative bottom-up', 'top-down'],'upper left',
