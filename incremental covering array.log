@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  15 DEC 2017 07:40
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  16 DEC 2017 21:08
 entering extended mode
 **incremental*covering*array.tex
 
@@ -482,26 +482,26 @@ Overfull \hbox (18.79755pt too wide) in paragraph at lines 921--922
  [] 
  []
 
+[7]
+Underfull \vbox (badness 1028) has occurred while \output is active []
+
 File: time-degree.eps Graphic file (type eps)
+
 <time-degree.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 976--977
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 960--961
  [] 
  []
 
-[7] [8]
+[8]
 File: rfd-degree.eps Graphic file (type eps)
  <rfd-degree.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 1011--1012
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 999--1000
  [] 
  []
-
-
-LaTeX Warning: Reference `statistic_of_subjects_size' on page 9 undefined on in
-put line 1055.
 
 [9] [10]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
-.bbl"
+.bbl" [11]
 Underfull \hbox (badness 2020) in paragraph at lines 113--116
 \OT1/ptm/m/n/8 in \OT1/ptm/m/it/8 Soft-ware En-gi-neer-ing Work-shop, 2006. SEW
 '06. 30th An-nu-al
@@ -519,20 +519,18 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[11]
+[12
+
+]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
-.aux")
-
-LaTeX Warning: There were undefined references.
-
- ) 
+.aux") ) 
 Here is how much of TeX's memory you used:
- 3360 strings out of 430478
- 54942 string characters out of 3191502
+ 3359 strings out of 430478
+ 54914 string characters out of 3191502
  129432 words of memory out of 3000000
- 6499 multiletter control sequences out of 15000+200000
+ 6498 multiletter control sequences out of 15000+200000
  29514 words of font info for 68 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
  44i,11n,42p,1577b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on incremental*covering*array.pdf (11 pages).
+Output written on incremental*covering*array.pdf (12 pages).
