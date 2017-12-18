@@ -914,12 +914,12 @@ We ran all the experiments on a server which has a 6-core CPU of 2.0GHz (Intel X
 
 \subsection{RQ1. The size of the incremental covering array}
 
-The results are listed in Fig.\ref{experiement}. There are 5 sub figures in this figure, each of which focus on reporting the covering array with specific strength. For each sub-figure, there are four polygonal lines that represent the size of the generated covering array of the four approaches respectively. The x axis means the 55 subjects listed in Table \ref{model_of_sut_of_subjects}, while the y axis means the covering array size (which is normalized between 0 to 1 for visualization purposes). Note the value of "-1" in y axis means we cannot generate the specific covering array of the corresponding subject due to the limitation of memory and computing time.
+The results are listed in Fig.\ref{experiement}. There are 5 sub figures in this figure, each of which focus on reporting the covering array with specific strength. For each sub-figure, there are four polygonal lines that represent the size of the generated covering array of the four approaches respectively. The x axis means the 55 subjects listed in Table \ref{model_of_sut_of_subjects}, while the y axis means the covering array size. These values are normalized between 0 to 1 for visualization purposes. Additionally, the smaller the value of y is, the better the corresponding approach performed. Note the value of "-1" in y axis means we cannot generate the specific covering array of the corresponding subject due to the limitation of memory and computing time.
 
 \begin{figure*}[htbp]
 \center
  \includegraphics[width=7.4in]{size-degree.eps}
-\caption{The comparison of the three strategies with respect to the size of covering arrays}
+\caption{The comparison of the four approaches with respect to the size of covering arrays}
 \label{experiement}
 \end{figure*}
 
@@ -927,144 +927,128 @@ The results are listed in Fig.\ref{experiement}. There are 5 sub figures in this
 There are several observations that can be made:
 
  \begin{enumerate}
- \item Approach \emph{single bottom-up} outperformed \emph{CB top-down} and \emph{HDB top-down} at 54 out of 55 subjects and all the 55 subjects, respectively, for 2-way covering arrays. Among these subjects, \emph{single bottom-up} reduced about 22\%, and 77\% on average (Not shown in this figure), respectively, on the size of the covering array. Approach \emph{collaborative bottom-up} also outperformed these two top-down approaches at 53 and 55 subjects, respectively, for 2-way covering arrays. The extent to which the reductions of the size of covering arrays made by \emph{collaborative bottom-up} are about 18\% and 76\%, respectively. For 3-way covering strength, the advantages of \emph{bottom-up} approaches over \emph{top-down} approaches slightly decreased. Specifically, approach \emph{single bottom-up}  outperformed \emph{CB top-down} and \emph{HDB top-down} at 45, and 47 subjects, respectively. The corresponding size reduction are about 16\% and 69\% on average.  Approach \emph{collaborative bottom-up} also outperformed \emph{CB top-down} and \emph{HDB top-down} at 45, and 47 subjects, respectively. The corresponding size reduction are about 2\% and 69\% on average.
+ \item Approach \emph{single bottom-up} outperformed \emph{CB top-down} and \emph{HDB top-down} at 54 out of 55 subjects and all the 55 subjects, respectively, for 2-way covering arrays. Among these subjects, \emph{single bottom-up} reduced the size of covering arrays by 22\%, and 77\% on average (not shown in this figure), respectively. Approach \emph{collaborative bottom-up} outperformed these two top-down approaches at 53 and 55 subjects, respectively, for 2-way covering arrays. The reductions on the size of covering arrays made by \emph{collaborative bottom-up} are around 18\% and 76\%, respectively. For 3-way covering strength, the advantages of \emph{bottom-up} approaches over \emph{top-down} approaches slightly decreased. Specifically, approach \emph{single bottom-up}  outperformed \emph{CB top-down} and \emph{HDB top-down} at 45, and 47 subjects, respectively. The corresponding reductions on the size of covering arrays are around 16\% and 69\% on average.  Approach \emph{collaborative bottom-up} also outperformed \emph{CB top-down} and \emph{HDB top-down} at 45, and 47 subjects, respectively. The corresponding reductions on the size of covering arrays are around 2\% and 69\% on average.
 
- \item  For the highest covering strength, i.e., 6-way, approach \emph{CB top-down} outperformed both \emph{single bottom-up} and  and \emph{HDB top-down} at all the 10 subjects (only 10 subjects can be tested under 6-way testing strength).  Among these subjects, \emph{CB top-down} reduced about 3\%, and 4\% on average, respectively, on the size of the covering array. The \emph{HDB top-down} obtained the same results as  approach \emph{CB top-down} at this testing strength. This is because they share the same covering array at the highest covering strength (the difference between the two top-down approaches is their different extracting methods for generating lower-way covering array).
+ \item  For the highest covering strength, i.e., 6-way, approach \emph{CB top-down} outperformed both \emph{single bottom-up} and  and \emph{HDB top-down} at all the 10 subjects (only 10 subjects can be tested under 6-way testing strength).  Among these subjects, \emph{CB top-down} reduced by 3\%, and 4\%, on average, respectively, on the size of the covering array.
+     %Although the reduction ratio is not as high as what \emph{bottom-up} approaches obtained at the 2-way and 3-way covering strength, however, considering the total number of the 6-way covering array of these subjects generated by the four approaches (1265.8 on average),  the number of test cases \emph{CB top-down} reduced is not trivial (41.40, and 46.07 respectively, on average).
+     The \emph{HDB top-down} obtained the same results as  approach \emph{CB top-down} at this testing strength. This is because they share the same covering array at the highest covering strength (the difference between the two top-down approaches is their different extracting methods for generating lower-way covering array).
 
- \item  For the medium testing strength, i.e., 4 and 5, top-down approaches and bottom-up approaches performed neck and neck on the size of the covering array. Specifically, for 4-way covering arrays, \emph{single bottom-up} outperformed \emph{CB top-down} and \emph{HDB top-down} at 22 and 26 subjects, respectively, and \emph{collaborative bottom-up} outperformed \emph{CB top-down} and \emph{HDB top-down} at 21 and 24 subjects. On the other hand, \emph{CB top-down} outperformed \emph{single bottom-up} and \emph{collaborative bottom-up} at 22 and 21 subjects, respectively, and \emph{HDB top-down} outperformed these two bottom-up approaches at 20 and 16 subjects, respectively.  Besides, the extent to which the reductions of the size of covering arrays made by these approaches against each other are also similar (around 2\% to 5\%). Approach \emph{HDB top-down} is an exception, other 3 approaches reduced about from 30\% to 50\% of the size of the test cases than its generated covering array.  The results of 5-way covering strength matched well with those of 4-way covering strength.
+ \item  For the medium testing strength, i.e., 4 and 5, top-down approaches and bottom-up approaches performed neck and neck on the size of the covering array. Specifically, for 4-way covering arrays, \emph{single bottom-up} outperformed \emph{CB top-down} and \emph{HDB top-down} at 22 and 26 subjects, respectively, and \emph{collaborative bottom-up} outperformed \emph{CB top-down} and \emph{HDB top-down} at 21 and 24 subjects. On the other hand, \emph{CB top-down} outperformed \emph{single bottom-up} and \emph{collaborative bottom-up} at 22 and 21 subjects, respectively, and \emph{HDB top-down} outperformed these two bottom-up approaches at 20 and 16 subjects, respectively.  Among these subjects, the extent to which the reductions of the size of covering arrays made by these approaches against each other are also similar (around 2\% to 5\%). Approach \emph{HDB top-down} was an exception, other 3 approaches reduced about by 30\% to 50\% on the size of the covering arrays when compared to its generated covering arrays.  The results of 5-way covering strength matched well with those of 4-way covering strength.
  %\item  We apply our approach on testing an industrial software and compare the performance between the traditional approach with ours.
- \item The input space of the subjects also had influences on the results of these four approaches. Specifically, 
+ %\item The input space of the subjects also had influences on the results of these four approaches. Specifically,
 
- \item Different implementations. Approach A and B performs well at subjects with parameters number big.
+ %\item Different implementations. Approach A and B performs well at subjects with parameters number big.
 % \item Approach C and D performs well at subjects with input space small (number of parameters better than ).
+    \item When comparing the two approaches that both belong to \emph{bottom-up} strategy, approach \emph{single bottom-up} slightly performed better than \emph{collaborative bottom-up} at almost all the testing strengths. Specifically, there are 45, 24, 21, 14, and 1 subjects, on which approach \emph{single bottom-up} generated smaller size of covering array than than \emph{collaborative bottom-up} for testing strength 2, 3, 4, 5, and 6, respectively, while there are 6, 21, 7, 1, and 1 subjects, on which \emph{collaborative bottom-up} worked better. The specific reductions on the size of covering arrays made by these two approaches are 1\% to 6\%.
+
+    \item When comparing the two approaches that both belong to \emph{top-down} strategy, approach \emph{CB top-down} exhibited a significant advantage over \emph{HDB top-down}. Specifically, there are 55, 44, 21, 10, and 0 subjects, on which approach \emph{CB top-down} generated smaller size of covering arrays when compared to \emph{HDB top-down} for testing strength 2, 3, 4, 5, and 6, respectively, while there are no subjects on which \emph{HDB top-down} worked better than \emph{CB top-down} for all the testing strengths. More specifically, among these subjects, approach \emph{CB top-down} reduced the size of the covering arrays by 46\% and 71\% when compared to \emph{HDB top-down}.
 \end{enumerate}
 
-In summary,  we can learn that, besides the number of subjects, \emph{Bottom-up} strategy also has a significant advantage on the extent to which it has decreased the size of test cases. In fact, \emph{Bottom-up} strategy has decreased the number of test cases ranged from 270 to 657 on average, while \emph{Top-down} strategy just decreased the number of test cases no more than 40.
+%Based on these observations, we can conclude that:
+In summary, we can conclude that, with respect to the size of the covering array, \emph{Bottom-up} strategy has a significant advantage over \emph{Top-down} strategy at low testing strengths, while \emph{Top-down} strategy works better at the high testing strength. Additionally, different implementations of the strategy also affect on the results. Specifically, \emph{single bottom-up} performs slightly better than \emph{collaborative bottom-up}, while \emph{CB top-down} exhibits significant advantage over \emph{HDB top-down}.
 
-Above all, the answer to research question 1 is:
+%Above all, the answer to research question 1 is
+%\textbf{Except for the highest-way (6-way) covering array on which \emph{Top-down} strategy has a slight advantage, it falls far behind  strategy \emph{Bottom-up} at the size of generated covering array.}
 
-\textbf{Except for the highest-way (6-way) covering array on which \emph{Top-down} strategy has a slight advantage, it falls far behind  strategy \emph{Bottom-up} at the size of generated covering array.}
-
-One reason for this result is because the method to extract lower-way covering arrays from higher coverings is not optimal. As mentioned before, considering of the efficiency, we use a greedy method to select test cases from higher covering arrays. This may result in that, for strategy \emph{Top-down}, the number of test cases of the lower-way covering array may be larger than needed. We believe another reason for this result is the covering array generation approach IPOG. This is because that even though for higher-way covering array (6-way), strategy \emph{Top-down} did not have any significant advantages over \emph{Bottom-up}, which indicates that IPOG is not good at generating higher-way covering array.
+It is as expected that \emph{Bottom-up} and \emph{Top-down} strategies both have their ups and downs, considering that \emph{Bottom-up} makes the lowest-way covering array generation a priority (using specialized covering array generation approach for the 2-way covering array), while \emph{Top-down} makes the highest-way covering array generation a priority.  With respect to \emph{Bottom-up} strategy, the reason that approach \emph{single bottom-up} slightly performs better than \emph{collaborative bottom-up} is that the latter approach considers more aspects (un-deterministic failures reappearance) such that it cannot only focus on the size of the covering arrays.  The observation that \emph{CB top-down} performs much better \emph{HDB top-down} is interesting, which implies that the methods for extracting lower-way  covering arrays from higher-way covering arrays are important for the size of tests.
+%In fact, considering that \emph{CB top-down}  is also not the optimal method, it
+%As mentioned before, considering of the efficiency, we use a greedy method to select test cases from higher covering arrays. This may result in that, for strategy \emph{Top-down}, the number of test cases of the lower-way covering array may be larger than needed. We believe another reason for this result is the covering array generation approach IPOG. implicts that there is a , even is not the best \emph{top-down} approach.
+%This is because that even though for higher-way covering array (6-way), strategy \emph{Top-down} did not have any significant advantages over \emph{Bottom-up}, which indicates that IPOG is not good at generating higher-way covering array.
 
 
 \subsection{RQ2. The time cost of the incremental covering array}
 
+The results are visualized in Fig.\ref{experiement_time}. The organization of this figure is similar to Fig. \ref{experiement}. The only difference is that the y axis in this figure indicates the time consumed for generating these covering arrays (which is also normalized between 0 to 1 for visualization purposes).
+%Note the value of "-1" in y axis means we cannot generate the specific covering array of the corresponding subject due to the limitation of memory and computing time.
 
-The results are listed in Fig.\ref{experiement_time}. There are 5 sub figures in this figure, each of which focus on reporting one specific strength covering array in the incremental covering array. For each sub-figure, there are four polygonal lines that represent the size of the generated covering array by the four approaches respectively. The x axis means the 55 subjects listed in Table \ref{model_of_sut_of_subjects}, while the y axis means the covering array size (which is normalized between 0 to 1 for visualization purposes). Note the value of "-1" in y axis means we cannot generate the specific covering array of the corresponding subject due to the limitation of memory and computing time.
-
-Fig.\ref{experiement_time}  consuming time.
+%Fig.\ref{experiement_time}  consuming time.
 
 \begin{figure*}[htbp]
 \center
  \includegraphics[width=7.4in]{time-degree.eps}
-\caption{The comparison of the three strategies with respect to the time cost}
+\caption{The comparison of  the four approaches with respect to the time cost}
 \label{experiement_time}
 \end{figure*}
 
-With respect to the second research question, we can also find that \emph{Bottom-up} performs better than \emph{Top-down}. Similar to the first question, we list the comparative data of time cost in Table \ref{statistic_of_subjects_time}.  Column ``Bottom-up'' shows the number of subjects that strategy \emph{Bottom-up} performs better. We also attached the seconds that are decreased on average to generate the covering array in the parentheses.  Column ``Top-down'' shows the better results for strategy \emph{Top-down}.
 
-\begin{table}[!ht]
-\caption{Comparative data between two strategies (Time) }
-\label{statistic_of_subjects_time}
-\center
-%\setlength{\tabcolsep}{3pt}
-    \begin{tabular}{|c|c|c|} \hline
-\multirow{2}{*}{Degree} & Bottom-up & Top-down \\\cline{2-3}
- & \#subjects (\#seconds) & \#subjects (\#seconds) \\\hline
-2 & 49 (27.17) & 6 (0.05) \\
-3 & 53 (98.82) & 2 (0.01) \\
-4 & 48 (456.41) & 3 (0.01) \\
-5 & 21 (589.39) & 4 (0.44) \\
-6 & 8 (205.44) & 3 (2.18)  \\ \hline
-    \end{tabular}%
-\end{table}
+We made the following observations:
 
-From this table, it is easy to conclude that for most subjects, strategy \emph{Bottom-up} performs more efficiently with respect to the time cost. In fact, the time reduction of \emph{Bottom-up} is ranged from 27 seconds to 289 seconds, while \emph{Top-down} reduced less than 1 second for most subjects.
+ \begin{enumerate}
+ \item Approach \emph{CB top-down} was the best approach in terms of the rate of fault detection when compared with all the other three approaches at most cases. Specifically, \emph{CB top-down} outperformed \emph{single bottom-up} approach at 45, 50, 24, 10, and 0 subjects for the 5 testing strengths, respectively,  while \emph{single bottom-up} only performed better at 9, 5, 20, 9, and 10 subjects, respectively,  and \emph{CB top-down} outperformed \emph{collaborative bottom-up} at 53, 50, 31, 11, and 0 subjects, while \emph{collaborative bottom-up} only performed better at 1, 5, 10, 5, and 10 subjects, respectively. We can observe that the advantages of \emph{CB top-down}  over the two bottom-up approaches are mainly focus on the lower testing strengths, which is contrary to the observations for the size of the covering arrays. 
 
-Besides this, another important observation is that strategy \emph{Bottom-up} can run more higher-way covering arrays. Specifically, there are 4 subjects (`Insurance', `NetworkMgmt', `Storage4', and  `Storage5') on which \emph{Bottom-up} can run more 4-way covering arrays than \emph{Top-down}, 14 subjects (`Healthcare3', `Healthcare4', `Insurance', `NetworkMgmt', etc.) that can run more 5-way covering arrays, and 10 subjects (`Healthcare3', `Healthcare4', `Insurance', `NetworkMgmt', `ProcessorComm1', etc.) that can run more 6-way covering arrays. For these subjects, strategy \emph{Top-down} can not completely obtain the corresponding higher-way covering arrays within a proper time limitation.
+ \item The second best approach was \emph{single bottom-up}.
 
-Hence, the answer to the second question is :
+ Among these subjects, \emph{single bottom-up} reduced time cost by 85\%, 84\%, 59\%, 62\%, and 31\% on average, respectively. Besides, \emph{single bottom-up} outperformed another top-down approach, i.e., \emph{HDB top-down} at 49, 53, 43, 18, and 7 subjects for the five different testing strengths, respectively. The time cost reduction made by \emph{single bottom-up} is about 93\%, 79\%, 54\%, 57\%,  and  31\%, respectively, for these subjects when compared to approach \emph{HDB top-down}.  Approach \emph{collaborative bottom-up} also outperformed these two top-down approaches. Specifically, \emph{collaborative bottom-up} outperformed \emph{CB top-down} at 27, 40, 30, 13, and 4 subjects, with corresponding time cost reduction of 60\%, 81\%, 57\%, 67\%, and 15\%, respectively, for the 5 different teasing strengths.  It outperformed \emph{HDB top-down} at 41, 43, 29, 13, and 4 subjects, with corresponding time cost reduction of 79\%, 80\%, 51\%, 56\%, and 15\%, respectively, for the 5 different teasing strengths.
 
-\textbf{Strategy \emph{Bottom-up} is the better approach when considering the time cost for generating incremental covering array. }
+ \item With respect to the two approaches both belong to \emph{bottom-up} strategy, \emph{single bottom-up} exhibited a clear advantage in terms of time cost. Specifically, \emph{single bottom-up} outperformed  \emph{collaborative bottom-up}  at 54, 52, 39, 15, and 9 subjects, respectively, for these 5 testing strengths. Among these subjects,  \emph{single bottom-up} made reductions of  89\%, 58\%, 50\%, 64\%, and 58\%, respectively, at the time cost.
+
+ \item  With respect to \emph{top-down} strategy, these two approaches performed neck and neck. Specifically, there are 50, 23, 12, 4, and 0 subjects at which \emph{CB top-down} performed better, while there are 5, 23, 10, 6, and 0 subjects at which \emph{HDB top-down} consumed less time. Besides, there are 0, 9, 24, 12, and 10 subjects that these two approaches performed nearly equally well, of which the percentage is not low.
+ %\item  We apply our approach on testing an industrial software and compare the performance between the traditional approach with ours.
+ %\item The input space of the subjects also had influences on the results of these four approaches. Specifically,
+
+ %\item Different implementations. Approach A and B performs well at subjects with parameters number big.
+% \item Approach C and D performs well at subjects with input space small (number of parameters better than )
+\end{enumerate}
+
+
+%The extent to which \emph{single bottom-up} outperformed \emph{CB top-down} is high,
+
+%ALl the strentghss,
+%Based on these observations, we can conclude that:
+In summary, we can conclude that, with respect to the time cost of generating the covering arrays, \emph{single bottom-up} approach exhibits a significant advantage over all the remaining three approaches at all the testing strengths. \emph{Collaborative bottom-up} also performs better than the other two \emph{top-down} approaches at most of the subjects, but the reduction of time costs is not as much as that of \emph{single bottom-up}. As for the two \emph{top-down} approaches, there is not significant difference between them at the time cost.
+
+%Additionally, different implementations of the strategy also affect on the results. Specifically, \emph{single bottom-up} performs slightly better than \emph{collaborative bottom-up}, while \emph{CB top-down} exhibits significant advantage over \emph{HDB top-down}.
+
+%Above all, the answer to research question 1 is
+%\textbf{Except for the highest-way (6-way) covering array on which \emph{Top-down} strategy has a slight advantage, it falls far behind  strategy \emph{Bottom-up} at the size of generated covering array.}
+
+%With respect to the time cost, it is easy to figure out that our approach \emph{Bottom-up} performs better than the traditional approach. Similar to the size, we list the comparative data in Table  for a clear view. In this table, we can learn that almost for all the subjects (54 for degree 2, 54 for degree 3, 46 for degree 4, 28 for degree 5, and 14 for degree 6), our approach \emph{Bottom-up} costs less time than the traditional approach.
+The observation that \emph{bottom-up} approaches generally needed less time to compute the incremental covering arrays than \emph{top-down} approaches is very interesting. It indicates that the process that extracting lower covering is time-consuming. %Note that we have already compromised between the size of the covering arrays and the time cost for \emph{top-down} strategy (we did not select the optimal lower-covering arrays), but it still
+With respect to \emph{bottom-up} approaches,  the reason why \emph{single bottom-up} performs more efficiently than \emph{collaborative bottom-up} is mainly because  \emph{single bottom-up} does not need to generate the higher-way covering arrays in prior, while \emph{collaborative bottom-up}  needs to take some part of the test cases from higher-way covering array as the seeding test cases of the lower-way covering arrays.
+
+%It is as expected that \emph{Bottom-up} and \emph{Top-down} strategies both have their ups and downs, considering that \emph{Bottom-up} makes the lowest-way covering array generation a priority (using specialized covering array generation approach for the 2-way covering array), while \emph{Top-down} makes the highest-way covering array generation a priority.  With respect to \emph{Bottom-up} strategy, the reason that approach \emph{single bottom-up} slightly performs better than \emph{collaborative bottom-up} is that the latter approach considers more aspects (un-deterministic failures reappearance) such that it cannot only focus on the size of the covering arrays.  The observation that \emph{CB top-down} performs much better \emph{HDB top-down} is interesting, which implies that the methods for extracting lower-way  covering arrays from higher-way covering arrays are important for the size of tests.
 
 \subsection{RQ3. The RFD of the incremental covering array}
 
-
-
-The results are listed in Fig.\ref{experiement_rfd}. There are 5 sub figures in this figure, each of which focus on reporting one specific strength covering array in the incremental covering array. For each sub-figure, there are four polygonal lines that represent the size of the generated covering array by the four approaches respectively. The x axis means the 55 subjects listed in Table \ref{model_of_sut_of_subjects}, while the y axis means the covering array size (which is normalized between 0 to 1 for visualization purposes). Note the value of "-1" in y axis means we cannot generate the specific covering array of the corresponding subject due to the limitation of memory and computing time.
+The results are listed in Fig.\ref{experiement_rfd}. In this figure, the y axis indicates the RFD of the corresponding covering arrays (which is also normalized between 0 to 1). Another difference from the pervious two experiments is that in this figure, the larger the value of the y axis is, the better the corresponding approach performed.
 
 \begin{figure*}[htbp]
 \center
  \includegraphics[width=7.4in]{rfd-degree.eps}
-\caption{The comparison of the three strategies with respect to the RFD}
+\caption{The comparison of the four approaches with respect to the RFD}
 \label{experiement_rfd}
 \end{figure*}
 
+The following could be observed.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{enumerate}
+ \item Approach \emph{single bottom-up} outperformed \emph{CB top-down} and \emph{HDB top-down} at 54 out of 55 subjects and all the 55 subjects, respectively, for 2-way covering arrays. Among these subjects, \emph{single bottom-up} reduced the size of covering arrays by 22\%, and 77\% on average (not shown in this figure), respectively. Approach \emph{collaborative bottom-up} outperformed these two top-down approaches at 53 and 55 subjects, respectively, for 2-way covering arrays. The reductions on the size of covering arrays made by \emph{collaborative bottom-up} are around 18\% and 76\%, respectively. For 3-way covering strength, the advantages of \emph{bottom-up} approaches over \emph{top-down} approaches slightly decreased. Specifically, approach \emph{single bottom-up}  outperformed \emph{CB top-down} and \emph{HDB top-down} at 45, and 47 subjects, respectively. The corresponding reductions on the size of covering arrays are around 16\% and 69\% on average.  Approach \emph{collaborative bottom-up} also outperformed \emph{CB top-down} and \emph{HDB top-down} at 45, and 47 subjects, respectively. The corresponding reductions on the size of covering arrays are around 2\% and 69\% on average.
 
-For the third question, we have the following observations:
+ \item  For the highest covering strength, i.e., 6-way, approach \emph{CB top-down} outperformed both \emph{single bottom-up} and  and \emph{HDB top-down} at all the 10 subjects (only 10 subjects can be tested under 6-way testing strength).  Among these subjects, \emph{CB top-down} reduced by 3\%, and 4\%, on average, respectively, on the size of the covering array.
+     %Although the reduction ratio is not as high as what \emph{bottom-up} approaches obtained at the 2-way and 3-way covering strength, however, considering the total number of the 6-way covering array of these subjects generated by the four approaches (1265.8 on average),  the number of test cases \emph{CB top-down} reduced is not trivial (41.40, and 46.07 respectively, on average).
+     The \emph{HDB top-down} obtained the same results as  approach \emph{CB top-down} at this testing strength. This is because they share the same covering array at the highest covering strength (the difference between the two top-down approaches is their different extracting methods for generating lower-way covering array).
 
-First,
+ \item  For the medium testing strength, i.e., 4 and 5, top-down approaches and bottom-up approaches performed neck and neck on the size of the covering array. Specifically, for 4-way covering arrays, \emph{single bottom-up} outperformed \emph{CB top-down} and \emph{HDB top-down} at 22 and 26 subjects, respectively, and \emph{collaborative bottom-up} outperformed \emph{CB top-down} and \emph{HDB top-down} at 21 and 24 subjects. On the other hand, \emph{CB top-down} outperformed \emph{single bottom-up} and \emph{collaborative bottom-up} at 22 and 21 subjects, respectively, and \emph{HDB top-down} outperformed these two bottom-up approaches at 20 and 16 subjects, respectively.  Among these subjects, the extent to which the reductions of the size of covering arrays made by these approaches against each other are also similar (around 2\% to 5\%). Approach \emph{HDB top-down} was an exception, other 3 approaches reduced about by 30\% to 50\% on the size of the covering arrays when compared to its generated covering arrays.  The results of 5-way covering strength matched well with those of 4-way covering strength.
+ %\item  We apply our approach on testing an industrial software and compare the performance between the traditional approach with ours.
+ %\item The input space of the subjects also had influences on the results of these four approaches. Specifically,
 
-Second.
+ %\item Different implementations. Approach A and B performs well at subjects with parameters number big.
+% \item Approach C and D performs well at subjects with input space small (number of parameters better than ).
+    \item When comparing the two approaches that both belong to \emph{bottom-up} strategy, approach \emph{single bottom-up} slightly performed better than \emph{collaborative bottom-up} at almost all the testing strengths. Specifically, there are 45, 24, 21, 14, and 1 subjects, on which approach \emph{single bottom-up} generated smaller size of covering array than than \emph{collaborative bottom-up} for testing strength 2, 3, 4, 5, and 6, respectively, while there are 6, 21, 7, 1, and 1 subjects, on which \emph{collaborative bottom-up} worked better. The specific reductions on the size of covering arrays made by these two approaches are 1\% to 6\%.
 
-In summary, the answer to the research question 3 is :
+    \item When comparing the two approaches that both belong to \emph{top-down} strategy, approach \emph{CB top-down} exhibited a significant advantage over \emph{HDB top-down}. Specifically, there are 55, 44, 21, 10, and 0 subjects, on which approach \emph{CB top-down} generated smaller size of covering arrays when compared to \emph{HDB top-down} for testing strength 2, 3, 4, 5, and 6, respectively, while there are no subjects on which \emph{HDB top-down} worked better than \emph{CB top-down} for all the testing strengths. More specifically, among these subjects, approach \emph{CB top-down} reduced the size of the covering arrays by 46\% and 71\% when compared to \emph{HDB top-down}.
+\end{enumerate}
 
+%Based on these observations, we can conclude that:
+In summary, we can conclude that, with respect to the size of the covering array, \emph{Bottom-up} strategy has a significant advantage over \emph{Top-down} strategy at low testing strengths, while \emph{Top-down} strategy works better at the high testing strength. Additionally, different implementations of the strategy also affect on the results. Specifically, \emph{single bottom-up} performs slightly better than \emph{collaborative bottom-up}, while \emph{CB top-down} exhibits significant advantage over \emph{HDB top-down}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Above all, the answer to research question 1 is
+%\textbf{Except for the highest-way (6-way) covering array on which \emph{Top-down} strategy has a slight advantage, it falls far behind  strategy \emph{Bottom-up} at the size of generated covering array.}
 
-
-
-
-
-For the last research question, there are several observations:
-
-At first sight of Fig \ref{experiement}, we can hardly distinguish the traditional approach and \emph{Bottom-up} strategy, which indicates that the two strategies has a similar performance at the size of generated covering array. This is easy to understand, as we mentioned before, the approach \cite{fouche2009incremental} is also a special version of \emph{Bottom-up} strategy.
-But on closer inspection, these still exists differences between them.
-
-\begin{table}[!ht]
-\caption{Compare Bottom-up strategy with Collaborative bottom-up strategy(Size)}
-\label{statistic_of_subjects_size_tranditional}
-\center
-%\setlength{\tabcolsep}{3pt}
-    \begin{tabular}{|c|c|c|c|} \hline
-\multirow{2}{*}{Degree} & Bottom-up & Collaborative bottom-up & \multirow{2}{*}{Equal} \\\cline{2-3}
- & \#subjects (\#test cases) & \#subjects (\#test cases) &  \\\hline
-2 & 45 (2.33) & 6 (0.83) & 4 \\
-3 & 24 (1.82) & 21 (2.33) & 10 \\
-4 & 24 (11.53) & 7 (2.24) & 17 \\
-5 & 18 (69.33) & 2 (1.0) & 14 \\
-6 & 1 (48.67) & 1 (2.0) & 16 \\ \hline
-    \end{tabular}%
-\end{table}
-
-We list the comparative data in Table \ref{statistic_of_subjects_size_tranditional}, We can learn that there is a slight advantage (around 1 to 69 test case) of our approach \emph{Bottom-up} over the traditional approach.
-
-With respect to the time cost, it is easy to figure out that our approach \emph{Bottom-up} performs better than the traditional approach. Similar to the size, we list the comparative data in Table \ref{statistic_of_subjects_time_traditional} for a clear view. In this table, we can learn that almost for all the subjects (54 for degree 2, 54 for degree 3, 46 for degree 4, 28 for degree 5, and 14 for degree 6), our approach \emph{Bottom-up} costs less time than the traditional approach.  The reason why our approach performs more efficiently is mainly because our approach does not need to generate a higher-way covering array in prior. This task is very time-consuming if the input space is too large.
-
-\begin{table}[!ht]
-\caption{Compare Bottom-up strategy with Collaborative bottom-up strategy (Time)}
-\label{statistic_of_subjects_time_traditional}
-\center
-%\setlength{\tabcolsep}{3pt}
-    \begin{tabular}{|c|c|c|} \hline
-    \multirow{2}{*}{Degree} & Collaborative bottom-up & Top-down \\\cline{2-3}
- & \#subjects (\#seconds) & \#subjects (\#seconds) \\\hline
-2 & 54 (0.18) & 1 (0.08) \\
-3 & 54 (0.82) & 1 (5.9)  \\
-4 & 46 (80.19) & 2 (30.4)  \\
-5 & 28 (716.38) & 6 (181.64)  \\
-6 & 14 (2.31) & 4 (431.43) \\ \hline
-    \end{tabular}%
-\end{table}
-
-We do not give a closer inspection for comparing the traditional approach with \emph{Top-down} strategy. This is because based on Fig. \ref{experiement} and Fig. \ref{experiement_time}, we can easily find that the traditional approach also has a significant advantage over \emph{Top-down} strategy at the covering array size and time cost.
-
-Above all, the answer to the last question is:
-
-\textbf{With respect to the size of incremental covering array, strategy \emph{Bottom-up} is slightly better than the traditional approach. Strategy \emph{Bottom-up} also needs less time than the traditional approach to generate the covering arrays.}
+It is as expected that \emph{Bottom-up} and \emph{Top-down} strategies both have their ups and downs, considering that \emph{Bottom-up} makes the lowest-way covering array generation a priority (using specialized covering array generation approach for the 2-way covering array), while \emph{Top-down} makes the highest-way covering array generation a priority.  With respect to \emph{Bottom-up} strategy, the reason that approach \emph{single bottom-up} slightly performs better than \emph{collaborative bottom-up} is that the latter approach considers more aspects (un-deterministic failures reappearance) such that it cannot only focus on the size of the covering arrays.  The observation that \emph{CB top-down} performs much better \emph{HDB top-down} is interesting, which implies that the methods for extracting lower-way  covering arrays from higher-way covering arrays are important for the size of tests.
+%In fact, considering that \emph{CB top-down}  is also not the optimal method, it
+%As mentioned before, considering of the efficiency, we use a greedy method to select test cases from higher covering arrays. This may result in that, for strategy \emph{Top-down}, the number of test cases of the lower-way covering array may be larger than needed. We believe another reason for this result is the covering array generation approach IPOG. implicts that there is a , even is not the best \emph{top-down} approach.
+%This is because that even though for higher-way covering array (6-way), strategy \emph{Top-down} did not have any significant advantages over \emph{Bottom-up}, which indicates that IPOG is not good at generating higher-way covering
 
 
 %One observation is that the result is relatively stable according to the small standard deviation against the average value. In fact, the deviation is about 1 to 2 for the 2-way covering array, 1 to 3 for the 3-way covering array, 1 to 7 for 4-way, and 6 to 15 for the 5-way. The stability of the results is owe to the covering array generation algorithm AETG, by which the size of the covering array is similar for different runs.
