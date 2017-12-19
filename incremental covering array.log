@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  18 DEC 2017 21:43
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2014.9.10)  19 DEC 2017 14:45
 entering extended mode
 **incremental*covering*array.tex
 
@@ -498,14 +498,17 @@ Overfull \hbox (18.79755pt too wide) in paragraph at lines 968--969
 
 File: rfd-degree.eps Graphic file (type eps)
 <rfd-degree.eps>
-Overfull \hbox (18.79755pt too wide) in paragraph at lines 1018--1019
+Overfull \hbox (18.79755pt too wide) in paragraph at lines 1007--1008
  [] 
  []
 
-[9] [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
+Underfull \hbox (badness 2269) in paragraph at lines 1017--1018
+\OT1/ptm/m/n/10 i-cal-ly, \OT1/ptm/m/it/10 s-in-gle bottom-up \OT1/ptm/m/n/10 o
+ut-per-formed \OT1/ptm/m/it/10 col-lab-o-ra-tive
+ []
+
+[9] [10] [11]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .bbl"
 Underfull \hbox (badness 2020) in paragraph at lines 113--116
@@ -513,7 +516,7 @@ Underfull \hbox (badness 2020) in paragraph at lines 113--116
 '06. 30th An-nu-al
  []
 
-[12])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -525,9 +528,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[13
-
-]
+[12]
 ("C:\Users\xintao\Desktop\incremental-covering-array\incremental covering array
 .aux") ) 
 Here is how much of TeX's memory you used:
@@ -539,4 +540,4 @@ Here is how much of TeX's memory you used:
  17 hyphenation exceptions out of 8191
  44i,11n,42p,1577b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on incremental*covering*array.pdf (13 pages).
+Output written on incremental*covering*array.pdf (12 pages).
